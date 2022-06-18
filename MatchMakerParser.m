@@ -33,29 +33,38 @@ correct ranges.";
 ParseSums[expr_Plus] := Map[ParseSums, expr];
 ParseSums[expr_Times] :=
   Block[
-    {indices, ranges}
+    {indicesByCoupling, allIndices, exprNoFree}
   ,
-    indices =
-    Table[
-      GetSumIndexPattern[i]
-    , {i, List @@ expr}
-    ] /. {Free[y_], n_} :> Nothing;
+    (* Return indices like {{indices on first coupling}, {indices on 2nd}, ...} *)
+    (* We don't care about the free indices, so remove them at the end *)
+    indicesByCoupling =
+    Table[GetSumIndexPattern[i], {i, List @@ expr}] /. {Free[y_], n_} :> Nothing;
 
-    Print[NormaliseIndices[Join @@ indices]];
+    (* Join all the indices together as they would appear in the sum *)
+    (* TODO Replace DeleteDuplicate below with `NormaliseIndices` *)
+    allIndices = DeleteDuplicates[Join @@ indicesByCoupling];
 
-    Hold[Sum] @@ Join @@ {
-      {expr /. Free -> Identity}
-    , DeleteDuplicates[Join @@ indices]
-    }
+    (* Remove Free head on free indices, since GetSumIndexPattern already
+    called *)
+    exprNoFree = expr /. Free -> Identity;
+
+    If[
+      allIndices === {}
+    , exprNoFree (* If no indices to sum, just return expr *)
+    , Hold[Sum] @@ Join @@ {{exprNoFree}, allIndices}
+    ]
   ];
 ParseSums[y_[idx__]] /; MemberQ[Keys[$Couplings], y] := y[idx] /. {Free[i_] :> i};
 PackageExport["ParseSums"]
 
 ParseMatchMakerOutput[rules_] :=
   Table[
-    Composition[ParseSums, Expand][
+    RuleDelayed @@ {
+      rule[[1]]
+    , Composition[ParseSums, Expand][
       rule[[1]] //. {Pattern -> pattern, pattern[x_, y_] :> Free[x]} /. rule
-    ]
+      ]
+    }
   , {rule, rules}
   ];
 
