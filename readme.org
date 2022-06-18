@@ -1,3 +1,23 @@
 * MatchMakerParser
 
 A small tool to parse Mathematica expressions from MatchMaker into Python code.
+
+** Notes
+
+There is an idea to actually use =numpy= to perform fast matrix multiplication,
+since =sympy= can recognise matrix summations:
+#+begin_src python
+import sympy as sym
+import numpy as np
+from numpy import dot
+
+from sympy.abc import i,j,k,l
+
+X = sym.MatrixSymbol("X", 2, 2)
+matrix_expr = sym.MatrixExpr.from_index_summation(sym.Sum(X[i,j]*X[i,k], (i, 0, 1)))
+func = sym.lambdify(X, matrix_expr, modules='numpy')
+
+npX = np.matrix([[1, 2], [3, 4]])
+func(npX)
+#+end_src
+It's not clear if this will be quicker than just using =Sympy= to perform the matrix multiplication, or just the sum directly using =summation= for that matter!
