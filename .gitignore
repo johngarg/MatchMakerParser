@@ -5,6 +5,9 @@
 # Figures, for now
 img/
 
+# raw data
+data/
+
 # macOS
 .DS_Store
 
