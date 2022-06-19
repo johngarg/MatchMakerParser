@@ -7,6 +7,10 @@ $Couplings::usage = "Association list of couplings to dimension."
 $Couplings = <||>;
 PackageExport["$Couplings"]
 
+$ExoticParams::usage = "List of exotic parameters."
+$ExoticParams = {};
+PackageExport["$ExoticParams"]
+
 DeclareCouplings::usage = "Function used to declare coupling matrices in
 MatchMaker output. Returns a list of the inputs."
 DeclareCouplings[couplings__] :=
@@ -15,6 +19,12 @@ DeclareCouplings[couplings__] :=
   , {coupling, List[couplings]}
   ];
 PackageExport["DeclareCouplings"]
+
+DeclareExoticParams::usage = "Function used to declare exotic coupling matrices
+and masses in MatchMaker output.";
+DeclareExoticParams[params__] := $ExoticParams = List[params];
+PackageExport["DeclareExoticParams"]
+
 
 GetSumIndexPattern::usage = "For a coupling featuring in a product whose indices
 are being summed over, returns a list like {i, 3}, where i is the index and the
@@ -46,7 +56,7 @@ ParseSums[expr_Times] :=
 
     (* Remove `Free` head on free indices, since `GetSumIndexPattern` already
     called *)
-    exprNoFree = expr /. Free -> Identity;
+    exprNoFree = expr (* /. Free -> Identity *);
 
     If[
       allIndices === {}
@@ -54,12 +64,11 @@ ParseSums[expr_Times] :=
     , Sum @@ Join @@ {{exprNoFree}, allIndices}
     ]
   ];
-ParseSums[y_[idx__]] /; MemberQ[Keys[$Couplings], y] := y[idx] /. {Free[i_] :> i};
-ParseSums[y_[idx__]] /; y === KroneckerDelta := y[idx] /. {Free[i_] :> i};
-
-ParseSums[x_Integer] := x;
-ParseSums[x_] /; Head[x] === Symbol := x;
+ParseSums[y_[idx__]] /; MemberQ[Keys[$Couplings], y] := y[idx] (* /. {Free[i_] :> i} *);
+ParseSums[y_[idx__]] /; y === KroneckerDelta := y[idx] (* /. {Free[i_] :> i} *);
+ParseSums[x_] := x;
 PackageExport["ParseSums"]
+PackageExport["Free"]
 
 ParseMatchMakerOutput[rules_] :=
   Table[
@@ -73,25 +82,61 @@ ParseMatchMakerOutput[rules_] :=
   ];
 PackageExport["ParseMatchMakerOutput"]
 
-OperatorNameAndIndexStrings[opName_[indices__]] :=
-  Block[{cleanIndices}
-      , cleanIndices =
-        List[indices] //. {Pattern -> pattern, pattern[x_, y_] :> x};
-        {ToString[opName], StringRiffle[Map[ToString, cleanIndices], ","]}
+OperatorNameAndIndexStrings[opName_[indices___]] :=
+  Block[
+    {cleanIndices, opNameString = ToString[opName], uniq = Unique[p]}
+  ,
+    If[
+      indices === {}
+    , {opNameString, ""}
+    , cleanIndices = List[indices] //. {Pattern -> uniq, uniq[x_, y_] :> x};
+      {opNameString, StringRiffle[Map[ToString, cleanIndices], ","]}
+    ]
   ];
+OperatorNameAndIndexStrings[opName_] := {ToString[opName], ""};
 
 OutputPythonClass[name_][List[rules__RuleDelayed]] :=
   Block[
-    {boilerplateTemplate, methodTemplate, operatorTriple, methodStringList}
+    { boilerplateTemplate
+    , methodTemplate
+    , operatorTriple
+    , methodStringList
+    , exoticParamTemplate
+    , exoticCouplingTemplate
+    , attrStringList
+    }
   ,
     boilerplateTemplate =
     StringTemplate[
-      "from .matchingresult import GenericMatchingResult
+      "import matchingresult
+import numpy as np
 
-class `n`MatchingResult(GenericMatchingResult):
-    def __init__(self, name, scale):
+class `n`MatchingResult(matchingresult.GenericMatchingResult):
+    def __init__(self, name='`n`', scale=91.1876):
         super().__init__(name, scale)\n"
     ][<| "n" -> name |>];
+
+    exoticParamTemplate =
+    StringTemplate[
+      "        self.`` = 1\n"
+    ];
+    exoticCouplingTemplate =
+    StringTemplate[
+      "        self.`` = np.zeros(``)\n"
+    ];
+    attrStringList =
+    Table[
+      If[MemberQ[Keys[$Couplings], param]
+       , exoticCouplingTemplate @@ {
+         ToString[param]
+         , StringReplace[ToString[$Couplings[param]]
+                       , {"}" -> ")", "{" -> "("}
+           ]
+         }
+       , exoticParamTemplate[ToString[param], ToString[param]]
+      ]
+    , {param, $ExoticParams}
+    ];
 
     methodTemplate =
     StringTemplate[
@@ -107,6 +152,11 @@ class `n`MatchingResult(GenericMatchingResult):
 
     methodStringList =
     Table[methodTemplate @@ triple, {triple, operatorTriples}];
+
+    Table[
+      boilerplateTemplate = boilerplateTemplate <> attr;
+      , {attr, attrStringList}
+    ];
 
     Table[
       boilerplateTemplate = boilerplateTemplate <> "\n" <> method;

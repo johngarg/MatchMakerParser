@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
 # arguments: process name, matchmaker data, desired output python file location
+# e.g. ./parse-matchmaker-output S1 data/MatchingResult.dat python/s1_match.py
 
 wolframscript -file ExampleConfig.wl $1 $2 $3

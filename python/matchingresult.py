@@ -27,6 +27,10 @@ class GenericMatchingResult:
         self.yd: np.matrix = np.diag([0.00267, 0.05316, 2.839])
         self.yl: np.matrix = np.diag([0.00048307, 0.101766, 1.72856])
 
+        self.yubar: np.matrix = self.yu
+        self.ydbar: np.matrix = self.yd
+        self.ylbar: np.matrix = self.yl
+
         self.mZ: float = 91.1876
         self.mH: float = 125.10
 
@@ -43,20 +47,10 @@ class GenericMatchingResult:
         self.onelooporder: int = 1  # Dummy variable to identify 1-loop part
         self.aEV: float = 1  # Evanescent parameter
         self.mu: float = self.scale  # Identify mu with scale
+        self.invepsilonbar: float = 0
+        self.epsilonbar: float = 0
 
     def kronecker_delta(i, j):
         if i == j:
             return 1
         return 0
-
-    def get_coeff(self, coeff: str, entry: List[int]) -> float:
-        return getattr(self, coeff)(entry)
-
-
-class S1_MatchingResult(GenericMatchingResult):
-    def __init__(self, name: str, scale: float = 91.1876):
-        super().__init__(name, scale)
-
-    def alphaEceu(self, entry):
-        i, j = entry
-        return i ** 2 + j

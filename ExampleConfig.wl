@@ -14,13 +14,22 @@ DeclareCouplings[
 , {YeuSbar, {3, 3}}
 ];
 
+(* User should need to do this somewhere *)
+DeclareExoticParams[
+  YLQS
+, YeuS
+, YLQSbar
+, YeuSbar
+, MS1
+];
+
 {fileName, name, matchMakerDataPath, outputPythonFilePath} = $ScriptCommandLine;
 
 (* Only keep matching onto physical basis *)
 matchMakerData = Read[matchMakerDataPath][[-2]];
 
 (* For now, just test with a small subset *)
-matchMakerData = matchMakerData[[10 ;; 20]];
+matchMakerData = matchMakerData; (* [[10 ;; 20]]; *)
 
 Print["Parsing matchmaker data..."];
 parsedMatchMakerData = ParseMatchMakerOutput[matchMakerData];
@@ -31,7 +40,7 @@ pythonCode = OutputPythonClass[name][parsedMatchMakerData];
 usedSymbols =
 StringRiffle[
   Table[
-    "# " <> PythonForm[i] <> " = " <> PythonForm[i]
+    "# " <> ToString[i]
   , {i, Normal[$PythonForm`Symbols]}
   ]
 , "\n"
