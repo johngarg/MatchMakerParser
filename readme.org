@@ -2,6 +2,11 @@
 
 A small tool to parse Mathematica expressions from MatchMaker into Python code.
 
+** Questions
+- What do we do about input parameters and running?
+- The way MatchMaker is dealing with complex conjugates is a bit annoying,
+  haven't thought a lot about what to do here
+
 ** Workflow
 How do we want this to work? Last meeting we discussed an output like:
 #+begin_src python

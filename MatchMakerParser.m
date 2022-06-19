@@ -43,7 +43,7 @@ correct ranges.";
 ParseSums[expr_Plus] := Map[ParseSums, expr];
 ParseSums[expr_Times] :=
   Block[
-    {indicesByCoupling, allIndices, exprNoFree}
+    {indicesByCoupling, allIndices}
   ,
     (* Return indices like {{indices on first coupling}, {indices on 2nd}, ...} *)
     (* We don't care about the free indices, so remove them at the end *)
@@ -54,18 +54,14 @@ ParseSums[expr_Times] :=
     (* TODO Replace DeleteDuplicate below with `NormaliseIndices` *)
     allIndices = DeleteDuplicates[Join @@ indicesByCoupling];
 
-    (* Remove `Free` head on free indices, since `GetSumIndexPattern` already
-    called *)
-    exprNoFree = expr (* /. Free -> Identity *);
-
     If[
       allIndices === {}
-    , exprNoFree (* If no indices to sum, just return expr *)
-    , Sum @@ Join @@ {{exprNoFree}, allIndices}
+    , expr (* If no indices to sum, just return expr *)
+    , Sum @@ Join @@ {{expr}, allIndices}
     ]
   ];
-ParseSums[y_[idx__]] /; MemberQ[Keys[$Couplings], y] := y[idx] (* /. {Free[i_] :> i} *);
-ParseSums[y_[idx__]] /; y === KroneckerDelta := y[idx] (* /. {Free[i_] :> i} *);
+ParseSums[y_[idx__]] /; MemberQ[Keys[$Couplings], y] := y[idx];
+ParseSums[y_[idx__]] /; y === KroneckerDelta := y[idx];
 ParseSums[x_] := x;
 PackageExport["ParseSums"]
 PackageExport["Free"]
