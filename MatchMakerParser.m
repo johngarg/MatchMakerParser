@@ -51,10 +51,14 @@ ParseSums[expr_Times] :=
     If[
       allIndices === {}
     , exprNoFree (* If no indices to sum, just return expr *)
-    , Hold[Sum] @@ Join @@ {{exprNoFree}, allIndices}
+    , Sum @@ Join @@ {{exprNoFree}, allIndices}
     ]
   ];
 ParseSums[y_[idx__]] /; MemberQ[Keys[$Couplings], y] := y[idx] /. {Free[i_] :> i};
+ParseSums[y_[idx__]] /; y === KroneckerDelta := y[idx] /. {Free[i_] :> i};
+
+ParseSums[x_Integer] := x;
+ParseSums[x_] /; Head[x] === Symbol := x;
 PackageExport["ParseSums"]
 
 ParseMatchMakerOutput[rules_] :=
@@ -67,5 +71,48 @@ ParseMatchMakerOutput[rules_] :=
     }
   , {rule, rules}
   ];
-
 PackageExport["ParseMatchMakerOutput"]
+
+OperatorNameAndIndexStrings[opName_[indices__]] :=
+  Block[{cleanIndices}
+      , cleanIndices =
+        List[indices] //. {Pattern -> pattern, pattern[x_, y_] :> x};
+        {ToString[opName], StringRiffle[Map[ToString, cleanIndices], ","]}
+  ];
+
+OutputPythonClass[name_][List[rules__RuleDelayed]] :=
+  Block[
+    {boilerplateTemplate, methodTemplate, operatorTriple, methodStringList}
+  ,
+    boilerplateTemplate =
+    StringTemplate[
+      "from .matchingresult import GenericMatchingResult
+
+class `n`MatchingResult(GenericMatchingResult):
+    def __init__(self, name, scale):
+        super().__init__(name, scale)\n"
+    ][<| "n" -> name |>];
+
+    methodTemplate =
+    StringTemplate[
+      "    def ``(self, ``):
+        return ``\n"
+    ];
+
+    operatorTriples =
+    Table[
+      Append[OperatorNameAndIndexStrings[rule[[1]]], PythonForm[rule[[2]]]]
+    , {rule, List[rules]}
+    ];
+
+    methodStringList =
+    Table[methodTemplate @@ triple, {triple, operatorTriples}];
+
+    Table[
+      boilerplateTemplate = boilerplateTemplate <> "\n" <> method;
+    , {method, methodStringList}
+    ];
+
+    boilerplateTemplate
+  ];
+PackageExport["OutputPythonClass"]

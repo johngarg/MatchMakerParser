@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# arguments: process name, matchmaker data, desired output python file location
+
+wolframscript -file ExampleConfig.wl $1 $2 $3
