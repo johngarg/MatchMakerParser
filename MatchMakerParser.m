@@ -8,7 +8,7 @@ $Couplings = <||>;
 PackageExport["$Couplings"]
 
 DeclareCouplings::usage = "Function used to declare coupling matrices in
-MatchMaker output."
+MatchMaker output. Returns a list of the inputs."
 DeclareCouplings[couplings__] :=
   Table[
     $Couplings[coupling[[1]]] = coupling[[2]]; coupling
@@ -44,7 +44,7 @@ ParseSums[expr_Times] :=
     (* TODO Replace DeleteDuplicate below with `NormaliseIndices` *)
     allIndices = DeleteDuplicates[Join @@ indicesByCoupling];
 
-    (* Remove Free head on free indices, since GetSumIndexPattern already
+    (* Remove `Free` head on free indices, since `GetSumIndexPattern` already
     called *)
     exprNoFree = expr /. Free -> Identity;
 
