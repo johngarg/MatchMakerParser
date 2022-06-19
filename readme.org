@@ -2,7 +2,15 @@
 
 A small tool to parse Mathematica expressions from MatchMaker into Python code.
 
-** Notes
+** Workflow
+How do we want this to work? Last meeting we discussed an output like:
+#+begin_src python
+matching_instance = MatchingResults(scale=1000, yLQ=np.matrix([[1, 7j, 0],[...],[...]]), ...)
+matching_instance.get_coeff("Clq(1)", [1,1,1,1])
+#+end_src
+This means that nothing will need to be symbolic within the dataclass. Initialise the objects with sensible values so that only the matrix will need to be updated.
+
+** Thoughts on a Numpy interface
 
 There is an idea to actually use =numpy= to perform fast matrix multiplication,
 since =sympy= can recognise matrix summations:
