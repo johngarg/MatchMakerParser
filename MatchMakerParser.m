@@ -3,16 +3,24 @@ Package["MatchMakerParser`"]
 Print["Main package MatchMakerParser.m loaded!"];
 
 
-$Couplings::usage = "Association list of couplings to dimension."
+$Couplings::usage = "Association list of couplings to dimension. E.g.
+
+  <| YLQS -> {3, 3}, ... |>
+
+means the coupling YLQS has two indices that each go over 1, 2, 3.";
 $Couplings = <||>;
 PackageExport["$Couplings"]
 
-$ExoticParams::usage = "List of exotic parameters."
+$ExoticParams::usage = "List of exotic parameters.";
 $ExoticParams = {};
 PackageExport["$ExoticParams"]
 
 DeclareCouplings::usage = "Function used to declare coupling matrices in
-MatchMaker output. Returns a list of the inputs."
+MatchMaker output. Returns a list of the inputs. E.g.
+
+  DeclareCouplings[{YLQS, {3, 3}}, ...]
+
+";
 DeclareCouplings[couplings__] :=
   Table[
     $Couplings[coupling[[1]]] = coupling[[2]]; coupling
@@ -21,10 +29,13 @@ DeclareCouplings[couplings__] :=
 PackageExport["DeclareCouplings"]
 
 DeclareExoticParams::usage = "Function used to declare exotic coupling matrices
-and masses in MatchMaker output.";
+and masses in MatchMaker output. E.g.
+
+DeclareExoticParams[YLQS , YeuS, MS1];
+
+";
 DeclareExoticParams[params__] := $ExoticParams = List[params];
 PackageExport["DeclareExoticParams"]
-
 
 GetSumIndexPattern::usage = "For a coupling featuring in a product whose indices
 are being summed over, returns a list like {i, 3}, where i is the index and the
@@ -33,13 +44,18 @@ GetSumIndexPattern[y_[idx__]] /; MemberQ[Keys[$Couplings], y] :=
   MapThread[List, {List[idx], $Couplings[y]}];
 GetSumIndexPattern[x_] := Nothing;
 
+(* TODO Extend so that mismatching sums are truncated in a way that allows the
+sum to be performed. In such an event, a warning should be shown. *)
 NormaliseIndices::usage = "Normalise index patterns so that duplicates are
-deleted, and mismatching sums are truncated in a way that allows the sum to be
-performed. In such an event, a warning is shown.";
-NormaliseIndices[indices_List] := Nothing;
+deleted.";
+NormaliseIndices[indices_List] := DeleteDuplicates[indices];
 
 ParseSums::usage = "Function to parse repeated indices into sums with the
-correct ranges.";
+correct ranges. E.g.
+
+ParseSums[x[i] y[j,i]] (* => Sum[x[i] y[j,i], {i, 3}] *)
+
+";
 ParseSums[expr_Plus] := Map[ParseSums, expr];
 ParseSums[expr_Times] :=
   Block[
@@ -51,8 +67,7 @@ ParseSums[expr_Times] :=
     Table[GetSumIndexPattern[i], {i, List @@ expr}] /. {Free[y_], n_} :> Nothing;
 
     (* Join all the indices together as they would appear in the sum *)
-    (* TODO Replace DeleteDuplicate below with `NormaliseIndices` *)
-    allIndices = DeleteDuplicates[Join @@ indicesByCoupling];
+    allIndices = NormaliseIndices[Join @@ indicesByCoupling];
 
     If[
       allIndices === {}
@@ -66,18 +81,32 @@ ParseSums[x_] := x;
 PackageExport["ParseSums"]
 PackageExport["Free"]
 
+ParseMatchMakerOutput::usage = "Parses sums in a list of rules as output by
+Matchmaker.";
 ParseMatchMakerOutput[rules_] :=
   Table[
     RuleDelayed @@ {
       rule[[1]]
     , Composition[ParseSums, Expand][
-      rule[[1]] //. {Pattern -> pattern, pattern[x_, y_] :> Free[x]} /. rule
+      Block[
+        {uniq = Unique[p]}
+      ,
+        (* Wrap free indices with a `Free` head to flag them for `ParseSum` so
+        that they are not summed over *)
+        rule[[1]] //. {Pattern -> uniq, uniq[x_, y_] :> Free[x]} /. rule]
       ]
     }
   , {rule, rules}
   ];
 PackageExport["ParseMatchMakerOutput"]
 
+OperatorNameAndIndexStrings::usage = "Returns a length-2 list whose first
+element is the `opName` as a string, and the second is a string representation
+of the indices separated by a comma. E.g.
+
+OperatorNameAndIndexStrings[Olq[i, j, k]] (* => {\"Olq\", \"i,j,k\"} *)
+
+";
 OperatorNameAndIndexStrings[opName_[indices___]] :=
   Block[
     {cleanIndices, opNameString = ToString[opName], uniq = Unique[p]}
@@ -91,11 +120,13 @@ OperatorNameAndIndexStrings[opName_[indices___]] :=
   ];
 OperatorNameAndIndexStrings[opName_] := {ToString[opName], ""};
 
+OutputPythonClass::usage = "Main function that maps output of
+ParseMatchMakerOutput to a string representation of a Python class.";
 OutputPythonClass[name_][List[rules__RuleDelayed]] :=
   Block[
     { boilerplateTemplate
     , methodTemplate
-    , operatorTriple
+    , operatorTriples
     , methodStringList
     , exoticParamTemplate
     , exoticCouplingTemplate
@@ -120,6 +151,10 @@ class `n`MatchingResult(matchingresult.GenericMatchingResult):
     StringTemplate[
       "        self.`` = np.zeros(``)\n"
     ];
+
+    (* Create list of strings representing attributes of Python class. For
+    numerical parameters: something like "self.param = 1" and for tensors
+    "self.param = np.zeros(...)" *)
     attrStringList =
     Table[
       If[MemberQ[Keys[$Couplings], param]
@@ -140,20 +175,23 @@ class `n`MatchingResult(matchingresult.GenericMatchingResult):
         return ``\n"
     ];
 
+    (* A list of length-3 lists of strings like: {opName, indices, method body}
+    *)
     operatorTriples =
     Table[
       Append[OperatorNameAndIndexStrings[rule[[1]]], PythonForm[rule[[2]]]]
     , {rule, List[rules]}
     ];
 
+    (* Apply method template to triples to construct methods *)
     methodStringList =
     Table[methodTemplate @@ triple, {triple, operatorTriples}];
 
+    (* Add the attributes and methods to the boilerplate code *)
     Table[
       boilerplateTemplate = boilerplateTemplate <> attr;
       , {attr, attrStringList}
     ];
-
     Table[
       boilerplateTemplate = boilerplateTemplate <> "\n" <> method;
     , {method, methodStringList}
