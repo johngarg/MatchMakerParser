@@ -50,7 +50,7 @@ class GenericMatchingResult:
         self.invepsilonbar: float = 0
         self.epsilonbar: float = 0
 
-    def kronecker_delta(i, j):
+    def kronecker_delta(self, i, j):
         if i == j:
             return 1
         return 0
