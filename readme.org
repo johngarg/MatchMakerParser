@@ -60,3 +60,15 @@ npX = np.matrix([[1, 2], [3, 4]])
 func(npX)
 #+end_src
 It's not clear if this will be quicker than just using =Sympy= to perform the matrix multiplication, or just the sum directly using =summation= for that matter!
+
+Actually, it seems this is already implemented in =numpy=! See [[https://numpy.org/doc/stable/reference/generated/numpy.einsum.html][this library]] called =einsum=, which stands for /Einstein summation/
+#+begin_src python
+>>> a = np.arange(6).reshape((3,2))
+>>> b = np.arange(12).reshape((4,3))
+>>> np.einsum('ki,jk->ij', a, b)
+array([[10, 28, 46, 64],
+       [13, 40, 67, 94]])
+#+end_src
+This will clean up the expressions a lot, for 3 by 3 matrices I don't know how
+much of a speed up it will give, but if we want array programming the whole way
+then it will be the way to go.
