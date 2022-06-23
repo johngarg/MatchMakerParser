@@ -1,6 +1,11 @@
-#!/usr/bin/env bash
+#!/usr/bin/env wolframscript
 
-# arguments: process name, matchmaker data, desired output python file location and config
-# e.g. ./parse-matchmaker-output S1 data/MatchingResult.dat python/s1_match.py data/S1Config.wl
+<<MatchMakerParser`;
 
-wolframscript -file Parse.m $1 $2 $3 $4
+{fileName, name, matchMakerDataPath, outputPythonFilePath, configFilePath} = $ScriptCommandLine;
+
+(* Evaluate config file *)
+Get[configFilePath];
+
+(* Output Python file *)
+MatchMakerToPython[name, matchMakerDataPath, outputPythonFilePath];
