@@ -7,9 +7,10 @@ The package provides the main executable `parse-matchmaker-output`:
 #+begin_src bash
 ./parse-matchmaker-output S1 data/S1Config.m data/S1MatchingData.dat python/s1_matching.py
 #+end_src
-The first argument is the name of the process (will enter the name of the Python
-class constructed), the second is the path to the Matchmaker output and the
-third is the desired path for the python output file.
+The first argument is the name of the process (will enter the name of the
+Python class constructed), the second is the config file that defines couplings,
+the third is the path to the Matchmaker output, and the last is the desired path
+for the python output file.
 
 ** Questions
 - What do we do about input parameters and running?
