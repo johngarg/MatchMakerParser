@@ -120,8 +120,8 @@ OperatorNameAndIndexStrings[opName_[indices___]] :=
   ];
 OperatorNameAndIndexStrings[opName_] := {ToString[opName], ""};
 
-OutputPythonClass::usage = "Main function that maps output of
-ParseMatchMakerOutput to a string representation of a Python class.";
+OutputPythonClass::usage = "Maps output of ParseMatchMakerOutput to a string
+representation of a Python class.";
 OutputPythonClass[name_][List[rules__RuleDelayed]] :=
   Block[
     { boilerplateTemplate
@@ -200,3 +200,42 @@ class `n`MatchingResult(matchingresult.GenericMatchingResult):
     boilerplateTemplate
   ];
 PackageExport["OutputPythonClass"]
+
+MatchMakerToPython::usage = "Central function of package. The user needs to
+declare couplings and exotic parameters with `DeclareCouplings` and
+`DeclareExoticParams`, then this function will write out a python file to
+`outputPythonFilePath` with the matching information contained within
+`matchMakerDataPath` directly as it came from matchmaker. `name` is the name of
+the process, and will be prepended to the name of the class.";
+MatchMakerToPython[
+  name_String
+, matchMakerDataPath_String
+, outputPythonFilePath_String
+] :=
+  Block[
+    {matchMakerData, parsedMatchMakerData, pythonCode, usedSymbols}
+  ,
+    matchMakerData = Read[matchMakerDataPath][[-2]];
+
+    Print["Parsing matchmaker data..."];
+    parsedMatchMakerData = ParseMatchMakerOutput[matchMakerData];
+
+    Print["Successfully parsed! Converting to Python code..."];
+    pythonCode = OutputPythonClass[name][parsedMatchMakerData];
+
+    usedSymbols =
+    StringRiffle[
+      Table[
+        "# " <> ToString[i]
+      , {i, Normal[$PythonForm`Symbols]}
+      ]
+    , "\n"
+    ];
+
+    Print["Writing Python file " <> outputPythonFilePath];
+    WriteString[
+      outputPythonFilePath
+    , "## Symbols used:\n" <> usedSymbols <> "\n\n" <> pythonCode
+    ];
+  ];
+PackageExport["MatchMakerToPython"]
