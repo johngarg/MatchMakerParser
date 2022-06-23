@@ -2,7 +2,7 @@
 
 <<MatchMakerParser`;
 
-{fileName, name, matchMakerDataPath, outputPythonFilePath, configFilePath} = $ScriptCommandLine;
+{fileName, name, configFilePath, matchMakerDataPath, outputPythonFilePath} = $ScriptCommandLine;
 
 (* Evaluate config file *)
 Get[configFilePath];
