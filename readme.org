@@ -73,3 +73,6 @@ array([[10, 28, 46, 64],
 This will clean up the expressions a lot, for 3 by 3 matrices I don't know how
 much of a speed up it will give, but if we want array programming the whole way
 then it will be the way to go.
+
+This functionality in =sympy.tensor= also seems usable:
+https://github.com/sympy/sympy/pull/9314
