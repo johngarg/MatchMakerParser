@@ -2,7 +2,6 @@ Package["MatchMakerParser`"]
 
 Print["Main package MatchMakerParser.m loaded!"];
 
-
 $Couplings::usage = "Association list of couplings to dimension. E.g.
 
   <| YLQS -> {3, 3}, ... |>
@@ -131,6 +130,8 @@ OutputPythonClass[name_][List[rules__RuleDelayed]] :=
     , exoticParamTemplate
     , exoticCouplingTemplate
     , attrStringList
+    , nonVanishingOperatorCoefficients
+    , nonvanishingAttr
     }
   ,
     boilerplateTemplate =
@@ -182,6 +183,28 @@ class `n`MatchingResult(matchingresult.GenericMatchingResult):
       Append[OperatorNameAndIndexStrings[rule[[1]]], PythonForm[rule[[2]]]]
     , {rule, List[rules]}
     ];
+
+    (* Remove non-Warsaw operator coefficients from `operatorTriples`. Don't
+    include HCs in this list? *)
+    operatorTriples =
+    Select[
+      operatorTriples
+    , MemberQ[$WarsawOperatorCoefficients, First[#]] && ! StringEndsQ[First[#], "bar"] &
+    ];
+
+    (* Isolate the non-vanishing operator coefficients *)
+    nonVanishingOperatorCoefficients =
+    Select[
+      operatorTriples
+    , Last[#] != "0" &
+    ];
+
+    (* Assign list of labels to `self.nonvanishing` *)
+    nonvanishingAttr =
+    "        self.nonvanishing = " <>
+                                   PythonForm[Map[First, nonVanishingOperatorCoefficients]] <>
+                                   "\n";
+    AppendTo[attrStringList, nonvanishingAttr];
 
     (* Apply method template to triples to construct methods *)
     methodStringList =
