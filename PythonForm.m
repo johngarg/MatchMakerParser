@@ -15,6 +15,7 @@ PythonFormIdx[x_Integer] := x - 1;
 PythonFormIdx[x_] := PythonForm[x];
 
 PythonForm[x_String] := "'" <> x <> "'";
+PythonForm[x_List] := StringRiffle[Map[PythonForm, x], {"[", ", ", "]"}];
 PythonForm[x_Integer] := ToString[x];
 PythonForm[x_Association] :=
   "{" <>
