@@ -5,6 +5,114 @@
 import os
 import pandas as pd
 
+WARSAW = [
+    "alphaO3G",
+    "alphaO3Gt",
+    "alphaO3W",
+    "alphaO3Wt",
+    "alphaOHG",
+    "alphaOHGt",
+    "alphaOHW",
+    "alphaOHWt",
+    "alphaOHB",
+    "alphaOHBt",
+    "alphaOHWB",
+    "alphaOHWBt",
+    "alphaOHBox",
+    "alphaOHD",
+    "alphaOH",
+    "alphaOuG",
+    "alphaOuW",
+    "alphaOuB",
+    "alphaOdG",
+    "alphaOdW",
+    "alphaOdB",
+    "alphaOeW",
+    "alphaOeB",
+    "alphaOHq1",
+    "alphaOHq3",
+    "alphaOHu",
+    "alphaOHd",
+    "alphaOHud",
+    "alphaOHl1",
+    "alphaOHl3",
+    "alphaOHe",
+    "alphaOuH",
+    "alphaOdH",
+    "alphaOeH",
+    "alphaOuGbar",
+    "alphaOuWbar",
+    "alphaOuBbar",
+    "alphaOdGbar",
+    "alphaOdWbar",
+    "alphaOdBbar",
+    "alphaOeWbar",
+    "alphaOeBbar",
+    "alphaOHq1bar",
+    "alphaOHq3bar",
+    "alphaOHubar",
+    "alphaOHdbar",
+    "alphaOHudbar",
+    "alphaOHl1bar",
+    "alphaOHl3bar",
+    "alphaOHebar",
+    "alphaOuHbar",
+    "alphaOdHbar",
+    "alphaOeHbar",
+    "alphaOqq1",
+    "alphaOqq3",
+    "alphaOuu",
+    "alphaOdd",
+    "alphaOud1",
+    "alphaOud8",
+    "alphaOqu1",
+    "alphaOqu8",
+    "alphaOqd1",
+    "alphaOqd8",
+    "alphaOquqd1",
+    "alphaOquqd8",
+    "alphaOll",
+    "alphaOee",
+    "alphaOle",
+    "alphaOlq1",
+    "alphaOlq3",
+    "alphaOeu",
+    "alphaOed",
+    "alphaOqe",
+    "alphaOlu",
+    "alphaOld",
+    "alphaOledq",
+    "alphaOlequ1",
+    "alphaOlequ3",
+    "alphaOqq1bar",
+    "alphaOqq3bar",
+    "alphaOuubar",
+    "alphaOddbar",
+    "alphaOud1bar",
+    "alphaOud8bar",
+    "alphaOqu1bar",
+    "alphaOqu8bar",
+    "alphaOqd1bar",
+    "alphaOqd8bar",
+    "alphaOquqd1bar",
+    "alphaOquqd8bar",
+    "alphaOllbar",
+    "alphaOeebar",
+    "alphaOlebar",
+    "alphaOlq1bar",
+    "alphaOlq3bar",
+    "alphaOeubar",
+    "alphaOedbar",
+    "alphaOqebar",
+    "alphaOlubar",
+    "alphaOldbar",
+    "alphaOledqbar",
+    "alphaOlequ1bar",
+    "alphaOlequ3bar",
+    "alphaWeinberg",
+    "alphaWeinbergbar",
+]
+
 VALID_MULTIPLETS = {
     "S",
     "S1",
@@ -77,9 +185,11 @@ for f in VALID_MULTIPLETS:
     # Run MatchMakerParser
     print(f"\nRunning matchmaker parser...")
     python_file = f"{valid_unix_name}_matching.py"
-    run_and_print(
-        f"./parse-matchmaker-output {f} {config_path} {matching_result_path} {os.path.join('python', python_file)}"
-    )
+    output = os.path.join("python", python_file)
+    if not os.path.exists(output):
+        run_and_print(
+            f"./parse-matchmaker-output {f} {config_path} {matching_result_path} {output}"
+        )
 
     # Load class from python directory
     cmd = (
@@ -97,4 +207,17 @@ for f in VALID_MULTIPLETS:
     run_and_print("cd mm/ && ./clean")
 
 print("Writing dataframe to csv...")
-pd.DataFrame(NONVANISHING).to_csv("./nonvanishing.csv")
+
+WARSAW_NO_BARS = [op for op in WARSAW if not op.endswith("bar")]
+table_data = {"ops": WARSAW_NO_BARS}
+for k, v in NONVANISHING.items():
+    data = []
+    for op in WARSAW_NO_BARS:
+        if op in v:
+            data.append(1)
+        else:
+            data.append(0)
+
+    table_data[k] = data
+
+pd.DataFrame(table_data).to_csv("./nonvanishing.csv")
