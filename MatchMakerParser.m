@@ -136,10 +136,10 @@ OutputPythonClass[name_][List[rules__RuleDelayed]] :=
   ,
     boilerplateTemplate =
     StringTemplate[
-      "import matchingresult
+      "import python.matchingresult
 import numpy as np
 
-class `n`MatchingResult(matchingresult.GenericMatchingResult):
+class `n`MatchingResult(python.matchingresult.GenericMatchingResult):
     def __init__(self, name='`n`', scale=91.1876):
         super().__init__(name, scale)\n"
     ][<| "n" -> name |>];

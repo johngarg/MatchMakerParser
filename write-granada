@@ -1,0 +1,100 @@
+#!/usr/bin/env python3
+
+"""Scrpt to match and convert granada dictionary to Python classes"""
+
+import os
+import pandas as pd
+
+VALID_MULTIPLETS = {
+    "S",
+    "S1",
+    "S2",
+    "varphi",
+    "Xi",
+    "Xi1",
+    "Theta1",
+    "Theta3",
+    "omega1",
+    "omega2",
+    "omega4",
+    "Pi1",
+    "Pi7",
+    "zeta",
+    "Omega1",
+    "Omega2",
+    "Omega4",
+    "Upsilon",
+    "Phi",
+    "N",
+    "E",
+    "Delta1",
+    "Delta3",
+    "Sigma",
+    "Sigma1",
+    "U",
+    "D",
+    "Q1",
+    "Q5",
+    "Q7",
+    "T1",
+    "T2",
+}
+VALID_MULTIPLETS = {"Granada" + f for f in VALID_MULTIPLETS}
+DRY = False
+
+
+def run_and_print(cmd, dry=DRY):
+    print("$ " + cmd)
+    if not dry:
+        os.system(cmd)
+
+
+NONVANISHING = {}
+for f in VALID_MULTIPLETS:
+    valid_unix_name = f
+    if f.removeprefix("Granada")[0].isupper():
+        valid_unix_name = "GranadaCapital" + f.removeprefix("Granada")
+
+    # Make output directory if it doesn't already exist
+    if not os.path.exists(f"granada/{valid_unix_name}"):
+        run_and_print(f"mkdir granada/{valid_unix_name}")
+
+        # Match the fields
+        print(f"\n\nNow matching {f}...")
+        run_and_print(f"cd mm/ && ./match {f}")
+
+        # Copy results to corresponding directory
+        model_path = f"granada/{valid_unix_name}/"
+        print(f"\nCopying MatchingResult.dat...")
+        matching_result_path = os.path.join(model_path, "MatchingResult.dat")
+        run_and_print(f"cp mm/{f}_MM/MatchingResult.dat {matching_result_path}")
+
+        # Write config
+        print(f"\nWriting MatchMakerParser config...")
+        config_path = os.path.join(model_path, "Config.m")
+        run_and_print(f"feynwrite {f} --mmp-config > {config_path}")
+
+    # Run MatchMakerParser
+    print(f"\nRunning matchmaker parser...")
+    python_file = f"{valid_unix_name}_matching.py"
+    run_and_print(
+        f"./parse-matchmaker-output {f} {config_path} {matching_result_path} {os.path.join('python', python_file)}"
+    )
+
+    # Load class from python directory
+    cmd = (
+        f"from python.{python_file.removesuffix('.py')} import {f}MatchingResult as MR"
+    )
+    print("Reading class...")
+    print(cmd)
+    if not DRY:
+        exec(cmd)
+        mr = MR()
+        print(mr.nonvanishing)
+        NONVANISHING[f] = mr.nonvanishing
+
+    # Return to parent directory
+    run_and_print("cd mm/ && ./clean")
+
+print("Writing dataframe to csv...")
+pd.DataFrame(NONVANISHING).to_csv("./nonvanishing.csv")
