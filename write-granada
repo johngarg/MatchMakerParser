@@ -175,7 +175,9 @@ for f in VALID_MULTIPLETS:
         model_path = f"granada/{valid_unix_name}/"
         print(f"\nCopying MatchingResult.dat...")
         matching_result_path = os.path.join(model_path, "MatchingResult.dat")
+        rge_result_path = os.path.join(model_path, "RGEResult.dat")
         run_and_print(f"cp mm/{f}_MM/MatchingResult.dat {matching_result_path}")
+        run_and_print(f"cp mm/{f}_MM/RGEResult.dat {rge_result_path}")
 
         # Write config
         print(f"\nWriting MatchMakerParser config...")
