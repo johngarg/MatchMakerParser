@@ -1,0 +1,36 @@
+    eseft(1)=G[p2.p2*p2.pol1*pol2.pol3*sSS^3*g2*alphaR2W + p2.p2*
+   p2.pol2*pol1.pol3*sSS^3*g2*alphaR2W - 4*p2.p2*p2.pol3*pol1.pol2*
+   sSS^3*g2*alphaR2W + 6*p2.p2*p3.pol1*pol2.pol3*sSS^3*alphaO3W - 3*
+   p2.p2*p3.pol1*pol2.pol3*sSS^3*g2*alphaR2W - 6*p2.p2*p3.pol2*
+   pol1.pol3*sSS^3*alphaO3W + 4*p2.p2*p3.pol2*pol1.pol3*sSS^3*g2*
+   alphaR2W - 2*p2.p2*p3.pol3*pol1.pol2*sSS^3*g2*alphaR2W - 6*p2.p3*
+   p2.pol1*pol2.pol3*sSS^3*alphaO3W + 2*p2.p3*p2.pol1*pol2.pol3*sSS^3*
+   g2*alphaR2W + 6*p2.p3*p2.pol2*pol1.pol3*sSS^3*alphaO3W - 4*p2.p3*
+   p2.pol3*pol1.pol2*sSS^3*g2*alphaR2W + 6*p2.p3*p3.pol1*pol2.pol3*
+   sSS^3*alphaO3W - 2*p2.p3*p3.pol1*pol2.pol3*sSS^3*g2*alphaR2W + 4*
+   p2.p3*p3.pol2*pol1.pol3*sSS^3*g2*alphaR2W - 6*p2.p3*p3.pol3*
+   pol1.pol2*sSS^3*alphaO3W + 2*p2.pol1*p2.pol2*p2.pol3*sSS^3*g2*
+   alphaR2W + p2.pol1*p2.pol2*p3.pol3*sSS^3*g2*alphaR2W + 6*p2.pol1*
+   p2.pol3*p3.pol2*sSS^3*alphaO3W - 6*p2.pol1*p3.p3*pol2.pol3*sSS^3*
+   alphaO3W + 3*p2.pol1*p3.p3*pol2.pol3*sSS^3*g2*alphaR2W + 6*p2.pol1*
+   p3.pol2*p3.pol3*sSS^3*alphaO3W - 2*p2.pol1*p3.pol2*p3.pol3*sSS^3*g2*
+   alphaR2W + p2.pol1*pol2.pol3*sSS*g2*alphaKW - 6*p2.pol2*p2.pol3*
+   p3.pol1*sSS^3*alphaO3W + 2*p2.pol2*p2.pol3*p3.pol1*sSS^3*g2*alphaR2W
+    + 2*p2.pol2*p3.p3*pol1.pol3*sSS^3*g2*alphaR2W - p2.pol2*p3.pol1*
+   p3.pol3*sSS^3*g2*alphaR2W + p2.pol2*pol1.pol3*sSS*g2*alphaKW + 6*
+   p2.pol3*p3.p3*pol1.pol2*sSS^3*alphaO3W - 4*p2.pol3*p3.p3*pol1.pol2*
+   sSS^3*g2*alphaR2W - 6*p2.pol3*p3.pol1*p3.pol2*sSS^3*alphaO3W - 2*
+   p2.pol3*pol1.pol2*sSS*g2*alphaKW - p3.p3*p3.pol1*pol2.pol3*sSS^3*g2*
+   alphaR2W + 4*p3.p3*p3.pol2*pol1.pol3*sSS^3*g2*alphaR2W - p3.p3*
+   p3.pol3*pol1.pol2*sSS^3*g2*alphaR2W - 2*p3.pol1*p3.pol2*p3.pol3*
+   sSS^3*g2*alphaR2W - p3.pol1*pol2.pol3*sSS*g2*alphaKW + 2*p3.pol2*
+   pol1.pol3*sSS*g2*alphaKW - p3.pol3*pol1.pol2*sSS*g2*alphaKW - 4*e_[
+   p2,p3,pol1,pol2]*p2.pol3*sSS^3*I*alphaO3Wt - 2*e_[p2,p3,pol1,pol2]*
+   p3.pol3*sSS^3*I*alphaO3Wt - 2*e_[p2,p3,pol1,pol3]*p2.pol2*sSS^3*I*
+   alphaO3Wt - 4*e_[p2,p3,pol1,pol3]*p3.pol2*sSS^3*I*alphaO3Wt + 2*e_[
+   p2,p3,pol2,pol3]*p2.pol1*sSS^3*I*alphaO3Wt - 2*e_[p2,p3,pol2,pol3]*
+   p3.pol1*sSS^3*I*alphaO3Wt + 4*e_[p2,pol1,pol2,pol3]*p2.p3*sSS^3*I*
+   alphaO3Wt + 2*e_[p2,pol1,pol2,pol3]*p3.p3*sSS^3*I*alphaO3Wt + 2*e_[
+   p3,pol1,pol2,pol3]*p2.p2*sSS^3*I*alphaO3Wt + 4*e_[p3,pol1,pol2,pol3]
+   *p2.p3*sSS^3*I*alphaO3Wt];
+

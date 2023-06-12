@@ -1,0 +1,8 @@
+FORM 4.2.1 (Aug 28 2019, v4.2.1-5-g4057c65) 64-bits  Run: Wed Mar 30 22:09:00 2022
+    #-
+
+   ampllLlLPhiPhi =
+      1/2*ee2[l93,l97]*ee2[l95,l99]*eseft(3) + 1/2*ee2[l93,l99]*ee2[l95
+      ,l97]*eseft(3);
+
+  0.03 sec out of 0.03 sec

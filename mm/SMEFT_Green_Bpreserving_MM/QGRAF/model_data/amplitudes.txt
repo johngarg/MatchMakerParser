@@ -1,0 +1,87 @@
+B B
+G G
+Phi Phibar
+Wi Wi
+dRbar dR
+eRbar eR
+lLbar lL
+qLbar qL
+uRbar uR
+B Phi Phibar
+G G G
+Phi Phibar Wi
+Wi Wi Wi
+dRbar dR B
+dRbar dR G
+dRbar qL Phibar
+eRbar eR B
+eRbar lL Phibar
+lLbar eR Phi
+lLbar lL B
+lLbar lL Wi
+qLbar dR Phi
+qLbar qL B
+qLbar qL G
+qLbar qL Wi
+qLbar uR Phibar
+uRbar qL Phi
+uRbar uR B
+uRbar uR G
+B B Phi Phibar
+B Phi Phibar Wi
+G G Phi Phibar
+Phi Phi Phibar Phibar
+Phi Phibar Wi Wi
+dRbar dR Phi Phibar
+dRbar dR dR dRbar
+dRbar dR eR eRbar
+dRbar dR lLbar lL
+dRbar dR qLbar qL
+dRbar dR uR uRbar
+dRbar eR lLbar qL
+dRbar qL B Phibar
+dRbar qL G Phibar
+dRbar qL Phibar Wi
+dRbar qL uRbar qL
+dRbar uR Phibar Phibar
+eRbar dR qLbar lL
+eRbar eR Phi Phibar
+eRbar eR eR eRbar
+eRbar eR lLbar lL
+eRbar eR qLbar qL
+eRbar lL B Phibar
+eRbar lL Phibar Wi
+eRbar lL uRbar qL
+lL lL Phi Phi
+lLbar eR B Phi
+lLbar eR Phi Wi
+lLbar eR qLbar uR
+lLbar lL Phi Phibar
+lLbar lL lL lLbar
+lLbar lL qL qLbar
+lLbar lL uRbar uR
+lLbar lLbar Phibar Phibar
+qLbar dR B Phi
+qLbar dR G Phi
+qLbar dR Phi Wi
+qLbar dR qLbar uR
+qLbar qL Phi Phibar
+qLbar qL qL qLbar
+qLbar qL uRbar uR
+qLbar uR B Phibar
+qLbar uR G Phibar
+qLbar uR Phibar Wi
+uRbar dR Phi Phi
+uRbar qL B Phi
+uRbar qL G Phi
+uRbar qL Phi Wi
+uRbar uR Phi Phibar
+uRbar uR eR eRbar
+uRbar uR uR uRbar
+dRbar qL Phi Phibar Phibar
+eRbar lL Phi Phibar Phibar
+lLbar eR Phi Phi Phibar
+qLbar dR Phi Phi Phibar
+qLbar uR Phi Phibar Phibar
+uRbar qL Phi Phi Phibar
+Phi Phi Phi Phibar Phibar Phibar

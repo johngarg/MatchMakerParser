@@ -1,0 +1,342 @@
+alphaWeinbergbar  lLbar lLbar Phibar Phibar 1 2
+alphaWeinberg  lL lL Phi Phi 1 2
+alphaRuHD4bar  uRbar qL Phi 2 1
+alphaRuHD4  qLbar uR Phibar 1 2
+alphaRuHD3bar  uRbar qL Phi 2 1
+alphaRuHD3  qLbar uR Phibar 1 2
+alphaRuHD2bar  uRbar qL Phi 2 1
+alphaRuHD2  qLbar uR Phibar 1 2
+alphaRuHD1bar  uRbar qL Phi 2 1
+alphaRuHD1  qLbar uR Phibar 1 2
+alphaRuD  uRbar uR 1 2
+alphaRqD  qLbar qL 1 2
+alphaRlD  lLbar lL 1 2
+alphaReHD4bar  eRbar lL Phibar 2 1
+alphaReHD4  lLbar eR Phi 1 2
+alphaReHD3bar  eRbar lL Phibar 2 1
+alphaReHD3  lLbar eR Phi 1 2
+alphaReHD2bar  eRbar lL Phibar 2 1
+alphaReHD2  lLbar eR Phi 1 2
+alphaReHD1bar  eRbar lL Phibar 2 1
+alphaReHD1  lLbar eR Phi 1 2
+alphaReD  eRbar eR 1 2
+alphaRdHD4bar  dRbar qL Phibar 2 1
+alphaRdHD4  qLbar dR Phi 1 2
+alphaRdHD3bar  dRbar qL Phibar 2 1
+alphaRdHD3  qLbar dR Phi 1 2
+alphaRdHD2bar  dRbar qL Phibar 2 1
+alphaRdHD2  qLbar dR Phi 1 2
+alphaRdHD1bar  dRbar qL Phibar 2 1
+alphaRdHD1  qLbar dR Phi 1 2
+alphaRdD  dRbar dR 1 2
+alphaRWqtp  qLbar qL Wi 1 2
+alphaRWqp  qLbar qL Wi 1 2
+alphaRWq  qLbar qL Wi 1 2
+alphaRWltp  lLbar lL Wi 1 2
+alphaRWlp  lLbar lL Wi 1 2
+alphaRWl  lLbar lL Wi 1 2
+alphaRWDH  Phi Phibar Wi  
+alphaRHupp  uRbar uR Phi Phibar 1 2
+alphaRHup  uRbar uR Phi Phibar 1 2
+alphaRHq3pp  qLbar qL Phi Phibar 1 2
+alphaRHq3p  qLbar qL Phi Phibar 1 2
+alphaRHq1pp  qLbar qL Phi Phibar 1 2
+alphaRHq1p  qLbar qL Phi Phibar 1 2
+alphaRHl3pp  lLbar lL Phi Phibar 1 2
+alphaRHl3p  lLbar lL Phi Phibar 1 2
+alphaRHl1pp  lLbar lL Phi Phibar 1 2
+alphaRHl1p  lLbar lL Phi Phibar 1 2
+alphaRHepp  eRbar eR Phi Phibar 1 2
+alphaRHep  eRbar eR Phi Phibar 1 2
+alphaRHdpp  dRbar dR Phi Phibar 1 2
+alphaRHdp  dRbar dR Phi Phibar 1 2
+alphaRHDpp  Phi Phi Phibar Phibar  
+alphaRHDp  Phi Phi Phibar Phibar  
+alphaRGutp  uRbar uR G 1 2
+alphaRGup  uRbar uR G 1 2
+alphaRGu  uRbar uR G 1 2
+alphaRGqtp  qLbar qL G 1 2
+alphaRGqp  qLbar qL G 1 2
+alphaRGq  qLbar qL G 1 2
+alphaRGdtp  dRbar dR G 1 2
+alphaRGdp  dRbar dR G 1 2
+alphaRGd  dRbar dR G 1 2
+alphaRDH  Phi Phibar  
+alphaRButp  uRbar uR B 1 2
+alphaRBup  uRbar uR B 1 2
+alphaRBu  uRbar uR B 1 2
+alphaRBqtp  qLbar qL B 1 2
+alphaRBqp  qLbar qL B 1 2
+alphaRBq  qLbar qL B 1 2
+alphaRBltp  lLbar lL B 1 2
+alphaRBlp  lLbar lL B 1 2
+alphaRBl  lLbar lL B 1 2
+alphaRBetp  eRbar eR B 1 2
+alphaRBep  eRbar eR B 1 2
+alphaRBe  eRbar eR B 1 2
+alphaRBdtp  dRbar dR B 1 2
+alphaRBdp  dRbar dR B 1 2
+alphaRBd  dRbar dR B 1 2
+alphaRBDH  B Phi Phibar  
+alphaR2W  Wi Wi  
+alphaR2G  G G  
+alphaR2B  B B  
+alphaOuu  uRbar uR uR uRbar 1 3 4 2
+alphaOud8  dRbar dR uR uRbar 4 3 1 2
+alphaOud1  dRbar dR uR uRbar 4 3 1 2
+alphaOuWbar  uRbar qL Phi Wi 2 1
+alphaOuW  qLbar uR Phibar Wi 1 2
+alphaOuHbar  uRbar qL Phi Phi Phibar 2 1
+alphaOuH  qLbar uR Phi Phibar Phibar 1 2
+alphaOuGbar  uRbar qL G Phi 2 1
+alphaOuG  qLbar uR G Phibar 1 2
+alphaOuBbar  uRbar qL B Phi 2 1
+alphaOuB  qLbar uR B Phibar 1 2
+alphaOquqd8bar  dRbar qL uRbar qL 2 3 4 1
+alphaOquqd8  qLbar dR qLbar uR 1 4 3 2
+alphaOquqd1bar  dRbar qL uRbar qL 2 3 4 1
+alphaOquqd1  qLbar dR qLbar uR 1 4 3 2
+alphaOqu8  qLbar qL uRbar uR 1 2 3 4
+alphaOqu1  qLbar qL uRbar uR 1 2 3 4
+alphaOqq3  qLbar qL qL qLbar 1 3 4 2
+alphaOqq1  qLbar qL qL qLbar 1 3 4 2
+alphaOqe  eRbar eR qLbar qL 3 4 1 2
+alphaOqd8  dRbar dR qLbar qL 3 4 1 2
+alphaOqd1  dRbar dR qLbar qL 3 4 1 2
+alphaOmuH2  Phi Phibar  
+alphaOlu  lLbar lL uRbar uR 1 2 3 4
+alphaOlq3  lLbar lL qL qLbar 1 2 4 3
+alphaOlq1  lLbar lL qL qLbar 1 2 4 3
+alphaOll  lLbar lL lL lLbar 1 3 4 2
+alphaOlequ1bar  eRbar lL uRbar qL 2 1 4 3
+alphaOlequ1  lLbar eR qLbar uR 1 2 3 4
+alphaOledqbar  eRbar dR qLbar lL 4 1 2 3
+alphaOledq  dRbar eR lLbar qL 3 2 1 4
+alphaOle  eRbar eR lLbar lL 3 4 1 2
+alphaOld  dRbar dR lLbar lL 3 4 1 2
+alphaOlambdaubar  uRbar qL Phi 2 1
+alphaOlambdau  qLbar uR Phibar 1 2
+alphaOlambdaebar  eRbar lL Phibar 2 1
+alphaOlambdae  lLbar eR Phi 1 2
+alphaOlambdadbar  dRbar qL Phibar 2 1
+alphaOlambdad  qLbar dR Phi 1 2
+alphaOlambda  Phi Phi Phibar Phibar  
+alphaOeu  uRbar uR eR eRbar 4 3 1 2
+alphaOee  eRbar eR eR eRbar 1 3 4 2
+alphaOed  dRbar dR eR eRbar 4 3 1 2
+alphaOeWbar  eRbar lL Phibar Wi 2 1
+alphaOeW  lLbar eR Phi Wi 1 2
+alphaOeHbar  eRbar lL Phi Phibar Phibar 2 1
+alphaOeH  lLbar eR Phi Phi Phibar 1 2
+alphaOeBbar  eRbar lL B Phibar 2 1
+alphaOeB  lLbar eR B Phi 1 2
+alphaOdd  dRbar dR dR dRbar 1 3 4 2
+alphaOdWbar  dRbar qL Phibar Wi 2 1
+alphaOdW  qLbar dR Phi Wi 1 2
+alphaOdHbar  dRbar qL Phi Phibar Phibar 2 1
+alphaOdH  qLbar dR Phi Phi Phibar 1 2
+alphaOdGbar  dRbar qL G Phibar 2 1
+alphaOdG  qLbar dR G Phi 1 2
+alphaOdBbar  dRbar qL B Phibar 2 1
+alphaOdB  qLbar dR B Phi 1 2
+alphaOHudbar  dRbar uR Phibar Phibar 2 1
+alphaOHud  uRbar dR Phi Phi 1 2
+alphaOHu  uRbar uR Phi Phibar 1 2
+alphaOHq3  qLbar qL Phi Phibar 1 2
+alphaOHq1  qLbar qL Phi Phibar 1 2
+alphaOHl3  lLbar lL Phi Phibar 1 2
+alphaOHl1  lLbar lL Phi Phibar 1 2
+alphaOHe  eRbar eR Phi Phibar 1 2
+alphaOHd  dRbar dR Phi Phibar 1 2
+alphaOHWt  Phi Phibar Wi Wi  
+alphaOHWBt  B Phi Phibar Wi  
+alphaOHWB  B Phi Phibar Wi  
+alphaOHW  Phi Phibar Wi Wi  
+alphaOHGt  G G Phi Phibar  
+alphaOHG  G G Phi Phibar  
+alphaOHD  Phi Phi Phibar Phibar  
+alphaOHBt  B B Phi Phibar  
+alphaOHBox  Phi Phi Phibar Phibar  
+alphaOHB  B B Phi Phibar  
+alphaOH  Phi Phi Phi Phibar Phibar Phibar  
+alphaO3Wt  Wi Wi Wi  
+alphaO3W  Wi Wi Wi  
+alphaO3Gt  G G G  
+alphaO3G  G G G  
+alphaKu  uRbar uR 1 2
+alphaKq  qLbar qL 1 2
+alphaKl  lLbar lL 1 2
+alphaKe  eRbar eR 1 2
+alphaKd  dRbar dR 1 2
+alphaKW  Wi Wi  
+alphaKH  Phi Phibar  
+alphaKG  G G  
+alphaKB  B B  
+alphaEuuthree8  uRbar uR uR uRbar 1 3 4 2
+alphaEuuthree  uRbar uR uR uRbar 1 3 4 2
+alphaEuu8  uRbar uR uR uRbar 1 3 4 2
+alphaEudthreep  dRbar dR uR uRbar 4 3 1 2
+alphaEudthree8p  dRbar dR uR uRbar 4 3 1 2
+alphaEudthree8  dRbar dR uR uRbar 4 2 1 3
+alphaEudthree  dRbar dR uR uRbar 4 2 1 3
+alphaEud8  dRbar dR uR uRbar 4 2 1 3
+alphaEud  dRbar dR uR uRbar 4 2 1 3
+alphaEuWbar  uRbar qL Phi Wi 2 1
+alphaEuW  qLbar uR Phibar Wi 1 2
+alphaEuHbar  uRbar qL Phi 2 1
+alphaEuH  qLbar uR Phibar 1 2
+alphaEuGbar  uRbar qL G Phi 2 1
+alphaEuG  qLbar uR G Phibar 1 2
+alphaEuBbar  uRbar qL B Phi 2 1
+alphaEuB  qLbar uR B Phibar 1 2
+alphaEqutwo8  qLbar qL uRbar uR 1 4 3 2
+alphaEqutwo  qLbar qL uRbar uR 1 4 3 2
+alphaEquthree8  qLbar qL uRbar uR 1 2 3 4
+alphaEquthree  qLbar qL uRbar uR 1 2 3 4
+alphaEquqdtwobar  dRbar qL uRbar qL 2 3 4 1
+alphaEquqdtwo8bar  dRbar qL uRbar qL 2 3 4 1
+alphaEquqdtwo8  qLbar dR qLbar uR 1 4 3 2
+alphaEquqdtwo  qLbar dR qLbar uR 1 4 3 2
+alphaEqu8  qLbar qL uRbar uR 1 4 3 2
+alphaEqu  qLbar qL uRbar uR 1 4 3 2
+alphaEqqthree8  qLbar qL qL qLbar 1 3 4 2
+alphaEqqthree38  qLbar qL qL qLbar 1 3 4 2
+alphaEqqthree3  qLbar qL qL qLbar 1 3 4 2
+alphaEqqthree1  qLbar qL qL qLbar 1 3 4 2
+alphaEqq8  qLbar qL qL qLbar 1 3 4 2
+alphaEqq38  qLbar qL qL qLbar 1 3 4 2
+alphaEqetwo  eRbar eR qLbar qL 3 2 1 4
+alphaEqethree  eRbar eR qLbar qL 3 4 1 2
+alphaEqe  eRbar eR qLbar qL 3 2 1 4
+alphaEqdtwo8  dRbar dR qLbar qL 3 2 1 4
+alphaEqdtwo  dRbar dR qLbar qL 3 2 1 4
+alphaEqdthree8  dRbar dR qLbar qL 3 4 1 2
+alphaEqdthree  dRbar dR qLbar qL 3 4 1 2
+alphaEqd8  dRbar dR qLbar qL 3 2 1 4
+alphaEqd  dRbar dR qLbar qL 3 2 1 4
+alphaElutwo  lLbar lL uRbar uR 1 4 3 2
+alphaEluthree  lLbar lL uRbar uR 1 2 3 4
+alphaEluqetwobar  eRbar lL uRbar qL 2 3 4 1
+alphaEluqetwo  lLbar eR qLbar uR 1 4 3 2
+alphaEluqebar  eRbar lL uRbar qL 2 3 4 1
+alphaEluqe  lLbar eR qLbar uR 1 4 3 2
+alphaElu  lLbar lL uRbar uR 1 4 3 2
+alphaElqthreep  lLbar lL qL qLbar 1 2 4 3
+alphaElqthree3p  lLbar lL qL qLbar 1 2 4 3
+alphaElqthree3  lLbar lL qL qLbar 1 3 4 2
+alphaElqthree  lLbar lL qL qLbar 1 3 4 2
+alphaElqdethreebar  eRbar dR qLbar lL 4 3 2 1
+alphaElqdethree  dRbar eR lLbar qL 3 4 1 2
+alphaElqdebar  eRbar dR qLbar lL 4 3 2 1
+alphaElqde  dRbar eR lLbar qL 3 4 1 2
+alphaElq3  lLbar lL qL qLbar 1 3 4 2
+alphaElq  lLbar lL qL qLbar 1 3 4 2
+alphaEllthree3  lLbar lL lL lLbar 1 3 4 2
+alphaEllthree  lLbar lL lL lLbar 1 3 4 2
+alphaEll3  lLbar lL lL lLbar 1 3 4 2
+alphaEletwo  eRbar eR lLbar lL 3 2 1 4
+alphaElethree  eRbar eR lLbar lL 3 4 1 2
+alphaElequtwobar  eRbar lL uRbar qL 2 1 4 3
+alphaElequtwo  lLbar eR qLbar uR 1 2 3 4
+alphaEledqtwobar  eRbar dR qLbar lL 4 1 2 3
+alphaEledqtwo  dRbar eR lLbar qL 3 2 1 4
+alphaEle  eRbar eR lLbar lL 3 2 1 4
+alphaEldtwo  dRbar dR lLbar lL 3 2 1 4
+alphaEldthree  dRbar dR lLbar lL 3 4 1 2
+alphaEld  dRbar dR lLbar lL 3 2 1 4
+alphaEeuthreep  uRbar uR eR eRbar 4 3 1 2
+alphaEeuthree  uRbar uR eR eRbar 4 2 1 3
+alphaEeu  uRbar uR eR eRbar 4 2 1 3
+alphaEeethree  eRbar eR eR eRbar 1 3 4 2
+alphaEedthreep  dRbar dR eR eRbar 4 3 1 2
+alphaEedthree  dRbar dR eR eRbar 4 2 1 3
+alphaEed  dRbar dR eR eRbar 4 2 1 3
+alphaEeWbar  eRbar lL Phibar Wi 2 1
+alphaEeW  lLbar eR Phi Wi 1 2
+alphaEeHbar  eRbar lL Phibar 2 1
+alphaEeH  lLbar eR Phi 1 2
+alphaEeBbar  eRbar lL B Phibar 2 1
+alphaEeB  lLbar eR B Phi 1 2
+alphaEddthree8  dRbar dR dR dRbar 1 3 4 2
+alphaEddthree  dRbar dR dR dRbar 1 3 4 2
+alphaEdd8  dRbar dR dR dRbar 1 3 4 2
+alphaEdWbar  dRbar qL Phibar Wi 2 1
+alphaEdW  qLbar dR Phi Wi 1 2
+alphaEdHbar  dRbar qL Phibar 2 1
+alphaEdH  qLbar dR Phi 1 2
+alphaEdGbar  dRbar qL G Phibar 2 1
+alphaEdG  qLbar dR G Phi 1 2
+alphaEdBbar  dRbar qL B Phibar 2 1
+alphaEdB  qLbar dR B Phi 1 2
+alphaEcuutwo  uRbar uR uR uRbar 2 3 1 4
+alphaEcuu  uRbar uR uR uRbar 2 3 1 4
+alphaEcuelqtwobar  eRbar lL uRbar qL 3 1 2 4
+alphaEcuelqtwo  lLbar eR qLbar uR 4 2 1 3
+alphaEcuelqbar  eRbar lL uRbar qL 3 1 2 4
+alphaEcuelq  lLbar eR qLbar uR 4 2 1 3
+alphaEcudtwo  dRbar dR uR uRbar 3 2 1 4
+alphaEcudqqtwobar  dRbar qL uRbar qL 3 1 4 2
+alphaEcudqqtwo  qLbar dR qLbar uR 4 2 1 3
+alphaEcudqqbar  dRbar qL uRbar qL 3 1 4 2
+alphaEcudqq  qLbar dR qLbar uR 4 2 1 3
+alphaEcudptwo  dRbar dR uR uRbar 3 2 1 4
+alphaEcudp  dRbar dR uR uRbar 3 2 1 4
+alphaEcud  dRbar dR uR uRbar 3 2 1 4
+alphaEcqup  qLbar qL uRbar uR 2 4 3 1
+alphaEcqu  qLbar qL uRbar uR 2 4 3 1
+alphaEcqqtwo  qLbar qL qL qLbar 2 3 1 4
+alphaEcqqptwo  qLbar qL qL qLbar 2 3 1 4
+alphaEcqqp  qLbar qL qL qLbar 2 3 1 4
+alphaEcqq  qLbar qL qL qLbar 2 3 1 4
+alphaEcqltwo  lLbar lL qL qLbar 3 2 1 4
+alphaEcqlptwo  lLbar lL qL qLbar 3 2 1 4
+alphaEcqlp  lLbar lL qL qLbar 3 2 1 4
+alphaEcql  lLbar lL qL qLbar 3 2 1 4
+alphaEcqedlbar  eRbar dR qLbar lL 3 1 2 4
+alphaEcqedl  dRbar eR lLbar qL 4 2 1 3
+alphaEcqe  eRbar eR qLbar qL 4 2 1 3
+alphaEcqdp  dRbar dR qLbar qL 4 2 1 3
+alphaEcqd  dRbar dR qLbar qL 4 2 1 3
+alphaEclu  lLbar lL uRbar uR 2 4 3 1
+alphaEclltwo  lLbar lL lL lLbar 2 3 1 4
+alphaEcll  lLbar lL lL lLbar 2 3 1 4
+alphaEcle  eRbar eR lLbar lL 4 2 1 3
+alphaEcld  dRbar dR lLbar lL 4 2 1 3
+alphaEceutwo  uRbar uR eR eRbar 3 2 1 4
+alphaEceu  uRbar uR eR eRbar 3 2 1 4
+alphaEceetwo  eRbar eR eR eRbar 2 3 1 4
+alphaEcee  eRbar eR eR eRbar 2 3 1 4
+alphaEcedtwo  dRbar dR eR eRbar 3 2 1 4
+alphaEced  dRbar dR eR eRbar 3 2 1 4
+alphaEcddtwo  dRbar dR dR dRbar 2 3 1 4
+alphaEcdd  dRbar dR dR dRbar 2 3 1 4
+alphaEWqtp  qLbar qL Wi 1 2
+alphaEWqp  qLbar qL Wi 1 2
+alphaEWq  qLbar qL Wi 1 2
+alphaEWltp  lLbar lL Wi 1 2
+alphaEWlp  lLbar lL Wi 1 2
+alphaEWl  lLbar lL Wi 1 2
+alphaEGutp  uRbar uR G 1 2
+alphaEGup  uRbar uR G 1 2
+alphaEGu  uRbar uR G 1 2
+alphaEGqtp  qLbar qL G 1 2
+alphaEGqp  qLbar qL G 1 2
+alphaEGq  qLbar qL G 1 2
+alphaEGdtp  dRbar dR G 1 2
+alphaEGdp  dRbar dR G 1 2
+alphaEGd  dRbar dR G 1 2
+alphaEButp  uRbar uR B 1 2
+alphaEBup  uRbar uR B 1 2
+alphaEBu  uRbar uR B 1 2
+alphaEBqtp  qLbar qL B 1 2
+alphaEBqp  qLbar qL B 1 2
+alphaEBq  qLbar qL B 1 2
+alphaEBltp  lLbar lL B 1 2
+alphaEBlp  lLbar lL B 1 2
+alphaEBl  lLbar lL B 1 2
+alphaEBetp  eRbar eR B 1 2
+alphaEBep  eRbar eR B 1 2
+alphaEBe  eRbar eR B 1 2
+alphaEBdtp  dRbar dR B 1 2
+alphaEBdp  dRbar dR B 1 2
+alphaEBd  dRbar dR B 1 2

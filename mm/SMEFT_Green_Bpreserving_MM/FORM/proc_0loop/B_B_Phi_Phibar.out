@@ -1,0 +1,21 @@
+    eseft(1)=G[8*p2.p2*pol1.pol2*sSS^2*I*alphaOHB + 4*p2.p2*pol1.pol2*
+   sSS^2*I*g1*alphaRBDH + 8*p2.p3*pol1.pol2*sSS^2*I*alphaOHB + 4*p2.p3*
+   pol1.pol2*sSS^2*I*g1*alphaRBDH + 8*p2.p4*pol1.pol2*sSS^2*I*alphaOHB
+    + 4*p2.p4*pol1.pol2*sSS^2*I*g1*alphaRBDH - 8*p2.pol1*p2.pol2*sSS^2*
+   I*alphaOHB - 4*p2.pol1*p2.pol2*sSS^2*I*g1*alphaRBDH + p2.pol1*
+   p2.pol2*sSS^2*I*g1^2*alphaRDH - 8*p2.pol1*p3.pol2*sSS^2*I*alphaOHB
+    - 2*p2.pol1*p3.pol2*sSS^2*I*g1*alphaRBDH + p2.pol1*p3.pol2*sSS^2*I*
+   g1^2*alphaRDH - 8*p2.pol1*p4.pol2*sSS^2*I*alphaOHB - 2*p2.pol1*
+   p4.pol2*sSS^2*I*g1*alphaRBDH + p2.pol1*p4.pol2*sSS^2*I*g1^2*alphaRDH
+    - 2*p2.pol2*p3.pol1*sSS^2*I*g1*alphaRBDH - 2*p2.pol2*p4.pol1*sSS^2*
+   I*g1*alphaRBDH + 2*p3.p3*pol1.pol2*sSS^2*I*g1*alphaRBDH + p3.p3*
+   pol1.pol2*sSS^2*I*g1^2*alphaRDH + 4*p3.p4*pol1.pol2*sSS^2*I*g1*
+   alphaRBDH - 2*p3.pol1*p3.pol2*sSS^2*I*g1*alphaRBDH + p3.pol1*p3.pol2
+   *sSS^2*I*g1^2*alphaRDH - 2*p3.pol1*p4.pol2*sSS^2*I*g1*alphaRBDH - 
+   p3.pol1*p4.pol2*sSS^2*I*g1^2*alphaRDH - 2*p3.pol2*p4.pol1*sSS^2*I*g1
+   *alphaRBDH - p3.pol2*p4.pol1*sSS^2*I*g1^2*alphaRDH + 2*p4.p4*
+   pol1.pol2*sSS^2*I*g1*alphaRBDH + p4.p4*pol1.pol2*sSS^2*I*g1^2*
+   alphaRDH - 2*p4.pol1*p4.pol2*sSS^2*I*g1*alphaRBDH + p4.pol1*p4.pol2*
+   sSS^2*I*g1^2*alphaRDH + pol1.pol2*I*g1^2*alphaKH - 8*e_[p2,p3,pol1,
+   pol2]*sSS^2*alphaOHBt - 8*e_[p2,p4,pol1,pol2]*sSS^2*alphaOHBt];
+

@@ -1,0 +1,6 @@
+kineticrule = {{"B", "B"} -> {alphaKB}, {"dRbar", "dR"} -> 
+      {alphaKd[fl99, fl97]}, {"eRbar", "eR"} -> {alphaKe[fl99, fl97]}, 
+     {"G", "G"} -> {alphaKG}, {"lLbar", "lL"} -> {alphaKl[fl99, fl97]}, 
+     {"Phi", "Phibar"} -> {alphaKH}, {"qLbar", "qL"} -> 
+      {alphaKq[fl99, fl97]}, {"uRbar", "uR"} -> {alphaKu[fl99, fl97]}, 
+     {"Wi", "Wi"} -> {alphaKW}}

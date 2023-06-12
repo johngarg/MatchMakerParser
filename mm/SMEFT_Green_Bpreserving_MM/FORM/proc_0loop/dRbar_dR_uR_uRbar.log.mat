@@ -1,0 +1,1 @@
+{ampldRbardRuRuRbar ->- 1/4*dd[3,m93,m95]*dd[3,m97,m99]*eseft[13] + 1/4*dd[3,m93,m97]*dd[3,m95,m99]*eseft[14] - 1/4*T[a1,m93,m95]*T[a1,m99,m97]*eseft[15] + 1/4*T[a1,m93,m97]*T[a1,m99,m95]*eseft[16]}

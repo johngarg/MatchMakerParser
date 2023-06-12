@@ -1,0 +1,15 @@
+    eseft(1)=G[2*I*alphaOlambda - 2*p2.p2*sSS^2*alphaRHDpp + 2*p2.p2*
+   sSS^2*I*alphaOHBox - 2*p2.p3*sSS^2*alphaRHDpp - p2.p3*sSS^2*I*
+   alphaRHDp + p2.p3*sSS^2*I*alphaOHD - 2*p2.p4*sSS^2*alphaRHDpp + 
+   p2.p4*sSS^2*I*alphaRHDp - p2.p4*sSS^2*I*alphaOHD + 4*p2.p4*sSS^2*I*
+   alphaOHBox - p3.p3*sSS^2*I*alphaRHDp - 2*p3.p4*sSS^2*alphaRHDpp - 
+   p3.p4*sSS^2*I*alphaRHDp - p3.p4*sSS^2*I*alphaOHD - p4.p4*sSS^2*I*
+   alphaOHD + 2*p4.p4*sSS^2*I*alphaOHBox];
+    eseft(2)=G[2*I*alphaOlambda - 2*p2.p2*sSS^2*alphaRHDpp + 2*p2.p2*
+   sSS^2*I*alphaOHBox - 2*p2.p3*sSS^2*alphaRHDpp + p2.p3*sSS^2*I*
+   alphaRHDp - p2.p3*sSS^2*I*alphaOHD + 4*p2.p3*sSS^2*I*alphaOHBox - 2*
+   p2.p4*sSS^2*alphaRHDpp - p2.p4*sSS^2*I*alphaRHDp + p2.p4*sSS^2*I*
+   alphaOHD - p3.p3*sSS^2*I*alphaOHD + 2*p3.p3*sSS^2*I*alphaOHBox - 2*
+   p3.p4*sSS^2*alphaRHDpp - p3.p4*sSS^2*I*alphaRHDp - p3.p4*sSS^2*I*
+   alphaOHD - p4.p4*sSS^2*I*alphaRHDp];
+

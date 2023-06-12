@@ -1,0 +1,137 @@
+    eseft(1)=alphaEcdd[fl95,fl97,fl99,fl93];
+    eseft(2)=alphaEcdd[fl97,fl95,fl93,fl99];
+    eseft(3)=alphaEcddtwo[fl95,fl97,fl99,fl93];
+    eseft(4)=alphaEcddtwo[fl97,fl95,fl93,fl99];
+    eseft(5)=alphaEcdd[fl95,fl97,fl93,fl99];
+    eseft(6)=alphaEcdd[fl97,fl95,fl99,fl93];
+    eseft(7)=alphaEcddtwo[fl95,fl97,fl93,fl99];
+    eseft(8)=alphaEcddtwo[fl97,fl95,fl99,fl93];
+    eseft(9)=alphaOdd[fl93,fl95,fl99,fl97];
+    eseft(10)=alphaOdd[fl99,fl97,fl93,fl95];
+    eseft(11)=alphaEdd8[fl93,fl95,fl99,fl97];
+    eseft(12)=alphaEdd8[fl99,fl97,fl93,fl95];
+    eseft(13)=alphaOdd[fl93,fl97,fl99,fl95];
+    eseft(14)=alphaOdd[fl99,fl95,fl93,fl97];
+    eseft(15)=alphaEdd8[fl93,fl97,fl99,fl95];
+    eseft(16)=alphaEdd8[fl99,fl95,fl93,fl97];
+    eseft(17)=alphaEddthree[fl93,fl95,fl99,fl97];
+    eseft(18)=alphaEddthree[fl99,fl97,fl93,fl95];
+    eseft(19)=alphaEddthree8[fl93,fl95,fl99,fl97];
+    eseft(20)=alphaEddthree8[fl99,fl97,fl93,fl95];
+    eseft(21)=alphaEddthree[fl93,fl97,fl99,fl95];
+    eseft(22)=alphaEddthree[fl99,fl95,fl93,fl97];
+    eseft(23)=alphaEddthree8[fl93,fl97,fl99,fl95];
+    eseft(24)=alphaEddthree8[fl99,fl95,fl93,fl97];
+    eseft(25)=G[4*gam[y93,FIVE,y95]*gam[y99,FIVE,y97]*I*
+   invepsilonbar^(-1)*eseft(3) + 4*gam[y93,FIVE,y95]*gam[y99,FIVE,y97]*
+   I*invepsilonbar^(-1)*eseft(4) - gam[y93,FIVE,y95]*gam[y99,FIVE,y97]*
+   I*eseft(1) - gam[y93,FIVE,y95]*gam[y99,FIVE,y97]*I*eseft(2) - 8*gam[
+   y93,FIVE,y95]*gam[y99,FIVE,y97]*I*eseft(3) - 8*gam[y93,FIVE,y95]*
+   gam[y99,FIVE,y97]*I*eseft(4) + 4*gam[y93,FIVE,y95]*gam[y99,y97]*I*
+   invepsilonbar^(-1)*eseft(3) - 4*gam[y93,FIVE,y95]*gam[y99,y97]*I*
+   invepsilonbar^(-1)*eseft(4) - gam[y93,FIVE,y95]*gam[y99,y97]*I*
+   eseft(1) + gam[y93,FIVE,y95]*gam[y99,y97]*I*eseft(2) - 8*gam[y93,
+   FIVE,y95]*gam[y99,y97]*I*eseft(3) + 8*gam[y93,FIVE,y95]*gam[y99,y97]
+   *I*eseft(4) + gam[y93,FIVE,mu1,y95]*gam[y99,FIVE,mu1,y97]*I*eseft(9)
+    + gam[y93,FIVE,mu1,y95]*gam[y99,FIVE,mu1,y97]*I*eseft(10) - gam[y93
+   ,FIVE,mu1,y95]*gam[y99,mu1,y97]*I*eseft(9) - gam[y93,FIVE,mu1,y95]*
+   gam[y99,mu1,y97]*I*eseft(10) + gam[y93,FIVE,mu1,mu2,y95]*gam[y99,
+   FIVE,mu1,mu2,y97]*I*eseft(3) + gam[y93,FIVE,mu1,mu2,y95]*gam[y99,
+   FIVE,mu1,mu2,y97]*I*eseft(4) + gam[y93,FIVE,mu1,mu2,y95]*gam[y99,mu1
+   ,mu2,y97]*I*eseft(3) - gam[y93,FIVE,mu1,mu2,y95]*gam[y99,mu1,mu2,y97
+   ]*I*eseft(4) + gam[y93,FIVE,mu1,mu2,mu3,y95]*gam[y99,FIVE,mu1,mu2,
+   mu3,y97]*I*eseft(17) + gam[y93,FIVE,mu1,mu2,mu3,y95]*gam[y99,FIVE,
+   mu1,mu2,mu3,y97]*I*eseft(18) - gam[y93,FIVE,mu1,mu2,mu3,y95]*gam[y99
+   ,mu1,mu2,mu3,y97]*I*eseft(17) - gam[y93,FIVE,mu1,mu2,mu3,y95]*gam[
+   y99,mu1,mu2,mu3,y97]*I*eseft(18) - 4*gam[y93,y95]*gam[y99,FIVE,y97]*
+   I*invepsilonbar^(-1)*eseft(3) + 4*gam[y93,y95]*gam[y99,FIVE,y97]*I*
+   invepsilonbar^(-1)*eseft(4) + gam[y93,y95]*gam[y99,FIVE,y97]*I*
+   eseft(1) - gam[y93,y95]*gam[y99,FIVE,y97]*I*eseft(2) + 8*gam[y93,y95
+   ]*gam[y99,FIVE,y97]*I*eseft(3) - 8*gam[y93,y95]*gam[y99,FIVE,y97]*I*
+   eseft(4) - 4*gam[y93,y95]*gam[y99,y97]*I*invepsilonbar^(-1)*eseft(3)
+    - 4*gam[y93,y95]*gam[y99,y97]*I*invepsilonbar^(-1)*eseft(4) + gam[
+   y93,y95]*gam[y99,y97]*I*eseft(1) + gam[y93,y95]*gam[y99,y97]*I*
+   eseft(2) + 8*gam[y93,y95]*gam[y99,y97]*I*eseft(3) + 8*gam[y93,y95]*
+   gam[y99,y97]*I*eseft(4) - gam[y93,mu1,y95]*gam[y99,FIVE,mu1,y97]*I*
+   eseft(9) - gam[y93,mu1,y95]*gam[y99,FIVE,mu1,y97]*I*eseft(10) + gam[
+   y93,mu1,y95]*gam[y99,mu1,y97]*I*eseft(9) + gam[y93,mu1,y95]*gam[y99,
+   mu1,y97]*I*eseft(10) - gam[y93,mu1,mu2,y95]*gam[y99,FIVE,mu1,mu2,y97
+   ]*I*eseft(3) + gam[y93,mu1,mu2,y95]*gam[y99,FIVE,mu1,mu2,y97]*I*
+   eseft(4) - gam[y93,mu1,mu2,y95]*gam[y99,mu1,mu2,y97]*I*eseft(3) - 
+   gam[y93,mu1,mu2,y95]*gam[y99,mu1,mu2,y97]*I*eseft(4) - gam[y93,mu1,
+   mu2,mu3,y95]*gam[y99,FIVE,mu1,mu2,mu3,y97]*I*eseft(17) - gam[y93,mu1
+   ,mu2,mu3,y95]*gam[y99,FIVE,mu1,mu2,mu3,y97]*I*eseft(18) + gam[y93,
+   mu1,mu2,mu3,y95]*gam[y99,mu1,mu2,mu3,y97]*I*eseft(17) + gam[y93,mu1,
+   mu2,mu3,y95]*gam[y99,mu1,mu2,mu3,y97]*I*eseft(18)];
+    eseft(26)=G[4*gam[y93,FIVE,y97]*gam[y99,FIVE,y95]*I*
+   invepsilonbar^(-1)*eseft(7) + 4*gam[y93,FIVE,y97]*gam[y99,FIVE,y95]*
+   I*invepsilonbar^(-1)*eseft(8) - gam[y93,FIVE,y97]*gam[y99,FIVE,y95]*
+   I*eseft(5) - gam[y93,FIVE,y97]*gam[y99,FIVE,y95]*I*eseft(6) - 8*gam[
+   y93,FIVE,y97]*gam[y99,FIVE,y95]*I*eseft(7) - 8*gam[y93,FIVE,y97]*
+   gam[y99,FIVE,y95]*I*eseft(8) - 4*gam[y93,FIVE,y97]*gam[y99,y95]*I*
+   invepsilonbar^(-1)*eseft(7) + 4*gam[y93,FIVE,y97]*gam[y99,y95]*I*
+   invepsilonbar^(-1)*eseft(8) + gam[y93,FIVE,y97]*gam[y99,y95]*I*
+   eseft(5) - gam[y93,FIVE,y97]*gam[y99,y95]*I*eseft(6) + 8*gam[y93,
+   FIVE,y97]*gam[y99,y95]*I*eseft(7) - 8*gam[y93,FIVE,y97]*gam[y99,y95]
+   *I*eseft(8) + gam[y93,FIVE,mu1,y97]*gam[y99,FIVE,mu1,y95]*I*
+   eseft(13) + gam[y93,FIVE,mu1,y97]*gam[y99,FIVE,mu1,y95]*I*eseft(14)
+    - gam[y93,FIVE,mu1,y97]*gam[y99,mu1,y95]*I*eseft(13) - gam[y93,FIVE
+   ,mu1,y97]*gam[y99,mu1,y95]*I*eseft(14) + gam[y93,FIVE,mu1,mu2,y97]*
+   gam[y99,FIVE,mu1,mu2,y95]*I*eseft(7) + gam[y93,FIVE,mu1,mu2,y97]*
+   gam[y99,FIVE,mu1,mu2,y95]*I*eseft(8) - gam[y93,FIVE,mu1,mu2,y97]*
+   gam[y99,mu1,mu2,y95]*I*eseft(7) + gam[y93,FIVE,mu1,mu2,y97]*gam[y99,
+   mu1,mu2,y95]*I*eseft(8) + gam[y93,FIVE,mu1,mu2,mu3,y97]*gam[y99,FIVE
+   ,mu1,mu2,mu3,y95]*I*eseft(21) + gam[y93,FIVE,mu1,mu2,mu3,y97]*gam[
+   y99,FIVE,mu1,mu2,mu3,y95]*I*eseft(22) - gam[y93,FIVE,mu1,mu2,mu3,y97
+   ]*gam[y99,mu1,mu2,mu3,y95]*I*eseft(21) - gam[y93,FIVE,mu1,mu2,mu3,
+   y97]*gam[y99,mu1,mu2,mu3,y95]*I*eseft(22) + 4*gam[y93,y97]*gam[y99,
+   FIVE,y95]*I*invepsilonbar^(-1)*eseft(7) - 4*gam[y93,y97]*gam[y99,
+   FIVE,y95]*I*invepsilonbar^(-1)*eseft(8) - gam[y93,y97]*gam[y99,FIVE,
+   y95]*I*eseft(5) + gam[y93,y97]*gam[y99,FIVE,y95]*I*eseft(6) - 8*gam[
+   y93,y97]*gam[y99,FIVE,y95]*I*eseft(7) + 8*gam[y93,y97]*gam[y99,FIVE,
+   y95]*I*eseft(8) - 4*gam[y93,y97]*gam[y99,y95]*I*invepsilonbar^(-1)*
+   eseft(7) - 4*gam[y93,y97]*gam[y99,y95]*I*invepsilonbar^(-1)*eseft(8)
+    + gam[y93,y97]*gam[y99,y95]*I*eseft(5) + gam[y93,y97]*gam[y99,y95]*
+   I*eseft(6) + 8*gam[y93,y97]*gam[y99,y95]*I*eseft(7) + 8*gam[y93,y97]
+   *gam[y99,y95]*I*eseft(8) - gam[y93,mu1,y97]*gam[y99,FIVE,mu1,y95]*I*
+   eseft(13) - gam[y93,mu1,y97]*gam[y99,FIVE,mu1,y95]*I*eseft(14) + 
+   gam[y93,mu1,y97]*gam[y99,mu1,y95]*I*eseft(13) + gam[y93,mu1,y97]*
+   gam[y99,mu1,y95]*I*eseft(14) + gam[y93,mu1,mu2,y97]*gam[y99,FIVE,mu1
+   ,mu2,y95]*I*eseft(7) - gam[y93,mu1,mu2,y97]*gam[y99,FIVE,mu1,mu2,y95
+   ]*I*eseft(8) - gam[y93,mu1,mu2,y97]*gam[y99,mu1,mu2,y95]*I*eseft(7)
+    - gam[y93,mu1,mu2,y97]*gam[y99,mu1,mu2,y95]*I*eseft(8) - gam[y93,
+   mu1,mu2,mu3,y97]*gam[y99,FIVE,mu1,mu2,mu3,y95]*I*eseft(21) - gam[y93
+   ,mu1,mu2,mu3,y97]*gam[y99,FIVE,mu1,mu2,mu3,y95]*I*eseft(22) + gam[
+   y93,mu1,mu2,mu3,y97]*gam[y99,mu1,mu2,mu3,y95]*I*eseft(21) + gam[y93,
+   mu1,mu2,mu3,y97]*gam[y99,mu1,mu2,mu3,y95]*I*eseft(22)];
+    eseft(27)=G[gam[y93,FIVE,mu1,y95]*gam[y99,FIVE,mu1,y97]*I*eseft(11)
+    + gam[y93,FIVE,mu1,y95]*gam[y99,FIVE,mu1,y97]*I*eseft(12) - gam[y93
+   ,FIVE,mu1,y95]*gam[y99,mu1,y97]*I*eseft(11) - gam[y93,FIVE,mu1,y95]*
+   gam[y99,mu1,y97]*I*eseft(12) + gam[y93,FIVE,mu1,mu2,mu3,y95]*gam[y99
+   ,FIVE,mu1,mu2,mu3,y97]*I*eseft(19) + gam[y93,FIVE,mu1,mu2,mu3,y95]*
+   gam[y99,FIVE,mu1,mu2,mu3,y97]*I*eseft(20) - gam[y93,FIVE,mu1,mu2,mu3
+   ,y95]*gam[y99,mu1,mu2,mu3,y97]*I*eseft(19) - gam[y93,FIVE,mu1,mu2,
+   mu3,y95]*gam[y99,mu1,mu2,mu3,y97]*I*eseft(20) - gam[y93,mu1,y95]*
+   gam[y99,FIVE,mu1,y97]*I*eseft(11) - gam[y93,mu1,y95]*gam[y99,FIVE,
+   mu1,y97]*I*eseft(12) + gam[y93,mu1,y95]*gam[y99,mu1,y97]*I*eseft(11)
+    + gam[y93,mu1,y95]*gam[y99,mu1,y97]*I*eseft(12) - gam[y93,mu1,mu2,
+   mu3,y95]*gam[y99,FIVE,mu1,mu2,mu3,y97]*I*eseft(19) - gam[y93,mu1,mu2
+   ,mu3,y95]*gam[y99,FIVE,mu1,mu2,mu3,y97]*I*eseft(20) + gam[y93,mu1,
+   mu2,mu3,y95]*gam[y99,mu1,mu2,mu3,y97]*I*eseft(19) + gam[y93,mu1,mu2,
+   mu3,y95]*gam[y99,mu1,mu2,mu3,y97]*I*eseft(20)];
+    eseft(28)=G[gam[y93,FIVE,mu1,y97]*gam[y99,FIVE,mu1,y95]*I*eseft(15)
+    + gam[y93,FIVE,mu1,y97]*gam[y99,FIVE,mu1,y95]*I*eseft(16) - gam[y93
+   ,FIVE,mu1,y97]*gam[y99,mu1,y95]*I*eseft(15) - gam[y93,FIVE,mu1,y97]*
+   gam[y99,mu1,y95]*I*eseft(16) + gam[y93,FIVE,mu1,mu2,mu3,y97]*gam[y99
+   ,FIVE,mu1,mu2,mu3,y95]*I*eseft(23) + gam[y93,FIVE,mu1,mu2,mu3,y97]*
+   gam[y99,FIVE,mu1,mu2,mu3,y95]*I*eseft(24) - gam[y93,FIVE,mu1,mu2,mu3
+   ,y97]*gam[y99,mu1,mu2,mu3,y95]*I*eseft(23) - gam[y93,FIVE,mu1,mu2,
+   mu3,y97]*gam[y99,mu1,mu2,mu3,y95]*I*eseft(24) - gam[y93,mu1,y97]*
+   gam[y99,FIVE,mu1,y95]*I*eseft(15) - gam[y93,mu1,y97]*gam[y99,FIVE,
+   mu1,y95]*I*eseft(16) + gam[y93,mu1,y97]*gam[y99,mu1,y95]*I*eseft(15)
+    + gam[y93,mu1,y97]*gam[y99,mu1,y95]*I*eseft(16) - gam[y93,mu1,mu2,
+   mu3,y97]*gam[y99,FIVE,mu1,mu2,mu3,y95]*I*eseft(23) - gam[y93,mu1,mu2
+   ,mu3,y97]*gam[y99,FIVE,mu1,mu2,mu3,y95]*I*eseft(24) + gam[y93,mu1,
+   mu2,mu3,y97]*gam[y99,mu1,mu2,mu3,y95]*I*eseft(23) + gam[y93,mu1,mu2,
+   mu3,y97]*gam[y99,mu1,mu2,mu3,y95]*I*eseft(24)];
+

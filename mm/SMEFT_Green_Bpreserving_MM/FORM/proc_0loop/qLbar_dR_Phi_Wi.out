@@ -1,0 +1,20 @@
+    eseft(1)=alphaRdHD2[fl99,fl97];
+    eseft(2)=alphaOdW[fl99,fl97];
+    eseft(3)=alphaRdHD1[fl99,fl97];
+    eseft(4)=alphaRdHD4[fl99,fl97];
+    eseft(5)=alphaEdH[fl99,fl97];
+    eseft(6)=alphaEdW[fl99,fl97];
+    eseft(7)=G[gam[y99,FIVE,p2,pol4,y97]*sSS*I*g2*eseft(1) + 4*gam[y99,
+   FIVE,p4,pol4,y97]*sSS*I*eseft(2) - gam[y99,FIVE,y97]*p2.pol4*sSS*I*
+   g2*eseft(1) - gam[y99,FIVE,y97]*p2.pol4*sSS*I*g2*eseft(4) - 2*gam[
+   y99,FIVE,y97]*p3.pol4*sSS*I*g2*eseft(3) - 4*gam[y99,FIVE,y97]*
+   p4.pol4*sSS*I*eseft(2) - gam[y99,FIVE,y97]*p4.pol4*sSS*I*g2*eseft(3)
+    + gam[y99,FIVE,mu1,mu2,y97]*e_[p2,pol4,mu1,mu2]*sSS*I*g2*eseft(5)
+    - 2*gam[y99,FIVE,mu1,mu2,y97]*e_[p4,pol4,mu1,mu2]*sSS*eseft(6) + 
+   gam[y99,p2,pol4,y97]*sSS*I*g2*eseft(1) + 4*gam[y99,p4,pol4,y97]*sSS*
+   I*eseft(2) - gam[y99,y97]*p2.pol4*sSS*I*g2*eseft(1) - gam[y99,y97]*
+   p2.pol4*sSS*I*g2*eseft(4) - 2*gam[y99,y97]*p3.pol4*sSS*I*g2*eseft(3)
+    - 4*gam[y99,y97]*p4.pol4*sSS*I*eseft(2) - gam[y99,y97]*p4.pol4*sSS*
+   I*g2*eseft(3) + gam[y99,mu1,mu2,y97]*e_[p2,pol4,mu1,mu2]*sSS*I*g2*
+   eseft(5) - 2*gam[y99,mu1,mu2,y97]*e_[p4,pol4,mu1,mu2]*sSS*eseft(6)];
+

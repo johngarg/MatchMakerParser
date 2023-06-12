@@ -1,0 +1,26 @@
+
+ --------------------------------------------------------------
+                           qgraf-3.5.0
+ --------------------------------------------------------------
+
+  output= 'OUTPUTFILE' ;
+  style= '/usr/local/lib/python3.9/site-pa'
+ 'ckages/matchmakereft/core/my.sty' ;
+  model= 'model';
+  in= uRbar,uR,G;
+  out=;
+  loops= 0;
+  loop_momentum= k;
+  options= ;
+  true = bridge[B, BQuantum, dR, eR, G, ghB, ghG, ghWi, GQuantum,
+ lL, Phi, qL, uR, Wi, WiQuantum, 0 , 0];
+
+ --------------------------------------------------------------
+
+        v-degrees                #diagrams
+
+    3^1   -    -    -      ....     1
+
+
+       total =  1 connected diagram   (w!)
+

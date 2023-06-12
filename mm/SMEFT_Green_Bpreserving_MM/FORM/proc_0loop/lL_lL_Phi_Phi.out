@@ -1,0 +1,5 @@
+    eseft(1)=alphaWeinberg[fl97,fl99];
+    eseft(2)=alphaWeinberg[fl99,fl97];
+    eseft(3)=G[gam[y99,FIVE,y97]*I*eseft(1) + gam[y99,FIVE,y97]*I*
+   eseft(2) - gam[y99,y97]*I*eseft(1) - gam[y99,y97]*I*eseft(2)];
+

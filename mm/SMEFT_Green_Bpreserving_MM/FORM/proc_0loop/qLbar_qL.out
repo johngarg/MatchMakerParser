@@ -1,0 +1,6 @@
+    eseft(1)=alphaKq[fl99,fl97];
+    eseft(2)=alphaRqD[fl99,fl97];
+    eseft(3)=G[gam[y99,FIVE,p2,y97]*sSS*I*eseft(1) - gam[y99,FIVE,p2,
+   y97]*p2.p2*sSS^3*I*eseft(2) + gam[y99,p2,y97]*sSS*I*eseft(1) - gam[
+   y99,p2,y97]*p2.p2*sSS^3*I*eseft(2)];
+

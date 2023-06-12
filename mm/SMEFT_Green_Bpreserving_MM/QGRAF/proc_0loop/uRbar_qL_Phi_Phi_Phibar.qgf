@@ -1,0 +1,11 @@
+diags:=[
+ 
+(-1)*
+ cpol(uRbar(-1,p1))*
+ cpol(qL(-3,p2))*
+ cpol(Phi(-5,p3))*
+ cpol(Phi(-7,p4))*
+ cpol(Phibar(-9,p5))*
+
+ v5(uRbar(-1,p1),qL(-3,p2),Phi(-5,p3),Phi(-7,p4),Phibar(-9,p5)),
+NULL]:

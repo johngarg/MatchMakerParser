@@ -1,0 +1,18 @@
+FORM 4.2.1 (Aug 28 2019, v4.2.1-5-g4057c65) 64-bits  Run: Wed Mar 30 22:09:06 2022
+    #-
+
+   amplqLbarqLqLqLbar =
+       - 1/4*dd[2,l93,l95]*dd[2,l97,l99]*dd[3,m93,m95]*dd[3,m97,m99]*
+      eseft(49) + 1/4*dd[2,l93,l95]*dd[2,l97,l99]*dd[3,m93,m97]*dd[3,
+      m95,m99]*eseft(50) - 1/4*dd[2,l93,l95]*dd[2,l97,l99]*T[a1,m93,m95
+      ]*T[a1,m99,m97]*eseft(51) - 1/4*dd[2,l93,l97]*dd[2,l95,l99]*dd[3,
+      m93,m95]*dd[3,m97,m99]*eseft(52) + 1/4*dd[2,l93,l97]*dd[2,l95,l99
+      ]*dd[3,m93,m97]*dd[3,m95,m99]*eseft(53) + 1/4*dd[2,l93,l97]*dd[2,
+      l95,l99]*T[a1,m93,m97]*T[a1,m99,m95]*eseft(54) - dd[3,m93,m95]*
+      dd[3,m97,m99]*Ta[n1,l93,l95]*Ta[n1,l99,l97]*eseft(55) + dd[3,m93,
+      m97]*dd[3,m95,m99]*Ta[n1,l93,l97]*Ta[n1,l99,l95]*eseft(56) - Ta[
+      n1,l93,l95]*Ta[n1,l99,l97]*T[a1,m93,m95]*T[a1,m99,m97]*eseft(57)
+       + Ta[n1,l93,l97]*Ta[n1,l99,l95]*T[a1,m93,m97]*T[a1,m99,m95]*
+      eseft(58);
+
+  0.55 sec out of 0.61 sec
