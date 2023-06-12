@@ -49,6 +49,7 @@ NormaliseIndices::usage = "Normalise index patterns so that duplicates are
 deleted.";
 NormaliseIndices[indices_List] := DeleteDuplicates[indices];
 
+(* TODO Fix this to use np.einsum *)
 ParseSums::usage = "Function to parse repeated indices into sums with the
 correct ranges. E.g.
 
@@ -150,7 +151,7 @@ class `n`MatchingResult(python.matchingresult.GenericMatchingResult):
     ];
     exoticCouplingTemplate =
     StringTemplate[
-      "        self.`` = np.zeros(``)\n"
+      "        self.`` = np.ones(``)\n"
     ];
 
     (* Create list of strings representing attributes of Python class. For
