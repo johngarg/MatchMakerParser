@@ -1,0 +1,207 @@
+#!/usr/bin/env python3
+
+"""Scrpt to match models with pairs of Granada fields onto the SMEFT"""
+
+import os
+import pandas as pd
+from itertools import combinations
+
+WARSAW = [
+    "alphaO3G",
+    "alphaO3Gt",
+    "alphaO3W",
+    "alphaO3Wt",
+    "alphaOHG",
+    "alphaOHGt",
+    "alphaOHW",
+    "alphaOHWt",
+    "alphaOHB",
+    "alphaOHBt",
+    "alphaOHWB",
+    "alphaOHWBt",
+    "alphaOHBox",
+    "alphaOHD",
+    "alphaOH",
+    "alphaOuG",
+    "alphaOuW",
+    "alphaOuB",
+    "alphaOdG",
+    "alphaOdW",
+    "alphaOdB",
+    "alphaOeW",
+    "alphaOeB",
+    "alphaOHq1",
+    "alphaOHq3",
+    "alphaOHu",
+    "alphaOHd",
+    "alphaOHud",
+    "alphaOHl1",
+    "alphaOHl3",
+    "alphaOHe",
+    "alphaOuH",
+    "alphaOdH",
+    "alphaOeH",
+    "alphaOuGbar",
+    "alphaOuWbar",
+    "alphaOuBbar",
+    "alphaOdGbar",
+    "alphaOdWbar",
+    "alphaOdBbar",
+    "alphaOeWbar",
+    "alphaOeBbar",
+    "alphaOHq1bar",
+    "alphaOHq3bar",
+    "alphaOHubar",
+    "alphaOHdbar",
+    "alphaOHudbar",
+    "alphaOHl1bar",
+    "alphaOHl3bar",
+    "alphaOHebar",
+    "alphaOuHbar",
+    "alphaOdHbar",
+    "alphaOeHbar",
+    "alphaOqq1",
+    "alphaOqq3",
+    "alphaOuu",
+    "alphaOdd",
+    "alphaOud1",
+    "alphaOud8",
+    "alphaOqu1",
+    "alphaOqu8",
+    "alphaOqd1",
+    "alphaOqd8",
+    "alphaOquqd1",
+    "alphaOquqd8",
+    "alphaOll",
+    "alphaOee",
+    "alphaOle",
+    "alphaOlq1",
+    "alphaOlq3",
+    "alphaOeu",
+    "alphaOed",
+    "alphaOqe",
+    "alphaOlu",
+    "alphaOld",
+    "alphaOledq",
+    "alphaOlequ1",
+    "alphaOlequ3",
+    "alphaOqq1bar",
+    "alphaOqq3bar",
+    "alphaOuubar",
+    "alphaOddbar",
+    "alphaOud1bar",
+    "alphaOud8bar",
+    "alphaOqu1bar",
+    "alphaOqu8bar",
+    "alphaOqd1bar",
+    "alphaOqd8bar",
+    "alphaOquqd1bar",
+    "alphaOquqd8bar",
+    "alphaOllbar",
+    "alphaOeebar",
+    "alphaOlebar",
+    "alphaOlq1bar",
+    "alphaOlq3bar",
+    "alphaOeubar",
+    "alphaOedbar",
+    "alphaOqebar",
+    "alphaOlubar",
+    "alphaOldbar",
+    "alphaOledqbar",
+    "alphaOlequ1bar",
+    "alphaOlequ3bar",
+    "alphaWeinberg",
+    "alphaWeinbergbar",
+]
+
+VALID_MULTIPLETS = {
+    # "S",
+    # "S1",
+    # "S2",
+    # "varphi",
+    # "Xi",
+    # "Xi1",
+    # "Theta1",
+    # "Theta3",
+    # "omega1",
+    # "omega2",
+    # "omega4",
+    # "Pi1",
+    # "Pi7",
+    # "zeta",
+    # "Omega1",
+    # "Omega2",
+    # "Omega4",
+    # "Upsilon",
+    # "Phi",
+    "N",
+    "E",
+    "Delta1",
+    "Delta3",
+    "Sigma",
+    "Sigma1",
+    "U",
+    "D",
+    "Q1",
+    "Q5",
+    "Q7",
+    "T1",
+    "T2",
+}
+VALID_MULTIPLETS = {"Granada" + f for f in VALID_MULTIPLETS}
+DRY = False
+
+
+def run_and_print(cmd, dry=DRY):
+    print("$ " + cmd)
+    if not dry:
+        os.system(cmd)
+
+
+for multiplet_1, multiplet_2 in combinations(VALID_MULTIPLETS, 2):
+    valid_unix_names = []
+    for f in sorted([multiplet_1, multiplet_2]):
+        valid_unix_name = f
+        if f.removeprefix("Granada")[0].isupper():
+            valid_unix_name = "GranadaCapital" + f.removeprefix("Granada")
+
+        valid_unix_names.append(valid_unix_name)
+
+    dir_name = "_".join(valid_unix_names)
+
+
+    # Make output directory if it doesn't already exist
+    output = f"~/Downloads/granada_pairs/{dir_name}"
+    if not os.path.exists(output):
+        run_and_print(f"mkdir {output}")
+
+        # Match the fields
+        print(f"\n\nNow matching {multiplet_1} and {multiplet_2}...")
+        run_and_print(f"cd mm/ && ./match {multiplet_1} {multiplet_2}")
+
+        # Copy results to corresponding directory
+        model_path = output
+        print(f"\nCopying MatchingResult.dat...")
+        matching_result_path = os.path.join(model_path, "MatchingResult.dat")
+        matching_problems_path = os.path.join(model_path, "MatchingProblems.dat")
+        rge_result_path = os.path.join(model_path, "RGEResult.dat")
+        run_and_print(f"cp mm/{multiplet_1}_{multiplet_2}_MM/MatchingResult.dat {matching_result_path}")
+        run_and_print(f"cp mm/{multiplet_1}_{multiplet_2}_MM/MatchingProblems.dat {matching_problems_path}")
+        run_and_print(f"cp mm/{multiplet_1}_{multiplet_2}_MM/RGEResult.dat {rge_result_path}")
+
+        # Write config
+        print(f"\nWriting MatchMakerParser config...")
+        config_path = os.path.join(model_path, "Config.m")
+        run_and_print(f"feynwrite {multiplet_1} {multiplet_2} --mmp-config > {config_path}")
+
+    # Run MatchMakerParser
+    print(f"\nRunning matchmaker parser...")
+    python_file = f"{dir_name}_matching.py"
+    output = os.path.join("python", python_file)
+    if not os.path.exists(output):
+        run_and_print(
+            f"./parse-matchmaker-output {multiplet_1}_{multiplet_2} {config_path} {matching_result_path} {output}"
+        )
+
+    # Return to parent directory
+    run_and_print("cd mm/ && ./clean")
