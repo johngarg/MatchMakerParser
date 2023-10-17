@@ -1,0 +1,1 @@
+{ampleRbarlLPhiPhibarPhibar ->- 1/8*dd[2,l91,l95]*dd[2,l93,l97]*esfull[8] - 1/8*dd[2,l91,l97]*dd[2,l93,l95]*esfull[8] - 1/2*dd[2,l91,l97]*Ta[n1,l1,l95]*Ta[n1,l93,l1]*esfull[9] - 1/2*dd[2,l93,l97]*Ta[n1,l1,l95]*Ta[n1,l91,l1]*esfull[9] + 1/2*Ta[n1,l91,l95]*Ta[n1,l93,l97]*esfull[10] + 1/2*Ta[n1,l91,l97]*Ta[n1,l93,l95]*esfull[10]}

@@ -1,0 +1,31 @@
+
+ --------------------------------------------------------------
+                          qgraf-3.6.5
+ --------------------------------------------------------------
+
+  output= 'OUTPUTFILE' ;
+  style= '/usr/local/lib/python3.11/site-p'
+ 'ackages/matchmakereft/core/my.sty' ;
+  model= 'model';
+  in= dRbar,qL,uRbar,qL;
+  out=;
+  loops= 1;
+  loop_momentum= k;
+  options= ;
+  true = bridge[B, BQuantum, dR, eR, G, ghB, ghG, ghWi, GQuantum,
+ lL, Phi, qL, uR, Wi, WiQuantum, 0 , 0];
+  false = chord[GranadaDelta1, GranadaN, 0,  0];
+  true = chord[G,  Wi,  B, 0,  0];
+
+ --------------------------------------------------------------
+
+   #loops    v-degrees          #diagrams
+
+      1
+              -   4^2     ....     0
+             3^2  4^1     ....     0
+             3^4   -      ....     0
+
+
+        total =  0 connected diagrams
+

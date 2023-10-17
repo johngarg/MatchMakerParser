@@ -1,0 +1,4 @@
+    esfull(1)=G[p2.pol1*pol2.pol3*sSS*g3 + p2.pol2*pol1.pol3*sSS*g3 - 2
+   *p2.pol3*pol1.pol2*sSS*g3 - p3.pol1*pol2.pol3*sSS*g3 + 2*p3.pol2*
+   pol1.pol3*sSS*g3 - p3.pol3*pol1.pol2*sSS*g3];
+

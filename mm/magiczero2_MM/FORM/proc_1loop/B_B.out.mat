@@ -1,0 +1,1 @@
+{esfull[1]->G[p2.p2*p2.pol1*p2.pol2*sSS^4*FourPi^(-2)*I*g1^2*MDelta1^(-2) - 5*p2.p2*pol1.pol2*sSS^2*FourPi^(-2)*I*invepsilonbar*g1^2 - p2.p2^2*pol1.pol2*sSS^4*FourPi^(-2)*I*g1^2*MDelta1^(-2) + 5*p2.pol1*p2.pol2*sSS^2*FourPi^(-2)*I*invepsilonbar*g1^2 + 5*Log[MDelta1^2]*p2.p2*pol1.pol2*sSS^2*FourPi^(-2)*I*g1^2 - 5*Log[MDelta1^2]*p2.pol1*p2.pol2*sSS^2*FourPi^(-2)*I*g1^2]}

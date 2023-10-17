@@ -1,0 +1,11 @@
+diags:=[
+ 
+(-1)*
+ cpol(Wi(-1,p1))*
+ cpol(Wi(-3,p2))*
+
+ prop(GranadaDelta1(1,k1-p1),GranadaDelta1bar(2,k1-p1))*
+ prop(GranadaDelta1(3,k1),GranadaDelta1bar(4,k1))*
+ v3(GranadaDelta1bar(4,-k1),GranadaDelta1(1,k1-p1),Wi(-1,p1))*
+ v3(GranadaDelta1bar(2,-k1+p1),GranadaDelta1(3,k1),Wi(-3,p2)),
+NULL]:

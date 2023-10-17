@@ -172,3 +172,5 @@ Block[
 ];
 
 Ltot := LSM + LFreeGranadaN + LFreeGranadaDelta1 + LlambdaN + HC[LlambdaN] + LlambdaDelta1 + HC[LlambdaDelta1] + LlambdaNDelta1 + HC[LlambdaNDelta1];
+
+(* LlambdaHatNDelta1 + HC[LlambdaHatNDelta1]; *)

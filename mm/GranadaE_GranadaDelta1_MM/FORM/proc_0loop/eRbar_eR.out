@@ -1,0 +1,4 @@
+    esfull(1)=ddF[3,fl97,fl99];
+    esfull(2)=G[gam[y99,FIVE,p2,y97]*sSS*I*esfull(1) - gam[y99,p2,y97]*
+   sSS*I*esfull(1)];
+

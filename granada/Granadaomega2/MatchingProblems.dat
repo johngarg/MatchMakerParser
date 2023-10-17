@@ -1,0 +1,923 @@
+problist = {{1, {"dRbar", "dR", "dR", "dRbar"}, 
+      {0, 0, 0, 0, ((-I)*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 
+       ((-I)*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 
+       (I*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       (I*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       (I*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 0, 0, 
+       ((-I)*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 0, 0, 0, 0, 
+       ((-I)*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 0, 0, 
+       (I*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       (I*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       (I*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 
+       ((-I)*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 
+       ((-I)*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 - 
+        (I*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2 + 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/Momega2^2, 0, 0, 0, 0}}, 
+     {2, {"dRbar", "dR", "dR", "dRbar"}, 
+      {((-1/4*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/32)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/16)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/32)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/16)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/32)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/16)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/16)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/16)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/16)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/16)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/16)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 
+       ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 
+       ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 
+       ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 0, 0, 
+       ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 
+       ((-1/4*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/32)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/16)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/32)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/16)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/32)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/16)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/16)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/16)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/16)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/16)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/16)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 
+       ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 0, 0, 
+       ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 
+       ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 
+       ((-1/8*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/64)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/64)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/8)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/8)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/32)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/32)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2), 0, 0, 0, 
+       ((-1/4*I)*g3^2*gam[y97, y95]*gam[y99, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*invepsilonbar*gam[y99, y93]*gam[y97, FIVE, y95]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*invepsilonbar*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*invepsilonbar*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        (((3*I)/32)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, mu1, mu2, y93]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/16)*g3^2*invepsilonbar*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + (((3*I)/32)*g3^2*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/16)*g3^2*invepsilonbar*gam[y99, mu1, mu2, y93]*
+          gam[y97, FIVE, mu1, mu2, y95]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/32)*g3^2*gam[y97, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/16)*g3^2*invepsilonbar*gam[y97, mu1, mu2, 
+           y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        (((3*I)/32)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, 
+           mu2, y93]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/16)*g3^2*invepsilonbar*gam[y97, FIVE, mu1, 
+           mu2, y95]*gam[y99, FIVE, mu1, mu2, y93]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y97, y95]*gam[y99, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/4)*g3^2*gam[y99, y93]*gam[y97, FIVE, y95]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*gam[y97, y95]*gam[y99, FIVE, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/4)*g3^2*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) - ((I/16)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) - 
+        ((I/16)*g3^2*gam[y99, mu1, mu2, y93]*gam[y97, FIVE, mu1, mu2, y95]*
+          Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/
+         (Momega2^2*Pi^2) + ((I/16)*g3^2*gam[y97, mu1, mu2, y95]*
+          gam[y99, FIVE, mu1, mu2, y93]*Log[Momega2^2/\[Mu]^2]*
+          yomega2[fl93, fl99]*yomega2bar[fl95, fl97])/(Momega2^2*Pi^2) + 
+        ((I/16)*g3^2*gam[y97, FIVE, mu1, mu2, y95]*gam[y99, FIVE, mu1, mu2, 
+           y93]*Log[Momega2^2/\[Mu]^2]*yomega2[fl93, fl99]*
+          yomega2bar[fl95, fl97])/(Momega2^2*Pi^2)}}}

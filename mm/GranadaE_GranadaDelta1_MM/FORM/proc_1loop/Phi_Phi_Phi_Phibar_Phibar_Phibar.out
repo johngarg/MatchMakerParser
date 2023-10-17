@@ -1,0 +1,1941 @@
+    esfull(1)=lambdaDelta1[fl1]*lambdaDelta1bar[fl1];
+    esfull(2)=lambdaE[fl1]*lambdaEbar[fl1];
+    esfull(3)=lambdaDelta1[fl1]*lambdaDelta1[fl2]*lambdaDelta1bar[fl1]*
+   lambdaDelta1bar[fl2];
+    esfull(4)=lambdaDelta1[fl1]*lambdaE[fl2]*lambdaDelta1bar[fl1]*
+   lambdaEbar[fl2];
+    esfull(5)=lambdaDelta1[fl1]*lambdaEbar[fl2]*ylbar[fl2,fl1];
+    esfull(6)=lambdaE[fl1]*lambdaE[fl2]*lambdaEbar[fl1]*lambdaEbar[fl2]
+   ;
+    esfull(7)=lambdaE[fl1]*yl[fl1,fl2]*lambdaDelta1bar[fl2];
+    esfull(8)=lambdaDelta1[fl1]*lambdaDelta1[fl2]*lambdaDelta1bar[fl1]*
+   lambdaEbar[fl3]*ylbar[fl3,fl2];
+    esfull(9)=lambdaDelta1[fl1]*lambdaDelta1[fl2]*lambdaDelta1bar[fl2]*
+   lambdaEbar[fl3]*ylbar[fl3,fl1];
+    esfull(10)=lambdaDelta1[fl1]*lambdaE[fl2]*yl[fl2,fl3]*
+   lambdaDelta1bar[fl1]*lambdaDelta1bar[fl3];
+    esfull(11)=lambdaDelta1[fl1]*lambdaE[fl2]*lambdaEbar[fl2]*
+   lambdaEbar[fl3]*ylbar[fl3,fl1];
+    esfull(12)=lambdaDelta1[fl1]*yl[fl2,fl3]*lambdaDelta1bar[fl3]*
+   ylbar[fl2,fl1];
+    esfull(13)=lambdaE[fl1]*lambdaE[fl2]*yl[fl1,fl3]*lambdaDelta1bar[
+   fl3]*lambdaEbar[fl2];
+    esfull(14)=lambdaE[fl1]*lambdaE[fl2]*yl[fl2,fl3]*lambdaDelta1bar[
+   fl3]*lambdaEbar[fl1];
+    esfull(15)=lambdaE[fl1]*yl[fl1,fl2]*lambdaEbar[fl3]*ylbar[fl3,fl2];
+    esfull(16)=lambdaDelta1[fl1]*lambdaE[fl2]*yl[fl2,fl3]*
+   lambdaDelta1bar[fl3]*lambdaEbar[fl4]*ylbar[fl4,fl1];
+    esfull(17)=lambdaDelta1[fl1]*yl[fl2,fl3]*lambdaEbar[fl4]*ylbar[fl2,
+   fl1]*ylbar[fl4,fl3];
+    esfull(18)=lambdaE[fl1]*yl[fl1,fl2]*yl[fl3,fl4]*lambdaDelta1bar[fl4
+   ]*ylbar[fl3,fl2];
+    esfull(19)=lambdaE[fl1]*yl[fl1,fl2]*yl[fl3,fl4]*lambdaEbar[fl5]*
+   ylbar[fl3,fl2]*ylbar[fl5,fl4];
+    esfull(20)=lambdaDelta1[fl1]*yl[fl2,fl3]*yl[fl4,fl5]*
+   lambdaDelta1bar[fl3]*ylbar[fl2,fl5]*ylbar[fl4,fl1];
+    esfull(21)=lambdaDelta1[fl1]*yl[fl2,fl3]*yl[fl4,fl5]*
+   lambdaDelta1bar[fl5]*ylbar[fl2,fl1]*ylbar[fl4,fl3];
+    esfull(22)=lambdaDelta1[fl1]*lambdaDelta1[fl2]*lambdaDelta1[fl3]*
+   lambdaDelta1bar[fl1]*lambdaDelta1bar[fl2]*lambdaDelta1bar[fl3];
+    esfull(23)=lambdaDelta1[fl1]*lambdaDelta1[fl2]*yl[fl3,fl4]*
+   lambdaDelta1bar[fl1]*lambdaDelta1bar[fl4]*ylbar[fl3,fl2];
+    esfull(24)=lambdaDelta1[fl1]*lambdaDelta1[fl2]*yl[fl3,fl4]*
+   lambdaDelta1bar[fl2]*lambdaDelta1bar[fl4]*ylbar[fl3,fl1];
+    esfull(25)=lambdaE[fl1]*lambdaE[fl2]*lambdaE[fl3]*lambdaEbar[fl1]*
+   lambdaEbar[fl2]*lambdaEbar[fl3];
+    esfull(26)=lambdaE[fl1]*lambdaE[fl2]*yl[fl1,fl3]*lambdaEbar[fl2]*
+   lambdaEbar[fl4]*ylbar[fl4,fl3];
+    esfull(27)=lambdaE[fl1]*lambdaE[fl2]*yl[fl2,fl3]*lambdaEbar[fl1]*
+   lambdaEbar[fl4]*ylbar[fl4,fl3];
+    esfull(28)=G[6*FourPi^(-2)*I*MDelta1^(-3)*ME*lambdaEDelta1bar*
+   esfull(10) - 6*FourPi^(-2)*I*MDelta1^(-3)*ME*lambdaEDelta1bar*
+   esfull(18) - 6*FourPi^(-2)*I*MDelta1^(-3)*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar*esfull(12) + 6*FourPi^(-2)*I*MDelta1^(-2)*
+   esfull(16) - 4*FourPi^(-2)*I*MDelta1^(-2)*esfull(20) - 2*FourPi^(-2)
+   *I*MDelta1^(-2)*esfull(21) + FourPi^(-2)*I*MDelta1^(-2)*esfull(22)
+    + 4*FourPi^(-2)*I*MDelta1^(-2)*esfull(23) + 2*FourPi^(-2)*I*
+   MDelta1^(-2)*esfull(24) - 6*FourPi^(-2)*I*MDelta1^(-2)*
+   lambdaHatEDelta1bar*esfull(18) - 6*FourPi^(-2)*I*MDelta1^(-2)*
+   lambdaHatEDelta1*esfull(17) - 6*FourPi^(-2)*I*MDelta1^(-2)*
+   lambdaHatEDelta1*lambdaEDelta1bar^2*esfull(7) + 4*FourPi^(-2)*I*
+   MDelta1^(-1)*ME^(-1)*lambdaEDelta1bar*esfull(13) + 2*FourPi^(-2)*I*
+   MDelta1^(-1)*ME^(-1)*lambdaEDelta1bar*esfull(14) - 6*FourPi^(-2)*I*
+   MDelta1^(-1)*ME^(-1)*lambdaEDelta1bar*esfull(18) - 6*FourPi^(-2)*I*
+   MDelta1^(-1)*lambdaHatEDelta1*ME^(-1)*lambdaEDelta1bar*esfull(15) - 
+   6*FourPi^(-2)*I*ME^(-2)*esfull(19) + FourPi^(-2)*I*ME^(-2)*
+   esfull(25) + 4*FourPi^(-2)*I*ME^(-2)*esfull(26) + 2*FourPi^(-2)*I*
+   ME^(-2)*esfull(27) + 4*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME*
+   esfull(8) + 2*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME*esfull(9)
+    - 6*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME*esfull(17) - 6*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME*lambdaHatEDelta1bar*
+   esfull(12) + 6*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-2)*
+   lambdaEDelta1bar*esfull(4) - 6*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^(-2)*lambdaEDelta1bar*esfull(12) - 6*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^(-2)*lambdaEDelta1bar*esfull(15) + 6*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME^(-1)*esfull(11) - 6*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME^(-1)*esfull(17) - 6*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME^(-1)*lambdaHatEDelta1bar
+   *esfull(15) - 6*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^(-2)*
+   lambdaHatEDelta1bar*esfull(5) + 6*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^(-3)*ME*lambdaEDelta1bar*esfull(10) - 6*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^(-3)*ME*lambdaEDelta1bar*esfull(18) - 6*
+   FourPi^(-2)*I*invepsilonbar*MDelta1^(-3)*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar*esfull(12) + 6*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^(-2)*esfull(16) - 4*FourPi^(-2)*I*invepsilonbar*MDelta1^(-2)
+   *esfull(20) - 2*FourPi^(-2)*I*invepsilonbar*MDelta1^(-2)*esfull(21)
+    - 6*FourPi^(-2)*I*invepsilonbar*MDelta1^(-2)*lambdaHatEDelta1bar*
+   esfull(18) - 6*FourPi^(-2)*I*invepsilonbar*MDelta1^(-2)*
+   lambdaHatEDelta1*esfull(17) - 6*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^(-1)*ME^(-1)*lambdaEDelta1bar*esfull(18) - 6*FourPi^(-2)*I*
+   invepsilonbar*ME^(-2)*esfull(19) + 4*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^(-3)*ME*esfull(8) + 2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^(-3)*ME*esfull(9) - 6*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^(-3)*ME*esfull(17)
+    - 6*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^(-3)*ME*
+   lambdaHatEDelta1bar*esfull(12) - 6*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^(-2)*lambdaEDelta1bar*esfull(12) - 6*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^(-1)*ME^(-1)*
+   esfull(17) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*MDelta1^(-3)*ME^3*
+   lambdaEDelta1bar*esfull(10) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   MDelta1^(-3)*ME^3*lambdaEDelta1bar*esfull(18) - 6*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*MDelta1^(-3)*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   esfull(12) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*MDelta1^(-2)*ME^2*
+   esfull(16) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*MDelta1^(-2)*ME^2*
+   lambdaHatEDelta1bar*esfull(18) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   MDelta1^(-2)*lambdaHatEDelta1*ME^2*esfull(17) - 6*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*MDelta1^(-1)*ME*lambdaEDelta1bar*esfull(10) + 6*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*MDelta1^(-1)*ME*lambdaEDelta1bar*
+   esfull(18) + 3*DEN[MDelta1,ME]*FourPi^(-2)*I*MDelta1^(-1)*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(3) + 6*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*MDelta1^(-1)*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(12) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*esfull(16) + 6*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*lambdaHatEDelta1bar*esfull(18) + 6*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*lambdaHatEDelta1*esfull(17) + 3*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*lambdaHatEDelta1*lambdaHatEDelta1bar*
+   esfull(3) - 3*DEN[MDelta1,ME]*FourPi^(-2)*I*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(6) - 3*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   MDelta1*lambdaHatEDelta1*ME^(-1)*lambdaEDelta1bar*esfull(6) + 4*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME^3*esfull(8)
+    + 2*DEN[MDelta1,ME]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME^3*
+   esfull(9) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^(-3)*ME^3*esfull(17) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^(-3)*ME^3*lambdaHatEDelta1bar*esfull(12) - 6*
+   DEN[MDelta1,ME]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-2)*ME^2*
+   lambdaEDelta1bar*esfull(12) - 4*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^(-1)*ME*esfull(8) - 2*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME*esfull(9) + 6*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME*esfull(17)
+    + 3*DEN[MDelta1,ME]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME*
+   lambdaHatEDelta1bar*esfull(3) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^(-1)*ME*lambdaHatEDelta1bar*esfull(12) + 3*
+   DEN[MDelta1,ME]*FourPi^(-2)*I*lambdaEDelta1*lambdaEDelta1bar*
+   esfull(3) - 3*DEN[MDelta1,ME]*FourPi^(-2)*I*lambdaEDelta1*
+   lambdaEDelta1bar*esfull(6) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaEDelta1bar*esfull(12) - 3*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME^(-1)*lambdaHatEDelta1bar*
+   esfull(6) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^(-3)*ME^3*lambdaEDelta1bar*esfull(10) - 6*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*invepsilonbar*MDelta1^(-3)*ME^3*lambdaEDelta1bar*
+   esfull(18) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^(-3)*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*esfull(12) + 6*
+   DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*MDelta1^(-2)*ME^2*
+   esfull(16) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^(-2)*ME^2*lambdaHatEDelta1bar*esfull(18) - 6*DEN[MDelta1,ME]
+   *FourPi^(-2)*I*invepsilonbar*MDelta1^(-2)*lambdaHatEDelta1*ME^2*
+   esfull(17) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^(-2)*lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*esfull(7) - 4*
+   DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*MDelta1^(-1)*ME*
+   lambdaEDelta1bar*esfull(13) - 2*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^(-1)*ME*lambdaEDelta1bar*esfull(14) + 6*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*MDelta1^(-1)*ME*
+   lambdaEDelta1bar*esfull(18) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^(-1)*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(15) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*
+   esfull(16) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*
+   lambdaHatEDelta1bar*esfull(10) - 4*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1bar*esfull(13) - 2*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1bar*esfull(14) + 6*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1bar*
+   esfull(18) + 4*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*
+   lambdaHatEDelta1*esfull(8) + 2*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1*esfull(9) - 6*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*esfull(11) + 6*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*esfull(17)
+    - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(3) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(6) - 6*
+   DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(12) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(15) + 4*
+   DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^(-3)*ME^3*esfull(8) + 2*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^(-3)*ME^3*esfull(9) - 6*DEN[
+   MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^(-3)*
+   ME^3*esfull(17) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^(-3)*ME^3*lambdaHatEDelta1bar*esfull(12) - 6*
+   DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^(-2)*ME^2*lambdaEDelta1bar*esfull(4) - 6*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^(-2)*ME^2*
+   lambdaEDelta1bar*esfull(12) + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^(-2)*ME^2*lambdaEDelta1bar*
+   esfull(15) - 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^(-1)*ME*esfull(11) + 6*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^(-1)*ME*esfull(17)
+    + 6*DEN[MDelta1,ME]*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^(-1)*ME*lambdaHatEDelta1bar*esfull(15) + 6*DEN[MDelta1,ME]*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^(-2)*ME^2*
+   lambdaHatEDelta1bar*esfull(5) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   MDelta1^(-2)*lambdaHatEDelta1*ME^4*lambdaEDelta1bar^2*esfull(7) + 6*
+   DEN[MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^(-1)*ME^3*lambdaEDelta1bar*
+   esfull(10) - 4*DEN[MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^(-1)*ME^3*
+   lambdaEDelta1bar*esfull(13) - 2*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   MDelta1^(-1)*ME^3*lambdaEDelta1bar*esfull(14) - 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*MDelta1^(-1)*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   esfull(12) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^(-1)*
+   lambdaHatEDelta1*ME^3*lambdaEDelta1bar*esfull(15) + 6*DEN[MDelta1,ME
+   ]^2*FourPi^(-2)*I*ME^2*lambdaHatEDelta1bar*esfull(10) - 4*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*ME^2*lambdaHatEDelta1bar*esfull(13) - 2*
+   DEN[MDelta1,ME]^2*FourPi^(-2)*I*ME^2*lambdaHatEDelta1bar*esfull(14)
+    + 4*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaHatEDelta1*ME^2*esfull(8)
+    + 2*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaHatEDelta1*ME^2*esfull(9)
+    - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaHatEDelta1*ME^2*
+   esfull(11) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaHatEDelta1*ME^2
+   *lambdaHatEDelta1bar*esfull(4) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar*esfull(6) - 6*DEN[MDelta1,
+   ME]^2*FourPi^(-2)*I*lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar*
+   esfull(12) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaHatEDelta1*ME^2
+   *lambdaHatEDelta1bar*esfull(15) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar^2*esfull(7) - 6*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2
+   *esfull(7) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaHatEDelta1^2*
+   ME^2*lambdaHatEDelta1bar*esfull(5) - 3*DEN[MDelta1,ME]^2*FourPi^(-2)
+   *I*lambdaHatEDelta1^2*ME^2*lambdaHatEDelta1bar^2*esfull(2) + 3*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*lambdaHatEDelta1^2*ME^2*
+   lambdaEDelta1bar^2*esfull(1) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   MDelta1*ME*lambdaEDelta1bar*esfull(10) + 4*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*MDelta1*ME*lambdaEDelta1bar*esfull(13) + 2*DEN[MDelta1
+   ,ME]^2*FourPi^(-2)*I*MDelta1*ME*lambdaEDelta1bar*esfull(14) + 6*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar*esfull(12) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   MDelta1*lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(15) + 6*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 6*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   MDelta1^2*lambdaHatEDelta1bar*esfull(10) + 4*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1bar*esfull(13) + 2*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1bar*esfull(14)
+    - 4*DEN[MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1*
+   esfull(8) - 2*DEN[MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1*esfull(9) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   MDelta1^2*lambdaHatEDelta1*esfull(11) + 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1*lambdaHatEDelta1bar*
+   esfull(3) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(4) + 6*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1*lambdaHatEDelta1bar*
+   esfull(12) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(15) + 6*DEN[MDelta1,ME]^
+   2*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1*lambdaHatEDelta1bar^2*
+   esfull(7) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1^2*lambdaHatEDelta1bar*esfull(5) - 3*DEN[MDelta1,ME]
+   ^2*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*
+   esfull(1) + 3*DEN[MDelta1,ME]^2*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1^2*lambdaEDelta1bar^2*esfull(2) - 6*DEN[MDelta1,ME]^
+   2*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-2)*ME^4*lambdaEDelta1bar*
+   esfull(4) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^(-2)*ME^4*lambdaEDelta1bar*esfull(15) + 4*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME^3*esfull(8) + 2*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME^3*
+   esfull(9) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^(-1)*ME^3*esfull(11) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^(-1)*ME^3*lambdaHatEDelta1bar*esfull(12) + 6*
+   DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME^3*
+   lambdaHatEDelta1bar*esfull(15) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   lambdaEDelta1*ME^2*lambdaEDelta1bar*esfull(4) - 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*lambdaEDelta1*ME^2*lambdaEDelta1bar*esfull(12) - 6*
+   DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*ME^2*lambdaEDelta1bar*
+   esfull(15) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1)
+    + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1*
+   ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 4*DEN[MDelta1,
+   ME]^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*esfull(8) - 2*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*esfull(9) + 6*
+   DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*esfull(11)
+    + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*
+   lambdaHatEDelta1bar*esfull(12) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1*ME*lambdaHatEDelta1bar*esfull(15) + 6*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*
+   ME*lambdaHatEDelta1bar^2*esfull(1) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)
+   *I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*lambdaHatEDelta1bar^2*
+   esfull(2) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar^2*esfull(1) + 6*DEN[MDelta1,ME]
+   ^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(2) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*lambdaEDelta1bar*esfull(12) + 6*DEN[MDelta1,
+   ME]^2*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 6*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 6*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^(-2)*ME^4*lambdaHatEDelta1bar
+   *esfull(5) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1^2*ME^2*
+   lambdaHatEDelta1bar*esfull(5) + 3*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   lambdaEDelta1^2*ME^2*lambdaHatEDelta1bar^2*esfull(1) + 3*DEN[MDelta1
+   ,ME]^2*FourPi^(-2)*I*lambdaEDelta1^2*ME^2*lambdaEDelta1bar^2*
+   esfull(2) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 6*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 3*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*lambdaHatEDelta1bar^2*
+   esfull(2) + 3*DEN[MDelta1,ME]^2*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^2*lambdaEDelta1bar^2*esfull(1) + 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*MDelta1^(-2)*lambdaHatEDelta1*ME^4*
+   lambdaEDelta1bar^2*esfull(7) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^(-1)*ME^3*lambdaEDelta1bar*esfull(10) - 4*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1^(-1)*ME^3*
+   lambdaEDelta1bar*esfull(13) - 2*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^(-1)*ME^3*lambdaEDelta1bar*esfull(14) - 6*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1^(-1)*
+   lambdaHatEDelta1*ME^3*lambdaEDelta1bar*esfull(12) + 6*DEN[MDelta1,ME
+   ]^2*FourPi^(-2)*I*invepsilonbar*MDelta1^(-1)*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar*esfull(15) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*ME^2*lambdaHatEDelta1bar*esfull(10) - 4*DEN[MDelta1,ME
+   ]^2*FourPi^(-2)*I*invepsilonbar*ME^2*lambdaHatEDelta1bar*esfull(13)
+    - 2*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*ME^2*
+   lambdaHatEDelta1bar*esfull(14) + 4*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1*ME^2*esfull(8) + 2*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*ME^2*esfull(9) - 6*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*ME^2*
+   esfull(11) - 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar*esfull(4) + 12*DEN[MDelta1
+   ,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*ME^2*
+   lambdaHatEDelta1bar*esfull(6) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar*esfull(12)
+    + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*
+   ME^2*lambdaHatEDelta1bar*esfull(15) + 12*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*ME^2*
+   lambdaHatEDelta1bar^2*esfull(7) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*esfull(7) + 
+   12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1^2*
+   ME^2*lambdaHatEDelta1bar*esfull(5) - 18*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1^2*ME^2*
+   lambdaHatEDelta1bar^2*esfull(2) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*ME*lambdaEDelta1bar*esfull(10) + 4*DEN[MDelta1
+   ,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1*ME*lambdaEDelta1bar*
+   esfull(13) + 2*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1
+   *ME*lambdaEDelta1bar*esfull(14) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(3)
+    - 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(4) + 6*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*invepsilonbar*MDelta1*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar*esfull(6) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(12) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1
+   *lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(15) + 24*DEN[MDelta1,ME
+   ]^2*FourPi^(-2)*I*invepsilonbar*MDelta1*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) + 12*DEN[MDelta1,ME]^
+   2*FourPi^(-2)*I*invepsilonbar*MDelta1*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar*esfull(5) - 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^2*lambdaHatEDelta1bar*esfull(10) + 4*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1^2*
+   lambdaHatEDelta1bar*esfull(13) + 2*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^2*lambdaHatEDelta1bar*esfull(14) - 4*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1^2*lambdaHatEDelta1
+   *esfull(8) - 2*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^2*lambdaHatEDelta1*esfull(9) + 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*MDelta1^2*lambdaHatEDelta1*esfull(11) + 
+   12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1^2*
+   lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(3) - 12*DEN[MDelta1,ME]^
+   2*FourPi^(-2)*I*invepsilonbar*MDelta1^2*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(4) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^2*lambdaHatEDelta1*lambdaHatEDelta1bar*
+   esfull(12) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^2*lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(15) + 12*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*MDelta1^2*lambdaHatEDelta1
+   *lambdaHatEDelta1bar^2*esfull(7) + 12*DEN[MDelta1,ME]^2*FourPi^(-2)*
+   I*invepsilonbar*MDelta1^2*lambdaHatEDelta1^2*lambdaHatEDelta1bar*
+   esfull(5) - 18*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^2*lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*esfull(1) - 6*
+   DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^(-2)*ME^4*lambdaEDelta1bar*esfull(4) + 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^(-2)*ME^4*
+   lambdaEDelta1bar*esfull(15) + 4*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^(-1)*ME^3*esfull(8) + 2*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^(-1)
+   *ME^3*esfull(9) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^(-1)*ME^3*esfull(11) - 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^(-1)*ME^3*
+   lambdaHatEDelta1bar*esfull(12) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^(-1)*ME^3*lambdaHatEDelta1bar*
+   esfull(15) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*ME^2*lambdaEDelta1bar*esfull(4) + 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*ME^2*lambdaEDelta1bar*
+   esfull(6) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*ME^2*lambdaEDelta1bar*esfull(12) - 6*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*ME^2*lambdaEDelta1bar*
+   esfull(15) + 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) + 
+   12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar*esfull(5) - 6*DEN[MDelta1,ME]
+   ^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*lambdaHatEDelta1*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 12*DEN[MDelta1,ME]^
+   2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*lambdaHatEDelta1*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 4*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*ME*esfull(8) - 2*
+   DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   ME*esfull(9) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1*ME*esfull(11) + 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*ME*
+   lambdaHatEDelta1bar*esfull(3) - 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*ME*lambdaHatEDelta1bar*esfull(4)
+    + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1*ME*lambdaHatEDelta1bar*esfull(6) + 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*ME*
+   lambdaHatEDelta1bar*esfull(12) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*ME*lambdaHatEDelta1bar*
+   esfull(15) + 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1*ME*lambdaHatEDelta1bar^2*esfull(7) + 12*DEN[
+   MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*ME*
+   lambdaEDelta1bar^2*esfull(7) + 24*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar*esfull(5) - 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar^2*esfull(1) - 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I
+   *invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar^2*esfull(2) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(1) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(2) + 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^2*lambdaEDelta1bar*esfull(3) + 6
+   *DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^2*lambdaEDelta1bar*esfull(12) + 12*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^2*lambdaEDelta1bar
+   *lambdaHatEDelta1bar*esfull(7) + 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   lambdaEDelta1bar*esfull(5) - 12*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 6*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^2*
+   lambdaHatEDelta1*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 6*
+   DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^(-2)*ME^4*lambdaHatEDelta1bar*esfull(5) + 6*DEN[MDelta1,ME]^
+   2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*ME^2*
+   lambdaHatEDelta1bar*esfull(5) - 6*DEN[MDelta1,ME]^2*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(2) + 12
+   *DEN[MDelta1,ME]^2*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1*ME*lambdaEDelta1bar*esfull(5) - 6*DEN[MDelta1,ME]^2*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 6*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 6*DEN[MDelta1,ME]^2
+   *FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^2*
+   lambdaEDelta1bar^2*esfull(1) + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaHatEDelta1*ME^4*lambdaHatEDelta1bar*esfull(3) - 12*DEN[MDelta1
+   ,ME]^3*FourPi^(-2)*I*lambdaHatEDelta1*ME^4*lambdaHatEDelta1bar*
+   esfull(4) + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaHatEDelta1*ME^4*
+   lambdaHatEDelta1bar*esfull(6) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaHatEDelta1*ME^4*lambdaHatEDelta1bar^2*esfull(7) + 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaHatEDelta1*ME^4*lambdaEDelta1bar^2
+   *esfull(7) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaHatEDelta1^2*
+   ME^4*lambdaHatEDelta1bar*esfull(5) + 12*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*lambdaHatEDelta1^2*ME^4*lambdaHatEDelta1bar^2*
+   esfull(1) - 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaHatEDelta1^2*
+   ME^4*lambdaHatEDelta1bar^2*esfull(2) + 5*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*lambdaHatEDelta1^3*ME^4*lambdaHatEDelta1bar^3 + 6*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar*esfull(3) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   MDelta1*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*esfull(4) + 6*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar*esfull(6) + 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   MDelta1*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(7) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1*
+   lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar*esfull(5) + 12*DEN[MDelta1,
+   ME]^3*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar
+   *lambdaHatEDelta1bar*esfull(1) - 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   MDelta1*lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar
+   *esfull(2) + 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1*
+   lambdaHatEDelta1^3*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 
+   DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^3*ME^3*
+   lambdaEDelta1bar^3 - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*esfull(7) - 6*DEN[MDelta1,
+   ME]^3*FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(3) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^3*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(4) - 6*DEN[MDelta1,ME]^3
+   *FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(6) - 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^3*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7)
+    - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1^2*
+   ME*lambdaEDelta1bar*esfull(5) + 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   MDelta1^3*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*lambdaHatEDelta1bar
+   *esfull(1) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^3*
+   lambdaHatEDelta1^2*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2)
+    - 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1^3*ME
+   *lambdaEDelta1bar*lambdaHatEDelta1bar^2 - DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1^3*ME*lambdaEDelta1bar^3 - 6
+   *DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(3) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   MDelta1^4*lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(4) - 6*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(6) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   MDelta1^4*lambdaHatEDelta1*lambdaHatEDelta1bar^2*esfull(7) - 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1^2*
+   lambdaHatEDelta1bar*esfull(5) + 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   MDelta1^4*lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*esfull(1) - 12*
+   DEN[MDelta1,ME]^3*FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1^2*
+   lambdaHatEDelta1bar^2*esfull(2) - 5*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   MDelta1^4*lambdaHatEDelta1^3*lambdaHatEDelta1bar^3 - 12*DEN[MDelta1,
+   ME]^3*FourPi^(-2)*I*lambdaEDelta1*ME^4*lambdaEDelta1bar*esfull(4) + 
+   6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*ME^4*
+   lambdaEDelta1bar*esfull(6) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*ME^4*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) + 
+   12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1*
+   ME^4*lambdaEDelta1bar*esfull(5) + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1^2*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1*ME^3*lambdaHatEDelta1bar*esfull(3) - 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME^3*
+   lambdaHatEDelta1bar*esfull(4) + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1*ME^3*lambdaHatEDelta1bar*esfull(6) + 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME^3*
+   lambdaHatEDelta1bar^2*esfull(7) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I
+   *lambdaEDelta1*MDelta1*ME^3*lambdaEDelta1bar^2*esfull(7) + 24*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*
+   ME^3*lambdaHatEDelta1bar*esfull(5) + 12*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaHatEDelta1bar^2*esfull(1) - 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I
+   *lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^3*lambdaHatEDelta1bar^2*
+   esfull(2) + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1*ME^3*lambdaEDelta1bar^2*esfull(1) - 12*DEN[MDelta1,
+   ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar^2*esfull(2) + 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^3*lambdaHatEDelta1bar^3
+    + 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 6*
+   DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*ME^2*
+   lambdaEDelta1bar*esfull(3) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*ME^2*lambdaEDelta1bar*esfull(4) - 6*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*ME^2*
+   lambdaEDelta1bar*esfull(6) + 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) - 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^3*ME*lambdaHatEDelta1bar*esfull(3) + 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*ME*
+   lambdaHatEDelta1bar*esfull(4) - 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^3*ME*lambdaHatEDelta1bar*esfull(6) - 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*ME*
+   lambdaHatEDelta1bar^2*esfull(7) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I
+   *lambdaEDelta1*MDelta1^3*ME*lambdaEDelta1bar^2*esfull(7) - 24*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1
+   *ME*lambdaHatEDelta1bar*esfull(5) + 24*DEN[MDelta1,ME]^3*FourPi^(-2)
+   *I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*lambdaHatEDelta1bar^2
+   *esfull(1) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^3*lambdaHatEDelta1*ME*lambdaHatEDelta1bar^2*esfull(2) + 12*
+   DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar^2*esfull(1) - 6*DEN[MDelta1,ME]
+   ^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(2) - 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^3*lambdaHatEDelta1^2*ME*lambdaHatEDelta1bar^3
+    - 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*
+   lambdaHatEDelta1^2*ME*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 6*
+   DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*
+   lambdaEDelta1bar*esfull(3) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^4*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(7) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^4*lambdaHatEDelta1*lambdaEDelta1bar*esfull(5) + 24*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*lambdaHatEDelta1
+   *lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 6*DEN[MDelta1,ME]^
+   3*FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*lambdaHatEDelta1*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 3*DEN[MDelta1,ME]^3
+   *FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*lambdaHatEDelta1^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 12*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*lambdaEDelta1^2*ME^4*lambdaHatEDelta1bar*esfull(5) - 
+   12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1^2*ME^4*
+   lambdaEDelta1bar^2*esfull(2) + 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^2*lambdaHatEDelta1*ME^4*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*ME^3*lambdaEDelta1bar*esfull(5) + 6*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME^3*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 12*DEN[MDelta1,ME]^
+   3*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^3*lambdaEDelta1bar^3 - 
+   12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*ME^2*
+   lambdaHatEDelta1bar*esfull(5) + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(1) - 6*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*ME^2*
+   lambdaEDelta1bar^2*esfull(2) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^3*ME*lambdaEDelta1bar*esfull(5) + 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 6*DEN[MDelta1,ME]^3
+   *FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) - 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar^3 + 
+   12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^4*
+   lambdaEDelta1bar^2*esfull(1) - 3*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^4*lambdaHatEDelta1*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 5*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   lambdaEDelta1^3*ME^4*lambdaEDelta1bar^3 + DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1*ME^3*lambdaHatEDelta1bar^3 + 3
+   *DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1*ME^3*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^3*ME*lambdaHatEDelta1bar^3 - 3
+   *DEN[MDelta1,ME]^3*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^3*ME*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 5*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^4*lambdaEDelta1bar^3 + 6*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*ME^4*
+   lambdaHatEDelta1bar*esfull(3) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1*ME^4*lambdaHatEDelta1bar*esfull(4) + 
+   6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*
+   ME^4*lambdaHatEDelta1bar*esfull(6) + 12*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1*ME^4*
+   lambdaHatEDelta1bar^2*esfull(7) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I
+   *invepsilonbar*lambdaHatEDelta1*ME^4*lambdaEDelta1bar^2*esfull(7) + 
+   12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1^2*
+   ME^4*lambdaHatEDelta1bar*esfull(5) + 18*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1^2*ME^4*
+   lambdaHatEDelta1bar^2*esfull(1) - 36*DEN[MDelta1,ME]^3*FourPi^(-2)*I
+   *invepsilonbar*lambdaHatEDelta1^2*ME^4*lambdaHatEDelta1bar^2*
+   esfull(2) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaHatEDelta1^3*ME^4*lambdaHatEDelta1bar^3 + 6*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*invepsilonbar*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar*esfull(3) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   esfull(4) + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*MDelta1*
+   lambdaHatEDelta1*ME^3*lambdaEDelta1bar*esfull(6) + 24*DEN[MDelta1,ME
+   ]^3*FourPi^(-2)*I*invepsilonbar*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) + 12*DEN[MDelta1,ME]^
+   3*FourPi^(-2)*I*invepsilonbar*MDelta1*lambdaHatEDelta1^2*ME^3*
+   lambdaEDelta1bar*esfull(5) + 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 48*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1^3*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^2*lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*
+   esfull(7) + 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^2*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(1) - 18*
+   DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*MDelta1^2*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(2) - 6*DEN[MDelta1
+   ,ME]^3*FourPi^(-2)*I*invepsilonbar*MDelta1^3*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar*esfull(3) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(4) - 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(6) - 24*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*MDelta1^3*lambdaHatEDelta1
+   *ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) - 12*DEN[MDelta1,
+   ME]^3*FourPi^(-2)*I*invepsilonbar*MDelta1^3*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar*esfull(5) + 48*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^3*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^3*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) - 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^3*lambdaHatEDelta1^3*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^4*lambdaHatEDelta1*lambdaHatEDelta1bar*
+   esfull(3) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^4*lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(4) - 6*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*MDelta1^4*lambdaHatEDelta1
+   *lambdaHatEDelta1bar*esfull(6) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^4*lambdaHatEDelta1*lambdaHatEDelta1bar^2*
+   esfull(7) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^4*lambdaHatEDelta1^2*lambdaHatEDelta1bar*esfull(5) + 36*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*MDelta1^4*
+   lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*esfull(1) - 18*DEN[MDelta1,
+   ME]^3*FourPi^(-2)*I*invepsilonbar*MDelta1^4*lambdaHatEDelta1^2*
+   lambdaHatEDelta1bar^2*esfull(2) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I
+   *invepsilonbar*MDelta1^4*lambdaHatEDelta1^3*lambdaHatEDelta1bar^3 - 
+   12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*ME^4*
+   lambdaEDelta1bar*esfull(4) + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*ME^4*lambdaEDelta1bar*esfull(6) + 12*
+   DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*ME^4*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) + 12*DEN[MDelta1,ME]^
+   3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*lambdaHatEDelta1*ME^4*
+   lambdaEDelta1bar*esfull(5) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*lambdaHatEDelta1*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 48*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*lambdaHatEDelta1*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*lambdaHatEDelta1^2*ME^4*lambdaEDelta1bar
+   *lambdaHatEDelta1bar^2 + 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*ME^3*lambdaHatEDelta1bar*
+   esfull(3) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1*ME^3*lambdaHatEDelta1bar*esfull(4) + 6*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*ME^3
+   *lambdaHatEDelta1bar*esfull(6) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*ME^3*lambdaHatEDelta1bar^2*
+   esfull(7) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1*ME^3*lambdaEDelta1bar^2*esfull(7) + 24*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1*ME^3*lambdaHatEDelta1bar*esfull(5) + 24*DEN[MDelta1
+   ,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1*ME^3*lambdaHatEDelta1bar^2*esfull(1) - 48*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1*ME^3*lambdaHatEDelta1bar^2*esfull(2) + 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1*ME^3*lambdaEDelta1bar^2*esfull(1) - 42*DEN[MDelta1,
+   ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1*ME^3*lambdaEDelta1bar^2*esfull(2) + 18*DEN[MDelta1,
+   ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1^2*ME^3*lambdaHatEDelta1bar^3 + 18*DEN[MDelta1,ME]^3
+   *FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 6*
+   DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^2*ME^2*lambdaEDelta1bar*esfull(3) + 12*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^2*ME^2*
+   lambdaEDelta1bar*esfull(4) - 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^2*ME^2*lambdaEDelta1bar*
+   esfull(6) + 66*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 66*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 6*DEN[MDelta1,ME]^3
+   *FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^3*ME*
+   lambdaHatEDelta1bar*esfull(3) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^3*ME*lambdaHatEDelta1bar*
+   esfull(4) - 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^3*ME*lambdaHatEDelta1bar*esfull(6) - 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^3*ME
+   *lambdaHatEDelta1bar^2*esfull(7) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*
+   I*invepsilonbar*lambdaEDelta1*MDelta1^3*ME*lambdaEDelta1bar^2*
+   esfull(7) - 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*lambdaHatEDelta1bar*
+   esfull(5) + 48*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*lambdaHatEDelta1bar^2*
+   esfull(1) - 24*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*lambdaHatEDelta1bar^2*
+   esfull(2) + 42*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar^2*
+   esfull(1) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar^2*
+   esfull(2) - 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1*MDelta1^3*lambdaHatEDelta1^2*ME*lambdaHatEDelta1bar^3
+    - 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^3*lambdaHatEDelta1^2*ME*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 6*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^4*lambdaEDelta1bar*esfull(3) - 
+   12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^4*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) - 12*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^4*
+   lambdaHatEDelta1*lambdaEDelta1bar*esfull(5) + 48*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^4*lambdaHatEDelta1
+   *lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 12*DEN[MDelta1,ME]
+   ^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^4*
+   lambdaHatEDelta1*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 18
+   *DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^4*lambdaHatEDelta1^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2
+    + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   ME^4*lambdaHatEDelta1bar*esfull(5) - 24*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*ME^4*lambdaEDelta1bar^2*
+   esfull(2) + 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1^2*lambdaHatEDelta1*ME^4*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^2*MDelta1*ME^3*lambdaEDelta1bar*
+   esfull(5) + 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1^2*MDelta1*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(1) - 42*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1^2*MDelta1*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(2) + 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar^3 - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^2*MDelta1^2*ME^2*lambdaHatEDelta1bar*
+   esfull(5) + 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1^2*MDelta1^2*ME^2*lambdaHatEDelta1bar^2*esfull(1) - 18*
+   DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^2*ME^2*lambdaHatEDelta1bar^2*esfull(2) + 12*DEN[MDelta1,ME]^
+   3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^2*ME^2*
+   lambdaEDelta1bar^2*esfull(1) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^2*MDelta1^2*ME^2*lambdaEDelta1bar^2*
+   esfull(2) - 12*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1^2*MDelta1^3*ME*lambdaEDelta1bar*esfull(5) + 42*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^3*
+   ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 12*DEN[MDelta1,
+   ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^3*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 18*DEN[MDelta1,ME]^
+   3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^3*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 18*DEN[
+   MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^3*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar^3 + 24*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^4*
+   lambdaEDelta1bar^2*esfull(1) - 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^2*MDelta1^4*lambdaHatEDelta1*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 12*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*ME^4*lambdaEDelta1bar^3
+    + 18*DEN[MDelta1,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*
+   MDelta1*ME^3*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 18*DEN[MDelta1
+   ,ME]^3*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*MDelta1^3*ME*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 12*DEN[MDelta1,ME]^3*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*MDelta1^4*
+   lambdaEDelta1bar^3 + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaHatEDelta1^2*ME^6*lambdaHatEDelta1bar^2*esfull(1) - 18*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*lambdaHatEDelta1^2*ME^6*
+   lambdaHatEDelta1bar^2*esfull(2) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I
+   *lambdaHatEDelta1^3*ME^6*lambdaHatEDelta1bar^3 + 36*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME^5*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   MDelta1*lambdaHatEDelta1^2*ME^5*lambdaEDelta1bar*lambdaHatEDelta1bar
+   *esfull(2) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*MDelta1*
+   lambdaHatEDelta1^3*ME^5*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^2*ME^4*
+   lambdaEDelta1bar^2*esfull(1) - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   MDelta1^2*lambdaHatEDelta1^2*ME^4*lambdaEDelta1bar^2*esfull(2) + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^3*ME^4*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*
+   esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*MDelta1^4*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(2) + 18*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1^3*ME^2*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*MDelta1^5*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   MDelta1^5*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*lambdaHatEDelta1bar
+   *esfull(2) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*MDelta1^5*
+   lambdaHatEDelta1^3*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*MDelta1^6*lambdaHatEDelta1^2*
+   lambdaHatEDelta1bar^2*esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I
+   *MDelta1^6*lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*esfull(2) + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*MDelta1^6*lambdaHatEDelta1^3*
+   lambdaHatEDelta1bar^3 + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1*ME^6*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1*ME^6*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1^2*ME^6*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^5*lambdaHatEDelta1bar^2*
+   esfull(1) - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*MDelta1
+   *lambdaHatEDelta1*ME^5*lambdaHatEDelta1bar^2*esfull(2) + 18*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*
+   ME^5*lambdaEDelta1bar^2*esfull(1) - 36*DEN[MDelta1,ME]^4*FourPi^(-2)
+   *I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^5*lambdaEDelta1bar^2*
+   esfull(2) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*MDelta1
+   *lambdaHatEDelta1^2*ME^5*lambdaHatEDelta1bar^3 + 54*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^5*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 54*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^4*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 36*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^4*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 54*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1^2*ME^4*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1^2*ME^4*
+   lambdaEDelta1bar^3 + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME^3*lambdaEDelta1bar^2*
+   esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^3*lambdaHatEDelta1*ME^3*lambdaEDelta1bar^2*esfull(2) + 36*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*
+   lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1)
+    + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2)
+    + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^3 - 36*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar^2*esfull(1) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I
+   *lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*lambdaHatEDelta1bar^2*
+   esfull(2) - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^5*lambdaHatEDelta1*ME*lambdaEDelta1bar^2*esfull(1) + 18*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1
+   *ME*lambdaEDelta1bar^2*esfull(2) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*
+   I*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1^2*ME*
+   lambdaHatEDelta1bar^3 + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^5*lambdaHatEDelta1^2*ME*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^6*lambdaHatEDelta1*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^6*lambdaHatEDelta1*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^6*lambdaHatEDelta1^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1^2*ME^6*lambdaEDelta1bar^2*esfull(2) + 36*DEN[MDelta1,
+   ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*lambdaHatEDelta1*ME^6*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME^5*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*ME^5*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(2) + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1*lambdaHatEDelta1*ME^5*lambdaEDelta1bar*lambdaHatEDelta1bar^2
+    + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*
+   lambdaHatEDelta1*ME^5*lambdaEDelta1bar^3 + 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*ME^4*lambdaHatEDelta1bar^2*
+   esfull(1) - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^2*ME^4*lambdaHatEDelta1bar^2*esfull(2) + 18*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*ME^4*lambdaEDelta1bar^2*
+   esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^2*lambdaHatEDelta1*ME^4*lambdaHatEDelta1bar^3 + 54*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*
+   lambdaHatEDelta1*ME^4*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*ME^3*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 18*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^3*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^4*ME^2*lambdaHatEDelta1bar^2*esfull(1) + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^4*ME^2*
+   lambdaHatEDelta1bar^2*esfull(2) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I
+   *lambdaEDelta1^2*MDelta1^4*ME^2*lambdaEDelta1bar^2*esfull(2) + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^4*
+   lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar^3 + 54*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^4*lambdaHatEDelta1*ME^2*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^5*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^5*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(2) + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^5*lambdaHatEDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2
+    + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^5*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar^3 - 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^6*lambdaEDelta1bar^2*esfull(1)
+    + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^6*
+   lambdaHatEDelta1*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 18*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^3*ME^6*lambdaEDelta1bar^3
+    + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1*ME^5*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^2*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1^3*MDelta1^4*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   lambdaEDelta1^3*MDelta1^5*ME*lambdaEDelta1bar^2*lambdaHatEDelta1bar
+    + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^6*
+   lambdaEDelta1bar^3 + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1^2*ME^6*lambdaHatEDelta1bar^2*
+   esfull(1) - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*
+   lambdaHatEDelta1^2*ME^6*lambdaHatEDelta1bar^2*esfull(2) + 24*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaHatEDelta1^3*ME^6*
+   lambdaHatEDelta1bar^3 + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1^2*ME^5*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1^2*ME^5*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*MDelta1*lambdaHatEDelta1^3*ME^5*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^2*lambdaHatEDelta1^2*ME^4*lambdaEDelta1bar^2*
+   esfull(1) - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^2*lambdaHatEDelta1^2*ME^4*lambdaEDelta1bar^2*esfull(2) + 36*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*MDelta1^2*
+   lambdaHatEDelta1^3*ME^4*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 12*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*MDelta1^3*
+   lambdaHatEDelta1^3*ME^3*lambdaEDelta1bar^3 - 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*MDelta1^4*lambdaHatEDelta1^2*ME^2*
+   lambdaEDelta1bar^2*esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^4*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*
+   esfull(2) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^4*lambdaHatEDelta1^3*ME^2*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^5*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^5*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^5*lambdaHatEDelta1^3*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^6*lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*
+   esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*
+   MDelta1^6*lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*esfull(2) + 24*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*MDelta1^6*
+   lambdaHatEDelta1^3*lambdaHatEDelta1bar^3 + 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*lambdaHatEDelta1*ME^6*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 36*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*lambdaHatEDelta1*ME^6*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 54*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*lambdaHatEDelta1^2*ME^6*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1*
+   ME^5*lambdaHatEDelta1bar^2*esfull(1) - 36*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1*
+   ME^5*lambdaHatEDelta1bar^2*esfull(2) + 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1*
+   ME^5*lambdaEDelta1bar^2*esfull(1) - 36*DEN[MDelta1,ME]^4*FourPi^(-2)
+   *I*invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^5*
+   lambdaEDelta1bar^2*esfull(2) + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^5*
+   lambdaHatEDelta1bar^3 + 90*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^5*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 54*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1
+   *ME^4*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 36*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^2*
+   lambdaHatEDelta1*ME^4*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2)
+    + 90*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^2*lambdaHatEDelta1^2*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1^2*ME^4*
+   lambdaEDelta1bar^3 + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar^2*esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar^2*esfull(2) + 72*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1^2*ME^3*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^4*lambdaHatEDelta1
+   *ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 54*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^4*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2)
+    + 90*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^4*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^4*lambdaHatEDelta1^2*ME^2*
+   lambdaEDelta1bar^3 - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar^2*esfull(1) + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I
+   *invepsilonbar*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar^2*esfull(2) - 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I
+   *invepsilonbar*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(2) + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1^2*ME*
+   lambdaHatEDelta1bar^3 + 90*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^6*lambdaHatEDelta1
+   *lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 18*DEN[MDelta1,ME]
+   ^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^6*
+   lambdaHatEDelta1*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 54
+   *DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^6*lambdaHatEDelta1^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2
+    - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   ME^6*lambdaEDelta1bar^2*esfull(2) + 54*DEN[MDelta1,ME]^4*FourPi^(-2)
+   *I*invepsilonbar*lambdaEDelta1^2*lambdaHatEDelta1*ME^6*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 18*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1*ME^5*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 36*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1*ME^5*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 90*DEN[MDelta1,ME]^
+   4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1*
+   lambdaHatEDelta1*ME^5*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 54*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1*lambdaHatEDelta1*ME^5*lambdaEDelta1bar^3 + 18*DEN[MDelta1,ME
+   ]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^2*ME^4*
+   lambdaHatEDelta1bar^2*esfull(1) - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I
+   *invepsilonbar*lambdaEDelta1^2*MDelta1^2*ME^4*lambdaHatEDelta1bar^2*
+   esfull(2) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1^2*MDelta1^2*ME^4*lambdaEDelta1bar^2*esfull(1) + 36*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^2*lambdaHatEDelta1*ME^4*lambdaHatEDelta1bar^3 + 90*DEN[
+   MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^2*
+   lambdaHatEDelta1*ME^4*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^3*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^3*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 72*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^3*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^2*MDelta1^4*ME^2*lambdaHatEDelta1bar^2*
+   esfull(1) + 18*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*
+   lambdaEDelta1^2*MDelta1^4*ME^2*lambdaHatEDelta1bar^2*esfull(2) + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^4*ME^2*lambdaEDelta1bar^2*esfull(2) + 36*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^4*
+   lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar^3 + 90*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^4*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^5*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 18*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^5*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 90*
+   DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^5*lambdaHatEDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2
+    + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^5*lambdaHatEDelta1*ME*lambdaEDelta1bar^3 - 18*DEN[MDelta1,ME
+   ]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^6*
+   lambdaEDelta1bar^2*esfull(1) + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^2*MDelta1^6*lambdaHatEDelta1*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 24*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*ME^6*lambdaEDelta1bar^3
+    + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*
+   MDelta1*ME^5*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 36*DEN[MDelta1
+   ,ME]^4*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*MDelta1^2*ME^4*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 12*DEN[MDelta1,ME]^4*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*MDelta1^3*ME^3*
+   lambdaHatEDelta1bar^3 + 36*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^3*MDelta1^4*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 54*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^3*MDelta1^5*ME*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 24*DEN[MDelta1,ME]^4*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^3*MDelta1^6*lambdaEDelta1bar^3 + 12*DEN[
+   MDelta1,ME]^5*FourPi^(-2)*I*lambdaHatEDelta1^3*ME^8*
+   lambdaHatEDelta1bar^3 + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*MDelta1*
+   lambdaHatEDelta1^3*ME^7*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^3*ME^6*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 12*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1^3*ME^5*lambdaEDelta1bar^3
+    - 12*DEN[MDelta1,ME]^5*FourPi^(-2)*I*MDelta1^5*lambdaHatEDelta1^3*
+   ME^3*lambdaEDelta1bar^3 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   MDelta1^6*lambdaHatEDelta1^3*ME^2*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*MDelta1^7*
+   lambdaHatEDelta1^3*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 12*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*MDelta1^8*lambdaHatEDelta1^3*
+   lambdaHatEDelta1bar^3 + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1^2*ME^8*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^7*lambdaHatEDelta1bar^3
+    + 72*DEN[MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1^2*ME^7*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 72*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*
+   lambdaHatEDelta1^2*ME^6*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*
+   lambdaHatEDelta1^2*ME^6*lambdaEDelta1bar^3 + 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1^2*ME^5*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1^2*ME^3*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 72*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^6*lambdaHatEDelta1^2*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^6*lambdaHatEDelta1^2*ME^2*
+   lambdaEDelta1bar^3 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^7*lambdaHatEDelta1^2*ME*lambdaHatEDelta1bar^3
+    - 72*DEN[MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1*MDelta1^7*
+   lambdaHatEDelta1^2*ME*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1*MDelta1^8*
+   lambdaHatEDelta1^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*DEN[
+   MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1^2*lambdaHatEDelta1*ME^8*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 72*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^7*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^7*
+   lambdaEDelta1bar^3 + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^2*lambdaHatEDelta1*ME^6*
+   lambdaHatEDelta1bar^3 + 72*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^2*lambdaHatEDelta1*ME^6*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^3*lambdaHatEDelta1*ME^5*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^5*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^6*lambdaHatEDelta1*ME^2*
+   lambdaHatEDelta1bar^3 - 72*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^6*lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 72*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^7*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^7*lambdaHatEDelta1*ME*lambdaEDelta1bar^3 - 
+   36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^8*
+   lambdaHatEDelta1*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 12*DEN[
+   MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1^3*ME^8*lambdaEDelta1bar^3
+    + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1*ME^7*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^2*ME^6*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 12*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^3*MDelta1^3*ME^5*lambdaHatEDelta1bar^3 - 12*DEN[
+   MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^5*ME^3*
+   lambdaHatEDelta1bar^3 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^3*MDelta1^6*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   lambdaEDelta1^3*MDelta1^7*ME*lambdaEDelta1bar^2*lambdaHatEDelta1bar
+    - 12*DEN[MDelta1,ME]^5*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^8*
+   lambdaEDelta1bar^3 + 12*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaHatEDelta1^3*ME^8*lambdaHatEDelta1bar^3 + 36*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*MDelta1*
+   lambdaHatEDelta1^3*ME^7*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*MDelta1^2*
+   lambdaHatEDelta1^3*ME^6*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 12*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*MDelta1^3*
+   lambdaHatEDelta1^3*ME^5*lambdaEDelta1bar^3 - 12*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*invepsilonbar*MDelta1^5*lambdaHatEDelta1^3*ME^3*
+   lambdaEDelta1bar^3 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^6*lambdaHatEDelta1^3*ME^2*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^7*lambdaHatEDelta1^3*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 12*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*MDelta1^8*lambdaHatEDelta1^3*lambdaHatEDelta1bar^3 + 
+   36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   lambdaHatEDelta1^2*ME^8*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1^2*ME^7*lambdaHatEDelta1bar^3 + 72*DEN[MDelta1,ME]^5
+   *FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1^2*ME^7*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 72*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^2*lambdaHatEDelta1^2*ME^6*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1^2*ME^6*
+   lambdaEDelta1bar^3 + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1^2*ME^5*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^5*
+   lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 72*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*
+   MDelta1^6*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^6*lambdaHatEDelta1^2*ME^2*
+   lambdaEDelta1bar^3 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^7*lambdaHatEDelta1^2*ME*
+   lambdaHatEDelta1bar^3 - 72*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1*MDelta1^7*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1*MDelta1^8*
+   lambdaHatEDelta1^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*DEN[
+   MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   lambdaHatEDelta1*ME^8*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 72*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1*lambdaHatEDelta1*ME^7*lambdaEDelta1bar*lambdaHatEDelta1bar^2
+    + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1*lambdaHatEDelta1*ME^7*lambdaEDelta1bar^3 + 36*DEN[MDelta1,ME
+   ]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^2*
+   lambdaHatEDelta1*ME^6*lambdaHatEDelta1bar^3 + 72*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^2*
+   lambdaHatEDelta1*ME^6*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 36*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^3*lambdaHatEDelta1*ME^5*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^2*MDelta1^5*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^6*
+   lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar^3 - 72*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^6*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 72*
+   DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^7*lambdaHatEDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2
+    - 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*
+   MDelta1^7*lambdaHatEDelta1*ME*lambdaEDelta1bar^3 - 36*DEN[MDelta1,ME
+   ]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^2*MDelta1^8*
+   lambdaHatEDelta1*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 12*DEN[
+   MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*ME^8*
+   lambdaEDelta1bar^3 + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^3*MDelta1*ME^7*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 36*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^3*MDelta1^2*ME^6*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 12*DEN[MDelta1,ME]^5*FourPi^(-2)*I*
+   invepsilonbar*lambdaEDelta1^3*MDelta1^3*ME^5*lambdaHatEDelta1bar^3
+    - 12*DEN[MDelta1,ME]^5*FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*
+   MDelta1^5*ME^3*lambdaHatEDelta1bar^3 - 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*MDelta1^6*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*MDelta1^7*ME*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 12*DEN[MDelta1,ME]^5*
+   FourPi^(-2)*I*invepsilonbar*lambdaEDelta1^3*MDelta1^8*
+   lambdaEDelta1bar^3 - 12*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*
+   lambdaHatEDelta1^3*ME^8*lambdaHatEDelta1bar^3 - 36*DEN[MDelta1,ME]^5
+   *Log[ME^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^3*ME^7*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*Log[
+   ME^2]*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^3*ME^6*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 12*DEN[MDelta1,ME]^5*Log[
+   ME^2]*FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1^3*ME^5*
+   lambdaEDelta1bar^3 - 36*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1^2*ME^8*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I
+   *lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^7*lambdaHatEDelta1bar^3
+    - 72*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1*lambdaHatEDelta1^2*ME^7*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 72*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*lambdaHatEDelta1^2*ME^6*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I
+   *lambdaEDelta1*MDelta1^2*lambdaHatEDelta1^2*ME^6*lambdaEDelta1bar^3
+    - 36*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^3*lambdaHatEDelta1^2*ME^5*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 36*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*lambdaHatEDelta1*ME^8*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 72*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^7*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I
+   *lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^7*lambdaEDelta1bar^3 - 
+   36*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^2*lambdaHatEDelta1*ME^6*lambdaHatEDelta1bar^3 - 72*DEN[
+   MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*
+   lambdaHatEDelta1*ME^6*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 36*
+   DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*
+   lambdaHatEDelta1*ME^5*lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 12*
+   DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^3*ME^8*
+   lambdaEDelta1bar^3 - 36*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^3*MDelta1*ME^7*lambdaEDelta1bar^2*lambdaHatEDelta1bar
+    - 36*DEN[MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^3*
+   MDelta1^2*ME^6*lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 12*DEN[
+   MDelta1,ME]^5*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^3*ME^5
+   *lambdaHatEDelta1bar^3 + 12*DEN[MDelta1,ME]^5*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^5*lambdaHatEDelta1^3*ME^3*lambdaEDelta1bar^3
+    + 36*DEN[MDelta1,ME]^5*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^6*
+   lambdaHatEDelta1^3*ME^2*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 36*
+   DEN[MDelta1,ME]^5*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^7*
+   lambdaHatEDelta1^3*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 12*
+   DEN[MDelta1,ME]^5*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^8*
+   lambdaHatEDelta1^3*lambdaHatEDelta1bar^3 + 36*DEN[MDelta1,ME]^5*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1^2*
+   ME^3*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 72*DEN[MDelta1,ME]^5*
+   Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^6*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*
+   DEN[MDelta1,ME]^5*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^6*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^3 + 36*DEN[
+   MDelta1,ME]^5*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^7*
+   lambdaHatEDelta1^2*ME*lambdaHatEDelta1bar^3 + 72*DEN[MDelta1,ME]^5*
+   Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^7*
+   lambdaHatEDelta1^2*ME*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 36*
+   DEN[MDelta1,ME]^5*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^8*lambdaHatEDelta1^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2
+    + 36*DEN[MDelta1,ME]^5*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2
+   *MDelta1^5*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^5*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^6*lambdaHatEDelta1*ME^2*
+   lambdaHatEDelta1bar^3 + 72*DEN[MDelta1,ME]^5*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^6*lambdaHatEDelta1*ME^2*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 72*DEN[MDelta1,ME]^5*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^7*lambdaHatEDelta1*
+   ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^5*
+   Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^7*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar^3 + 36*DEN[MDelta1,ME]^5*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^8*lambdaHatEDelta1*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 12*DEN[MDelta1,ME]^5*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^5*ME^3*
+   lambdaHatEDelta1bar^3 + 36*DEN[MDelta1,ME]^5*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^6*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 36*DEN[MDelta1,ME]^5*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^7*ME*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 12*DEN[MDelta1,ME]^5*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^8*lambdaEDelta1bar^3 - 18*DEN[
+   MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1^2*ME^6*
+   lambdaHatEDelta1bar^2*esfull(1) + 18*DEN[MDelta1,ME]^4*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1^2*ME^6*lambdaHatEDelta1bar^2*
+   esfull(2) - 24*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaHatEDelta1^3*ME^6*lambdaHatEDelta1bar^3 - 36*DEN[MDelta1,ME]^4
+   *Log[ME^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME^5*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 36*DEN[MDelta1,ME]^
+   4*Log[ME^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME^5*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 54*DEN[MDelta1,ME]^
+   4*Log[ME^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^3*ME^5*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 18*DEN[MDelta1,ME]^4*Log[
+   ME^2]*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^2*ME^4*
+   lambdaEDelta1bar^2*esfull(1) + 18*DEN[MDelta1,ME]^4*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^2*ME^4*lambdaEDelta1bar^2*
+   esfull(2) - 36*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1^3*ME^4*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 6*
+   DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*MDelta1^3*
+   lambdaHatEDelta1^3*ME^3*lambdaEDelta1bar^3 - 18*DEN[MDelta1,ME]^4*
+   Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1*ME^6*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 36*DEN[MDelta1,ME]^
+   4*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1*ME^6*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 54*DEN[MDelta1,ME]^
+   4*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1^2*ME^6*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^4*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^5*
+   lambdaHatEDelta1bar^2*esfull(1) + 36*DEN[MDelta1,ME]^4*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^5*
+   lambdaHatEDelta1bar^2*esfull(2) - 18*DEN[MDelta1,ME]^4*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^5*
+   lambdaEDelta1bar^2*esfull(1) + 36*DEN[MDelta1,ME]^4*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^5*
+   lambdaEDelta1bar^2*esfull(2) - 54*DEN[MDelta1,ME]^4*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^5*
+   lambdaHatEDelta1bar^3 - 90*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I
+   *lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^5*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 54*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 36*DEN[MDelta1,ME]^4*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^4*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 90*DEN[MDelta1,ME]^
+   4*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1^2
+   *ME^4*lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 36*DEN[MDelta1,ME]^4*
+   Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1^2*
+   ME^4*lambdaEDelta1bar^3 - 18*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)
+   *I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME^3*lambdaEDelta1bar^2*
+   esfull(1) - 36*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^3*lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 18*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*ME^6*lambdaEDelta1bar^2*esfull(2) - 54*DEN[MDelta1,
+   ME]^4*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*lambdaHatEDelta1*ME^6*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 18*DEN[MDelta1,ME]^4*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME^5*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1)];
+    esfull(29)=G[18*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*ME^5*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(2) - 45*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^5*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 27*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I
+   *lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^5*lambdaEDelta1bar^3 - 
+   9*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^2*ME^4*lambdaHatEDelta1bar^2*esfull(1) + 9*DEN[MDelta1,ME]^4
+   *Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*ME^4*
+   lambdaHatEDelta1bar^2*esfull(2) - 9*DEN[MDelta1,ME]^4*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*ME^4*lambdaEDelta1bar^2*
+   esfull(1) - 18*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^2*lambdaHatEDelta1*ME^4*
+   lambdaHatEDelta1bar^3 - 45*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I
+   *lambdaEDelta1^2*MDelta1^2*lambdaHatEDelta1*ME^4*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 9*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^3*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(1) - 18*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^3*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 12*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I
+   *lambdaEDelta1^3*ME^6*lambdaEDelta1bar^3 - 27*DEN[MDelta1,ME]^4*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1*ME^5*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 18*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^3*MDelta1^2*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 3*DEN[MDelta1,ME]^4*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^3*MDelta1^3*ME^3*lambdaHatEDelta1bar^3 - 3*DEN[MDelta1
+   ,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1^3*
+   ME^3*lambdaEDelta1bar^3 + 9*DEN[MDelta1,ME]^4*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*
+   esfull(1) - 9*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1^4*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(2) - 18*
+   DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^4*
+   lambdaHatEDelta1^3*ME^2*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 18*
+   DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^5*
+   lambdaHatEDelta1^2*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1)
+    - 18*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^5*
+   lambdaHatEDelta1^2*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2)
+    - 27*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^5*
+   lambdaHatEDelta1^3*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 9*
+   DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^6*
+   lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*esfull(1) - 9*DEN[MDelta1,
+   ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^6*lambdaHatEDelta1^2*
+   lambdaHatEDelta1bar^2*esfull(2) - 12*DEN[MDelta1,ME]^4*Log[MDelta1^2
+   ]*FourPi^(-2)*I*MDelta1^6*lambdaHatEDelta1^3*lambdaHatEDelta1bar^3
+    - 9*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^3*lambdaHatEDelta1*ME^3*lambdaEDelta1bar^2*esfull(2) - 18*
+   DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^3*lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 18*DEN[MDelta1,ME]^4*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*lambdaHatEDelta1*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 27*DEN[MDelta1,ME]^
+   4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2)
+    - 45*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^4*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 18*DEN[MDelta1,ME]^4*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*lambdaHatEDelta1^2*ME^2*
+   lambdaEDelta1bar^3 + 18*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)
+   *I*lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*lambdaHatEDelta1bar^2
+   *esfull(1) - 18*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*lambdaHatEDelta1bar^2*
+   esfull(2) + 18*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*lambdaEDelta1bar^2*
+   esfull(1) - 9*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^5*lambdaHatEDelta1*ME*lambdaEDelta1bar^2*
+   esfull(2) - 27*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^5*lambdaHatEDelta1^2*ME*lambdaHatEDelta1bar^3
+    - 45*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^5*lambdaHatEDelta1^2*ME*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar + 18*DEN[MDelta1,ME]^4*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^6*lambdaHatEDelta1*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 9*DEN[MDelta1,ME]^4
+   *Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^6*
+   lambdaHatEDelta1*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 27
+   *DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^6*lambdaHatEDelta1^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2
+    - 9*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^3*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 18*
+   DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^3*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 9*DEN[MDelta1,ME]^4*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^4*ME^2*lambdaHatEDelta1bar^2*
+   esfull(1) - 9*DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^4*ME^2*lambdaHatEDelta1bar^2*esfull(2) - 9*
+   DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^4*ME^2*lambdaEDelta1bar^2*esfull(2) - 18*DEN[MDelta1,ME]^4*
+   Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^4*
+   lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar^3 - 45*DEN[MDelta1,ME]^4*
+   Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^4*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 18*
+   DEN[MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^5*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 9*DEN[
+   MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^5
+   *ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 45*DEN[MDelta1,
+   ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^5*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 27*DEN[
+   MDelta1,ME]^4*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^5
+   *lambdaHatEDelta1*ME*lambdaEDelta1bar^3 + 9*DEN[MDelta1,ME]^4*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^6*
+   lambdaEDelta1bar^2*esfull(1) - 27*DEN[MDelta1,ME]^4*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^6*lambdaHatEDelta1*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 3*DEN[MDelta1,ME]^4*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^3*ME^3*
+   lambdaHatEDelta1bar^3 - 18*DEN[MDelta1,ME]^4*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^4*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 27*DEN[MDelta1,ME]^4*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^5*ME*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 12*DEN[MDelta1,ME]^4*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^6*lambdaEDelta1bar^3 - 3*DEN[
+   MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*ME^4*
+   lambdaHatEDelta1bar*esfull(3) + 6*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1*ME^4*lambdaHatEDelta1bar*esfull(4) - 
+   3*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*ME^4*
+   lambdaHatEDelta1bar*esfull(6) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1*ME^4*lambdaHatEDelta1bar^2*esfull(7)
+    - 6*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*ME^4
+   *lambdaEDelta1bar^2*esfull(7) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1^2*ME^4*lambdaHatEDelta1bar*esfull(5)
+    - 9*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1^2*
+   ME^4*lambdaHatEDelta1bar^2*esfull(1) + 18*DEN[MDelta1,ME]^3*Log[ME^2
+   ]*FourPi^(-2)*I*lambdaHatEDelta1^2*ME^4*lambdaHatEDelta1bar^2*
+   esfull(2) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaHatEDelta1^3*ME^4*lambdaHatEDelta1bar^3 - 3*DEN[MDelta1,ME]^3*
+   Log[ME^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar*esfull(3) + 6*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   esfull(4) - 3*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*MDelta1*
+   lambdaHatEDelta1*ME^3*lambdaEDelta1bar*esfull(6) - 12*DEN[MDelta1,ME
+   ]^3*Log[ME^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) - 6*DEN[MDelta1,ME]^3
+   *Log[ME^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME^3*
+   lambdaEDelta1bar*esfull(5) - 12*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 24*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) - 9*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^3*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 3*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   MDelta1^2*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(1) + 6*
+   DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(2) - 3*DEN[MDelta1
+   ,ME]^3*Log[ME^2]*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^3*ME^2*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 6*DEN[MDelta1,ME]^3*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1*ME^4*lambdaEDelta1bar*esfull(4) - 
+   3*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*ME^4*
+   lambdaEDelta1bar*esfull(6) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(7) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1*ME^4*lambdaEDelta1bar*
+   esfull(5) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 24*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1*ME^4*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) - 9*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1^2*ME^4*lambdaEDelta1bar
+   *lambdaHatEDelta1bar^2 - 3*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I
+   *lambdaEDelta1*MDelta1*ME^3*lambdaHatEDelta1bar*esfull(3) + 6*DEN[
+   MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME^3*
+   lambdaHatEDelta1bar*esfull(4) - 3*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME^3*lambdaHatEDelta1bar*
+   esfull(6) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1*ME^3*lambdaHatEDelta1bar^2*esfull(7) - 6*DEN[
+   MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME^3*
+   lambdaEDelta1bar^2*esfull(7) - 12*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaHatEDelta1bar*esfull(5) - 12*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaHatEDelta1bar^2*esfull(1) + 24*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaHatEDelta1bar^2*esfull(2) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar^2*esfull(1) + 18*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^3*
+   lambdaEDelta1bar^2*esfull(2) - 9*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^3*
+   lambdaHatEDelta1bar^3 - 12*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I
+   *lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^3*lambdaEDelta1bar^2*
+   lambdaHatEDelta1bar - 3*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*ME^2*lambdaEDelta1bar*esfull(3) - 6*DEN[
+   MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) - 6*DEN[MDelta1,ME]^3
+   *Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   ME^2*lambdaEDelta1bar*esfull(5) - 15*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 18*DEN[MDelta1,ME]^
+   3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 12*DEN[MDelta1
+   ,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 3*
+   DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^3 - 3*DEN[MDelta1,ME]^3*
+   Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(1) - 3*DEN[MDelta1,ME]^3*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 6*DEN[MDelta1,ME]^3*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*ME^4*lambdaHatEDelta1bar*
+   esfull(5) + 12*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*ME^4*lambdaEDelta1bar^2*esfull(2) - 9*DEN[MDelta1,ME
+   ]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*lambdaHatEDelta1*ME^4*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 6*DEN[MDelta1,ME]^3*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME^3*lambdaEDelta1bar*
+   esfull(5) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(1) + 18*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(2) - 12*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 - 9*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1*lambdaHatEDelta1*ME^3*lambdaEDelta1bar^3 - 3
+   *DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2
+   *ME^2*lambdaHatEDelta1bar^2*esfull(1) + 6*DEN[MDelta1,ME]^3*Log[ME^2
+   ]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*ME^2*lambdaHatEDelta1bar^2
+   *esfull(2) - 6*DEN[MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(1) - 3*DEN[
+   MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*
+   lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar^3 - 12*DEN[MDelta1,ME]^3*
+   Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*lambdaHatEDelta1*
+   ME^2*lambdaEDelta1bar^2*lambdaHatEDelta1bar - 3*DEN[MDelta1,ME]^3*
+   Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 3*DEN[MDelta1,ME]^3
+   *Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*lambdaHatEDelta1*
+   ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2 - 6*DEN[MDelta1,ME]^3*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1^3*ME^4*lambdaEDelta1bar^3 - 9*DEN[
+   MDelta1,ME]^3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1*ME^3*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 3*DEN[MDelta1,ME]^3*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^2*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar^2 + 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*
+   esfull(7) - 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1^2*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(1) + 3*
+   DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(2) + 3*DEN[MDelta1
+   ,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^3*
+   ME^2*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 3*DEN[MDelta1,ME]^3*
+   Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar*esfull(3) - 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(4) + 3*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1^3*lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(6) + 12*DEN[
+   MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^3*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7)
+    + 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^3*
+   lambdaHatEDelta1^2*ME*lambdaEDelta1bar*esfull(5) - 24*DEN[MDelta1,ME
+   ]^3*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 12*DEN[MDelta1,ME]^
+   3*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 9*DEN[MDelta1,ME]^3
+   *Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^3*lambdaHatEDelta1^3*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 3*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(3) - 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1*lambdaHatEDelta1bar*
+   esfull(4) + 3*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1^4*lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(6) + 6*DEN[
+   MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^4*
+   lambdaHatEDelta1*lambdaHatEDelta1bar^2*esfull(7) + 6*DEN[MDelta1,ME]
+   ^3*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1^2*
+   lambdaHatEDelta1bar*esfull(5) - 18*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^4*lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*
+   esfull(1) + 9*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1^4*lambdaHatEDelta1^2*lambdaHatEDelta1bar^2*esfull(2) + 6*
+   DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^4*
+   lambdaHatEDelta1^3*lambdaHatEDelta1bar^3 + 3*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME^3
+   *lambdaEDelta1bar^2*esfull(2) + 3*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1^2*ME^3*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar - 6*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*ME^2*
+   lambdaEDelta1bar*esfull(4) + 3*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*ME^2*lambdaEDelta1bar*
+   esfull(6) + 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(7) + 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^2*lambdaEDelta1bar*
+   esfull(5) - 18*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 15*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 12*DEN[MDelta1,ME]^
+   3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*
+   lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 3*
+   DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^2*lambdaHatEDelta1^2*ME^2*lambdaEDelta1bar^3 + 3*DEN[MDelta1
+   ,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*ME*
+   lambdaHatEDelta1bar*esfull(3) - 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*ME*lambdaHatEDelta1bar*
+   esfull(4) + 3*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^3*ME*lambdaHatEDelta1bar*esfull(6) + 6*DEN[
+   MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*
+   ME*lambdaHatEDelta1bar^2*esfull(7) + 6*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*ME*
+   lambdaEDelta1bar^2*esfull(7) + 12*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar*esfull(5) - 24*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar^2*esfull(1) + 12*DEN[MDelta1,ME]^3*Log[MDelta1^2
+   ]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar^2*esfull(2) - 18*DEN[MDelta1,ME]^3*Log[MDelta1^2
+   ]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(1) + 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(2) + 9*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1^2*ME*
+   lambdaHatEDelta1bar^3 + 12*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^3*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 3*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*lambdaEDelta1bar*
+   esfull(3) + 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^4*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(7) + 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^4*lambdaHatEDelta1*lambdaEDelta1bar*esfull(5)
+    - 24*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^4*lambdaHatEDelta1*lambdaEDelta1bar*lambdaHatEDelta1bar*
+   esfull(1) + 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^4*lambdaHatEDelta1*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 9*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^4*lambdaHatEDelta1^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 3*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME^3*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 3*DEN[MDelta1,ME]^3
+   *Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*
+   lambdaHatEDelta1*ME^3*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 6*
+   DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^2*ME^2*lambdaHatEDelta1bar*esfull(5) - 6*DEN[MDelta1,ME]^3*
+   Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*ME^2*
+   lambdaHatEDelta1bar^2*esfull(1) + 3*DEN[MDelta1,ME]^3*Log[MDelta1^2]
+   *FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*ME^2*lambdaHatEDelta1bar^2*
+   esfull(2) + 6*DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1^2*MDelta1^2*ME^2*lambdaEDelta1bar^2*esfull(2) + 3*DEN[
+   MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2
+   *lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar^3 + 12*DEN[MDelta1,ME]^3*
+   Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*
+   lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*lambdaHatEDelta1bar + 6*
+   DEN[MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1^3*ME*lambdaEDelta1bar*esfull(5) - 18*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) + 6*DEN[MDelta1,ME]^3
+   *Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 12*DEN[MDelta1,ME]^
+   3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 9*DEN[
+   MDelta1,ME]^3*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^3
+   *lambdaHatEDelta1*ME*lambdaEDelta1bar^3 - 12*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^4*
+   lambdaEDelta1bar^2*esfull(1) + 9*DEN[MDelta1,ME]^3*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^4*lambdaHatEDelta1*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 3*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^2*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar^2 + 9*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^3*ME*
+   lambdaEDelta1bar^2*lambdaHatEDelta1bar + 6*DEN[MDelta1,ME]^3*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^3*MDelta1^4*
+   lambdaEDelta1bar^3 - 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*
+   MDelta1^(-2)*lambdaHatEDelta1*ME^4*lambdaEDelta1bar^2*esfull(7) - 3*
+   DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-1)*ME^3*
+   lambdaEDelta1bar*esfull(10) + 2*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1^(-1)*ME^3*lambdaEDelta1bar*esfull(13) + DEN[
+   MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-1)*ME^3*
+   lambdaEDelta1bar*esfull(14) + 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1^(-1)*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*
+   esfull(12) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*
+   MDelta1^(-1)*lambdaHatEDelta1*ME^3*lambdaEDelta1bar*esfull(15) - 3*
+   DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*ME^2*lambdaHatEDelta1bar*
+   esfull(10) + 2*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*ME^2*
+   lambdaHatEDelta1bar*esfull(13) + DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*ME^2*lambdaHatEDelta1bar*esfull(14) - 2*DEN[MDelta1,ME
+   ]^2*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*ME^2*esfull(8) - DEN[
+   MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*ME^2*
+   esfull(9) + 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*
+   lambdaHatEDelta1*ME^2*esfull(11) + 6*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar*esfull(4) - 
+   6*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*ME^2*
+   lambdaHatEDelta1bar*esfull(6) + 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar*esfull(12)
+    - 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*ME^2
+   *lambdaHatEDelta1bar*esfull(15) - 6*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1*ME^2*lambdaHatEDelta1bar^2*esfull(7)
+    - 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*ME^2
+   *lambdaEDelta1bar^2*esfull(7) - 6*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1^2*ME^2*lambdaHatEDelta1bar*esfull(5)
+    + 9*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1^2*
+   ME^2*lambdaHatEDelta1bar^2*esfull(2) + 3*DEN[MDelta1,ME]^2*Log[ME^2]
+   *FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(4) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*MDelta1*
+   lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(6) - 6*DEN[MDelta1,ME]^2
+   *Log[ME^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) - 3*DEN[MDelta1,ME]^2
+   *Log[ME^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar*esfull(5) + 6*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-2)*ME^4*lambdaEDelta1bar*
+   esfull(4) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^(-2)*ME^4*lambdaEDelta1bar*esfull(15) - 2*DEN[
+   MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*
+   ME^3*esfull(8) - DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^(-1)*ME^3*esfull(9) + 3*DEN[MDelta1,ME]^2*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME^3*esfull(11) + 3*
+   DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)
+   *ME^3*lambdaHatEDelta1bar*esfull(12) - 3*DEN[MDelta1,ME]^2*Log[ME^2]
+   *FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME^3*lambdaHatEDelta1bar*
+   esfull(15) + 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*ME^2*lambdaEDelta1bar*esfull(4) - 3*DEN[MDelta1,ME]^2*
+   Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*ME^2*lambdaEDelta1bar*
+   esfull(6) + 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*ME^2*lambdaEDelta1bar*esfull(12) - 3*DEN[MDelta1,ME]^2
+   *Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(7) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1*ME^2*lambdaEDelta1bar*
+   esfull(5) + 6*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*lambdaHatEDelta1*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(2) + 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*lambdaHatEDelta1bar*esfull(4)
+    - 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1
+   *ME*lambdaHatEDelta1bar*esfull(6) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*lambdaHatEDelta1bar^2*
+   esfull(7) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1*ME*lambdaEDelta1bar^2*esfull(7) - 6*DEN[
+   MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1*
+   lambdaHatEDelta1*ME*lambdaHatEDelta1bar*esfull(5) + 6*DEN[MDelta1,ME
+   ]^2*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*
+   ME*lambdaHatEDelta1bar^2*esfull(2) + 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(2) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(7) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   lambdaEDelta1bar*esfull(5) + 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) - 3*DEN[MDelta1,ME]^2
+   *Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^(-2)*ME^4*
+   lambdaHatEDelta1bar*esfull(5) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*ME^2*lambdaHatEDelta1bar*esfull(5) + 3
+   *DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*ME^2*
+   lambdaEDelta1bar^2*esfull(2) - 3*DEN[MDelta1,ME]^2*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME*lambdaEDelta1bar*esfull(5)
+    + 3*DEN[MDelta1,ME]^2*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1^2*
+   MDelta1*ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(2) + 3*DEN[
+   MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1*ME*
+   lambdaEDelta1bar*esfull(10) - 2*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1*ME*lambdaEDelta1bar*esfull(13) - DEN[MDelta1,
+   ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1*ME*lambdaEDelta1bar*
+   esfull(14) - 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1*lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(3) + 3*DEN[
+   MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*
+   ME*lambdaEDelta1bar*esfull(4) - 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(12) + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1*lambdaHatEDelta1*ME*lambdaEDelta1bar*esfull(15) - 6*DEN[
+   MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1*
+   ME*lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) - 3*DEN[MDelta1,ME
+   ]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME*
+   lambdaEDelta1bar*esfull(5) + 6*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1*lambdaHatEDelta1^2*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1bar*esfull(10) - 2*DEN[
+   MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1bar*esfull(13) - DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1bar*esfull(14) + 2*DEN[
+   MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1*esfull(8) + DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1*esfull(9) - 3*DEN[MDelta1,
+   ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1*
+   esfull(11) - 6*DEN[MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1^2*lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(3) + 6*DEN[
+   MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(4) - 3*DEN[MDelta1,ME]^2
+   *Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(12) + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1*lambdaHatEDelta1bar*
+   esfull(15) - 6*DEN[MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1^2*lambdaHatEDelta1*lambdaHatEDelta1bar^2*esfull(7) - 6*DEN[
+   MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^2*
+   lambdaHatEDelta1^2*lambdaHatEDelta1bar*esfull(5) + 9*DEN[MDelta1,ME]
+   ^2*Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^2*lambdaHatEDelta1^2*
+   lambdaHatEDelta1bar^2*esfull(1) + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]
+   *FourPi^(-2)*I*lambdaEDelta1*ME^2*lambdaEDelta1bar*esfull(15) - 3*
+   DEN[MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*ME^2*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(7) - 3*DEN[MDelta1,ME]^2
+   *Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1*ME^2*
+   lambdaEDelta1bar*esfull(5) + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*lambdaHatEDelta1*ME^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 2*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*esfull(8) + DEN[MDelta1,ME]^2
+   *Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*esfull(9) - 3
+   *DEN[MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1*ME*esfull(11) - 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*lambdaHatEDelta1bar*esfull(3)
+    + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1*ME*lambdaHatEDelta1bar*esfull(4) - 3*DEN[MDelta1,ME]^2*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*
+   lambdaHatEDelta1bar*esfull(12) + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*lambdaHatEDelta1bar*
+   esfull(15) - 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1*ME*lambdaHatEDelta1bar^2*esfull(7) - 3*DEN[
+   MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1*ME*
+   lambdaEDelta1bar^2*esfull(7) - 6*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar*esfull(5) + 6*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaHatEDelta1bar^2*esfull(1) + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]
+   *FourPi^(-2)*I*lambdaEDelta1*MDelta1*lambdaHatEDelta1*ME*
+   lambdaEDelta1bar^2*esfull(1) - 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaEDelta1bar*esfull(3) - 3
+   *DEN[MDelta1,ME]^2*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^2*lambdaEDelta1bar*esfull(12) - 3*DEN[MDelta1,ME]^2*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(7) - 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   lambdaEDelta1bar*esfull(5) + 6*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^2*lambdaHatEDelta1*
+   lambdaEDelta1bar*lambdaHatEDelta1bar*esfull(1) - 3*DEN[MDelta1,ME]^2
+   *Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME*
+   lambdaEDelta1bar*esfull(5) + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1*ME*lambdaEDelta1bar*
+   lambdaHatEDelta1bar*esfull(1) + 3*DEN[MDelta1,ME]^2*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^2*lambdaEDelta1bar^2*esfull(1)
+    - 3*DEN[MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-3)*ME^3*
+   lambdaEDelta1bar*esfull(10) + 3*DEN[MDelta1,ME]*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1^(-3)*ME^3*lambdaEDelta1bar*esfull(18) + 3*DEN[
+   MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-3)*lambdaHatEDelta1*
+   ME^3*lambdaEDelta1bar*esfull(12) - 3*DEN[MDelta1,ME]*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1^(-2)*ME^2*esfull(16) + 3*DEN[MDelta1,ME]*Log[
+   ME^2]*FourPi^(-2)*I*MDelta1^(-2)*ME^2*lambdaHatEDelta1bar*esfull(18)
+    + 3*DEN[MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-2)*
+   lambdaHatEDelta1*ME^2*esfull(17) - 3*DEN[MDelta1,ME]*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1^(-2)*lambdaHatEDelta1*ME^2*lambdaEDelta1bar^2*
+   esfull(7) + 2*DEN[MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-1)*
+   ME*lambdaEDelta1bar*esfull(13) + DEN[MDelta1,ME]*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1^(-1)*ME*lambdaEDelta1bar*esfull(14) - 3*DEN[
+   MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-1)*lambdaHatEDelta1*ME
+   *lambdaEDelta1bar*esfull(15) + 2*DEN[MDelta1,ME]*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1bar*esfull(13) + DEN[MDelta1,ME]*Log[
+   ME^2]*FourPi^(-2)*I*lambdaHatEDelta1bar*esfull(14) + 3*DEN[MDelta1,
+   ME]*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*esfull(11) - 3*DEN[
+   MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(6) - 3*DEN[MDelta1,ME]*Log[ME^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(15) - 2*
+   DEN[MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*
+   ME^3*esfull(8) - DEN[MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^(-3)*ME^3*esfull(9) + 3*DEN[MDelta1,ME]*Log[
+   ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME^3*esfull(17) + 3*
+   DEN[MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*
+   ME^3*lambdaHatEDelta1bar*esfull(12) + 3*DEN[MDelta1,ME]*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-2)*ME^2*lambdaEDelta1bar*
+   esfull(4) + 3*DEN[MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^(-2)*ME^2*lambdaEDelta1bar*esfull(12) - 3*DEN[MDelta1,ME]*
+   Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-2)*ME^2*
+   lambdaEDelta1bar*esfull(15) + 3*DEN[MDelta1,ME]*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME*esfull(11) - 3*DEN[
+   MDelta1,ME]*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME*
+   lambdaHatEDelta1bar*esfull(15) - 3*DEN[MDelta1,ME]*Log[ME^2]*
+   FourPi^(-2)*I*lambdaEDelta1^2*MDelta1^(-2)*ME^2*lambdaHatEDelta1bar*
+   esfull(5) - 3*DEN[MDelta1,ME]*Log[MDelta1^2]*FourPi^(-2)*I*
+   MDelta1^(-1)*ME*lambdaEDelta1bar*esfull(18) + 3*DEN[MDelta1,ME]*Log[
+   MDelta1^2]*FourPi^(-2)*I*esfull(16) - 3*DEN[MDelta1,ME]*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaHatEDelta1bar*esfull(10) - 3*DEN[
+   MDelta1,ME]*Log[MDelta1^2]*FourPi^(-2)*I*lambdaHatEDelta1bar*
+   esfull(18) - 2*DEN[MDelta1,ME]*Log[MDelta1^2]*FourPi^(-2)*I*
+   lambdaHatEDelta1*esfull(8) - DEN[MDelta1,ME]*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1*esfull(9) - 3*DEN[MDelta1,ME]*Log[
+   MDelta1^2]*FourPi^(-2)*I*lambdaHatEDelta1*esfull(17) + 3*DEN[MDelta1
+   ,ME]*Log[MDelta1^2]*FourPi^(-2)*I*lambdaHatEDelta1*
+   lambdaHatEDelta1bar*esfull(3) + 3*DEN[MDelta1,ME]*Log[MDelta1^2]*
+   FourPi^(-2)*I*lambdaHatEDelta1*lambdaHatEDelta1bar*esfull(12) - 3*
+   DEN[MDelta1,ME]*Log[MDelta1^2]*FourPi^(-2)*I*lambdaEDelta1*
+   MDelta1^(-1)*ME*esfull(17) - 3*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-3)*
+   ME*lambdaEDelta1bar*esfull(10) + 3*Log[ME^2]*FourPi^(-2)*I*
+   MDelta1^(-3)*ME*lambdaEDelta1bar*esfull(18) + 3*Log[ME^2]*
+   FourPi^(-2)*I*MDelta1^(-3)*lambdaHatEDelta1*ME*lambdaEDelta1bar*
+   esfull(12) - 3*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-2)*esfull(16) + 3*
+   Log[ME^2]*FourPi^(-2)*I*MDelta1^(-2)*lambdaHatEDelta1bar*esfull(18)
+    + 3*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-2)*lambdaHatEDelta1*
+   esfull(17) + 3*Log[ME^2]*FourPi^(-2)*I*MDelta1^(-1)*ME^(-1)*
+   lambdaEDelta1bar*esfull(18) + 3*Log[ME^2]*FourPi^(-2)*I*ME^(-2)*
+   esfull(19) - 2*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME
+   *esfull(8) - Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME*
+   esfull(9) + 3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME*
+   esfull(17) + 3*Log[ME^2]*FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-3)*ME
+   *lambdaHatEDelta1bar*esfull(12) + 3*Log[ME^2]*FourPi^(-2)*I*
+   lambdaEDelta1*MDelta1^(-2)*lambdaEDelta1bar*esfull(12) + 3*Log[ME^2]
+   *FourPi^(-2)*I*lambdaEDelta1*MDelta1^(-1)*ME^(-1)*esfull(17) + 2*
+   Log[MDelta1^2]*FourPi^(-2)*I*MDelta1^(-2)*esfull(20) + Log[MDelta1^2
+   ]*FourPi^(-2)*I*MDelta1^(-2)*esfull(21)];
+

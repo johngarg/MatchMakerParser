@@ -1,0 +1,9 @@
+diags:=[
+ 
+(+1)*
+ cpol(Wi(-1,p1))*
+ cpol(Wi(-3,p2))*
+ cpol(Wi(-5,p3))*
+
+ v3(Wi(-1,p1),Wi(-3,p2),Wi(-5,p3)),
+NULL]:

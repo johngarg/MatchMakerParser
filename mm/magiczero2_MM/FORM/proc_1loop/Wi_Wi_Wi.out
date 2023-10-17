@@ -1,0 +1,39 @@
+    esfull(1)=G[4*p2.p2*p2.pol1*pol2.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 4*p2.p2*p2.pol2*pol1.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 16*p2.p2*p2.pol3*pol1.pol2*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 13*p2.p2*p3.pol1*pol2.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 17*p2.p2*p3.pol2*pol1.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 8*p2.p2*p3.pol3*pol1.pol2*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 9*p2.p3*p2.pol1*pol2.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - p2.p3*p2.pol2*pol1.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 16*p2.p3*p2.pol3*pol1.pol2*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 9*p2.p3*p3.pol1*pol2.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 16*p2.p3*p3.pol2*pol1.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + p2.p3*p3.pol3*pol1.pol2*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 8*p2.pol1*p2.pol2*p2.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 4*p2.pol1*p2.pol2*p3.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - p2.pol1*p2.pol3*p3.pol2*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 13*p2.pol1*p3.p3*pol2.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 9*p2.pol1*p3.pol2*p3.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 20*p2.pol1*pol2.pol3*sSS*FourPi^(-2)*I*invepsilonbar*
+   g2^3 + 9*p2.pol2*p2.pol3*p3.pol1*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 8*p2.pol2*p3.p3*pol1.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 4*p2.pol2*p3.pol1*p3.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 20*p2.pol2*pol1.pol3*sSS*FourPi^(-2)*I*invepsilonbar*
+   g2^3 - 17*p2.pol3*p3.p3*pol1.pol2*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + p2.pol3*p3.pol1*p3.pol2*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 40*p2.pol3*pol1.pol2*sSS*FourPi^(-2)*I*invepsilonbar*
+   g2^3 - 4*p3.p3*p3.pol1*pol2.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) + 16*p3.p3*p3.pol2*pol1.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 4*p3.p3*p3.pol3*pol1.pol2*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 8*p3.pol1*p3.pol2*p3.pol3*sSS^3*FourPi^(-2)*I*g2^3*
+   MDelta1^(-2) - 20*p3.pol1*pol2.pol3*sSS*FourPi^(-2)*I*invepsilonbar*
+   g2^3 + 40*p3.pol2*pol1.pol3*sSS*FourPi^(-2)*I*invepsilonbar*g2^3 - 
+   20*p3.pol3*pol1.pol2*sSS*FourPi^(-2)*I*invepsilonbar*g2^3 - 20*Log[
+   MDelta1^2]*p2.pol1*pol2.pol3*sSS*FourPi^(-2)*I*g2^3 - 20*Log[
+   MDelta1^2]*p2.pol2*pol1.pol3*sSS*FourPi^(-2)*I*g2^3 + 40*Log[
+   MDelta1^2]*p2.pol3*pol1.pol2*sSS*FourPi^(-2)*I*g2^3 + 20*Log[
+   MDelta1^2]*p3.pol1*pol2.pol3*sSS*FourPi^(-2)*I*g2^3 - 40*Log[
+   MDelta1^2]*p3.pol2*pol1.pol3*sSS*FourPi^(-2)*I*g2^3 + 20*Log[
+   MDelta1^2]*p3.pol3*pol1.pol2*sSS*FourPi^(-2)*I*g2^3];
+

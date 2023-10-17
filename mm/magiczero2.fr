@@ -1,0 +1,197 @@
+(*** Warning:
+        The Lagrangian produced is only valid for:
+            - One-loop matching of multiple fermions
+            - One-loop matching of models with only one scalar field
+ ***)
+            
+M$ModelName = "GranadaN_GranadaDelta1";
+
+M$Information =
+{ Date -> "2023-08-14" };
+
+(* Sextet not defined in SM model file *)
+IndexRange[Index[Sextet]] = Range[6];
+IndexStyle[Sextet, x];
+AddGaugeRepresentation[SU3C -> {T6, Sextet}];
+
+M$Parameters =
+{ MN == 
+  { ParameterType -> Internal
+  , Description -> "GranadaN mass"
+  }
+, lambdaNDelta1 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Description -> "Coupling lambdaNDelta1 of lambdaNDelta1()*GranadaN(-s0)*GranadaDelta1(s0,i0)*Phi(i1)*Eps(-i1,-i0) interaction"
+  }
+, lambdaN ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Generation]}
+  , Description -> "Coupling lambdaN of lambdaN(-g0)*GranadaN(-s0)*LL(s0,i0,g0)*Eps(-i0,-i1)*Phi(i1) interaction"
+  }
+, lambdaDelta1 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Generation]}
+  , Description -> "Coupling lambdaDelta1 of lambdaDelta1(-g0)*GranadaDelta1(-s0,-i0)*LR(s0,g0)*Phi(i0) interaction"
+  }
+, lambdaHatNDelta1 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Description -> "Coupling lambdaHatNDelta1 of lambdaHatNDelta1()*GranadaN(-s0)*GranadaDelta1(s0,i0)*Phi(i1)*Eps(-i0,-i1) interaction"
+  }
+, MDelta1 == 
+  { ParameterType -> Internal
+  , Description -> "GranadaDelta1 mass"
+  }
+, EpsSU3 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Colour], Index[Colour], Index[Colour]}
+  , Description -> "Three-index epsilon symbol for contracting colour triplets into the antitriplet irrep."
+  }
+, Eps4 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[SU24], Index[SU24]}
+  , Description -> "SU(2) product for two quadruplets. Defined in 1711.10391."
+  }
+, T2244 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> False
+  , Indices -> {Index[SU2D], Index[SU2D], Index[SU24], Index[SU24]}
+  , Description -> "Clebsch-Gordan coefficients to multiply 2* x 2* x 4 x 4 for SU(2). Gotten from GroupMath."
+  }
+, T6 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Gluon], Index[Sextet], Index[Sextet]}
+  , Description -> "SU(3) generators in the sextet representation. See Appendix A.3 of 0909.2666."
+  }
+, K6 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Sextet], Index[Colour], Index[Colour]}
+  , Description -> "Matrices for contracting 3x3 into a 6 fo SU(3). See Appendix A.2 of 0909.2666."
+  }
+, C2224 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[SU2D], Index[SU2D], Index[SU2D], Index[SU24]}
+  , Description -> "Matrices for contracting 2x2x2x4 of SU(2). Defined as: sigma(I,i,-j)*C(Q,-I,-k)*Eps(-Q, -R) from 1711.10391."
+  }
+, C344 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[SU2W], Index[SU24], Index[SU24]}
+  , Description -> "Matrices for contracting 4x4x3 of SU(2). Gotten from `RepMatrices[SU2, {3}]` from GroupMath."
+  }
+};
+
+M$ClassesDescription =
+{ F[202] == 
+  { ClassName -> GranadaNR
+  , Mass -> MN
+  , Width -> 0
+  , SelfConjugate -> True
+  , Unphysical -> True
+  , Definitions -> {GranadaNR[s0_] :> right[GranadaN[s0]]}
+  }
+, F[201] == 
+  { ClassName -> GranadaNL
+  , Mass -> MN
+  , Width -> 0
+  , SelfConjugate -> True
+  , Unphysical -> True
+  , Definitions -> {GranadaNL[s0_] :> left[GranadaN[s0]]}
+  }
+, F[200] == 
+  { ClassName -> GranadaN
+  , Mass -> MN
+  , Width -> 0
+  , SelfConjugate -> True
+  , FullName -> "heavy"
+  }
+, F[205] == 
+  { ClassName -> GranadaDelta1R
+  , Mass -> MDelta1
+  , Width -> 0
+  , SelfConjugate -> False
+  , QuantumNumbers -> {Y -> -1/2}
+  , Indices -> {Index[SU2D]}
+  , Unphysical -> True
+  , Definitions -> {GranadaDelta1R[s0_,i0_] :> right[GranadaDelta1[s0,i0]]}
+  }
+, F[204] == 
+  { ClassName -> GranadaDelta1L
+  , Mass -> MDelta1
+  , Width -> 0
+  , SelfConjugate -> False
+  , QuantumNumbers -> {Y -> -1/2}
+  , Indices -> {Index[SU2D]}
+  , Unphysical -> True
+  , Definitions -> {GranadaDelta1L[s0_,i0_] :> left[GranadaDelta1[s0,i0]]}
+  }
+, F[203] == 
+  { ClassName -> GranadaDelta1
+  , Mass -> MDelta1
+  , Width -> 0
+  , SelfConjugate -> False
+  , QuantumNumbers -> {Y -> -1/2}
+  , Indices -> {Index[SU2D]}
+  , FullName -> "heavy"
+  }
+};
+
+(********************* The Lagrangian *********************)
+
+gotoBFM =
+{ G[a__] -> G[a] + GQuantum[a]
+, Wi[a__] -> Wi[a] + WiQuantum[a]
+, B[a__] -> B[a] + BQuantum[a] 
+};
+
+LFreeGranadaN :=
+Block[
+  {mu}
+  ,
+  1/2 I GranadaNbar.Ga[mu].DC[GranadaN, mu] - 1/2 MN GranadaNbar.GranadaN
+]/.gotoBFM;
+
+LFreeGranadaDelta1 :=
+Block[
+  {mu}
+  ,
+  I GranadaDelta1bar.Ga[mu].DC[GranadaDelta1, mu] - MDelta1 GranadaDelta1bar.GranadaDelta1
+]/.gotoBFM;
+
+LlambdaN :=
+Block[
+  {i0,s0,g0,i1}
+  ,
+  lambdaN[g0] anti[GranadaNR][s0].LL[s0,i0,g0] Eps[i0,i1] Phi[i1]
+];
+
+LlambdaDelta1 :=
+Block[
+  {i0,s0,g0}
+  ,
+  lambdaDelta1[g0] anti[GranadaDelta1L][s0,i0].LR[s0,g0] Phi[i0]
+];
+
+LlambdaNDelta1 :=
+Block[
+  {i0,s0,i1}
+  ,
+  lambdaNDelta1 anti[CC[GranadaNR]][s0].GranadaDelta1R[s0,i0] Phi[i1] Eps[i1,i0]
+];
+
+LlambdaHatNDelta1 :=
+Block[
+  {i0,s0,i1}
+  ,
+  lambdaHatNDelta1 anti[GranadaNR][s0].GranadaDelta1L[s0,i0] Phi[i1] Eps[i0,i1]
+];
+
+Ltot := LSM + LFreeGranadaN + LFreeGranadaDelta1 + LlambdaN + HC[LlambdaN] + LlambdaDelta1 + HC[LlambdaDelta1] + LlambdaNDelta1 + HC[LlambdaNDelta1] + LlambdaHatNDelta1 + HC[LlambdaHatNDelta1];

@@ -1,0 +1,7 @@
+problist = {{1, {"eRbar", "eR", "eR", "eRbar"}, 
+      {((-I)*gam[y97, y95]*gam[y99, y93]*yS2[fl93, fl99]*yS2bar[fl95, fl97])/
+         MS2^2 - (I*gam[y99, y93]*gam[y97, FIVE, y95]*yS2[fl93, fl99]*
+          yS2bar[fl95, fl97])/MS2^2 + (I*gam[y97, y95]*gam[y99, FIVE, y93]*
+          yS2[fl93, fl99]*yS2bar[fl95, fl97])/MS2^2 + 
+        (I*gam[y97, FIVE, y95]*gam[y99, FIVE, y93]*yS2[fl93, fl99]*
+          yS2bar[fl95, fl97])/MS2^2}}}

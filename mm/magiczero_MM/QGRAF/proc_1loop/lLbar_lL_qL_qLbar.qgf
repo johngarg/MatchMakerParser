@@ -1,0 +1,32 @@
+diags:=[
+ 
+(-1)*
+ cpol(lLbar(-1,p1))*
+ cpol(lL(-3,p2))*
+ cpol(qL(-5,p3))*
+ cpol(qLbar(-7,p4))*
+
+ prop(GranadaN(1,-k1),GranadaNbar(2,-k1))*
+ prop(Phi(3,-k1+p1),Phibar(4,-k1+p1))*
+ prop(Phi(5,-k1-p2),Phibar(6,-k1-p2))*
+ prop(uR(7,-k1+p1+p3),uRbar(8,-k1+p1+p3))*
+ v3(lLbar(-1,p1),GranadaN(1,-k1),Phibar(4,k1-p1))*
+ v3(GranadaNbar(2,k1),lL(-3,p2),Phi(5,-k1-p2))*
+ v3(uRbar(8,k1-p1-p3),qL(-5,p3),Phi(3,-k1+p1))*
+ v3(qLbar(-7,p4),uR(7,-k1+p1+p3),Phibar(6,k1+p2)),
+ 
+(-1)*
+ cpol(lLbar(-1,p1))*
+ cpol(lL(-3,p2))*
+ cpol(qL(-5,p3))*
+ cpol(qLbar(-7,p4))*
+
+ prop(GranadaN(1,-k1),GranadaNbar(2,-k1))*
+ prop(Phi(3,-k1+p1),Phibar(4,-k1+p1))*
+ prop(Phi(5,-k1-p2),Phibar(6,-k1-p2))*
+ prop(dR(7,k1-p1-p4),dRbar(8,k1-p1-p4))*
+ v3(lLbar(-1,p1),GranadaN(1,-k1),Phibar(4,k1-p1))*
+ v3(GranadaNbar(2,k1),lL(-3,p2),Phi(5,-k1-p2))*
+ v3(qLbar(-7,p4),dR(7,k1-p1-p4),Phi(3,-k1+p1))*
+ v3(dRbar(8,-k1+p1+p4),qL(-5,p3),Phibar(6,k1+p2)),
+NULL]:

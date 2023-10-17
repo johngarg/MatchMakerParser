@@ -1,0 +1,452 @@
+diags:=[
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(lL(1,k1),lLbar(2,k1))*
+ prop(eR(3,k1-p1),eRbar(4,k1-p1))*
+ prop(eR(5,k1+p3),eRbar(6,k1+p3))*
+ prop(GranadaDelta1(7,k1-p1-p4),GranadaDelta1bar(8,k1-p1-p4))*
+ v3(lLbar(2,-k1),eR(3,k1-p1),Phi(-1,p1))*
+ v3(eRbar(6,-k1-p3),lL(1,k1),Phibar(-5,p3))*
+ v3(eRbar(4,-k1+p1),GranadaDelta1(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(8,-k1+p1+p4),eR(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(lL(1,k1),lLbar(2,k1))*
+ prop(eR(3,k1-p1),eRbar(4,k1-p1))*
+ prop(GranadaE(5,k1+p3),GranadaEbar(6,k1+p3))*
+ prop(lL(7,k1-p1-p4),lLbar(8,k1-p1-p4))*
+ v3(lLbar(2,-k1),eR(3,k1-p1),Phi(-1,p1))*
+ v3(GranadaEbar(6,-k1-p3),lL(1,k1),Phibar(-5,p3))*
+ v3(eRbar(4,-k1+p1),lL(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(lLbar(8,-k1+p1+p4),GranadaE(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(lL(1,k1),lLbar(2,k1))*
+ prop(eR(3,k1-p1),eRbar(4,k1-p1))*
+ prop(GranadaE(5,k1+p3),GranadaEbar(6,k1+p3))*
+ prop(GranadaDelta1(7,k1-p1-p4),GranadaDelta1bar(8,k1-p1-p4))*
+ v3(lLbar(2,-k1),eR(3,k1-p1),Phi(-1,p1))*
+ v3(GranadaEbar(6,-k1-p3),lL(1,k1),Phibar(-5,p3))*
+ v3(eRbar(4,-k1+p1),GranadaDelta1(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(8,-k1+p1+p4),GranadaE(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(lL(1,k1),lLbar(2,k1))*
+ prop(GranadaE(3,k1-p1),GranadaEbar(4,k1-p1))*
+ prop(eR(5,k1+p3),eRbar(6,k1+p3))*
+ prop(lL(7,k1-p1-p4),lLbar(8,k1-p1-p4))*
+ v3(lLbar(2,-k1),GranadaE(3,k1-p1),Phi(-1,p1))*
+ v3(eRbar(6,-k1-p3),lL(1,k1),Phibar(-5,p3))*
+ v3(GranadaEbar(4,-k1+p1),lL(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(lLbar(8,-k1+p1+p4),eR(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(lL(1,k1),lLbar(2,k1))*
+ prop(GranadaE(3,k1-p1),GranadaEbar(4,k1-p1))*
+ prop(eR(5,k1+p3),eRbar(6,k1+p3))*
+ prop(GranadaDelta1(7,k1-p1-p4),GranadaDelta1bar(8,k1-p1-p4))*
+ v3(lLbar(2,-k1),GranadaE(3,k1-p1),Phi(-1,p1))*
+ v3(eRbar(6,-k1-p3),lL(1,k1),Phibar(-5,p3))*
+ v3(GranadaEbar(4,-k1+p1),GranadaDelta1(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(8,-k1+p1+p4),eR(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(lL(1,k1),lLbar(2,k1))*
+ prop(GranadaE(3,k1-p1),GranadaEbar(4,k1-p1))*
+ prop(GranadaE(5,k1+p3),GranadaEbar(6,k1+p3))*
+ prop(lL(7,k1-p1-p4),lLbar(8,k1-p1-p4))*
+ v3(lLbar(2,-k1),GranadaE(3,k1-p1),Phi(-1,p1))*
+ v3(GranadaEbar(6,-k1-p3),lL(1,k1),Phibar(-5,p3))*
+ v3(GranadaEbar(4,-k1+p1),lL(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(lLbar(8,-k1+p1+p4),GranadaE(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(lL(1,k1),lLbar(2,k1))*
+ prop(GranadaE(3,k1-p1),GranadaEbar(4,k1-p1))*
+ prop(GranadaE(5,k1+p3),GranadaEbar(6,k1+p3))*
+ prop(GranadaDelta1(7,k1-p1-p4),GranadaDelta1bar(8,k1-p1-p4))*
+ v3(lLbar(2,-k1),GranadaE(3,k1-p1),Phi(-1,p1))*
+ v3(GranadaEbar(6,-k1-p3),lL(1,k1),Phibar(-5,p3))*
+ v3(GranadaEbar(4,-k1+p1),GranadaDelta1(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(8,-k1+p1+p4),GranadaE(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(eR(1,-k1),eRbar(2,-k1))*
+ prop(lL(3,-k1+p1),lLbar(4,-k1+p1))*
+ prop(lL(5,-k1-p3),lLbar(6,-k1-p3))*
+ prop(GranadaE(7,-k1+p1+p4),GranadaEbar(8,-k1+p1+p4))*
+ v3(lLbar(4,k1-p1),eR(1,-k1),Phi(-1,p1))*
+ v3(eRbar(2,k1),lL(5,-k1-p3),Phibar(-5,p3))*
+ v3(GranadaEbar(8,k1-p1-p4),lL(3,-k1+p1),Phibar(-7,p4))*
+ v3(lLbar(6,k1+p3),GranadaE(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(eR(1,-k1),eRbar(2,-k1))*
+ prop(lL(3,-k1+p1),lLbar(4,-k1+p1))*
+ prop(GranadaDelta1(5,-k1-p3),GranadaDelta1bar(6,-k1-p3))*
+ prop(eR(7,-k1+p1+p4),eRbar(8,-k1+p1+p4))*
+ v3(lLbar(4,k1-p1),eR(1,-k1),Phi(-1,p1))*
+ v3(eRbar(2,k1),GranadaDelta1(5,-k1-p3),Phibar(-5,p3))*
+ v3(eRbar(8,k1-p1-p4),lL(3,-k1+p1),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(6,k1+p3),eR(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(eR(1,-k1),eRbar(2,-k1))*
+ prop(lL(3,-k1+p1),lLbar(4,-k1+p1))*
+ prop(GranadaDelta1(5,-k1-p3),GranadaDelta1bar(6,-k1-p3))*
+ prop(GranadaE(7,-k1+p1+p4),GranadaEbar(8,-k1+p1+p4))*
+ v3(lLbar(4,k1-p1),eR(1,-k1),Phi(-1,p1))*
+ v3(eRbar(2,k1),GranadaDelta1(5,-k1-p3),Phibar(-5,p3))*
+ v3(GranadaEbar(8,k1-p1-p4),lL(3,-k1+p1),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(6,k1+p3),GranadaE(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(eR(1,-k1),eRbar(2,-k1))*
+ prop(GranadaDelta1(3,-k1+p1),GranadaDelta1bar(4,-k1+p1))*
+ prop(lL(5,-k1-p3),lLbar(6,-k1-p3))*
+ prop(eR(7,-k1+p1+p4),eRbar(8,-k1+p1+p4))*
+ v3(GranadaDelta1bar(4,k1-p1),eR(1,-k1),Phi(-1,p1))*
+ v3(eRbar(2,k1),lL(5,-k1-p3),Phibar(-5,p3))*
+ v3(eRbar(8,k1-p1-p4),GranadaDelta1(3,-k1+p1),Phibar(-7,p4))*
+ v3(lLbar(6,k1+p3),eR(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(eR(1,-k1),eRbar(2,-k1))*
+ prop(GranadaDelta1(3,-k1+p1),GranadaDelta1bar(4,-k1+p1))*
+ prop(lL(5,-k1-p3),lLbar(6,-k1-p3))*
+ prop(GranadaE(7,-k1+p1+p4),GranadaEbar(8,-k1+p1+p4))*
+ v3(GranadaDelta1bar(4,k1-p1),eR(1,-k1),Phi(-1,p1))*
+ v3(eRbar(2,k1),lL(5,-k1-p3),Phibar(-5,p3))*
+ v3(GranadaEbar(8,k1-p1-p4),GranadaDelta1(3,-k1+p1),Phibar(-7,p4))*
+ v3(lLbar(6,k1+p3),GranadaE(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(eR(1,-k1),eRbar(2,-k1))*
+ prop(GranadaDelta1(3,-k1+p1),GranadaDelta1bar(4,-k1+p1))*
+ prop(GranadaDelta1(5,-k1-p3),GranadaDelta1bar(6,-k1-p3))*
+ prop(eR(7,-k1+p1+p4),eRbar(8,-k1+p1+p4))*
+ v3(GranadaDelta1bar(4,k1-p1),eR(1,-k1),Phi(-1,p1))*
+ v3(eRbar(2,k1),GranadaDelta1(5,-k1-p3),Phibar(-5,p3))*
+ v3(eRbar(8,k1-p1-p4),GranadaDelta1(3,-k1+p1),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(6,k1+p3),eR(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(eR(1,-k1),eRbar(2,-k1))*
+ prop(GranadaDelta1(3,-k1+p1),GranadaDelta1bar(4,-k1+p1))*
+ prop(GranadaDelta1(5,-k1-p3),GranadaDelta1bar(6,-k1-p3))*
+ prop(GranadaE(7,-k1+p1+p4),GranadaEbar(8,-k1+p1+p4))*
+ v3(GranadaDelta1bar(4,k1-p1),eR(1,-k1),Phi(-1,p1))*
+ v3(eRbar(2,k1),GranadaDelta1(5,-k1-p3),Phibar(-5,p3))*
+ v3(GranadaEbar(8,k1-p1-p4),GranadaDelta1(3,-k1+p1),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(6,k1+p3),GranadaE(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaDelta1(1,k1),GranadaDelta1bar(2,k1))*
+ prop(eR(3,k1-p1),eRbar(4,k1-p1))*
+ prop(eR(5,k1+p3),eRbar(6,k1+p3))*
+ prop(lL(7,k1-p1-p4),lLbar(8,k1-p1-p4))*
+ v3(GranadaDelta1bar(2,-k1),eR(3,k1-p1),Phi(-1,p1))*
+ v3(eRbar(6,-k1-p3),GranadaDelta1(1,k1),Phibar(-5,p3))*
+ v3(eRbar(4,-k1+p1),lL(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(lLbar(8,-k1+p1+p4),eR(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaDelta1(1,k1),GranadaDelta1bar(2,k1))*
+ prop(eR(3,k1-p1),eRbar(4,k1-p1))*
+ prop(eR(5,k1+p3),eRbar(6,k1+p3))*
+ prop(GranadaDelta1(7,k1-p1-p4),GranadaDelta1bar(8,k1-p1-p4))*
+ v3(GranadaDelta1bar(2,-k1),eR(3,k1-p1),Phi(-1,p1))*
+ v3(eRbar(6,-k1-p3),GranadaDelta1(1,k1),Phibar(-5,p3))*
+ v3(eRbar(4,-k1+p1),GranadaDelta1(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(8,-k1+p1+p4),eR(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaDelta1(1,k1),GranadaDelta1bar(2,k1))*
+ prop(eR(3,k1-p1),eRbar(4,k1-p1))*
+ prop(GranadaE(5,k1+p3),GranadaEbar(6,k1+p3))*
+ prop(lL(7,k1-p1-p4),lLbar(8,k1-p1-p4))*
+ v3(GranadaDelta1bar(2,-k1),eR(3,k1-p1),Phi(-1,p1))*
+ v3(GranadaEbar(6,-k1-p3),GranadaDelta1(1,k1),Phibar(-5,p3))*
+ v3(eRbar(4,-k1+p1),lL(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(lLbar(8,-k1+p1+p4),GranadaE(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaDelta1(1,k1),GranadaDelta1bar(2,k1))*
+ prop(eR(3,k1-p1),eRbar(4,k1-p1))*
+ prop(GranadaE(5,k1+p3),GranadaEbar(6,k1+p3))*
+ prop(GranadaDelta1(7,k1-p1-p4),GranadaDelta1bar(8,k1-p1-p4))*
+ v3(GranadaDelta1bar(2,-k1),eR(3,k1-p1),Phi(-1,p1))*
+ v3(GranadaEbar(6,-k1-p3),GranadaDelta1(1,k1),Phibar(-5,p3))*
+ v3(eRbar(4,-k1+p1),GranadaDelta1(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(8,-k1+p1+p4),GranadaE(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaDelta1(1,k1),GranadaDelta1bar(2,k1))*
+ prop(GranadaE(3,k1-p1),GranadaEbar(4,k1-p1))*
+ prop(eR(5,k1+p3),eRbar(6,k1+p3))*
+ prop(lL(7,k1-p1-p4),lLbar(8,k1-p1-p4))*
+ v3(GranadaDelta1bar(2,-k1),GranadaE(3,k1-p1),Phi(-1,p1))*
+ v3(eRbar(6,-k1-p3),GranadaDelta1(1,k1),Phibar(-5,p3))*
+ v3(GranadaEbar(4,-k1+p1),lL(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(lLbar(8,-k1+p1+p4),eR(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaDelta1(1,k1),GranadaDelta1bar(2,k1))*
+ prop(GranadaE(3,k1-p1),GranadaEbar(4,k1-p1))*
+ prop(eR(5,k1+p3),eRbar(6,k1+p3))*
+ prop(GranadaDelta1(7,k1-p1-p4),GranadaDelta1bar(8,k1-p1-p4))*
+ v3(GranadaDelta1bar(2,-k1),GranadaE(3,k1-p1),Phi(-1,p1))*
+ v3(eRbar(6,-k1-p3),GranadaDelta1(1,k1),Phibar(-5,p3))*
+ v3(GranadaEbar(4,-k1+p1),GranadaDelta1(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(8,-k1+p1+p4),eR(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaDelta1(1,k1),GranadaDelta1bar(2,k1))*
+ prop(GranadaE(3,k1-p1),GranadaEbar(4,k1-p1))*
+ prop(GranadaE(5,k1+p3),GranadaEbar(6,k1+p3))*
+ prop(lL(7,k1-p1-p4),lLbar(8,k1-p1-p4))*
+ v3(GranadaDelta1bar(2,-k1),GranadaE(3,k1-p1),Phi(-1,p1))*
+ v3(GranadaEbar(6,-k1-p3),GranadaDelta1(1,k1),Phibar(-5,p3))*
+ v3(GranadaEbar(4,-k1+p1),lL(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(lLbar(8,-k1+p1+p4),GranadaE(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaDelta1(1,k1),GranadaDelta1bar(2,k1))*
+ prop(GranadaE(3,k1-p1),GranadaEbar(4,k1-p1))*
+ prop(GranadaE(5,k1+p3),GranadaEbar(6,k1+p3))*
+ prop(GranadaDelta1(7,k1-p1-p4),GranadaDelta1bar(8,k1-p1-p4))*
+ v3(GranadaDelta1bar(2,-k1),GranadaE(3,k1-p1),Phi(-1,p1))*
+ v3(GranadaEbar(6,-k1-p3),GranadaDelta1(1,k1),Phibar(-5,p3))*
+ v3(GranadaEbar(4,-k1+p1),GranadaDelta1(7,k1-p1-p4),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(8,-k1+p1+p4),GranadaE(5,k1+p3),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaE(1,-k1),GranadaEbar(2,-k1))*
+ prop(lL(3,-k1+p1),lLbar(4,-k1+p1))*
+ prop(lL(5,-k1-p3),lLbar(6,-k1-p3))*
+ prop(eR(7,-k1+p1+p4),eRbar(8,-k1+p1+p4))*
+ v3(lLbar(4,k1-p1),GranadaE(1,-k1),Phi(-1,p1))*
+ v3(GranadaEbar(2,k1),lL(5,-k1-p3),Phibar(-5,p3))*
+ v3(eRbar(8,k1-p1-p4),lL(3,-k1+p1),Phibar(-7,p4))*
+ v3(lLbar(6,k1+p3),eR(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaE(1,-k1),GranadaEbar(2,-k1))*
+ prop(lL(3,-k1+p1),lLbar(4,-k1+p1))*
+ prop(lL(5,-k1-p3),lLbar(6,-k1-p3))*
+ prop(GranadaE(7,-k1+p1+p4),GranadaEbar(8,-k1+p1+p4))*
+ v3(lLbar(4,k1-p1),GranadaE(1,-k1),Phi(-1,p1))*
+ v3(GranadaEbar(2,k1),lL(5,-k1-p3),Phibar(-5,p3))*
+ v3(GranadaEbar(8,k1-p1-p4),lL(3,-k1+p1),Phibar(-7,p4))*
+ v3(lLbar(6,k1+p3),GranadaE(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaE(1,-k1),GranadaEbar(2,-k1))*
+ prop(lL(3,-k1+p1),lLbar(4,-k1+p1))*
+ prop(GranadaDelta1(5,-k1-p3),GranadaDelta1bar(6,-k1-p3))*
+ prop(eR(7,-k1+p1+p4),eRbar(8,-k1+p1+p4))*
+ v3(lLbar(4,k1-p1),GranadaE(1,-k1),Phi(-1,p1))*
+ v3(GranadaEbar(2,k1),GranadaDelta1(5,-k1-p3),Phibar(-5,p3))*
+ v3(eRbar(8,k1-p1-p4),lL(3,-k1+p1),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(6,k1+p3),eR(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaE(1,-k1),GranadaEbar(2,-k1))*
+ prop(lL(3,-k1+p1),lLbar(4,-k1+p1))*
+ prop(GranadaDelta1(5,-k1-p3),GranadaDelta1bar(6,-k1-p3))*
+ prop(GranadaE(7,-k1+p1+p4),GranadaEbar(8,-k1+p1+p4))*
+ v3(lLbar(4,k1-p1),GranadaE(1,-k1),Phi(-1,p1))*
+ v3(GranadaEbar(2,k1),GranadaDelta1(5,-k1-p3),Phibar(-5,p3))*
+ v3(GranadaEbar(8,k1-p1-p4),lL(3,-k1+p1),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(6,k1+p3),GranadaE(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaE(1,-k1),GranadaEbar(2,-k1))*
+ prop(GranadaDelta1(3,-k1+p1),GranadaDelta1bar(4,-k1+p1))*
+ prop(lL(5,-k1-p3),lLbar(6,-k1-p3))*
+ prop(eR(7,-k1+p1+p4),eRbar(8,-k1+p1+p4))*
+ v3(GranadaDelta1bar(4,k1-p1),GranadaE(1,-k1),Phi(-1,p1))*
+ v3(GranadaEbar(2,k1),lL(5,-k1-p3),Phibar(-5,p3))*
+ v3(eRbar(8,k1-p1-p4),GranadaDelta1(3,-k1+p1),Phibar(-7,p4))*
+ v3(lLbar(6,k1+p3),eR(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaE(1,-k1),GranadaEbar(2,-k1))*
+ prop(GranadaDelta1(3,-k1+p1),GranadaDelta1bar(4,-k1+p1))*
+ prop(lL(5,-k1-p3),lLbar(6,-k1-p3))*
+ prop(GranadaE(7,-k1+p1+p4),GranadaEbar(8,-k1+p1+p4))*
+ v3(GranadaDelta1bar(4,k1-p1),GranadaE(1,-k1),Phi(-1,p1))*
+ v3(GranadaEbar(2,k1),lL(5,-k1-p3),Phibar(-5,p3))*
+ v3(GranadaEbar(8,k1-p1-p4),GranadaDelta1(3,-k1+p1),Phibar(-7,p4))*
+ v3(lLbar(6,k1+p3),GranadaE(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaE(1,-k1),GranadaEbar(2,-k1))*
+ prop(GranadaDelta1(3,-k1+p1),GranadaDelta1bar(4,-k1+p1))*
+ prop(GranadaDelta1(5,-k1-p3),GranadaDelta1bar(6,-k1-p3))*
+ prop(eR(7,-k1+p1+p4),eRbar(8,-k1+p1+p4))*
+ v3(GranadaDelta1bar(4,k1-p1),GranadaE(1,-k1),Phi(-1,p1))*
+ v3(GranadaEbar(2,k1),GranadaDelta1(5,-k1-p3),Phibar(-5,p3))*
+ v3(eRbar(8,k1-p1-p4),GranadaDelta1(3,-k1+p1),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(6,k1+p3),eR(7,-k1+p1+p4),Phi(-3,p2)),
+ 
+(-1)*
+ cpol(Phi(-1,p1))*
+ cpol(Phi(-3,p2))*
+ cpol(Phibar(-5,p3))*
+ cpol(Phibar(-7,p4))*
+
+ prop(GranadaE(1,-k1),GranadaEbar(2,-k1))*
+ prop(GranadaDelta1(3,-k1+p1),GranadaDelta1bar(4,-k1+p1))*
+ prop(GranadaDelta1(5,-k1-p3),GranadaDelta1bar(6,-k1-p3))*
+ prop(GranadaE(7,-k1+p1+p4),GranadaEbar(8,-k1+p1+p4))*
+ v3(GranadaDelta1bar(4,k1-p1),GranadaE(1,-k1),Phi(-1,p1))*
+ v3(GranadaEbar(2,k1),GranadaDelta1(5,-k1-p3),Phibar(-5,p3))*
+ v3(GranadaEbar(8,k1-p1-p4),GranadaDelta1(3,-k1+p1),Phibar(-7,p4))*
+ v3(GranadaDelta1bar(6,k1+p3),GranadaE(7,-k1+p1+p4),Phi(-3,p2)),
+NULL]:

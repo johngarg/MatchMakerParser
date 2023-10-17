@@ -1,0 +1,46 @@
+    esfull(1)=lambdaDelta1[fl97]*lambdaDelta1bar[fl99];
+    esfull(2)=G[18*gam[y99,FIVE,p2,p3,pol3,y97]*sSS^2*FourPi^(-2)*I*g1*
+   MDelta1^(-2)*esfull(1) + 48*gam[y99,FIVE,p2,y97]*p2.pol3*sSS^2*
+   FourPi^(-2)*I*g1*MDelta1^(-2)*esfull(1) + 6*gam[y99,FIVE,p2,y97]*
+   p3.pol3*sSS^2*FourPi^(-2)*I*g1*MDelta1^(-2)*esfull(1) + 42*gam[y99,
+   FIVE,p3,y97]*p2.pol3*sSS^2*FourPi^(-2)*I*g1*MDelta1^(-2)*esfull(1)
+    + 7*gam[y99,FIVE,p3,y97]*p3.pol3*sSS^2*FourPi^(-2)*I*g1*
+   MDelta1^(-2)*esfull(1) + 6*gam[y99,FIVE,p3,y97]*p3.pol3*sSS^2*
+   FourPi^(-2)*I*invepsilonbar*g1*MDelta1^(-2)*esfull(1) - 6*gam[y99,
+   FIVE,p3,y97]*Log[MDelta1^2]*p3.pol3*sSS^2*FourPi^(-2)*I*g1*
+   MDelta1^(-2)*esfull(1) + 54*gam[y99,FIVE,pol3,y97]*FourPi^(-2)*I*g1*
+   esfull(1) + 108*gam[y99,FIVE,pol3,y97]*FourPi^(-2)*I*g1*muH^2*
+   MDelta1^(-2)*esfull(1) + 36*gam[y99,FIVE,pol3,y97]*FourPi^(-2)*I*
+   invepsilonbar*g1*esfull(1) + 72*gam[y99,FIVE,pol3,y97]*FourPi^(-2)*I
+   *invepsilonbar*g1*muH^2*MDelta1^(-2)*esfull(1) + 24*gam[y99,FIVE,
+   pol3,y97]*p2.p2*sSS^2*FourPi^(-2)*I*g1*MDelta1^(-2)*esfull(1) + 6*
+   gam[y99,FIVE,pol3,y97]*p2.p3*sSS^2*FourPi^(-2)*I*g1*MDelta1^(-2)*
+   esfull(1) + 17*gam[y99,FIVE,pol3,y97]*p3.p3*sSS^2*FourPi^(-2)*I*g1*
+   MDelta1^(-2)*esfull(1) - 6*gam[y99,FIVE,pol3,y97]*p3.p3*sSS^2*
+   FourPi^(-2)*I*invepsilonbar*g1*MDelta1^(-2)*esfull(1) - 36*gam[y99,
+   FIVE,pol3,y97]*Log[MDelta1^2]*FourPi^(-2)*I*g1*esfull(1) - 72*gam[
+   y99,FIVE,pol3,y97]*Log[MDelta1^2]*FourPi^(-2)*I*g1*muH^2*
+   MDelta1^(-2)*esfull(1) + 6*gam[y99,FIVE,pol3,y97]*Log[MDelta1^2]*
+   p3.p3*sSS^2*FourPi^(-2)*I*g1*MDelta1^(-2)*esfull(1) - 18*gam[y99,p2,
+   p3,pol3,y97]*sSS^2*FourPi^(-2)*I*g1*MDelta1^(-2)*esfull(1) - 48*gam[
+   y99,p2,y97]*p2.pol3*sSS^2*FourPi^(-2)*I*g1*MDelta1^(-2)*esfull(1) - 
+   6*gam[y99,p2,y97]*p3.pol3*sSS^2*FourPi^(-2)*I*g1*MDelta1^(-2)*
+   esfull(1) - 42*gam[y99,p3,y97]*p2.pol3*sSS^2*FourPi^(-2)*I*g1*
+   MDelta1^(-2)*esfull(1) - 7*gam[y99,p3,y97]*p3.pol3*sSS^2*FourPi^(-2)
+   *I*g1*MDelta1^(-2)*esfull(1) - 6*gam[y99,p3,y97]*p3.pol3*sSS^2*
+   FourPi^(-2)*I*invepsilonbar*g1*MDelta1^(-2)*esfull(1) + 6*gam[y99,p3
+   ,y97]*Log[MDelta1^2]*p3.pol3*sSS^2*FourPi^(-2)*I*g1*MDelta1^(-2)*
+   esfull(1) - 54*gam[y99,pol3,y97]*FourPi^(-2)*I*g1*esfull(1) - 108*
+   gam[y99,pol3,y97]*FourPi^(-2)*I*g1*muH^2*MDelta1^(-2)*esfull(1) - 36
+   *gam[y99,pol3,y97]*FourPi^(-2)*I*invepsilonbar*g1*esfull(1) - 72*
+   gam[y99,pol3,y97]*FourPi^(-2)*I*invepsilonbar*g1*muH^2*MDelta1^(-2)*
+   esfull(1) - 24*gam[y99,pol3,y97]*p2.p2*sSS^2*FourPi^(-2)*I*g1*
+   MDelta1^(-2)*esfull(1) - 6*gam[y99,pol3,y97]*p2.p3*sSS^2*FourPi^(-2)
+   *I*g1*MDelta1^(-2)*esfull(1) - 17*gam[y99,pol3,y97]*p3.p3*sSS^2*
+   FourPi^(-2)*I*g1*MDelta1^(-2)*esfull(1) + 6*gam[y99,pol3,y97]*p3.p3*
+   sSS^2*FourPi^(-2)*I*invepsilonbar*g1*MDelta1^(-2)*esfull(1) + 36*
+   gam[y99,pol3,y97]*Log[MDelta1^2]*FourPi^(-2)*I*g1*esfull(1) + 72*
+   gam[y99,pol3,y97]*Log[MDelta1^2]*FourPi^(-2)*I*g1*muH^2*MDelta1^(-2)
+   *esfull(1) - 6*gam[y99,pol3,y97]*Log[MDelta1^2]*p3.p3*sSS^2*
+   FourPi^(-2)*I*g1*MDelta1^(-2)*esfull(1)];
+

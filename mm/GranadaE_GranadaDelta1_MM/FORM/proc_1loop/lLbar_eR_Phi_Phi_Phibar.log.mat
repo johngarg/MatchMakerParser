@@ -1,0 +1,1 @@
+{ampllLbareRPhiPhiPhibar ->1/8*dd[2,l91,l93]*dd[2,l95,l99]*esfull[8] + 1/8*dd[2,l91,l95]*dd[2,l93,l99]*esfull[8] + 1/2*dd[2,l93,l99]*Ta[n1,l1,l95]*Ta[n1,l91,l1]*esfull[9] + 1/2*dd[2,l95,l99]*Ta[n1,l1,l93]*Ta[n1,l91,l1]*esfull[9] - 1/2*Ta[n1,l91,l93]*Ta[n1,l99,l95]*esfull[10] - 1/2*Ta[n1,l91,l95]*Ta[n1,l99,l93]*esfull[10]}

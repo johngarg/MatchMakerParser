@@ -1,0 +1,14 @@
+diags:=[
+ 
+(-1)*
+ cpol(lLbar(-1,p1))*
+ cpol(lL(-3,p2))*
+ cpol(Wi(-5,p3))*
+
+ prop(GranadaN(1,-k1),GranadaN(2,-k1))*
+ prop(Phi(3,-k1+p1),Phibar(4,-k1+p1))*
+ prop(Phi(5,-k1-p2),Phibar(6,-k1-p2))*
+ v3(lLbar(-1,p1),GranadaN(1,-k1),Phibar(4,k1-p1))*
+ v3(GranadaN(2,k1),lL(-3,p2),Phi(5,-k1-p2))*
+ v3(Phi(3,-k1+p1),Phibar(6,k1+p2),Wi(-5,p3)),
+NULL]:
