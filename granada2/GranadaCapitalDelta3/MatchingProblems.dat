@@ -1,0 +1,9 @@
+problist = {{2, {"B", "B", "Phi", "Phibar"}, 
+      {((-1/8*I)*g1^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaDelta3[fl1]*
+          lambdaDelta3bar[fl1])/(MDelta3^2*Pi^2) + 
+        ((I/8)*g1^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaDelta3[fl1]*
+          lambdaDelta3bar[fl1])/(MDelta3^2*Pi^2), 0, 0, 
+       ((-1/8*I)*g1^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaDelta3[fl1]*
+          lambdaDelta3bar[fl1])/(MDelta3^2*Pi^2) + 
+        ((I/8)*g1^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaDelta3[fl1]*
+          lambdaDelta3bar[fl1])/(MDelta3^2*Pi^2)}}}

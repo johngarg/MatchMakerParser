@@ -1,0 +1,80 @@
+problist = {{2, {"B", "B", "Phi", "Phibar"}, 
+      {((I/6)*g1^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/6)*g1^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 
+       ((I/6)*g1^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/6)*g1^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2)}}, {2, {"G", "G", "Phi", "Phibar"}, 
+      {((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2), 0, 0, 
+       ((I/16)*g3^2*sSS^2*ee[p2, p3, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2) - 
+        ((I/16)*g3^2*sSS^2*ee[p2, p4, pol1, pol2]*lambdaQ7[fl1]*
+          lambdaQ7bar[fl1])/(MQ7^2*Pi^2)}}}
