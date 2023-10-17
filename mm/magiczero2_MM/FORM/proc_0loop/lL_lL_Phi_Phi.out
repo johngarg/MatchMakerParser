@@ -1,4 +1,0 @@
-    esfull(1)=lambdaN[fl97]*lambdaN[fl99];
-    esfull(2)=G[gam[y99,FIVE,y97]*I*MN^(-1)*esfull(1) - gam[y99,y97]*I*
-   MN^(-1)*esfull(1)];
-

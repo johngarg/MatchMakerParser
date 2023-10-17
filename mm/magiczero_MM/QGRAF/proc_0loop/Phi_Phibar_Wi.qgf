@@ -1,9 +1,0 @@
-diags:=[
- 
-(+1)*
- cpol(Phi(-1,p1))*
- cpol(Phibar(-3,p2))*
- cpol(Wi(-5,p3))*
-
- v3(Phi(-1,p1),Phibar(-3,p2),Wi(-5,p3)),
-NULL]:
