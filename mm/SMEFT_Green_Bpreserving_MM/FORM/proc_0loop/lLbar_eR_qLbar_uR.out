@@ -1,33 +1,33 @@
-    eseft(1)=alphaOlequ1[fl99,fl97,fl95,fl93];
-    eseft(2)=alphaEluqe[fl99,fl93,fl95,fl97];
-    eseft(3)=alphaElequtwo[fl99,fl97,fl95,fl93];
-    eseft(4)=alphaEluqetwo[fl99,fl93,fl95,fl97];
-    eseft(5)=alphaEcuelq[fl93,fl97,fl99,fl95];
-    eseft(6)=alphaEcuelqtwo[fl93,fl97,fl99,fl95];
-    eseft(7)=G[gam[y95,FIVE,y93]*gam[y99,FIVE,y97]*I*eseft(1) + gam[y95
-   ,FIVE,y93]*gam[y99,y97]*I*eseft(1) - gam[y95,FIVE,y97]*gam[y99,FIVE,
-   y93]*I*eseft(2) - gam[y95,FIVE,y97]*gam[y99,y93]*I*eseft(2) + gam[
-   y95,FIVE,mu1,mu2,y93]*gam[y99,FIVE,mu1,mu2,y97]*I*eseft(3) + gam[y95
-   ,FIVE,mu1,mu2,y93]*gam[y99,mu1,mu2,y97]*I*eseft(3) - gam[y95,FIVE,
-   mu1,mu2,y97]*gam[y99,FIVE,mu1,mu2,y93]*I*eseft(4) - gam[y95,FIVE,mu1
-   ,mu2,y97]*gam[y99,mu1,mu2,y93]*I*eseft(4) + gam[y95,y93]*gam[y99,
-   FIVE,y97]*I*eseft(1) + gam[y95,y93]*gam[y99,y97]*I*eseft(1) - gam[
-   y95,y97]*gam[y99,FIVE,y93]*I*eseft(2) - gam[y95,y97]*gam[y99,y93]*I*
-   eseft(2) + gam[y95,mu1,mu2,y93]*gam[y99,FIVE,mu1,mu2,y97]*I*eseft(3)
-    + gam[y95,mu1,mu2,y93]*gam[y99,mu1,mu2,y97]*I*eseft(3) - gam[y95,
-   mu1,mu2,y97]*gam[y99,FIVE,mu1,mu2,y93]*I*eseft(4) - gam[y95,mu1,mu2,
-   y97]*gam[y99,mu1,mu2,y93]*I*eseft(4) + 4*gam[y97,FIVE,y93]*gam[y99,
-   FIVE,y95]*I*invepsilonbar^(-1)*eseft(6) - gam[y97,FIVE,y93]*gam[y99,
-   FIVE,y95]*I*eseft(5) - 8*gam[y97,FIVE,y93]*gam[y99,FIVE,y95]*I*
+    eseft(1)=alphaElequtwo[fl99,fl97,fl95,fl93];
+    eseft(2)=alphaEluqetwo[fl99,fl93,fl95,fl97];
+    eseft(3)=alphaOlequ1[fl99,fl97,fl95,fl93];
+    eseft(4)=alphaEluqe[fl99,fl93,fl95,fl97];
+    eseft(5)=alphaEcuelqtwo[fl93,fl97,fl99,fl95];
+    eseft(6)=alphaEcuelq[fl93,fl97,fl99,fl95];
+    eseft(7)=G[gam[y95,FIVE,mu1,mu2,y93]*gam[y99,FIVE,mu1,mu2,y97]*I*
+   eseft(1) + gam[y95,FIVE,mu1,mu2,y93]*gam[y99,mu1,mu2,y97]*I*eseft(1)
+    - gam[y95,FIVE,mu1,mu2,y97]*gam[y99,FIVE,mu1,mu2,y93]*I*eseft(2) - 
+   gam[y95,FIVE,mu1,mu2,y97]*gam[y99,mu1,mu2,y93]*I*eseft(2) + gam[y95,
+   FIVE,y93]*gam[y99,FIVE,y97]*I*eseft(3) + gam[y95,FIVE,y93]*gam[y99,
+   y97]*I*eseft(3) - gam[y95,FIVE,y97]*gam[y99,FIVE,y93]*I*eseft(4) - 
+   gam[y95,FIVE,y97]*gam[y99,y93]*I*eseft(4) + gam[y95,mu1,mu2,y93]*
+   gam[y99,FIVE,mu1,mu2,y97]*I*eseft(1) + gam[y95,mu1,mu2,y93]*gam[y99,
+   mu1,mu2,y97]*I*eseft(1) - gam[y95,mu1,mu2,y97]*gam[y99,FIVE,mu1,mu2,
+   y93]*I*eseft(2) - gam[y95,mu1,mu2,y97]*gam[y99,mu1,mu2,y93]*I*
+   eseft(2) + gam[y95,y93]*gam[y99,FIVE,y97]*I*eseft(3) + gam[y95,y93]*
+   gam[y99,y97]*I*eseft(3) - gam[y95,y97]*gam[y99,FIVE,y93]*I*eseft(4)
+    - gam[y95,y97]*gam[y99,y93]*I*eseft(4) + gam[y97,FIVE,mu1,mu2,y93]*
+   gam[y99,FIVE,mu1,mu2,y95]*I*eseft(5) + gam[y97,FIVE,mu1,mu2,y93]*
+   gam[y99,mu1,mu2,y95]*I*eseft(5) + 4*gam[y97,FIVE,y93]*gam[y99,FIVE,
+   y95]*I*invepsilonbar^(-1)*eseft(5) - 8*gam[y97,FIVE,y93]*gam[y99,
+   FIVE,y95]*I*eseft(5) - gam[y97,FIVE,y93]*gam[y99,FIVE,y95]*I*
    eseft(6) + 4*gam[y97,FIVE,y93]*gam[y99,y95]*I*invepsilonbar^(-1)*
-   eseft(6) - gam[y97,FIVE,y93]*gam[y99,y95]*I*eseft(5) - 8*gam[y97,
-   FIVE,y93]*gam[y99,y95]*I*eseft(6) + gam[y97,FIVE,mu1,mu2,y93]*gam[
-   y99,FIVE,mu1,mu2,y95]*I*eseft(6) + gam[y97,FIVE,mu1,mu2,y93]*gam[y99
-   ,mu1,mu2,y95]*I*eseft(6) + 4*gam[y97,y93]*gam[y99,FIVE,y95]*I*
-   invepsilonbar^(-1)*eseft(6) - gam[y97,y93]*gam[y99,FIVE,y95]*I*
-   eseft(5) - 8*gam[y97,y93]*gam[y99,FIVE,y95]*I*eseft(6) + 4*gam[y97,
-   y93]*gam[y99,y95]*I*invepsilonbar^(-1)*eseft(6) - gam[y97,y93]*gam[
-   y99,y95]*I*eseft(5) - 8*gam[y97,y93]*gam[y99,y95]*I*eseft(6) + gam[
-   y97,mu1,mu2,y93]*gam[y99,FIVE,mu1,mu2,y95]*I*eseft(6) + gam[y97,mu1,
-   mu2,y93]*gam[y99,mu1,mu2,y95]*I*eseft(6)];
+   eseft(5) - 8*gam[y97,FIVE,y93]*gam[y99,y95]*I*eseft(5) - gam[y97,
+   FIVE,y93]*gam[y99,y95]*I*eseft(6) + gam[y97,mu1,mu2,y93]*gam[y99,
+   FIVE,mu1,mu2,y95]*I*eseft(5) + gam[y97,mu1,mu2,y93]*gam[y99,mu1,mu2,
+   y95]*I*eseft(5) + 4*gam[y97,y93]*gam[y99,FIVE,y95]*I*
+   invepsilonbar^(-1)*eseft(5) - 8*gam[y97,y93]*gam[y99,FIVE,y95]*I*
+   eseft(5) - gam[y97,y93]*gam[y99,FIVE,y95]*I*eseft(6) + 4*gam[y97,y93
+   ]*gam[y99,y95]*I*invepsilonbar^(-1)*eseft(5) - 8*gam[y97,y93]*gam[
+   y99,y95]*I*eseft(5) - gam[y97,y93]*gam[y99,y95]*I*eseft(6)];
 

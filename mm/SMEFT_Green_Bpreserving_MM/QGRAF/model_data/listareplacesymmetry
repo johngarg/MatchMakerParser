@@ -1,5 +1,5 @@
 listareplacesymmetry =
-{
+ {
 alphaWeinberg[fl97_, fl99_] -> alphaWeinberg[fl99, fl97],
 alphaWeinbergbar[fl97_, fl99_] -> alphaWeinbergbar[fl99, fl97],
 alphaOll[fl95_, fl97_, fl99_, fl93_] -> alphaOll[fl99, fl93, fl95, fl97],
@@ -27,8 +27,10 @@ alphaEddthree8[fl95_, fl97_, fl99_, fl93_] -> alphaEddthree8[fl99, fl93, fl95, f
 alphaEcll[fl95_, fl97_, fl99_, fl93_] -> alphaEcll[fl97, fl95, fl93, fl99],
 alphaEcqq[fl95_, fl97_, fl99_, fl93_] -> alphaEcqq[fl97, fl95, fl93, fl99],
 alphaEcqqp[fl95_, fl97_, fl99_, fl93_] -> alphaEcqqp[fl97, fl95, fl93, fl99],
+
 alphaEcee[fl95_, fl97_, fl99_, fl93_] -> alphaEcee[fl97, fl95, fl99, fl93],
 alphaEcee[fl95_, fl97_, fl99_, fl93_] -> alphaEcee[fl95, fl97, fl93, fl99],
+
 alphaEcuu[fl95_, fl97_, fl99_, fl93_] -> alphaEcuu[fl97, fl95, fl93, fl99],
 alphaEcdd[fl95_, fl97_, fl99_, fl93_] -> alphaEcdd[fl97, fl95, fl93, fl99],
 
@@ -36,8 +38,10 @@ alphaEcdd[fl95_, fl97_, fl99_, fl93_] -> alphaEcdd[fl97, fl95, fl93, fl99],
 alphaEclltwo[fl95_, fl97_, fl99_, fl93_] -> alphaEclltwo[fl97, fl95, fl93, fl99],
 alphaEcqqtwo[fl95_, fl97_, fl99_, fl93_] -> alphaEcqqtwo[fl97, fl95, fl93, fl99],
 alphaEcqqptwo[fl95_, fl97_, fl99_, fl93_] -> alphaEcqqptwo[fl97, fl95, fl93, fl99],
-alphaEceetwo[fl95_, fl97_, fl99_, fl93_] -> alphaEceetwo[fl97, fl95, fl99, fl93],
-alphaEceetwo[fl95_, fl97_, fl99_, fl93_] -> alphaEceetwo[fl95, fl97, fl93, fl99],
+
+alphaEceetwo[fl95_, fl97_, fl99_, fl93_] -> alphaEceetwo[fl97, fl95, fl93, fl99],
+alphaEceetwo[fl95_, fl97_, fl99_, fl93_] -> -alphaEceetwo[fl97, fl95, fl99, fl93],
+
 alphaEcuutwo[fl95_, fl97_, fl99_, fl93_] -> alphaEcuutwo[fl97, fl95, fl93, fl99],
 alphaEcddtwo[fl95_, fl97_, fl99_, fl93_] -> alphaEcddtwo[fl97, fl95, fl93, fl99]
 }

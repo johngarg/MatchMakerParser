@@ -1,7 +1,7 @@
-FORM 4.2.1 (Aug 28 2019, v4.2.1-5-g4057c65) 64-bits  Run: Wed Mar 30 22:09:03 2022
+FORM 4.2.1 (Nov 21 2018, v4.2.1) 64-bits         Run: Mon May 29 15:47:12 2023
     #-
 
    ampldRbardRG =
       1/4*T[a95,m99,m97]*eseft(9);
 
-  0.11 sec out of 0.11 sec
+  0.04 sec out of 0.04 sec

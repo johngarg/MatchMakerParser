@@ -1,8 +1,8 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3.11
 
 import os
 import sys
-import matchmakereft.libs.mm_offline as mm
+from matchmakereft.libs.mm_offline import create_model, match_model_to_eft
 from rich import print
 
 particle_names = sys.argv[1:]
@@ -16,17 +16,16 @@ def run_and_print(cmd):
 
 
 # Run feynwrite
-run_and_print(f"feynwrite {particles} > {model_name}.fr")
+# run_and_print(f"feynwrite {particles} > {model_name}.fr")
 
 # Copy generic .symm and .gauge files
-run_and_print(f"cp granada.symm {model_name}.symm")
-run_and_print(f"cp granada.gauge {model_name}.gauge")
-run_and_print(f"cp granada.red {model_name}.red")
+# run_and_print(f"cp granada.symm {model_name}.symm")
+# run_and_print(f"cp granada.gauge {model_name}.gauge")
+# run_and_print(f"cp granada.red {model_name}.red")
 
 # Run Matchmaker
-mm.create_model(f"UnbrokenSM_BFM.fr {model_name}.fr")
-mm.match_model_to_eft(f"{model_name}_MM SMEFT_Green_Bpreserving_MM")
-mm.compute_rge_model_to_eft(f"{model_name}_MM SMEFT_Green_Bpreserving_MM")
+create_model(f"UnbrokenSM_BFM.fr {model_name}.fr")
+match_model_to_eft(f"{model_name}_MM SMEFT_Green_Bpreserving_MM")
 
 # Check output
 with open(f"{model_name}_MM/MatchingProblems.dat", "r") as problems_file:

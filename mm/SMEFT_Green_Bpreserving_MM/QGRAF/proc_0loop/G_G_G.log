@@ -1,11 +1,11 @@
 
  --------------------------------------------------------------
-                           qgraf-3.5.0
+                           qgraf-3.6.3
  --------------------------------------------------------------
 
   output= 'OUTPUTFILE' ;
-  style= '/usr/local/lib/python3.9/site-pa'
- 'ckages/matchmakereft/core/my.sty' ;
+  style= '/Users/usuario/Library/Python/3.9/lib/pyth'
+ 'on/site-packages/matchmakereft/core/my.sty' ;
   model= 'model';
   in= G,G,G;
   out=;
@@ -14,6 +14,8 @@
   options= ;
   true = bridge[B, BQuantum, dR, eR, G, ghB, ghG, ghWi, GQuantum,
  lL, Phi, qL, uR, Wi, WiQuantum, 0 , 0];
+  true = chord[G, Wi, B, 0,  0];
+  true = bridge[GQuantum, WiQuantum, BQuantum, 0,  0];
 
  --------------------------------------------------------------
 
@@ -22,5 +24,5 @@
     3^1   -    -    -      ....     1
 
 
-       total =  1 connected diagram   (w!)
+       total =  1 connected diagram
 

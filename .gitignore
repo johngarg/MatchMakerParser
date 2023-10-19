@@ -1,3 +1,6 @@
+# Matching files
+*_MM/
+
 # Mathematica notebooks
 *.nb
 *.ipynb

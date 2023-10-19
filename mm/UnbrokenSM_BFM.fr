@@ -59,7 +59,7 @@ IndexRange[Index[SU24      ]] = Range[4];
 IndexRange[Index[SU2W      ]] = Range[3]; 
 IndexRange[Index[SU2D      ]] = Range[2];
 IndexRange[Index[Gluon     ]] = Range[8];
-IndexRange[Index[Colour    ]] = Range[3];
+IndexRange[Index[Colour    ]] = Range[3]; 
 IndexRange[Index[Generation]] = Range[3];
 
 IndexStyle[SU24,       lq];

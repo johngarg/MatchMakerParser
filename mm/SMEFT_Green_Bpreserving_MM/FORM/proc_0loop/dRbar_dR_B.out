@@ -4,8 +4,8 @@
     eseft(4)=alphaRBdp[fl99,fl97];
     eseft(5)=alphaKd[fl99,fl97];
     eseft(6)=alphaEBdtp[fl99,fl97];
-    eseft(7)=alphaRBdtp[fl99,fl97];
-    eseft(8)=alphaEBd[fl99,fl97];
+    eseft(7)=alphaEBd[fl99,fl97];
+    eseft(8)=alphaRBdtp[fl99,fl97];
     eseft(9)=G[24*gam[y99,FIVE,p2,p3,pol3,y97]*sSS^2*I*eseft(1) + 4*
    gam[y99,FIVE,p2,y97]*p2.pol3*sSS^2*I*g1*eseft(2) - 24*gam[y99,FIVE,
    p2,y97]*p3.pol3*sSS^2*I*eseft(1) + 2*gam[y99,FIVE,p2,y97]*p3.pol3*
@@ -21,11 +21,11 @@
    sSS^2*I*g1*eseft(2) - 3*gam[y99,FIVE,pol3,y97]*p3.p3*sSS^2*eseft(4)
     + 12*gam[y99,FIVE,pol3,y97]*p3.p3*sSS^2*I*eseft(1) + 6*gam[y99,FIVE
    ,pol3,y97]*p3.p3*sSS^2*I*eseft(3) + gam[y99,FIVE,pol3,y97]*p3.p3*
-   sSS^2*I*g1*eseft(2) - 24*gam[y99,FIVE,mu1,y97]*e_[p2,p3,pol3,mu1]*
-   sSS^2*eseft(6) - 6*gam[y99,FIVE,mu1,y97]*e_[p2,p3,pol3,mu1]*sSS^2*I*
-   eseft(7) - 12*gam[y99,FIVE,mu1,mu2,p2,y97]*e_[p3,pol3,mu1,mu2]*sSS^2
-   *eseft(6) - 6*gam[y99,FIVE,mu1,mu2,p3,y97]*e_[p3,pol3,mu1,mu2]*sSS^2
-   *eseft(6) + 12*gam[y99,FIVE,mu1,mu2,p3,y97]*e_[p3,pol3,mu1,mu2]*
+   sSS^2*I*g1*eseft(2) - 12*gam[y99,FIVE,mu1,mu2,p2,y97]*e_[p3,pol3,mu1
+   ,mu2]*sSS^2*eseft(6) - 6*gam[y99,FIVE,mu1,mu2,p3,y97]*e_[p3,pol3,mu1
+   ,mu2]*sSS^2*eseft(6) + 12*gam[y99,FIVE,mu1,mu2,p3,y97]*e_[p3,pol3,
+   mu1,mu2]*sSS^2*I*eseft(7) - 24*gam[y99,FIVE,mu1,y97]*e_[p2,p3,pol3,
+   mu1]*sSS^2*eseft(6) - 6*gam[y99,FIVE,mu1,y97]*e_[p2,p3,pol3,mu1]*
    sSS^2*I*eseft(8) - 24*gam[y99,p2,p3,pol3,y97]*sSS^2*I*eseft(1) - 4*
    gam[y99,p2,y97]*p2.pol3*sSS^2*I*g1*eseft(2) + 24*gam[y99,p2,y97]*
    p3.pol3*sSS^2*I*eseft(1) - 2*gam[y99,p2,y97]*p3.pol3*sSS^2*I*g1*
@@ -39,10 +39,10 @@
    pol3,y97]*p2.p3*sSS^2*I*eseft(1) - 2*gam[y99,pol3,y97]*p2.p3*sSS^2*I
    *g1*eseft(2) + 3*gam[y99,pol3,y97]*p3.p3*sSS^2*eseft(4) - 12*gam[y99
    ,pol3,y97]*p3.p3*sSS^2*I*eseft(1) - 6*gam[y99,pol3,y97]*p3.p3*sSS^2*
-   I*eseft(3) - gam[y99,pol3,y97]*p3.p3*sSS^2*I*g1*eseft(2) + 24*gam[
-   y99,mu1,y97]*e_[p2,p3,pol3,mu1]*sSS^2*eseft(6) + 6*gam[y99,mu1,y97]*
-   e_[p2,p3,pol3,mu1]*sSS^2*I*eseft(7) + 12*gam[y99,mu1,mu2,p2,y97]*e_[
-   p3,pol3,mu1,mu2]*sSS^2*eseft(6) + 6*gam[y99,mu1,mu2,p3,y97]*e_[p3,
-   pol3,mu1,mu2]*sSS^2*eseft(6) - 12*gam[y99,mu1,mu2,p3,y97]*e_[p3,pol3
-   ,mu1,mu2]*sSS^2*I*eseft(8)];
+   I*eseft(3) - gam[y99,pol3,y97]*p3.p3*sSS^2*I*g1*eseft(2) + 12*gam[
+   y99,mu1,mu2,p2,y97]*e_[p3,pol3,mu1,mu2]*sSS^2*eseft(6) + 6*gam[y99,
+   mu1,mu2,p3,y97]*e_[p3,pol3,mu1,mu2]*sSS^2*eseft(6) - 12*gam[y99,mu1,
+   mu2,p3,y97]*e_[p3,pol3,mu1,mu2]*sSS^2*I*eseft(7) + 24*gam[y99,mu1,
+   y97]*e_[p2,p3,pol3,mu1]*sSS^2*eseft(6) + 6*gam[y99,mu1,y97]*e_[p2,p3
+   ,pol3,mu1]*sSS^2*I*eseft(8)];
 
