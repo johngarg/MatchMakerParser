@@ -6,22 +6,23 @@ import rundec
 import numpy as np
 
 CRD = rundec.CRunDec()
-
+GEV = 1e-3
+MZ = 91.1876 * GEV
 
 class GenericMatchingResult:
     """Class for storing MatchMaker matching results. All dimensionful quantities
-    are in GeV. Scale is initialised to mZ.
+    are in TeV. Scale is initialised to mZ.
 
     """
 
-    def __init__(self, name: str, scale: float = 91.1876):
+    def __init__(self, name: str, scale: float = MZ):
         self.name = name
         self.scale = scale
 
         # See https://arxiv.org/abs/2112.10787 for more information about
         # specific couplings and constants
 
-        vev = 248.404
+        vev = 248.404 * GEV
         # SM couplings and parameters
         # Values taken from https://inspirehep.net/files/71930f37457ebd10742e55c2b36531ea
         self.yu: np.matrix = np.diag([0.00123, 0.620, 168.26]) / vev
@@ -32,14 +33,14 @@ class GenericMatchingResult:
         self.ydbar: np.matrix = self.yd
         self.ylbar: np.matrix = self.yl
 
-        self.mZ: float = 91.1876
-        self.mH: float = 125.10
+        self.mZ: float = MZ
+        self.mH: float = 125.10 * GEV
 
         self.g1: float = 0.65100
         self.g2: float = 0.357254
         self.g3: float = 1.204
 
-        self.muH: float = np.sqrt(8434) * 1j  # Not sure what to do with this
+        self.muH: float = np.sqrt(8434) * 1j * GEV # Not sure what to do with this
         self.lam: float = 0.13947
         self.vev: float = vev  # I haven't seen this used by MatchMaker yet
 
@@ -50,6 +51,7 @@ class GenericMatchingResult:
         self.mu: float = self.scale  # Identify mu with scale
         self.invepsilonbar: float = 0
         self.epsilonbar: float = 0
+        self.xRP: float = 1 # Reading-point parameter
 
     def kronecker_delta(self, i, j):
         if i == j:
