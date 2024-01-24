@@ -141,7 +141,7 @@ OutputPythonClass[name_][List[rules__RuleDelayed]] :=
 import numpy as np
 
 class `n`MatchingResult(python.matchingresult.GenericMatchingResult):
-    def __init__(self, name='`n`', scale=91.1876):
+    def __init__(self, name='`n`', scale=1.0):
         super().__init__(name, scale)\n"
     ][<| "n" -> name |>];
 
