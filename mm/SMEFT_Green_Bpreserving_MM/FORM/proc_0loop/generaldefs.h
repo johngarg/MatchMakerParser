@@ -56,8 +56,8 @@ set li: l1, ... , l100, lminus1, ... , lminus100;
 i <m1=3>, ... , <m100=3>, <mminus1=3>, ... , <mminus100=3>;
 set mi: m1, ... , m100, mminus1, ... , mminus100;
 
-i <mu1=D>, ... , <mu100=D>, <muminus1=D>, ... , <muminus100=D>, mumucurlyepsilon1=D, mumueta1=D, mumubeta1=D, mumualpha1=D, mumugamma1=D, mumuzeta1=D, mumutheta1=D, mumudelta1=D;
-set mui: mu1, ... , mu100, muminus1, ... , muminus100, mumucurlyepsilon1, mumueta1, mumubeta1, mumualpha1, mumugamma1, mumuzeta1, mumutheta1, mumudelta1;
+i <mu1=D>, ... , <mu100=D>, <muminus1=D>, ... , <muminus100=D>, mumuzeta1=D, mumugamma1=D, mumutheta1=D, mumucurlyepsilon1=D, mumualpha1=D, mumueta1=D, mumudelta1=D, mumubeta1=D;
+set mui: mu1, ... , mu100, muminus1, ... , muminus100, mumuzeta1, mumugamma1, mumutheta1, mumucurlyepsilon1, mumualpha1, mumueta1, mumudelta1, mumubeta1;
 
 i <n1=3>, ... , <n100=3>, <nminus1=3>, ... , <nminus100=3>;
 set ni: n1, ... , n100, nminus1, ... , nminus100;
