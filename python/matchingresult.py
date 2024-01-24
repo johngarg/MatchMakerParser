@@ -22,12 +22,12 @@ class GenericMatchingResult:
         # See https://arxiv.org/abs/2112.10787 for more information about
         # specific couplings and constants
 
-        vev = 248.404 * GEV
+        self.vev: float = 246 * GEV
         # SM couplings and parameters
         # Values taken from https://inspirehep.net/files/71930f37457ebd10742e55c2b36531ea
-        self.yu: np.matrix = np.diag([0.00123, 0.620, 168.26]) / vev
-        self.yd: np.matrix = np.diag([0.00267, 0.05316, 2.839]) / vev
-        self.yl: np.matrix = np.diag([0.00048307, 0.101766, 1.72856]) / vev
+        self.yu: np.matrix = np.diag([0.00123, 0.620, 168.26]) / self.vev
+        self.yd: np.matrix = np.diag([0.00267, 0.05316, 2.839]) / self.vev
+        self.yl: np.matrix = np.diag([0.00048307, 0.101766, 1.72856]) / self.vev
 
         self.yubar: np.matrix = self.yu
         self.ydbar: np.matrix = self.yd
@@ -40,9 +40,8 @@ class GenericMatchingResult:
         self.g2: float = 0.357254
         self.g3: float = 1.204
 
-        self.muH: float = np.sqrt(8434) * 1j * GEV # Not sure what to do with this
-        self.lam: float = 0.13947
-        self.vev: float = vev  # I haven't seen this used by MatchMaker yet
+        self.muH: float = np.sqrt(self.mH**2 / 2)
+        self.lam: float = self.mH**2 / (2 * self.vev**2)
 
         # Constants
         self.iCPV: int = 1  # Fixes \eps_{0123} sign convention
