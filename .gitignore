@@ -15,6 +15,13 @@ granada2/
 old_granada/
 python/*_matching.py
 
+# Matching files
+mm/Granada*.fr
+mm/Granada*.gauge
+mm/Granada*.log
+mm/Granada*.red
+mm/Granada*.symm
+
 # macOS
 .DS_Store
 
