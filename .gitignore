@@ -10,6 +10,10 @@ img/
 
 # raw data
 data/
+granada/
+granada2/
+old_granada/
+python/*_matching.py
 
 # macOS
 .DS_Store

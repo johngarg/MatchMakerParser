@@ -1,118 +1,452 @@
 RGEResult = {\[Beta][g1] -> g1^3/(12*Pi^2), \[Beta][g2] -> g2^3/(12*Pi^2), 
      \[Beta][g3] -> g3^3/(8*Pi^2), \[Beta][alphaKB] -> 0, 
-     \[Beta][alphaKW] -> 0, \[Beta][alphaKG] -> 0, 
-     \[Beta][alphaKq[mif1_, mif2_]] -> 0, \[Beta][alphaKl[mif1_, mif2_]] -> 
-      0, \[Beta][alphaKu[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaKd[mif1_, mif2_]] -> 0, \[Beta][alphaKe[mif1_, mif2_]] -> 
-      0, \[Beta][alphaOmuH2] -> 0, \[Beta][alphaKH] -> 0, 
-     \[Beta][alphaOlambda] -> -(lambdaHatPhi^2/Pi^2) - 
-       (2*lambdaHatPhi*lambdaHatPrimePhi)/Pi^2 - (2*lambdaHatPrimePhi^2)/
-        Pi^2 - (8*lambdaHatPrimePrimePhi*lambdaHatPrimePrimePhibar)/Pi^2, 
-     \[Beta][alphaOlambdad[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOlambdae[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOlambdau[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaKqbar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaKlbar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaKubar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaKG] -> 0, \[Beta][alphaKH] -> 0, \[Beta][alphaKW] -> 0, 
+     \[Beta][alphaO3G] -> 0, \[Beta][alphaO3Gt] -> 0, \[Beta][alphaO3W] -> 0, 
+     \[Beta][alphaO3Wt] -> 0, \[Beta][alphaOH] -> 0, \[Beta][alphaOHB] -> 0, 
+     \[Beta][alphaOHBox] -> 0, \[Beta][alphaOHBt] -> 0, 
+     \[Beta][alphaOHD] -> 0, \[Beta][alphaOHG] -> 0, \[Beta][alphaOHGt] -> 0, 
+     \[Beta][alphaOHW] -> 0, \[Beta][alphaOHWB] -> 0, 
+     \[Beta][alphaOHWBt] -> 0, \[Beta][alphaOHWt] -> 0, 
+     \[Beta][alphaOlambda] -> (-lambdaHatPhi^2 - 2*lambdaHatPhi*
+         lambdaHatPrimePhi - 2*lambdaHatPrimePhi^2 - 8*lambdaHatPrimePrimePhi*
+         lambdaHatPrimePrimePhibar)/Pi^2, \[Beta][alphaOmuH2] -> 0, 
+     \[Beta][alphaKd[mif1_, mif2_]] -> 0, 
      \[Beta][alphaKdbar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaKe[mif1_, mif2_]] -> 0, 
      \[Beta][alphaKebar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOlambdadbar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOlambdaebar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOlambdaubar[mif1_, mif2_]] -> 0, \[Beta][alphaO3G] -> 0, 
-     \[Beta][alphaO3Gt] -> 0, \[Beta][alphaO3W] -> 0, 
-     \[Beta][alphaO3Wt] -> 0, \[Beta][alphaOHG] -> 0, 
-     \[Beta][alphaOHGt] -> 0, \[Beta][alphaOHW] -> 0, 
-     \[Beta][alphaOHWt] -> 0, \[Beta][alphaOHB] -> 0, 
-     \[Beta][alphaOHBt] -> 0, \[Beta][alphaOHWB] -> 0, 
-     \[Beta][alphaOHWBt] -> 0, \[Beta][alphaOHBox] -> 0, 
-     \[Beta][alphaOHD] -> 0, \[Beta][alphaOH] -> 0, 
-     \[Beta][alphaOuG[mif1_, mif2_]] -> 
-      -1/96*(g3*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOuW[mif1_, mif2_]] -> 
-      -1/48*(g2*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOuB[mif1_, mif2_]] -> 
-      -1/144*(g1*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOdG[mif1_, mif2_]] -> 
-      -1/96*(g3*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOdW[mif1_, mif2_]] -> 
-      -1/48*(g2*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOdB[mif1_, mif2_]] -> 
-      (5*g1*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2])/
-       (144*MPhi^2*Pi^2), \[Beta][alphaOeW[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOeB[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOHq1[mif1_, mif2_]] -> 
-      -1/108*(g1^2*ydqPhi[fl1, mif2]*ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) + 
-       (yd[fl1, fl2]*ydbar[fl1, fl3]*ydqPhi[fl2, mif2]*ydqPhibar[fl3, mif1])/
-        (12*MPhi^2*Pi^2) + (g1^2*yquPhi[mif1, fl1]*yquPhibar[mif2, fl1])/
-        (54*MPhi^2*Pi^2) - (yquPhi[mif1, fl1]*yquPhibar[mif2, fl2]*
-         yu[fl3, fl2]*yubar[fl3, fl1])/(12*MPhi^2*Pi^2), 
-     \[Beta][alphaOHq3[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOHu[mif1_, mif2_]] -> 
-      (g1^2*yquPhi[fl1, mif2]*yquPhibar[fl1, mif1])/(108*MPhi^2*Pi^2) - 
-       (yd[fl1, fl2]*ydbar[fl3, fl2]*yquPhi[fl3, mif2]*yquPhibar[fl1, mif1])/
-        (12*MPhi^2*Pi^2) + (yquPhi[fl1, mif2]*yquPhibar[fl2, mif1]*
-         yu[fl2, fl3]*yubar[fl1, fl3])/(12*MPhi^2*Pi^2), 
-     \[Beta][alphaOHd[mif1_, mif2_]] -> 
-      (g1^2*ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl1])/(108*MPhi^2*Pi^2) - 
-       (yd[fl1, fl2]*ydbar[fl3, fl2]*ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl3])/
-        (12*MPhi^2*Pi^2) + (ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl2]*
-         yu[fl1, fl3]*yubar[fl2, fl3])/(12*MPhi^2*Pi^2), 
-     \[Beta][alphaOHud[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOHl1[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOHl3[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOHe[mif1_, mif2_]] -> 0, \[Beta][alphaOuH[mif1_, mif2_]] -> 
-      (lam*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
-        (4*MPhi^2*Pi^2) - (yd[fl1, fl2]*ydbar[fl1, fl3]*ydbar[fl4, fl2]*
-         ydqPhibar[fl3, mif1]*yquPhi[fl4, mif2])/(4*MPhi^2*Pi^2), 
-     \[Beta][alphaOdH[mif1_, mif2_]] -> 
-      (lam*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2])/
-        (4*MPhi^2*Pi^2) - (ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*
-         yu[fl3, fl4]*yubar[fl1, fl4]*yubar[fl3, fl2])/(4*MPhi^2*Pi^2), 
-     \[Beta][alphaOeH[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOuGbar[mif1_, mif2_]] -> 
-      -1/96*(g3*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOuWbar[mif1_, mif2_]] -> 
-      -1/48*(g2*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOuBbar[mif1_, mif2_]] -> 
-      -1/144*(g1*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOdGbar[mif1_, mif2_]] -> 
-      -1/96*(g3*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOdWbar[mif1_, mif2_]] -> 
-      -1/48*(g2*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
-        (MPhi^2*Pi^2), \[Beta][alphaOdBbar[mif1_, mif2_]] -> 
-      (5*g1*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
-       (144*MPhi^2*Pi^2), \[Beta][alphaOeWbar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOeBbar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaKl[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaKlbar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaKq[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaKqbar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaKu[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaKubar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOddbar[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/324*(g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif2, fl1]*
+          ydqPhibar[mif1, fl1])/(MPhi^2*Pi^2) + 
+       (g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif2, fl1]*
+         ydqPhibar[mif1, fl1])/(864*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[mif4, fl1]*
+         ydqPhibar[mif1, fl1])/(288*MPhi^2*Pi^2) - 
+       (yd[fl1, mif3]*ydbar[fl2, mif4]*ydqPhi[mif2, fl1]*
+         ydqPhibar[mif1, fl2])/(32*MPhi^2*Pi^2) + 
+       (yd[fl1, mif3]*ydbar[fl2, mif2]*ydqPhi[mif4, fl1]*
+         ydqPhibar[mif1, fl2])/(96*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[mif2, fl1]*
+         ydqPhibar[mif3, fl1])/(288*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+         ydqPhibar[mif3, fl1])/(324*MPhi^2*Pi^2) + 
+       (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+         ydqPhibar[mif3, fl1])/(864*MPhi^2*Pi^2) + 
+       (yd[fl1, mif1]*ydbar[fl2, mif4]*ydqPhi[mif2, fl1]*
+         ydqPhibar[mif3, fl2])/(96*MPhi^2*Pi^2) - 
+       (yd[fl1, mif1]*ydbar[fl2, mif2]*ydqPhi[mif4, fl1]*
+         ydqPhibar[mif3, fl2])/(32*MPhi^2*Pi^2) + 
+       (alphaOddbar[mif1_, mif2_, mif3_, mif4_]*
+         (960*g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif2, fl1]*
+           ydqPhibar[mif1, fl1] - 360*g3^2*KroneckerDelta[mif3, mif4]*
+           ydqPhi[mif2, fl1]*ydqPhibar[mif1, fl1] + 
+          1080*g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[mif4, fl1]*
+           ydqPhibar[mif1, fl1] + 4860*yd[fl1, mif3]*ydbar[fl2, mif4]*
+           ydqPhi[mif2, fl1]*ydqPhibar[mif1, fl2] - 1620*yd[fl1, mif3]*
+           ydbar[fl2, mif2]*ydqPhi[mif4, fl1]*ydqPhibar[mif1, fl2] + 
+          1080*g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[mif2, fl1]*
+           ydqPhibar[mif3, fl1] + 960*g1^2*KroneckerDelta[mif1, mif2]*
+           ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl1] - 
+          360*g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+           ydqPhibar[mif3, fl1] - 1620*yd[fl1, mif1]*ydbar[fl2, mif4]*
+           ydqPhi[mif2, fl1]*ydqPhibar[mif3, fl2] + 4860*yd[fl1, mif1]*
+           ydbar[fl2, mif2]*ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl2]))/
+        (622080*MPhi^2*Pi^2), \[Beta][alphaOeebar[mif1_, mif2_, mif3_, 
+        mif4_]] -> 0, \[Beta][alphaOHdbar[mif1_, mif2_]] -> 
+      (g1^2*ydqPhi[mif2, fl1]*ydqPhibar[mif1, fl1])/(108*MPhi^2*Pi^2) - 
+       (yd[fl1, fl2]*ydbar[fl3, fl2]*ydqPhi[mif2, fl1]*ydqPhibar[mif1, fl3])/
+        (6*MPhi^2*Pi^2) + (ydqPhi[mif2, fl1]*ydqPhibar[mif1, fl2]*
+         yu[fl1, fl3]*yubar[fl2, fl3])/(6*MPhi^2*Pi^2) + 
+       (alphaOHdbar[mif1_, mif2_]*(-30*g1^2*ydqPhi[mif2, fl1]*
+           ydqPhibar[mif1, fl1] + 270*yd[fl1, fl2]*ydbar[fl3, fl2]*
+           ydqPhi[mif2, fl1]*ydqPhibar[mif1, fl3] - 270*ydqPhi[mif2, fl1]*
+           ydqPhibar[mif1, fl2]*yu[fl1, fl3]*yubar[fl2, fl3]))/
+        (6480*MPhi^2*Pi^2), \[Beta][alphaOHebar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOHl1bar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOHl3bar[mif1_, mif2_]] -> 0, 
      \[Beta][alphaOHq1bar[mif1_, mif2_]] -> 
       -1/108*(g1^2*ydqPhi[fl1, mif1]*ydqPhibar[fl1, mif2])/(MPhi^2*Pi^2) + 
        (yd[fl1, fl2]*ydbar[fl1, fl3]*ydqPhi[fl2, mif1]*ydqPhibar[fl3, mif2])/
-        (12*MPhi^2*Pi^2) + (g1^2*yquPhi[mif2, fl1]*yquPhibar[mif1, fl1])/
+        (6*MPhi^2*Pi^2) + (g1^2*yquPhi[mif2, fl1]*yquPhibar[mif1, fl1])/
         (54*MPhi^2*Pi^2) - (yquPhi[mif2, fl1]*yquPhibar[mif1, fl2]*
-         yu[fl3, fl2]*yubar[fl3, fl1])/(12*MPhi^2*Pi^2), 
+         yu[fl3, fl2]*yubar[fl3, fl1])/(6*MPhi^2*Pi^2) + 
+       (alphaOHq1bar[mif1_, mif2_]*(60*g1^2*ydqPhi[fl1, mif1]*
+           ydqPhibar[fl1, mif2] - 540*yd[fl1, fl2]*ydbar[fl1, fl3]*
+           ydqPhi[fl2, mif1]*ydqPhibar[fl3, mif2] - 
+          120*g1^2*yquPhi[mif2, fl1]*yquPhibar[mif1, fl1] + 
+          540*yquPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl3, fl2]*
+           yubar[fl3, fl1]))/(12960*MPhi^2*Pi^2), 
      \[Beta][alphaOHq3bar[mif1_, mif2_]] -> 0, 
      \[Beta][alphaOHubar[mif1_, mif2_]] -> 
       (g1^2*yquPhi[fl1, mif1]*yquPhibar[fl1, mif2])/(108*MPhi^2*Pi^2) - 
        (yd[fl1, fl2]*ydbar[fl3, fl2]*yquPhi[fl3, mif1]*yquPhibar[fl1, mif2])/
-        (12*MPhi^2*Pi^2) + (yquPhi[fl1, mif1]*yquPhibar[fl2, mif2]*
-         yu[fl2, fl3]*yubar[fl1, fl3])/(12*MPhi^2*Pi^2), 
-     \[Beta][alphaOHdbar[mif1_, mif2_]] -> 
-      (g1^2*ydqPhi[mif2, fl1]*ydqPhibar[mif1, fl1])/(108*MPhi^2*Pi^2) - 
-       (yd[fl1, fl2]*ydbar[fl3, fl2]*ydqPhi[mif2, fl1]*ydqPhibar[mif1, fl3])/
-        (12*MPhi^2*Pi^2) + (ydqPhi[mif2, fl1]*ydqPhibar[mif1, fl2]*
-         yu[fl1, fl3]*yubar[fl2, fl3])/(12*MPhi^2*Pi^2), 
-     \[Beta][alphaOHudbar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOHl1bar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOHl3bar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOHebar[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaOuHbar[mif1_, mif2_]] -> 
-      (lam*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
-        (4*MPhi^2*Pi^2) - (yd[fl1, fl2]*yd[fl3, fl4]*ydbar[fl1, fl4]*
-         ydqPhi[fl2, mif1]*yquPhibar[fl3, mif2])/(4*MPhi^2*Pi^2), 
+        (6*MPhi^2*Pi^2) + (yquPhi[fl1, mif1]*yquPhibar[fl2, mif2]*
+         yu[fl2, fl3]*yubar[fl1, fl3])/(6*MPhi^2*Pi^2) + 
+       (alphaOHubar[mif1_, mif2_]*(-30*g1^2*yquPhi[fl1, mif1]*
+           yquPhibar[fl1, mif2] + 270*yd[fl1, fl2]*ydbar[fl3, fl2]*
+           yquPhi[fl3, mif1]*yquPhibar[fl1, mif2] - 270*yquPhi[fl1, mif1]*
+           yquPhibar[fl2, mif2]*yu[fl2, fl3]*yubar[fl1, fl3]))/
+        (6480*MPhi^2*Pi^2), \[Beta][alphaOllbar[mif1_, mif2_, mif3_, 
+        mif4_]] -> 0, \[Beta][alphaOuubar[mif1_, mif2_, mif3_, mif4_]] -> 
+      (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif1]*
+         yquPhibar[fl1, mif2])/(162*MPhi^2*Pi^2) + 
+       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif1]*
+         yquPhibar[fl1, mif2])/(864*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif1, mif4]*yquPhi[fl1, mif3]*
+         yquPhibar[fl1, mif2])/(288*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif2, mif3]*yquPhi[fl1, mif1]*
+         yquPhibar[fl1, mif4])/(288*MPhi^2*Pi^2) + 
+       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif3]*
+         yquPhibar[fl1, mif4])/(162*MPhi^2*Pi^2) + 
+       (g3^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif3]*
+         yquPhibar[fl1, mif4])/(864*MPhi^2*Pi^2) - 
+       (yquPhi[fl1, mif3]*yquPhibar[fl2, mif4]*yu[fl2, mif1]*
+         yubar[fl1, mif2])/(32*MPhi^2*Pi^2) + 
+       (yquPhi[fl1, mif1]*yquPhibar[fl2, mif4]*yu[fl2, mif3]*
+         yubar[fl1, mif2])/(96*MPhi^2*Pi^2) + 
+       (yquPhi[fl1, mif3]*yquPhibar[fl2, mif2]*yu[fl2, mif1]*
+         yubar[fl1, mif4])/(96*MPhi^2*Pi^2) - 
+       (yquPhi[fl1, mif1]*yquPhibar[fl2, mif2]*yu[fl2, mif3]*
+         yubar[fl1, mif4])/(32*MPhi^2*Pi^2) + 
+       (alphaOuubar[mif1_, mif2_, mif3_, mif4_]*
+         (-1920*g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif1]*
+           yquPhibar[fl1, mif2] - 360*g3^2*KroneckerDelta[mif3, mif4]*
+           yquPhi[fl1, mif1]*yquPhibar[fl1, mif2] + 
+          1080*g3^2*KroneckerDelta[mif1, mif4]*yquPhi[fl1, mif3]*
+           yquPhibar[fl1, mif2] + 1080*g3^2*KroneckerDelta[mif2, mif3]*
+           yquPhi[fl1, mif1]*yquPhibar[fl1, mif4] - 
+          1920*g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif3]*
+           yquPhibar[fl1, mif4] - 360*g3^2*KroneckerDelta[mif1, mif2]*
+           yquPhi[fl1, mif3]*yquPhibar[fl1, mif4] + 4860*yquPhi[fl1, mif3]*
+           yquPhibar[fl2, mif4]*yu[fl2, mif1]*yubar[fl1, mif2] - 
+          1620*yquPhi[fl1, mif1]*yquPhibar[fl2, mif4]*yu[fl2, mif3]*
+           yubar[fl1, mif2] - 1620*yquPhi[fl1, mif3]*yquPhibar[fl2, mif2]*
+           yu[fl2, mif1]*yubar[fl1, mif4] + 4860*yquPhi[fl1, mif1]*
+           yquPhibar[fl2, mif2]*yu[fl2, mif3]*yubar[fl1, mif4]))/
+        (622080*MPhi^2*Pi^2), \[Beta][alphaWeinberg[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaWeinbergbar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOdB[mif1_, mif2_]] -> (5*g1*ydqPhibar[mif2, fl1]*
+        yquPhi[mif1, fl2]*yubar[fl1, fl2])/(288*MPhi^2*Pi^2), 
+     \[Beta][alphaOdBbar[mif1_, mif2_]] -> 
+      (5*g1*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
+       (288*MPhi^2*Pi^2), \[Beta][alphaOdd[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/324*(g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif1, fl1]*
+          ydqPhibar[mif2, fl1])/(MPhi^2*Pi^2) + 
+       (g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif1, fl1]*
+         ydqPhibar[mif2, fl1])/(864*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[mif3, fl1]*
+         ydqPhibar[mif2, fl1])/(288*MPhi^2*Pi^2) - 
+       (yd[fl1, mif4]*ydbar[fl2, mif3]*ydqPhi[mif1, fl1]*
+         ydqPhibar[mif2, fl2])/(32*MPhi^2*Pi^2) + 
+       (yd[fl1, mif4]*ydbar[fl2, mif1]*ydqPhi[mif3, fl1]*
+         ydqPhibar[mif2, fl2])/(96*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[mif1, fl1]*
+         ydqPhibar[mif4, fl1])/(288*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+         ydqPhibar[mif4, fl1])/(324*MPhi^2*Pi^2) + 
+       (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+         ydqPhibar[mif4, fl1])/(864*MPhi^2*Pi^2) + 
+       (yd[fl1, mif2]*ydbar[fl2, mif3]*ydqPhi[mif1, fl1]*
+         ydqPhibar[mif4, fl2])/(96*MPhi^2*Pi^2) - 
+       (yd[fl1, mif2]*ydbar[fl2, mif1]*ydqPhi[mif3, fl1]*
+         ydqPhibar[mif4, fl2])/(32*MPhi^2*Pi^2) + 
+       (960*g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif1, fl1]*
+          ydqPhibar[mif2, fl1] - 360*g3^2*KroneckerDelta[mif3, mif4]*
+          ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl1] + 
+         1080*g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[mif3, fl1]*
+          ydqPhibar[mif2, fl1] + 4860*yd[fl1, mif4]*ydbar[fl2, mif3]*
+          ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl2] - 1620*yd[fl1, mif4]*
+          ydbar[fl2, mif1]*ydqPhi[mif3, fl1]*ydqPhibar[mif2, fl2] + 
+         1080*g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[mif1, fl1]*
+          ydqPhibar[mif4, fl1] + 960*g1^2*KroneckerDelta[mif1, mif2]*
+          ydqPhi[mif3, fl1]*ydqPhibar[mif4, fl1] - 
+         360*g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+          ydqPhibar[mif4, fl1] - 1620*yd[fl1, mif2]*ydbar[fl2, mif3]*
+          ydqPhi[mif1, fl1]*ydqPhibar[mif4, fl2] + 4860*yd[fl1, mif2]*
+          ydbar[fl2, mif1]*ydqPhi[mif3, fl1]*ydqPhibar[mif4, fl2])/
+        (311040*MPhi^2*Pi^2), \[Beta][alphaOdG[mif1_, mif2_]] -> 
+      -1/192*(g3*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOdGbar[mif1_, mif2_]] -> 
+      -1/192*(g3*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOdH[mif1_, mif2_]] -> 
+      (lam*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2])/
+        (3*MPhi^2*Pi^2) - (ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*
+         yu[fl3, fl4]*yubar[fl1, fl4]*yubar[fl3, fl2])/(2*MPhi^2*Pi^2) + 
+       (-120*lam*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2] + 
+         120*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yu[fl3, fl4]*
+          yubar[fl1, fl4]*yubar[fl3, fl2])/(480*MPhi^2*Pi^2), 
      \[Beta][alphaOdHbar[mif1_, mif2_]] -> 
       (lam*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
-        (4*MPhi^2*Pi^2) - (ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*
-         yu[fl1, fl3]*yu[fl4, fl2]*yubar[fl4, fl3])/(4*MPhi^2*Pi^2), 
+        (3*MPhi^2*Pi^2) - (ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*
+         yu[fl1, fl3]*yu[fl4, fl2]*yubar[fl4, fl3])/(2*MPhi^2*Pi^2) + 
+       (-120*lam*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2] + 
+         120*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl3]*yu[fl4, fl2]*
+          yubar[fl4, fl3])/(480*MPhi^2*Pi^2), 
+     \[Beta][alphaOdW[mif1_, mif2_]] -> 
+      -1/96*(g2*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOdWbar[mif1_, mif2_]] -> 
+      -1/96*(g2*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOeB[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOeBbar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOed[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOedbar[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/54*(g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+          ydqPhibar[mif3, fl1])/(MPhi^2*Pi^2) + 
+       (g1^2*alphaOedbar[mif1_, mif2_, mif3_, mif4_]*KroneckerDelta[mif1, 
+          mif2]*ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl1])/(108*MPhi^2*Pi^2), 
+     \[Beta][alphaOee[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOeH[mif1_, mif2_]] -> 0, 
      \[Beta][alphaOeHbar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOeu[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOeubar[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/54*(g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif3]*
+          yquPhibar[fl1, mif4])/(MPhi^2*Pi^2) + 
+       (g1^2*alphaOeubar[mif1_, mif2_, mif3_, mif4_]*KroneckerDelta[mif1, 
+          mif2]*yquPhi[fl1, mif3]*yquPhibar[fl1, mif4])/(108*MPhi^2*Pi^2), 
+     \[Beta][alphaOeW[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOeWbar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOHd[mif1_, mif2_]] -> 
+      (g1^2*ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl1])/(108*MPhi^2*Pi^2) - 
+       (yd[fl1, fl2]*ydbar[fl3, fl2]*ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl3])/
+        (6*MPhi^2*Pi^2) + (ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl2]*
+         yu[fl1, fl3]*yubar[fl2, fl3])/(6*MPhi^2*Pi^2) + 
+       (-30*g1^2*ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl1] + 
+         270*yd[fl1, fl2]*ydbar[fl3, fl2]*ydqPhi[mif1, fl1]*
+          ydqPhibar[mif2, fl3] - 270*ydqPhi[mif1, fl1]*ydqPhibar[mif2, fl2]*
+          yu[fl1, fl3]*yubar[fl2, fl3])/(3240*MPhi^2*Pi^2), 
+     \[Beta][alphaOHe[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOHl1[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOHl3[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOHq1[mif1_, mif2_]] -> 
+      -1/108*(g1^2*ydqPhi[fl1, mif2]*ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) + 
+       (yd[fl1, fl2]*ydbar[fl1, fl3]*ydqPhi[fl2, mif2]*ydqPhibar[fl3, mif1])/
+        (6*MPhi^2*Pi^2) + (g1^2*yquPhi[mif1, fl1]*yquPhibar[mif2, fl1])/
+        (54*MPhi^2*Pi^2) - (yquPhi[mif1, fl1]*yquPhibar[mif2, fl2]*
+         yu[fl3, fl2]*yubar[fl3, fl1])/(6*MPhi^2*Pi^2) + 
+       (60*g1^2*ydqPhi[fl1, mif2]*ydqPhibar[fl1, mif1] - 
+         540*yd[fl1, fl2]*ydbar[fl1, fl3]*ydqPhi[fl2, mif2]*
+          ydqPhibar[fl3, mif1] - 120*g1^2*yquPhi[mif1, fl1]*
+          yquPhibar[mif2, fl1] + 540*yquPhi[mif1, fl1]*yquPhibar[mif2, fl2]*
+          yu[fl3, fl2]*yubar[fl3, fl1])/(6480*MPhi^2*Pi^2), 
+     \[Beta][alphaOHq3[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOHu[mif1_, mif2_]] -> 
+      (g1^2*yquPhi[fl1, mif2]*yquPhibar[fl1, mif1])/(108*MPhi^2*Pi^2) - 
+       (yd[fl1, fl2]*ydbar[fl3, fl2]*yquPhi[fl3, mif2]*yquPhibar[fl1, mif1])/
+        (6*MPhi^2*Pi^2) + (yquPhi[fl1, mif2]*yquPhibar[fl2, mif1]*
+         yu[fl2, fl3]*yubar[fl1, fl3])/(6*MPhi^2*Pi^2) + 
+       (-30*g1^2*yquPhi[fl1, mif2]*yquPhibar[fl1, mif1] + 
+         270*yd[fl1, fl2]*ydbar[fl3, fl2]*yquPhi[fl3, mif2]*
+          yquPhibar[fl1, mif1] - 270*yquPhi[fl1, mif2]*yquPhibar[fl2, mif1]*
+          yu[fl2, fl3]*yubar[fl1, fl3])/(3240*MPhi^2*Pi^2), 
+     \[Beta][alphaOHud[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOHudbar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOld[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOldbar[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/108*(g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+          ydqPhibar[mif3, fl1])/(MPhi^2*Pi^2) + 
+       (g1^2*alphaOldbar[mif1_, mif2_, mif3_, mif4_]*KroneckerDelta[mif1, 
+          mif2]*ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl1])/(216*MPhi^2*Pi^2), 
+     \[Beta][alphaOle[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOlebar[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOledq[mif1_, mif2_, mif3_, mif4_]] -> 
+      (ydqPhi[mif3, fl1]*yl[mif1, mif2]*yquPhibar[mif4, fl2]*yu[fl1, fl2])/
+       (12*MPhi^2*Pi^2), \[Beta][alphaOledqbar[mif1_, mif2_, mif3_, 
+        mif4_]] -> (ydqPhibar[mif3, fl1]*ylbar[mif1, mif2]*yquPhi[mif4, fl2]*
+        yubar[fl1, fl2])/(12*MPhi^2*Pi^2), 
+     \[Beta][alphaOlequ1[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/12*(ydbar[fl1, fl2]*ydqPhibar[fl2, mif3]*yl[mif1, mif2]*
+         yquPhi[fl1, mif4])/(MPhi^2*Pi^2), 
+     \[Beta][alphaOlequ1bar[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/12*(yd[fl1, fl2]*ydqPhi[fl2, mif3]*ylbar[mif1, mif2]*
+         yquPhibar[fl1, mif4])/(MPhi^2*Pi^2), 
+     \[Beta][alphaOlequ3[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOlequ3bar[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOll[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOlq1[mif1_, mif2_, mif3_, mif4_]] -> 
+      (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[fl1, mif4]*
+         ydqPhibar[fl1, mif3])/(108*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[mif3, fl1]*
+         yquPhibar[mif4, fl1])/(54*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif1, mif2]*(12*ydqPhi[fl1, mif4]*
+           ydqPhibar[fl1, mif3] - 24*yquPhi[mif3, fl1]*yquPhibar[mif4, fl1]))/
+        (1296*MPhi^2*Pi^2), \[Beta][alphaOlq1bar[mif1_, mif2_, mif3_, 
+        mif4_]] -> (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[fl1, mif3]*
+         ydqPhibar[fl1, mif4])/(108*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[mif4, fl1]*
+         yquPhibar[mif3, fl1])/(54*MPhi^2*Pi^2) - 
+       (g1^2*alphaOlq1bar[mif1_, mif2_, mif3_, mif4_]*KroneckerDelta[mif1, 
+          mif2]*(12*ydqPhi[fl1, mif3]*ydqPhibar[fl1, mif4] - 
+          24*yquPhi[mif4, fl1]*yquPhibar[mif3, fl1]))/(2592*MPhi^2*Pi^2), 
+     \[Beta][alphaOlq3[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOlq3bar[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOlu[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+     \[Beta][alphaOlubar[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/108*(g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif3]*
+          yquPhibar[fl1, mif4])/(MPhi^2*Pi^2) + 
+       (g1^2*alphaOlubar[mif1_, mif2_, mif3_, mif4_]*KroneckerDelta[mif1, 
+          mif2]*yquPhi[fl1, mif3]*yquPhibar[fl1, mif4])/(216*MPhi^2*Pi^2), 
+     \[Beta][alphaOqd1[mif1_, mif2_, mif3_, mif4_]] -> 
+      (g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+         ydqPhibar[fl1, mif1])/(162*MPhi^2*Pi^2) + 
+       (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+         ydqPhibar[mif4, fl1])/(324*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
+         yquPhibar[mif2, fl1])/(81*MPhi^2*Pi^2) - 
+       (yd[mif1, mif4]*ydqPhi[mif3, fl1]*yquPhibar[mif2, fl2]*yu[fl1, fl2])/
+        (36*MPhi^2*Pi^2) - (ydbar[mif2, mif3]*ydqPhibar[mif4, fl1]*
+         yquPhi[mif1, fl2]*yubar[fl1, fl2])/(36*MPhi^2*Pi^2) + 
+       (-240*g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, mif1] - 120*g1^2*KroneckerDelta[mif1, mif2]*
+          ydqPhi[mif3, fl1]*ydqPhibar[mif4, fl1] + 720*ydqPhi[MIF1, fl1]*
+          ydqPhi[mif3, mif2]*ydqPhibar[MIF1, mif1]*ydqPhibar[mif4, fl1] + 
+         360*ydqPhi[fl1, mif2]*ydqPhi[mif3, MIF1]*ydqPhibar[fl1, MIF1]*
+          ydqPhibar[mif4, mif1] + 720*ydqPhi[MIF1, mif2]*ydqPhi[mif3, fl1]*
+          ydqPhibar[MIF1, fl1]*ydqPhibar[mif4, mif1] + 360*ydqPhi[fl1, MIF1]*
+          ydqPhi[mif3, mif2]*ydqPhibar[fl1, mif1]*ydqPhibar[mif4, MIF1] + 
+         180*ydqPhi[mif3, mif2]*ydqPhibar[mif4, fl1]*yquPhi[mif1, fl2]*
+          yquPhibar[fl1, fl2] + 360*ydqPhi[mif3, mif2]*ydqPhibar[mif4, MIF1]*
+          yquPhi[mif1, fl1]*yquPhibar[MIF1, fl1] + 
+         480*g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
+          yquPhibar[mif2, fl1] + 360*ydqPhi[mif3, MIF1]*ydqPhibar[mif4, mif1]*
+          yquPhi[MIF1, fl1]*yquPhibar[mif2, fl1] + 180*ydqPhi[mif3, fl1]*
+          ydqPhibar[mif4, mif1]*yquPhi[fl1, fl2]*yquPhibar[mif2, fl2] + 
+         540*yd[mif1, mif4]*ydqPhi[mif3, fl1]*yquPhibar[mif2, fl2]*
+          yu[fl1, fl2] + 540*ydbar[mif2, mif3]*ydqPhibar[mif4, fl1]*
+          yquPhi[mif1, fl2]*yubar[fl1, fl2])/(38880*MPhi^2*Pi^2), 
+     \[Beta][alphaOqd1bar[mif1_, mif2_, mif3_, mif4_]] -> 
+      (g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
+         ydqPhibar[fl1, mif2])/(162*MPhi^2*Pi^2) + 
+       (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+         ydqPhibar[mif3, fl1])/(324*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
+         yquPhibar[mif1, fl1])/(81*MPhi^2*Pi^2) - 
+       (yd[mif2, mif3]*ydqPhi[mif4, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
+        (36*MPhi^2*Pi^2) - (ydbar[mif1, mif4]*ydqPhibar[mif3, fl1]*
+         yquPhi[mif2, fl2]*yubar[fl1, fl2])/(36*MPhi^2*Pi^2) + 
+       (alphaOqd1bar[mif1_, mif2_, mif3_, mif4_]*
+         (-240*g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
+           ydqPhibar[fl1, mif2] - 120*g1^2*KroneckerDelta[mif1, mif2]*
+           ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl1] + 720*ydqPhi[MIF1, fl1]*
+           ydqPhi[mif4, mif1]*ydqPhibar[MIF1, mif2]*ydqPhibar[mif3, fl1] + 
+          360*ydqPhi[fl1, MIF1]*ydqPhi[mif4, mif1]*ydqPhibar[fl1, mif2]*
+           ydqPhibar[mif3, MIF1] + 360*ydqPhi[fl1, mif1]*ydqPhi[mif4, MIF1]*
+           ydqPhibar[fl1, MIF1]*ydqPhibar[mif3, mif2] + 
+          720*ydqPhi[MIF1, mif1]*ydqPhi[mif4, fl1]*ydqPhibar[MIF1, fl1]*
+           ydqPhibar[mif3, mif2] + 180*ydqPhi[mif4, mif1]*
+           ydqPhibar[mif3, fl1]*yquPhi[mif2, fl2]*yquPhibar[fl1, fl2] + 
+          360*ydqPhi[mif4, MIF1]*ydqPhibar[mif3, mif2]*yquPhi[MIF1, fl1]*
+           yquPhibar[mif1, fl1] + 480*g1^2*KroneckerDelta[mif3, mif4]*
+           yquPhi[mif2, fl1]*yquPhibar[mif1, fl1] + 180*ydqPhi[mif4, fl1]*
+           ydqPhibar[mif3, mif2]*yquPhi[fl1, fl2]*yquPhibar[mif1, fl2] + 
+          360*ydqPhi[mif4, mif1]*ydqPhibar[mif3, MIF1]*yquPhi[mif2, fl1]*
+           yquPhibar[MIF1, fl1] + 540*yd[mif2, mif3]*ydqPhi[mif4, fl1]*
+           yquPhibar[mif1, fl2]*yu[fl1, fl2] + 540*ydbar[mif1, mif4]*
+           ydqPhibar[mif3, fl1]*yquPhi[mif2, fl2]*yubar[fl1, fl2]))/
+        (77760*MPhi^2*Pi^2), \[Beta][alphaOqd8[mif1_, mif2_, mif3_, 
+        mif4_]] -> -1/144*(g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) + 
+       (yd[fl1, mif4]*ydbar[mif2, fl2]*ydqPhi[mif3, fl1]*
+         ydqPhibar[fl2, mif1])/(16*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+         ydqPhibar[mif4, fl1])/(72*MPhi^2*Pi^2) + 
+       (yd[mif1, fl1]*ydbar[fl2, mif3]*ydqPhi[fl1, mif2]*
+         ydqPhibar[mif4, fl2])/(16*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
+         yquPhibar[mif2, fl1])/(144*MPhi^2*Pi^2) - 
+       (yd[mif1, mif4]*ydqPhi[mif3, fl1]*yquPhibar[mif2, fl2]*yu[fl1, fl2])/
+        (6*MPhi^2*Pi^2) + (yd[fl1, mif4]*ydqPhi[mif3, fl1]*
+         yquPhibar[mif2, fl2]*yu[mif1, fl2])/(16*MPhi^2*Pi^2) - 
+       (ydbar[mif2, mif3]*ydqPhibar[mif4, fl1]*yquPhi[mif1, fl2]*
+         yubar[fl1, fl2])/(6*MPhi^2*Pi^2) + 
+       (ydbar[fl1, mif3]*ydqPhibar[mif4, fl1]*yquPhi[mif1, fl2]*
+         yubar[mif2, fl2])/(16*MPhi^2*Pi^2) + 
+       (120*g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, mif1] - 540*yd[fl1, mif4]*ydbar[mif2, fl2]*
+          ydqPhi[mif3, fl1]*ydqPhibar[fl2, mif1] + 
+         240*g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+          ydqPhibar[mif4, fl1] - 240*ydqPhi[MIF1, fl1]*ydqPhi[mif3, mif2]*
+          ydqPhibar[MIF1, mif1]*ydqPhibar[mif4, fl1] - 540*yd[mif1, fl1]*
+          ydbar[fl2, mif3]*ydqPhi[fl1, mif2]*ydqPhibar[mif4, fl2] - 
+         120*ydqPhi[fl1, mif2]*ydqPhi[mif3, MIF1]*ydqPhibar[fl1, MIF1]*
+          ydqPhibar[mif4, mif1] - 240*ydqPhi[MIF1, mif2]*ydqPhi[mif3, fl1]*
+          ydqPhibar[MIF1, fl1]*ydqPhibar[mif4, mif1] - 120*ydqPhi[fl1, MIF1]*
+          ydqPhi[mif3, mif2]*ydqPhibar[fl1, mif1]*ydqPhibar[mif4, MIF1] - 
+         60*ydqPhi[mif3, mif2]*ydqPhibar[mif4, fl1]*yquPhi[mif1, fl2]*
+          yquPhibar[fl1, fl2] - 120*ydqPhi[mif3, mif2]*ydqPhibar[mif4, MIF1]*
+          yquPhi[mif1, fl1]*yquPhibar[MIF1, fl1] + 
+         120*g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
+          yquPhibar[mif2, fl1] - 120*ydqPhi[mif3, MIF1]*ydqPhibar[mif4, mif1]*
+          yquPhi[MIF1, fl1]*yquPhibar[mif2, fl1] - 60*ydqPhi[mif3, fl1]*
+          ydqPhibar[mif4, mif1]*yquPhi[fl1, fl2]*yquPhibar[mif2, fl2] + 
+         1440*yd[mif1, mif4]*ydqPhi[mif3, fl1]*yquPhibar[mif2, fl2]*
+          yu[fl1, fl2] - 540*yd[fl1, mif4]*ydqPhi[mif3, fl1]*
+          yquPhibar[mif2, fl2]*yu[mif1, fl2] + 1440*ydbar[mif2, mif3]*
+          ydqPhibar[mif4, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2] - 
+         540*ydbar[fl1, mif3]*ydqPhibar[mif4, fl1]*yquPhi[mif1, fl2]*
+          yubar[mif2, fl2])/(17280*MPhi^2*Pi^2), 
+     \[Beta][alphaOqd8bar[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/144*(g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
+          ydqPhibar[fl1, mif2])/(MPhi^2*Pi^2) + 
+       (yd[fl1, mif3]*ydbar[mif1, fl2]*ydqPhi[mif4, fl1]*
+         ydqPhibar[fl2, mif2])/(16*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+         ydqPhibar[mif3, fl1])/(72*MPhi^2*Pi^2) + 
+       (yd[mif2, fl1]*ydbar[fl2, mif4]*ydqPhi[fl1, mif1]*
+         ydqPhibar[mif3, fl2])/(16*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
+         yquPhibar[mif1, fl1])/(144*MPhi^2*Pi^2) - 
+       (yd[mif2, mif3]*ydqPhi[mif4, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
+        (6*MPhi^2*Pi^2) + (yd[fl1, mif3]*ydqPhi[mif4, fl1]*
+         yquPhibar[mif1, fl2]*yu[mif2, fl2])/(16*MPhi^2*Pi^2) - 
+       (ydbar[mif1, mif4]*ydqPhibar[mif3, fl1]*yquPhi[mif2, fl2]*
+         yubar[fl1, fl2])/(6*MPhi^2*Pi^2) + 
+       (ydbar[fl1, mif4]*ydqPhibar[mif3, fl1]*yquPhi[mif2, fl2]*
+         yubar[mif1, fl2])/(16*MPhi^2*Pi^2) + 
+       (alphaOqd8bar[mif1_, mif2_, mif3_, mif4_]*
+         (120*g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
+           ydqPhibar[fl1, mif2] - 540*yd[fl1, mif3]*ydbar[mif1, fl2]*
+           ydqPhi[mif4, fl1]*ydqPhibar[fl2, mif2] + 
+          240*g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+           ydqPhibar[mif3, fl1] - 240*ydqPhi[MIF1, fl1]*ydqPhi[mif4, mif1]*
+           ydqPhibar[MIF1, mif2]*ydqPhibar[mif3, fl1] - 540*yd[mif2, fl1]*
+           ydbar[fl2, mif4]*ydqPhi[fl1, mif1]*ydqPhibar[mif3, fl2] - 
+          120*ydqPhi[fl1, MIF1]*ydqPhi[mif4, mif1]*ydqPhibar[fl1, mif2]*
+           ydqPhibar[mif3, MIF1] - 120*ydqPhi[fl1, mif1]*ydqPhi[mif4, MIF1]*
+           ydqPhibar[fl1, MIF1]*ydqPhibar[mif3, mif2] - 
+          240*ydqPhi[MIF1, mif1]*ydqPhi[mif4, fl1]*ydqPhibar[MIF1, fl1]*
+           ydqPhibar[mif3, mif2] - 60*ydqPhi[mif4, mif1]*ydqPhibar[mif3, fl1]*
+           yquPhi[mif2, fl2]*yquPhibar[fl1, fl2] - 120*ydqPhi[mif4, MIF1]*
+           ydqPhibar[mif3, mif2]*yquPhi[MIF1, fl1]*yquPhibar[mif1, fl1] + 
+          120*g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
+           yquPhibar[mif1, fl1] - 60*ydqPhi[mif4, fl1]*ydqPhibar[mif3, mif2]*
+           yquPhi[fl1, fl2]*yquPhibar[mif1, fl2] - 120*ydqPhi[mif4, mif1]*
+           ydqPhibar[mif3, MIF1]*yquPhi[mif2, fl1]*yquPhibar[MIF1, fl1] + 
+          1440*yd[mif2, mif3]*ydqPhi[mif4, fl1]*yquPhibar[mif1, fl2]*
+           yu[fl1, fl2] - 540*yd[fl1, mif3]*ydqPhi[mif4, fl1]*
+           yquPhibar[mif1, fl2]*yu[mif2, fl2] + 1440*ydbar[mif1, mif4]*
+           ydqPhibar[mif3, fl1]*yquPhi[mif2, fl2]*yubar[fl1, fl2] - 
+          540*ydbar[fl1, mif4]*ydqPhibar[mif3, fl1]*yquPhi[mif2, fl2]*
+           yubar[mif1, fl2]))/(34560*MPhi^2*Pi^2), 
+     \[Beta][alphaOqe[mif1_, mif2_, mif3_, mif4_]] -> 
+      (g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+         ydqPhibar[fl1, mif1])/(54*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
+         yquPhibar[mif2, fl1])/(27*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif3, mif4]*(12*ydqPhi[fl1, mif2]*
+           ydqPhibar[fl1, mif1] - 24*yquPhi[mif1, fl1]*yquPhibar[mif2, fl1]))/
+        (648*MPhi^2*Pi^2), \[Beta][alphaOqebar[mif1_, mif2_, mif3_, 
+        mif4_]] -> (g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
+         ydqPhibar[fl1, mif2])/(54*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
+         yquPhibar[mif1, fl1])/(27*MPhi^2*Pi^2) - 
+       (g1^2*alphaOqebar[mif1_, mif2_, mif3_, mif4_]*KroneckerDelta[mif3, 
+          mif4]*(12*ydqPhi[fl1, mif1]*ydqPhibar[fl1, mif2] - 
+          24*yquPhi[mif2, fl1]*yquPhibar[mif1, fl1]))/(1296*MPhi^2*Pi^2), 
      \[Beta][alphaOqq1[mif1_, mif2_, mif3_, mif4_]] -> 
       -1/648*(g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
           ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) + 
@@ -127,13 +461,13 @@ RGEResult = {\[Beta][g1] -> g1^3/(12*Pi^2), \[Beta][g2] -> g2^3/(12*Pi^2),
        (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[fl1, mif4]*
          ydqPhibar[fl1, mif3])/(1728*MPhi^2*Pi^2) - 
        (yd[mif3, fl1]*ydbar[mif4, fl2]*ydqPhi[fl1, mif2]*
-         ydqPhibar[fl2, mif1])/(128*MPhi^2*Pi^2) + 
+         ydqPhibar[fl2, mif1])/(64*MPhi^2*Pi^2) + 
        (yd[mif3, fl1]*ydbar[mif2, fl2]*ydqPhi[fl1, mif4]*
-         ydqPhibar[fl2, mif1])/(768*MPhi^2*Pi^2) + 
+         ydqPhibar[fl2, mif1])/(384*MPhi^2*Pi^2) + 
        (yd[mif1, fl1]*ydbar[mif4, fl2]*ydqPhi[fl1, mif2]*
-         ydqPhibar[fl2, mif3])/(768*MPhi^2*Pi^2) - 
+         ydqPhibar[fl2, mif3])/(384*MPhi^2*Pi^2) - 
        (yd[mif1, fl1]*ydbar[mif2, fl2]*ydqPhi[fl1, mif4]*
-         ydqPhibar[fl2, mif3])/(128*MPhi^2*Pi^2) + 
+         ydqPhibar[fl2, mif3])/(64*MPhi^2*Pi^2) + 
        (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
          yquPhibar[mif2, fl1])/(324*MPhi^2*Pi^2) + 
        (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
@@ -147,231 +481,66 @@ RGEResult = {\[Beta][g1] -> g1^3/(12*Pi^2), \[Beta][g2] -> g2^3/(12*Pi^2),
        (g3^2*KroneckerDelta[mif1, mif2]*yquPhi[mif3, fl1]*
          yquPhibar[mif4, fl1])/(1728*MPhi^2*Pi^2) + 
        (yd[mif3, fl1]*ydqPhi[fl1, mif4]*yquPhibar[mif2, fl2]*yu[mif1, fl2])/
-        (768*MPhi^2*Pi^2) + (yd[mif3, fl1]*ydqPhi[fl1, mif2]*
-         yquPhibar[mif4, fl2]*yu[mif1, fl2])/(256*MPhi^2*Pi^2) + 
+        (384*MPhi^2*Pi^2) + (yd[mif3, fl1]*ydqPhi[fl1, mif2]*
+         yquPhibar[mif4, fl2]*yu[mif1, fl2])/(128*MPhi^2*Pi^2) + 
        (yd[mif1, fl1]*ydqPhi[fl1, mif4]*yquPhibar[mif2, fl2]*yu[mif3, fl2])/
-        (256*MPhi^2*Pi^2) + (yd[mif1, fl1]*ydqPhi[fl1, mif2]*
-         yquPhibar[mif4, fl2]*yu[mif3, fl2])/(768*MPhi^2*Pi^2) - 
+        (128*MPhi^2*Pi^2) + (yd[mif1, fl1]*ydqPhi[fl1, mif2]*
+         yquPhibar[mif4, fl2]*yu[mif3, fl2])/(384*MPhi^2*Pi^2) - 
        (yquPhi[mif3, fl1]*yquPhibar[mif4, fl2]*yu[mif1, fl2]*
-         yubar[mif2, fl1])/(128*MPhi^2*Pi^2) + 
+         yubar[mif2, fl1])/(64*MPhi^2*Pi^2) + 
        (yquPhi[mif1, fl1]*yquPhibar[mif4, fl2]*yu[mif3, fl2]*
-         yubar[mif2, fl1])/(768*MPhi^2*Pi^2) + 
+         yubar[mif2, fl1])/(384*MPhi^2*Pi^2) + 
        (ydbar[mif4, fl1]*ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*
-         yubar[mif2, fl2])/(768*MPhi^2*Pi^2) + 
+         yubar[mif2, fl2])/(384*MPhi^2*Pi^2) + 
        (ydbar[mif4, fl1]*ydqPhibar[fl1, mif1]*yquPhi[mif3, fl2]*
-         yubar[mif2, fl2])/(256*MPhi^2*Pi^2) + 
+         yubar[mif2, fl2])/(128*MPhi^2*Pi^2) + 
        (yquPhi[mif3, fl1]*yquPhibar[mif2, fl2]*yu[mif1, fl2]*
-         yubar[mif4, fl1])/(768*MPhi^2*Pi^2) - 
+         yubar[mif4, fl1])/(384*MPhi^2*Pi^2) - 
        (yquPhi[mif1, fl1]*yquPhibar[mif2, fl2]*yu[mif3, fl2]*
-         yubar[mif4, fl1])/(128*MPhi^2*Pi^2) + 
+         yubar[mif4, fl1])/(64*MPhi^2*Pi^2) + 
        (ydbar[mif2, fl1]*ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*
-         yubar[mif4, fl2])/(256*MPhi^2*Pi^2) + 
+         yubar[mif4, fl2])/(128*MPhi^2*Pi^2) + 
        (ydbar[mif2, fl1]*ydqPhibar[fl1, mif1]*yquPhi[mif3, fl2]*
-         yubar[mif4, fl2])/(768*MPhi^2*Pi^2), 
-     \[Beta][alphaOqq3[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/1152*(g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[fl1, mif4]*
-          ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[fl1, mif2]*
-         ydqPhibar[fl1, mif3])/(1152*MPhi^2*Pi^2) + 
-       (yd[mif3, fl1]*ydbar[mif2, fl2]*ydqPhi[fl1, mif4]*
-         ydqPhibar[fl2, mif1])/(768*MPhi^2*Pi^2) + 
-       (yd[mif1, fl1]*ydbar[mif4, fl2]*ydqPhi[fl1, mif2]*
-         ydqPhibar[fl2, mif3])/(768*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif1, mif4]*yquPhi[mif3, fl1]*
-         yquPhibar[mif2, fl1])/(1152*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif2, mif3]*yquPhi[mif1, fl1]*
-         yquPhibar[mif4, fl1])/(1152*MPhi^2*Pi^2) - 
-       (yd[mif3, fl1]*ydqPhi[fl1, mif4]*yquPhibar[mif2, fl2]*yu[mif1, fl2])/
-        (768*MPhi^2*Pi^2) - (yd[mif3, fl1]*ydqPhi[fl1, mif2]*
-         yquPhibar[mif4, fl2]*yu[mif1, fl2])/(256*MPhi^2*Pi^2) - 
-       (yd[mif1, fl1]*ydqPhi[fl1, mif4]*yquPhibar[mif2, fl2]*yu[mif3, fl2])/
-        (256*MPhi^2*Pi^2) - (yd[mif1, fl1]*ydqPhi[fl1, mif2]*
-         yquPhibar[mif4, fl2]*yu[mif3, fl2])/(768*MPhi^2*Pi^2) + 
-       (yquPhi[mif1, fl1]*yquPhibar[mif4, fl2]*yu[mif3, fl2]*
-         yubar[mif2, fl1])/(768*MPhi^2*Pi^2) - 
-       (ydbar[mif4, fl1]*ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*
-         yubar[mif2, fl2])/(768*MPhi^2*Pi^2) - 
-       (ydbar[mif4, fl1]*ydqPhibar[fl1, mif1]*yquPhi[mif3, fl2]*
-         yubar[mif2, fl2])/(256*MPhi^2*Pi^2) + 
-       (yquPhi[mif3, fl1]*yquPhibar[mif2, fl2]*yu[mif1, fl2]*
-         yubar[mif4, fl1])/(768*MPhi^2*Pi^2) - 
-       (ydbar[mif2, fl1]*ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*
-         yubar[mif4, fl2])/(256*MPhi^2*Pi^2) - 
-       (ydbar[mif2, fl1]*ydqPhibar[fl1, mif1]*yquPhi[mif3, fl2]*
-         yubar[mif4, fl2])/(768*MPhi^2*Pi^2), 
-     \[Beta][alphaOuu[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif2]*
-         yquPhibar[fl1, mif1])/(162*MPhi^2*Pi^2) + 
-       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif2]*
-         yquPhibar[fl1, mif1])/(864*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif2, mif3]*yquPhi[fl1, mif4]*
-         yquPhibar[fl1, mif1])/(288*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif1, mif4]*yquPhi[fl1, mif2]*
-         yquPhibar[fl1, mif3])/(288*MPhi^2*Pi^2) + 
-       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
-         yquPhibar[fl1, mif3])/(162*MPhi^2*Pi^2) + 
-       (g3^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
-         yquPhibar[fl1, mif3])/(864*MPhi^2*Pi^2) - 
-       (yquPhi[fl1, mif4]*yquPhibar[fl2, mif3]*yu[fl2, mif2]*
-         yubar[fl1, mif1])/(64*MPhi^2*Pi^2) + 
-       (yquPhi[fl1, mif2]*yquPhibar[fl2, mif3]*yu[fl2, mif4]*
-         yubar[fl1, mif1])/(192*MPhi^2*Pi^2) + 
-       (yquPhi[fl1, mif4]*yquPhibar[fl2, mif1]*yu[fl2, mif2]*
-         yubar[fl1, mif3])/(192*MPhi^2*Pi^2) - 
-       (yquPhi[fl1, mif2]*yquPhibar[fl2, mif1]*yu[fl2, mif4]*
-         yubar[fl1, mif3])/(64*MPhi^2*Pi^2), 
-     \[Beta][alphaOdd[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/324*(g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif1, fl1]*
-          ydqPhibar[mif2, fl1])/(MPhi^2*Pi^2) + 
-       (g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif1, fl1]*
-         ydqPhibar[mif2, fl1])/(864*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif2, fl1])/(288*MPhi^2*Pi^2) - 
-       (yd[fl1, mif4]*ydbar[fl2, mif3]*ydqPhi[mif1, fl1]*
-         ydqPhibar[mif2, fl2])/(64*MPhi^2*Pi^2) + 
-       (yd[fl1, mif4]*ydbar[fl2, mif1]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif2, fl2])/(192*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[mif1, fl1]*
-         ydqPhibar[mif4, fl1])/(288*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif4, fl1])/(324*MPhi^2*Pi^2) + 
-       (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif4, fl1])/(864*MPhi^2*Pi^2) + 
-       (yd[fl1, mif2]*ydbar[fl2, mif3]*ydqPhi[mif1, fl1]*
-         ydqPhibar[mif4, fl2])/(192*MPhi^2*Pi^2) - 
-       (yd[fl1, mif2]*ydbar[fl2, mif1]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif4, fl2])/(64*MPhi^2*Pi^2), 
-     \[Beta][alphaOud1[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif4, fl1])/(81*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif2]*
-         yquPhibar[fl1, mif1])/(162*MPhi^2*Pi^2) - 
-       (yd[fl1, mif4]*ydbar[fl2, mif3]*yquPhi[fl2, mif2]*
-         yquPhibar[fl1, mif1])/(36*MPhi^2*Pi^2) + 
-       (yd[fl1, mif4]*ydqPhi[mif3, fl2]*yquPhibar[fl1, mif1]*yu[fl2, mif2])/
-        (36*MPhi^2*Pi^2) + (ydbar[fl1, mif3]*ydqPhibar[mif4, fl2]*
-         yquPhi[fl1, mif2]*yubar[fl2, mif1])/(36*MPhi^2*Pi^2) - 
-       (ydqPhi[mif3, fl1]*ydqPhibar[mif4, fl2]*yu[fl1, mif2]*
-         yubar[fl2, mif1])/(36*MPhi^2*Pi^2), 
-     \[Beta][alphaOud8[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/72*(g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
-          ydqPhibar[mif4, fl1])/(MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif2]*
-         yquPhibar[fl1, mif1])/(72*MPhi^2*Pi^2) + 
-       (yd[fl1, mif4]*ydbar[fl2, mif3]*yquPhi[fl2, mif2]*
-         yquPhibar[fl1, mif1])/(48*MPhi^2*Pi^2) - 
-       (yd[fl1, mif4]*ydqPhi[mif3, fl2]*yquPhibar[fl1, mif1]*yu[fl2, mif2])/
-        (48*MPhi^2*Pi^2) - (yd[fl1, mif4]*ydqPhi[mif3, fl1]*
-         yquPhibar[fl2, mif1]*yu[fl2, mif2])/(16*MPhi^2*Pi^2) - 
-       (ydbar[fl1, mif3]*ydqPhibar[mif4, fl2]*yquPhi[fl1, mif2]*
-         yubar[fl2, mif1])/(48*MPhi^2*Pi^2) - 
-       (ydbar[fl1, mif3]*ydqPhibar[mif4, fl1]*yquPhi[fl2, mif2]*
-         yubar[fl2, mif1])/(16*MPhi^2*Pi^2) + 
-       (ydqPhi[mif3, fl1]*ydqPhibar[mif4, fl2]*yu[fl1, mif2]*
-         yubar[fl2, mif1])/(48*MPhi^2*Pi^2), 
-     \[Beta][alphaOqu1[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/81*(g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
-          ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) + 
-       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
-         yquPhibar[fl1, mif3])/(324*MPhi^2*Pi^2) + 
-       (2*g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
-         yquPhibar[mif2, fl1])/(81*MPhi^2*Pi^2) - 
-       (yd[fl1, fl2]*ydqPhi[fl2, mif2]*yquPhibar[fl1, mif3]*yu[mif1, mif4])/
-        (72*MPhi^2*Pi^2) - (ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*
-         yquPhi[fl1, mif4]*yubar[mif2, mif3])/(72*MPhi^2*Pi^2), 
-     \[Beta][alphaOqu8[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/144*(g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
-          ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
-         yquPhibar[fl1, mif3])/(72*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
-         yquPhibar[mif2, fl1])/(144*MPhi^2*Pi^2) + 
-       (yd[mif1, fl1]*ydqPhi[fl1, mif2]*yquPhibar[fl2, mif3]*yu[fl2, mif4])/
-        (32*MPhi^2*Pi^2) - (yd[fl1, fl2]*ydqPhi[fl2, mif2]*
-         yquPhibar[fl1, mif3]*yu[mif1, mif4])/(12*MPhi^2*Pi^2) + 
-       (yquPhi[fl1, mif4]*yquPhibar[mif2, fl2]*yu[mif1, fl2]*
-         yubar[fl1, mif3])/(32*MPhi^2*Pi^2) + 
-       (ydbar[mif2, fl1]*ydqPhibar[fl1, mif1]*yquPhi[fl2, mif4]*
-         yubar[fl2, mif3])/(32*MPhi^2*Pi^2) + 
-       (yquPhi[mif1, fl1]*yquPhibar[fl2, mif3]*yu[fl2, mif4]*
-         yubar[mif2, fl1])/(32*MPhi^2*Pi^2) - 
-       (ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif4]*
-         yubar[mif2, mif3])/(12*MPhi^2*Pi^2), 
-     \[Beta][alphaOqd1[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
-         ydqPhibar[fl1, mif1])/(162*MPhi^2*Pi^2) + 
-       (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif4, fl1])/(324*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
-         yquPhibar[mif2, fl1])/(81*MPhi^2*Pi^2) - 
-       (yd[mif1, mif4]*ydqPhi[mif3, fl1]*yquPhibar[mif2, fl2]*yu[fl1, fl2])/
-        (72*MPhi^2*Pi^2) - (ydbar[mif2, mif3]*ydqPhibar[mif4, fl1]*
-         yquPhi[mif1, fl2]*yubar[fl1, fl2])/(72*MPhi^2*Pi^2), 
-     \[Beta][alphaOqd8[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/144*(g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
-          ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) + 
-       (yd[fl1, mif4]*ydbar[mif2, fl2]*ydqPhi[mif3, fl1]*
-         ydqPhibar[fl2, mif1])/(32*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif4, fl1])/(72*MPhi^2*Pi^2) + 
-       (yd[mif1, fl1]*ydbar[fl2, mif3]*ydqPhi[fl1, mif2]*
-         ydqPhibar[mif4, fl2])/(32*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
-         yquPhibar[mif2, fl1])/(144*MPhi^2*Pi^2) - 
-       (yd[mif1, mif4]*ydqPhi[mif3, fl1]*yquPhibar[mif2, fl2]*yu[fl1, fl2])/
-        (12*MPhi^2*Pi^2) + (yd[fl1, mif4]*ydqPhi[mif3, fl1]*
-         yquPhibar[mif2, fl2]*yu[mif1, fl2])/(32*MPhi^2*Pi^2) - 
-       (ydbar[mif2, mif3]*ydqPhibar[mif4, fl1]*yquPhi[mif1, fl2]*
-         yubar[fl1, fl2])/(12*MPhi^2*Pi^2) + 
-       (ydbar[fl1, mif3]*ydqPhibar[mif4, fl1]*yquPhi[mif1, fl2]*
-         yubar[mif2, fl2])/(32*MPhi^2*Pi^2), 
-     \[Beta][alphaOquqd1[mif1_, mif2_, mif3_, mif4_]] -> 
-      (yd[mif3, mif4]*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
-        (12*MPhi^2*Pi^2) + (g3^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2])/
-        (9*MPhi^2*Pi^2) + (5*g1^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/
-        (324*MPhi^2*Pi^2) + (g2^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/
-        (12*MPhi^2*Pi^2) - (7*g3^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/
-        (27*MPhi^2*Pi^2) + (ydqPhibar[mif4, fl1]*yquPhi[mif3, fl2]*
-         yu[mif1, mif2]*yubar[fl1, fl2])/(12*MPhi^2*Pi^2), 
-     \[Beta][alphaOquqd8[mif1_, mif2_, mif3_, mif4_]] -> 
-      (-5*g1^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2])/(288*MPhi^2*Pi^2) - 
-       (3*g2^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2])/(32*MPhi^2*Pi^2) + 
-       (5*g3^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2])/(24*MPhi^2*Pi^2) - 
-       (5*g1^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/(432*MPhi^2*Pi^2) - 
-       (g2^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/(16*MPhi^2*Pi^2) - 
-       (11*g3^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/(36*MPhi^2*Pi^2), 
-     \[Beta][alphaOll[mif1_, mif2_, mif3_, mif4_]] -> 0, 
-     \[Beta][alphaOee[mif1_, mif2_, mif3_, mif4_]] -> 0, 
-     \[Beta][alphaOle[mif1_, mif2_, mif3_, mif4_]] -> 0, 
-     \[Beta][alphaOlq1[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[fl1, mif4]*
-         ydqPhibar[fl1, mif3])/(108*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[mif3, fl1]*
-         yquPhibar[mif4, fl1])/(54*MPhi^2*Pi^2), 
-     \[Beta][alphaOlq3[mif1_, mif2_, mif3_, mif4_]] -> 0, 
-     \[Beta][alphaOeu[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/54*(g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
-         yquPhibar[fl1, mif3])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOed[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/54*(g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif4, fl1])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOqe[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
-         ydqPhibar[fl1, mif1])/(54*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
-         yquPhibar[mif2, fl1])/(27*MPhi^2*Pi^2), 
-     \[Beta][alphaOlu[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/108*(g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
-         yquPhibar[fl1, mif3])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOld[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/108*(g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
-         ydqPhibar[mif4, fl1])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOledq[mif1_, mif2_, mif3_, mif4_]] -> 
-      (ydqPhi[mif3, fl1]*yl[mif1, mif2]*yquPhibar[mif4, fl2]*yu[fl1, fl2])/
-       (12*MPhi^2*Pi^2), \[Beta][alphaOlequ1[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/12*(ydbar[fl1, fl2]*ydqPhibar[fl2, mif3]*yl[mif1, mif2]*
-         yquPhi[fl1, mif4])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOlequ3[mif1_, mif2_, mif3_, mif4_]] -> 0, 
+         yubar[mif4, fl2])/(384*MPhi^2*Pi^2) + 
+       (960*g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, mif1] - 360*g3^2*KroneckerDelta[mif3, mif4]*
+          ydqPhi[fl1, mif2]*ydqPhibar[fl1, mif1] + 
+         540*g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[fl1, mif4]*
+          ydqPhibar[fl1, mif1] + 540*g3^2*KroneckerDelta[mif1, mif4]*
+          ydqPhi[fl1, mif2]*ydqPhibar[fl1, mif3] + 
+         960*g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[fl1, mif4]*
+          ydqPhibar[fl1, mif3] - 360*g3^2*KroneckerDelta[mif1, mif2]*
+          ydqPhi[fl1, mif4]*ydqPhibar[fl1, mif3] + 4860*yd[mif3, fl1]*
+          ydbar[mif4, fl2]*ydqPhi[fl1, mif2]*ydqPhibar[fl2, mif1] - 
+         810*yd[mif3, fl1]*ydbar[mif2, fl2]*ydqPhi[fl1, mif4]*
+          ydqPhibar[fl2, mif1] - 810*yd[mif1, fl1]*ydbar[mif4, fl2]*
+          ydqPhi[fl1, mif2]*ydqPhibar[fl2, mif3] + 4860*yd[mif1, fl1]*
+          ydbar[mif2, fl2]*ydqPhi[fl1, mif4]*ydqPhibar[fl2, mif3] - 
+         1920*g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
+          yquPhibar[mif2, fl1] - 360*g3^2*KroneckerDelta[mif3, mif4]*
+          yquPhi[mif1, fl1]*yquPhibar[mif2, fl1] + 
+         540*g3^2*KroneckerDelta[mif1, mif4]*yquPhi[mif3, fl1]*
+          yquPhibar[mif2, fl1] + 540*g3^2*KroneckerDelta[mif2, mif3]*
+          yquPhi[mif1, fl1]*yquPhibar[mif4, fl1] - 
+         1920*g1^2*KroneckerDelta[mif1, mif2]*yquPhi[mif3, fl1]*
+          yquPhibar[mif4, fl1] - 360*g3^2*KroneckerDelta[mif1, mif2]*
+          yquPhi[mif3, fl1]*yquPhibar[mif4, fl1] - 810*yd[mif3, fl1]*
+          ydqPhi[fl1, mif4]*yquPhibar[mif2, fl2]*yu[mif1, fl2] - 
+         2430*yd[mif3, fl1]*ydqPhi[fl1, mif2]*yquPhibar[mif4, fl2]*
+          yu[mif1, fl2] - 2430*yd[mif1, fl1]*ydqPhi[fl1, mif4]*
+          yquPhibar[mif2, fl2]*yu[mif3, fl2] - 810*yd[mif1, fl1]*
+          ydqPhi[fl1, mif2]*yquPhibar[mif4, fl2]*yu[mif3, fl2] + 
+         4860*yquPhi[mif3, fl1]*yquPhibar[mif4, fl2]*yu[mif1, fl2]*
+          yubar[mif2, fl1] - 810*yquPhi[mif1, fl1]*yquPhibar[mif4, fl2]*
+          yu[mif3, fl2]*yubar[mif2, fl1] - 810*ydbar[mif4, fl1]*
+          ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*yubar[mif2, fl2] - 
+         2430*ydbar[mif4, fl1]*ydqPhibar[fl1, mif1]*yquPhi[mif3, fl2]*
+          yubar[mif2, fl2] - 810*yquPhi[mif3, fl1]*yquPhibar[mif2, fl2]*
+          yu[mif1, fl2]*yubar[mif4, fl1] + 4860*yquPhi[mif1, fl1]*
+          yquPhibar[mif2, fl2]*yu[mif3, fl2]*yubar[mif4, fl1] - 
+         2430*ydbar[mif2, fl1]*ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*
+          yubar[mif4, fl2] - 810*ydbar[mif2, fl1]*ydqPhibar[fl1, mif1]*
+          yquPhi[mif3, fl2]*yubar[mif4, fl2])/(622080*MPhi^2*Pi^2), 
      \[Beta][alphaOqq1bar[mif1_, mif2_, mif3_, mif4_]] -> 
       -1/648*(g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
           ydqPhibar[fl1, mif2])/(MPhi^2*Pi^2) + 
@@ -386,13 +555,13 @@ RGEResult = {\[Beta][g1] -> g1^3/(12*Pi^2), \[Beta][g2] -> g2^3/(12*Pi^2),
        (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[fl1, mif3]*
          ydqPhibar[fl1, mif4])/(1728*MPhi^2*Pi^2) - 
        (yd[mif4, fl1]*ydbar[mif3, fl2]*ydqPhi[fl1, mif1]*
-         ydqPhibar[fl2, mif2])/(128*MPhi^2*Pi^2) + 
+         ydqPhibar[fl2, mif2])/(64*MPhi^2*Pi^2) + 
        (yd[mif4, fl1]*ydbar[mif1, fl2]*ydqPhi[fl1, mif3]*
-         ydqPhibar[fl2, mif2])/(768*MPhi^2*Pi^2) + 
+         ydqPhibar[fl2, mif2])/(384*MPhi^2*Pi^2) + 
        (yd[mif2, fl1]*ydbar[mif3, fl2]*ydqPhi[fl1, mif1]*
-         ydqPhibar[fl2, mif4])/(768*MPhi^2*Pi^2) - 
+         ydqPhibar[fl2, mif4])/(384*MPhi^2*Pi^2) - 
        (yd[mif2, fl1]*ydbar[mif1, fl2]*ydqPhi[fl1, mif3]*
-         ydqPhibar[fl2, mif4])/(128*MPhi^2*Pi^2) + 
+         ydqPhibar[fl2, mif4])/(64*MPhi^2*Pi^2) + 
        (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
          yquPhibar[mif1, fl1])/(324*MPhi^2*Pi^2) + 
        (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
@@ -406,128 +575,202 @@ RGEResult = {\[Beta][g1] -> g1^3/(12*Pi^2), \[Beta][g2] -> g2^3/(12*Pi^2),
        (g3^2*KroneckerDelta[mif1, mif2]*yquPhi[mif4, fl1]*
          yquPhibar[mif3, fl1])/(1728*MPhi^2*Pi^2) + 
        (yd[mif4, fl1]*ydqPhi[fl1, mif3]*yquPhibar[mif1, fl2]*yu[mif2, fl2])/
-        (768*MPhi^2*Pi^2) + (yd[mif4, fl1]*ydqPhi[fl1, mif1]*
-         yquPhibar[mif3, fl2]*yu[mif2, fl2])/(256*MPhi^2*Pi^2) + 
+        (384*MPhi^2*Pi^2) + (yd[mif4, fl1]*ydqPhi[fl1, mif1]*
+         yquPhibar[mif3, fl2]*yu[mif2, fl2])/(128*MPhi^2*Pi^2) + 
        (yd[mif2, fl1]*ydqPhi[fl1, mif3]*yquPhibar[mif1, fl2]*yu[mif4, fl2])/
-        (256*MPhi^2*Pi^2) + (yd[mif2, fl1]*ydqPhi[fl1, mif1]*
-         yquPhibar[mif3, fl2]*yu[mif4, fl2])/(768*MPhi^2*Pi^2) - 
+        (128*MPhi^2*Pi^2) + (yd[mif2, fl1]*ydqPhi[fl1, mif1]*
+         yquPhibar[mif3, fl2]*yu[mif4, fl2])/(384*MPhi^2*Pi^2) - 
        (yquPhi[mif4, fl1]*yquPhibar[mif3, fl2]*yu[mif2, fl2]*
-         yubar[mif1, fl1])/(128*MPhi^2*Pi^2) + 
+         yubar[mif1, fl1])/(64*MPhi^2*Pi^2) + 
        (yquPhi[mif2, fl1]*yquPhibar[mif3, fl2]*yu[mif4, fl2]*
-         yubar[mif1, fl1])/(768*MPhi^2*Pi^2) + 
+         yubar[mif1, fl1])/(384*MPhi^2*Pi^2) + 
        (ydbar[mif3, fl1]*ydqPhibar[fl1, mif4]*yquPhi[mif2, fl2]*
-         yubar[mif1, fl2])/(768*MPhi^2*Pi^2) + 
+         yubar[mif1, fl2])/(384*MPhi^2*Pi^2) + 
        (ydbar[mif3, fl1]*ydqPhibar[fl1, mif2]*yquPhi[mif4, fl2]*
-         yubar[mif1, fl2])/(256*MPhi^2*Pi^2) + 
+         yubar[mif1, fl2])/(128*MPhi^2*Pi^2) + 
        (yquPhi[mif4, fl1]*yquPhibar[mif1, fl2]*yu[mif2, fl2]*
-         yubar[mif3, fl1])/(768*MPhi^2*Pi^2) - 
+         yubar[mif3, fl1])/(384*MPhi^2*Pi^2) - 
        (yquPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[mif4, fl2]*
-         yubar[mif3, fl1])/(128*MPhi^2*Pi^2) + 
+         yubar[mif3, fl1])/(64*MPhi^2*Pi^2) + 
        (ydbar[mif1, fl1]*ydqPhibar[fl1, mif4]*yquPhi[mif2, fl2]*
-         yubar[mif3, fl2])/(256*MPhi^2*Pi^2) + 
+         yubar[mif3, fl2])/(128*MPhi^2*Pi^2) + 
        (ydbar[mif1, fl1]*ydqPhibar[fl1, mif2]*yquPhi[mif4, fl2]*
-         yubar[mif3, fl2])/(768*MPhi^2*Pi^2), 
+         yubar[mif3, fl2])/(384*MPhi^2*Pi^2) + 
+       (alphaOqq1bar[mif1_, mif2_, mif3_, mif4_]*
+         (960*g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
+           ydqPhibar[fl1, mif2] - 360*g3^2*KroneckerDelta[mif3, mif4]*
+           ydqPhi[fl1, mif1]*ydqPhibar[fl1, mif2] + 
+          540*g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[fl1, mif3]*
+           ydqPhibar[fl1, mif2] + 540*g3^2*KroneckerDelta[mif2, mif3]*
+           ydqPhi[fl1, mif1]*ydqPhibar[fl1, mif4] + 
+          960*g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[fl1, mif3]*
+           ydqPhibar[fl1, mif4] - 360*g3^2*KroneckerDelta[mif1, mif2]*
+           ydqPhi[fl1, mif3]*ydqPhibar[fl1, mif4] + 4860*yd[mif4, fl1]*
+           ydbar[mif3, fl2]*ydqPhi[fl1, mif1]*ydqPhibar[fl2, mif2] - 
+          810*yd[mif4, fl1]*ydbar[mif1, fl2]*ydqPhi[fl1, mif3]*
+           ydqPhibar[fl2, mif2] - 810*yd[mif2, fl1]*ydbar[mif3, fl2]*
+           ydqPhi[fl1, mif1]*ydqPhibar[fl2, mif4] + 4860*yd[mif2, fl1]*
+           ydbar[mif1, fl2]*ydqPhi[fl1, mif3]*ydqPhibar[fl2, mif4] - 
+          1920*g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
+           yquPhibar[mif1, fl1] - 360*g3^2*KroneckerDelta[mif3, mif4]*
+           yquPhi[mif2, fl1]*yquPhibar[mif1, fl1] + 
+          540*g3^2*KroneckerDelta[mif2, mif3]*yquPhi[mif4, fl1]*
+           yquPhibar[mif1, fl1] + 540*g3^2*KroneckerDelta[mif1, mif4]*
+           yquPhi[mif2, fl1]*yquPhibar[mif3, fl1] - 
+          1920*g1^2*KroneckerDelta[mif1, mif2]*yquPhi[mif4, fl1]*
+           yquPhibar[mif3, fl1] - 360*g3^2*KroneckerDelta[mif1, mif2]*
+           yquPhi[mif4, fl1]*yquPhibar[mif3, fl1] - 810*yd[mif4, fl1]*
+           ydqPhi[fl1, mif3]*yquPhibar[mif1, fl2]*yu[mif2, fl2] - 
+          2430*yd[mif4, fl1]*ydqPhi[fl1, mif1]*yquPhibar[mif3, fl2]*
+           yu[mif2, fl2] - 2430*yd[mif2, fl1]*ydqPhi[fl1, mif3]*
+           yquPhibar[mif1, fl2]*yu[mif4, fl2] - 810*yd[mif2, fl1]*
+           ydqPhi[fl1, mif1]*yquPhibar[mif3, fl2]*yu[mif4, fl2] + 
+          4860*yquPhi[mif4, fl1]*yquPhibar[mif3, fl2]*yu[mif2, fl2]*
+           yubar[mif1, fl1] - 810*yquPhi[mif2, fl1]*yquPhibar[mif3, fl2]*
+           yu[mif4, fl2]*yubar[mif1, fl1] - 810*ydbar[mif3, fl1]*
+           ydqPhibar[fl1, mif4]*yquPhi[mif2, fl2]*yubar[mif1, fl2] - 
+          2430*ydbar[mif3, fl1]*ydqPhibar[fl1, mif2]*yquPhi[mif4, fl2]*
+           yubar[mif1, fl2] - 810*yquPhi[mif4, fl1]*yquPhibar[mif1, fl2]*
+           yu[mif2, fl2]*yubar[mif3, fl1] + 4860*yquPhi[mif2, fl1]*
+           yquPhibar[mif1, fl2]*yu[mif4, fl2]*yubar[mif3, fl1] - 
+          2430*ydbar[mif1, fl1]*ydqPhibar[fl1, mif4]*yquPhi[mif2, fl2]*
+           yubar[mif3, fl2] - 810*ydbar[mif1, fl1]*ydqPhibar[fl1, mif2]*
+           yquPhi[mif4, fl2]*yubar[mif3, fl2]))/(1244160*MPhi^2*Pi^2), 
+     \[Beta][alphaOqq3[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/1152*(g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[fl1, mif4]*
+          ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[fl1, mif2]*
+         ydqPhibar[fl1, mif3])/(1152*MPhi^2*Pi^2) + 
+       (yd[mif3, fl1]*ydbar[mif2, fl2]*ydqPhi[fl1, mif4]*
+         ydqPhibar[fl2, mif1])/(384*MPhi^2*Pi^2) + 
+       (yd[mif1, fl1]*ydbar[mif4, fl2]*ydqPhi[fl1, mif2]*
+         ydqPhibar[fl2, mif3])/(384*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif1, mif4]*yquPhi[mif3, fl1]*
+         yquPhibar[mif2, fl1])/(1152*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif2, mif3]*yquPhi[mif1, fl1]*
+         yquPhibar[mif4, fl1])/(1152*MPhi^2*Pi^2) - 
+       (yd[mif3, fl1]*ydqPhi[fl1, mif4]*yquPhibar[mif2, fl2]*yu[mif1, fl2])/
+        (384*MPhi^2*Pi^2) - (yd[mif3, fl1]*ydqPhi[fl1, mif2]*
+         yquPhibar[mif4, fl2]*yu[mif1, fl2])/(128*MPhi^2*Pi^2) - 
+       (yd[mif1, fl1]*ydqPhi[fl1, mif4]*yquPhibar[mif2, fl2]*yu[mif3, fl2])/
+        (128*MPhi^2*Pi^2) - (yd[mif1, fl1]*ydqPhi[fl1, mif2]*
+         yquPhibar[mif4, fl2]*yu[mif3, fl2])/(384*MPhi^2*Pi^2) + 
+       (yquPhi[mif1, fl1]*yquPhibar[mif4, fl2]*yu[mif3, fl2]*
+         yubar[mif2, fl1])/(384*MPhi^2*Pi^2) - 
+       (ydbar[mif4, fl1]*ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*
+         yubar[mif2, fl2])/(384*MPhi^2*Pi^2) - 
+       (ydbar[mif4, fl1]*ydqPhibar[fl1, mif1]*yquPhi[mif3, fl2]*
+         yubar[mif2, fl2])/(128*MPhi^2*Pi^2) + 
+       (yquPhi[mif3, fl1]*yquPhibar[mif2, fl2]*yu[mif1, fl2]*
+         yubar[mif4, fl1])/(384*MPhi^2*Pi^2) - 
+       (ydbar[mif2, fl1]*ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*
+         yubar[mif4, fl2])/(128*MPhi^2*Pi^2) - 
+       (ydbar[mif2, fl1]*ydqPhibar[fl1, mif1]*yquPhi[mif3, fl2]*
+         yubar[mif4, fl2])/(384*MPhi^2*Pi^2) + 
+       (60*g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[fl1, mif4]*
+          ydqPhibar[fl1, mif1] + 60*g3^2*KroneckerDelta[mif1, mif4]*
+          ydqPhi[fl1, mif2]*ydqPhibar[fl1, mif3] - 90*yd[mif3, fl1]*
+          ydbar[mif2, fl2]*ydqPhi[fl1, mif4]*ydqPhibar[fl2, mif1] - 
+         90*yd[mif1, fl1]*ydbar[mif4, fl2]*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl2, mif3] + 60*g3^2*KroneckerDelta[mif1, mif4]*
+          yquPhi[mif3, fl1]*yquPhibar[mif2, fl1] + 
+         60*g3^2*KroneckerDelta[mif2, mif3]*yquPhi[mif1, fl1]*
+          yquPhibar[mif4, fl1] + 90*yd[mif3, fl1]*ydqPhi[fl1, mif4]*
+          yquPhibar[mif2, fl2]*yu[mif1, fl2] + 270*yd[mif3, fl1]*
+          ydqPhi[fl1, mif2]*yquPhibar[mif4, fl2]*yu[mif1, fl2] + 
+         270*yd[mif1, fl1]*ydqPhi[fl1, mif4]*yquPhibar[mif2, fl2]*
+          yu[mif3, fl2] + 90*yd[mif1, fl1]*ydqPhi[fl1, mif2]*
+          yquPhibar[mif4, fl2]*yu[mif3, fl2] - 90*yquPhi[mif1, fl1]*
+          yquPhibar[mif4, fl2]*yu[mif3, fl2]*yubar[mif2, fl1] + 
+         90*ydbar[mif4, fl1]*ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*
+          yubar[mif2, fl2] + 270*ydbar[mif4, fl1]*ydqPhibar[fl1, mif1]*
+          yquPhi[mif3, fl2]*yubar[mif2, fl2] - 90*yquPhi[mif3, fl1]*
+          yquPhibar[mif2, fl2]*yu[mif1, fl2]*yubar[mif4, fl1] + 
+         270*ydbar[mif2, fl1]*ydqPhibar[fl1, mif3]*yquPhi[mif1, fl2]*
+          yubar[mif4, fl2] + 90*ydbar[mif2, fl1]*ydqPhibar[fl1, mif1]*
+          yquPhi[mif3, fl2]*yubar[mif4, fl2])/(69120*MPhi^2*Pi^2), 
      \[Beta][alphaOqq3bar[mif1_, mif2_, mif3_, mif4_]] -> 
       -1/1152*(g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[fl1, mif3]*
           ydqPhibar[fl1, mif2])/(MPhi^2*Pi^2) - 
        (g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[fl1, mif1]*
          ydqPhibar[fl1, mif4])/(1152*MPhi^2*Pi^2) + 
        (yd[mif4, fl1]*ydbar[mif1, fl2]*ydqPhi[fl1, mif3]*
-         ydqPhibar[fl2, mif2])/(768*MPhi^2*Pi^2) + 
+         ydqPhibar[fl2, mif2])/(384*MPhi^2*Pi^2) + 
        (yd[mif2, fl1]*ydbar[mif3, fl2]*ydqPhi[fl1, mif1]*
-         ydqPhibar[fl2, mif4])/(768*MPhi^2*Pi^2) - 
+         ydqPhibar[fl2, mif4])/(384*MPhi^2*Pi^2) - 
        (g3^2*KroneckerDelta[mif2, mif3]*yquPhi[mif4, fl1]*
          yquPhibar[mif1, fl1])/(1152*MPhi^2*Pi^2) - 
        (g3^2*KroneckerDelta[mif1, mif4]*yquPhi[mif2, fl1]*
          yquPhibar[mif3, fl1])/(1152*MPhi^2*Pi^2) - 
        (yd[mif4, fl1]*ydqPhi[fl1, mif3]*yquPhibar[mif1, fl2]*yu[mif2, fl2])/
-        (768*MPhi^2*Pi^2) - (yd[mif4, fl1]*ydqPhi[fl1, mif1]*
-         yquPhibar[mif3, fl2]*yu[mif2, fl2])/(256*MPhi^2*Pi^2) - 
+        (384*MPhi^2*Pi^2) - (yd[mif4, fl1]*ydqPhi[fl1, mif1]*
+         yquPhibar[mif3, fl2]*yu[mif2, fl2])/(128*MPhi^2*Pi^2) - 
        (yd[mif2, fl1]*ydqPhi[fl1, mif3]*yquPhibar[mif1, fl2]*yu[mif4, fl2])/
-        (256*MPhi^2*Pi^2) - (yd[mif2, fl1]*ydqPhi[fl1, mif1]*
-         yquPhibar[mif3, fl2]*yu[mif4, fl2])/(768*MPhi^2*Pi^2) + 
+        (128*MPhi^2*Pi^2) - (yd[mif2, fl1]*ydqPhi[fl1, mif1]*
+         yquPhibar[mif3, fl2]*yu[mif4, fl2])/(384*MPhi^2*Pi^2) + 
        (yquPhi[mif2, fl1]*yquPhibar[mif3, fl2]*yu[mif4, fl2]*
-         yubar[mif1, fl1])/(768*MPhi^2*Pi^2) - 
+         yubar[mif1, fl1])/(384*MPhi^2*Pi^2) - 
        (ydbar[mif3, fl1]*ydqPhibar[fl1, mif4]*yquPhi[mif2, fl2]*
-         yubar[mif1, fl2])/(768*MPhi^2*Pi^2) - 
+         yubar[mif1, fl2])/(384*MPhi^2*Pi^2) - 
        (ydbar[mif3, fl1]*ydqPhibar[fl1, mif2]*yquPhi[mif4, fl2]*
-         yubar[mif1, fl2])/(256*MPhi^2*Pi^2) + 
+         yubar[mif1, fl2])/(128*MPhi^2*Pi^2) + 
        (yquPhi[mif4, fl1]*yquPhibar[mif1, fl2]*yu[mif2, fl2]*
-         yubar[mif3, fl1])/(768*MPhi^2*Pi^2) - 
+         yubar[mif3, fl1])/(384*MPhi^2*Pi^2) - 
        (ydbar[mif1, fl1]*ydqPhibar[fl1, mif4]*yquPhi[mif2, fl2]*
-         yubar[mif3, fl2])/(256*MPhi^2*Pi^2) - 
+         yubar[mif3, fl2])/(128*MPhi^2*Pi^2) - 
        (ydbar[mif1, fl1]*ydqPhibar[fl1, mif2]*yquPhi[mif4, fl2]*
-         yubar[mif3, fl2])/(768*MPhi^2*Pi^2), 
-     \[Beta][alphaOuubar[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif1]*
-         yquPhibar[fl1, mif2])/(162*MPhi^2*Pi^2) + 
-       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif1]*
-         yquPhibar[fl1, mif2])/(864*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif1, mif4]*yquPhi[fl1, mif3]*
-         yquPhibar[fl1, mif2])/(288*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif2, mif3]*yquPhi[fl1, mif1]*
-         yquPhibar[fl1, mif4])/(288*MPhi^2*Pi^2) + 
-       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif3]*
-         yquPhibar[fl1, mif4])/(162*MPhi^2*Pi^2) + 
-       (g3^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif3]*
-         yquPhibar[fl1, mif4])/(864*MPhi^2*Pi^2) - 
-       (yquPhi[fl1, mif3]*yquPhibar[fl2, mif4]*yu[fl2, mif1]*
-         yubar[fl1, mif2])/(64*MPhi^2*Pi^2) + 
-       (yquPhi[fl1, mif1]*yquPhibar[fl2, mif4]*yu[fl2, mif3]*
-         yubar[fl1, mif2])/(192*MPhi^2*Pi^2) + 
-       (yquPhi[fl1, mif3]*yquPhibar[fl2, mif2]*yu[fl2, mif1]*
-         yubar[fl1, mif4])/(192*MPhi^2*Pi^2) - 
-       (yquPhi[fl1, mif1]*yquPhibar[fl2, mif2]*yu[fl2, mif3]*
-         yubar[fl1, mif4])/(64*MPhi^2*Pi^2), 
-     \[Beta][alphaOddbar[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/324*(g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif2, fl1]*
-          ydqPhibar[mif1, fl1])/(MPhi^2*Pi^2) + 
-       (g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[mif2, fl1]*
-         ydqPhibar[mif1, fl1])/(864*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif2, mif3]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif1, fl1])/(288*MPhi^2*Pi^2) - 
-       (yd[fl1, mif3]*ydbar[fl2, mif4]*ydqPhi[mif2, fl1]*
-         ydqPhibar[mif1, fl2])/(64*MPhi^2*Pi^2) + 
-       (yd[fl1, mif3]*ydbar[fl2, mif2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif1, fl2])/(192*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[mif2, fl1]*
-         ydqPhibar[mif3, fl1])/(288*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif3, fl1])/(324*MPhi^2*Pi^2) + 
-       (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif3, fl1])/(864*MPhi^2*Pi^2) + 
-       (yd[fl1, mif1]*ydbar[fl2, mif4]*ydqPhi[mif2, fl1]*
-         ydqPhibar[mif3, fl2])/(192*MPhi^2*Pi^2) - 
-       (yd[fl1, mif1]*ydbar[fl2, mif2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif3, fl2])/(64*MPhi^2*Pi^2), 
-     \[Beta][alphaOud1bar[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif3, fl1])/(81*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif1]*
-         yquPhibar[fl1, mif2])/(162*MPhi^2*Pi^2) - 
-       (yd[fl1, mif3]*ydbar[fl2, mif4]*yquPhi[fl2, mif1]*
-         yquPhibar[fl1, mif2])/(36*MPhi^2*Pi^2) + 
-       (yd[fl1, mif3]*ydqPhi[mif4, fl2]*yquPhibar[fl1, mif2]*yu[fl2, mif1])/
-        (36*MPhi^2*Pi^2) + (ydbar[fl1, mif4]*ydqPhibar[mif3, fl2]*
-         yquPhi[fl1, mif1]*yubar[fl2, mif2])/(36*MPhi^2*Pi^2) - 
-       (ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl2]*yu[fl1, mif1]*
-         yubar[fl2, mif2])/(36*MPhi^2*Pi^2), 
-     \[Beta][alphaOud8bar[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/72*(g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
-          ydqPhibar[mif3, fl1])/(MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif1]*
-         yquPhibar[fl1, mif2])/(72*MPhi^2*Pi^2) + 
-       (yd[fl1, mif3]*ydbar[fl2, mif4]*yquPhi[fl2, mif1]*
-         yquPhibar[fl1, mif2])/(48*MPhi^2*Pi^2) - 
-       (yd[fl1, mif3]*ydqPhi[mif4, fl2]*yquPhibar[fl1, mif2]*yu[fl2, mif1])/
-        (48*MPhi^2*Pi^2) - (yd[fl1, mif3]*ydqPhi[mif4, fl1]*
-         yquPhibar[fl2, mif2]*yu[fl2, mif1])/(16*MPhi^2*Pi^2) - 
-       (ydbar[fl1, mif4]*ydqPhibar[mif3, fl2]*yquPhi[fl1, mif1]*
-         yubar[fl2, mif2])/(48*MPhi^2*Pi^2) - 
-       (ydbar[fl1, mif4]*ydqPhibar[mif3, fl1]*yquPhi[fl2, mif1]*
-         yubar[fl2, mif2])/(16*MPhi^2*Pi^2) + 
-       (ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl2]*yu[fl1, mif1]*
-         yubar[fl2, mif2])/(48*MPhi^2*Pi^2), 
+         yubar[mif3, fl2])/(384*MPhi^2*Pi^2) + 
+       (alphaOqq3bar[mif1_, mif2_, mif3_, mif4_]*
+         (60*g3^2*KroneckerDelta[mif1, mif4]*ydqPhi[fl1, mif3]*
+           ydqPhibar[fl1, mif2] + 60*g3^2*KroneckerDelta[mif2, mif3]*
+           ydqPhi[fl1, mif1]*ydqPhibar[fl1, mif4] - 90*yd[mif4, fl1]*
+           ydbar[mif1, fl2]*ydqPhi[fl1, mif3]*ydqPhibar[fl2, mif2] - 
+          90*yd[mif2, fl1]*ydbar[mif3, fl2]*ydqPhi[fl1, mif1]*
+           ydqPhibar[fl2, mif4] + 60*g3^2*KroneckerDelta[mif2, mif3]*
+           yquPhi[mif4, fl1]*yquPhibar[mif1, fl1] + 
+          60*g3^2*KroneckerDelta[mif1, mif4]*yquPhi[mif2, fl1]*
+           yquPhibar[mif3, fl1] + 90*yd[mif4, fl1]*ydqPhi[fl1, mif3]*
+           yquPhibar[mif1, fl2]*yu[mif2, fl2] + 270*yd[mif4, fl1]*
+           ydqPhi[fl1, mif1]*yquPhibar[mif3, fl2]*yu[mif2, fl2] + 
+          270*yd[mif2, fl1]*ydqPhi[fl1, mif3]*yquPhibar[mif1, fl2]*
+           yu[mif4, fl2] + 90*yd[mif2, fl1]*ydqPhi[fl1, mif1]*
+           yquPhibar[mif3, fl2]*yu[mif4, fl2] - 90*yquPhi[mif2, fl1]*
+           yquPhibar[mif3, fl2]*yu[mif4, fl2]*yubar[mif1, fl1] + 
+          90*ydbar[mif3, fl1]*ydqPhibar[fl1, mif4]*yquPhi[mif2, fl2]*
+           yubar[mif1, fl2] + 270*ydbar[mif3, fl1]*ydqPhibar[fl1, mif2]*
+           yquPhi[mif4, fl2]*yubar[mif1, fl2] - 90*yquPhi[mif4, fl1]*
+           yquPhibar[mif1, fl2]*yu[mif2, fl2]*yubar[mif3, fl1] + 
+          270*ydbar[mif1, fl1]*ydqPhibar[fl1, mif4]*yquPhi[mif2, fl2]*
+           yubar[mif3, fl2] + 90*ydbar[mif1, fl1]*ydqPhibar[fl1, mif2]*
+           yquPhi[mif4, fl2]*yubar[mif3, fl2]))/(138240*MPhi^2*Pi^2), 
+     \[Beta][alphaOqu1[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/81*(g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) + 
+       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
+         yquPhibar[fl1, mif3])/(324*MPhi^2*Pi^2) + 
+       (2*g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
+         yquPhibar[mif2, fl1])/(81*MPhi^2*Pi^2) - 
+       (yd[fl1, fl2]*ydqPhi[fl2, mif2]*yquPhibar[fl1, mif3]*yu[mif1, mif4])/
+        (36*MPhi^2*Pi^2) - (ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*
+         yquPhi[fl1, mif4]*yubar[mif2, mif3])/(36*MPhi^2*Pi^2) + 
+       (480*g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, mif1] - 120*g1^2*KroneckerDelta[mif1, mif2]*
+          yquPhi[fl1, mif4]*yquPhibar[fl1, mif3] + 180*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, fl2]*yquPhi[mif1, mif4]*yquPhibar[fl2, mif3] + 
+         360*ydqPhi[fl1, mif2]*ydqPhibar[fl1, MIF1]*yquPhi[mif1, mif4]*
+          yquPhibar[MIF1, mif3] - 960*g1^2*KroneckerDelta[mif3, mif4]*
+          yquPhi[mif1, fl1]*yquPhibar[mif2, fl1] + 360*yquPhi[mif1, mif4]*
+          yquPhi[MIF1, fl1]*yquPhibar[MIF1, mif3]*yquPhibar[mif2, fl1] + 
+         720*yquPhi[fl1, MIF1]*yquPhi[mif1, mif4]*yquPhibar[fl1, mif3]*
+          yquPhibar[mif2, MIF1] + 180*ydqPhi[fl1, fl2]*ydqPhibar[fl1, mif1]*
+          yquPhi[fl2, mif4]*yquPhibar[mif2, mif3] + 360*ydqPhi[fl1, MIF1]*
+          ydqPhibar[fl1, mif1]*yquPhi[MIF1, mif4]*yquPhibar[mif2, mif3] + 
+         720*yquPhi[fl1, mif4]*yquPhi[mif1, MIF1]*yquPhibar[fl1, MIF1]*
+          yquPhibar[mif2, mif3] + 360*yquPhi[mif1, fl1]*yquPhi[MIF1, mif4]*
+          yquPhibar[MIF1, fl1]*yquPhibar[mif2, mif3] + 540*yd[fl1, fl2]*
+          ydqPhi[fl2, mif2]*yquPhibar[fl1, mif3]*yu[mif1, mif4] + 
+         540*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif4]*
+          yubar[mif2, mif3])/(38880*MPhi^2*Pi^2), 
      \[Beta][alphaOqu1bar[mif1_, mif2_, mif3_, mif4_]] -> 
       -1/81*(g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
           ydqPhibar[fl1, mif2])/(MPhi^2*Pi^2) + 
@@ -536,8 +779,68 @@ RGEResult = {\[Beta][g1] -> g1^3/(12*Pi^2), \[Beta][g2] -> g2^3/(12*Pi^2),
        (2*g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
          yquPhibar[mif1, fl1])/(81*MPhi^2*Pi^2) - 
        (yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif4]*yu[mif2, mif3])/
-        (72*MPhi^2*Pi^2) - (ydbar[fl1, fl2]*ydqPhibar[fl2, mif2]*
-         yquPhi[fl1, mif3]*yubar[mif1, mif4])/(72*MPhi^2*Pi^2), 
+        (36*MPhi^2*Pi^2) - (ydbar[fl1, fl2]*ydqPhibar[fl2, mif2]*
+         yquPhi[fl1, mif3]*yubar[mif1, mif4])/(36*MPhi^2*Pi^2) + 
+       (alphaOqu1bar[mif1_, mif2_, mif3_, mif4_]*
+         (480*g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
+           ydqPhibar[fl1, mif2] - 120*g1^2*KroneckerDelta[mif1, mif2]*
+           yquPhi[fl1, mif3]*yquPhibar[fl1, mif4] + 180*ydqPhi[fl1, mif1]*
+           ydqPhibar[fl1, fl2]*yquPhi[mif2, mif3]*yquPhibar[fl2, mif4] - 
+          960*g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
+           yquPhibar[mif1, fl1] + 720*yquPhi[fl1, MIF1]*yquPhi[mif2, mif3]*
+           yquPhibar[fl1, mif4]*yquPhibar[mif1, MIF1] + 180*ydqPhi[fl1, fl2]*
+           ydqPhibar[fl1, mif2]*yquPhi[fl2, mif3]*yquPhibar[mif1, mif4] + 
+          360*ydqPhi[fl1, MIF1]*ydqPhibar[fl1, mif2]*yquPhi[MIF1, mif3]*
+           yquPhibar[mif1, mif4] + 720*yquPhi[fl1, mif3]*yquPhi[mif2, MIF1]*
+           yquPhibar[fl1, MIF1]*yquPhibar[mif1, mif4] + 
+          360*yquPhi[MIF1, mif3]*yquPhi[mif2, fl1]*yquPhibar[mif1, mif4]*
+           yquPhibar[MIF1, fl1] + 360*ydqPhi[fl1, mif1]*ydqPhibar[fl1, MIF1]*
+           yquPhi[mif2, mif3]*yquPhibar[MIF1, mif4] + 360*yquPhi[MIF1, fl1]*
+           yquPhi[mif2, mif3]*yquPhibar[mif1, fl1]*yquPhibar[MIF1, mif4] + 
+          540*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif4]*
+           yu[mif2, mif3] + 540*ydbar[fl1, fl2]*ydqPhibar[fl2, mif2]*
+           yquPhi[fl1, mif3]*yubar[mif1, mif4]))/(77760*MPhi^2*Pi^2), 
+     \[Beta][alphaOqu8[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/144*(g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, mif1])/(MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
+         yquPhibar[fl1, mif3])/(72*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif1, fl1]*
+         yquPhibar[mif2, fl1])/(144*MPhi^2*Pi^2) + 
+       (yd[mif1, fl1]*ydqPhi[fl1, mif2]*yquPhibar[fl2, mif3]*yu[fl2, mif4])/
+        (16*MPhi^2*Pi^2) - (yd[fl1, fl2]*ydqPhi[fl2, mif2]*
+         yquPhibar[fl1, mif3]*yu[mif1, mif4])/(6*MPhi^2*Pi^2) + 
+       (yquPhi[fl1, mif4]*yquPhibar[mif2, fl2]*yu[mif1, fl2]*
+         yubar[fl1, mif3])/(16*MPhi^2*Pi^2) + 
+       (ydbar[mif2, fl1]*ydqPhibar[fl1, mif1]*yquPhi[fl2, mif4]*
+         yubar[fl2, mif3])/(16*MPhi^2*Pi^2) + 
+       (yquPhi[mif1, fl1]*yquPhibar[fl2, mif3]*yu[fl2, mif4]*
+         yubar[mif2, fl1])/(16*MPhi^2*Pi^2) - 
+       (ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif4]*
+         yubar[mif2, mif3])/(6*MPhi^2*Pi^2) + 
+       (120*g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, mif1] + 240*g3^2*KroneckerDelta[mif1, mif2]*
+          yquPhi[fl1, mif4]*yquPhibar[fl1, mif3] - 60*ydqPhi[fl1, mif2]*
+          ydqPhibar[fl1, fl2]*yquPhi[mif1, mif4]*yquPhibar[fl2, mif3] - 
+         120*ydqPhi[fl1, mif2]*ydqPhibar[fl1, MIF1]*yquPhi[mif1, mif4]*
+          yquPhibar[MIF1, mif3] + 120*g3^2*KroneckerDelta[mif3, mif4]*
+          yquPhi[mif1, fl1]*yquPhibar[mif2, fl1] - 120*yquPhi[mif1, mif4]*
+          yquPhi[MIF1, fl1]*yquPhibar[MIF1, mif3]*yquPhibar[mif2, fl1] - 
+         240*yquPhi[fl1, MIF1]*yquPhi[mif1, mif4]*yquPhibar[fl1, mif3]*
+          yquPhibar[mif2, MIF1] - 60*ydqPhi[fl1, fl2]*ydqPhibar[fl1, mif1]*
+          yquPhi[fl2, mif4]*yquPhibar[mif2, mif3] - 120*ydqPhi[fl1, MIF1]*
+          ydqPhibar[fl1, mif1]*yquPhi[MIF1, mif4]*yquPhibar[mif2, mif3] - 
+         240*yquPhi[fl1, mif4]*yquPhi[mif1, MIF1]*yquPhibar[fl1, MIF1]*
+          yquPhibar[mif2, mif3] - 120*yquPhi[mif1, fl1]*yquPhi[MIF1, mif4]*
+          yquPhibar[MIF1, fl1]*yquPhibar[mif2, mif3] - 540*yd[mif1, fl1]*
+          ydqPhi[fl1, mif2]*yquPhibar[fl2, mif3]*yu[fl2, mif4] + 
+         1440*yd[fl1, fl2]*ydqPhi[fl2, mif2]*yquPhibar[fl1, mif3]*
+          yu[mif1, mif4] - 540*yquPhi[fl1, mif4]*yquPhibar[mif2, fl2]*
+          yu[mif1, fl2]*yubar[fl1, mif3] - 540*ydbar[mif2, fl1]*
+          ydqPhibar[fl1, mif1]*yquPhi[fl2, mif4]*yubar[fl2, mif3] - 
+         540*yquPhi[mif1, fl1]*yquPhibar[fl2, mif3]*yu[fl2, mif4]*
+          yubar[mif2, fl1] + 1440*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*
+          yquPhi[fl1, mif4]*yubar[mif2, mif3])/(17280*MPhi^2*Pi^2), 
      \[Beta][alphaOqu8bar[mif1_, mif2_, mif3_, mif4_]] -> 
       -1/144*(g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
           ydqPhibar[fl1, mif2])/(MPhi^2*Pi^2) - 
@@ -546,91 +849,319 @@ RGEResult = {\[Beta][g1] -> g1^3/(12*Pi^2), \[Beta][g2] -> g2^3/(12*Pi^2),
        (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
          yquPhibar[mif1, fl1])/(144*MPhi^2*Pi^2) + 
        (yd[mif2, fl1]*ydqPhi[fl1, mif1]*yquPhibar[fl2, mif4]*yu[fl2, mif3])/
-        (32*MPhi^2*Pi^2) - (yd[fl1, fl2]*ydqPhi[fl2, mif1]*
-         yquPhibar[fl1, mif4]*yu[mif2, mif3])/(12*MPhi^2*Pi^2) + 
+        (16*MPhi^2*Pi^2) - (yd[fl1, fl2]*ydqPhi[fl2, mif1]*
+         yquPhibar[fl1, mif4]*yu[mif2, mif3])/(6*MPhi^2*Pi^2) + 
        (yquPhi[fl1, mif3]*yquPhibar[mif1, fl2]*yu[mif2, fl2]*
-         yubar[fl1, mif4])/(32*MPhi^2*Pi^2) + 
+         yubar[fl1, mif4])/(16*MPhi^2*Pi^2) + 
        (ydbar[mif1, fl1]*ydqPhibar[fl1, mif2]*yquPhi[fl2, mif3]*
-         yubar[fl2, mif4])/(32*MPhi^2*Pi^2) + 
+         yubar[fl2, mif4])/(16*MPhi^2*Pi^2) + 
        (yquPhi[mif2, fl1]*yquPhibar[fl2, mif4]*yu[fl2, mif3]*
-         yubar[mif1, fl1])/(32*MPhi^2*Pi^2) - 
+         yubar[mif1, fl1])/(16*MPhi^2*Pi^2) - 
        (ydbar[fl1, fl2]*ydqPhibar[fl2, mif2]*yquPhi[fl1, mif3]*
-         yubar[mif1, mif4])/(12*MPhi^2*Pi^2), 
-     \[Beta][alphaOqd1bar[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
-         ydqPhibar[fl1, mif2])/(162*MPhi^2*Pi^2) + 
-       (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif3, fl1])/(324*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
-         yquPhibar[mif1, fl1])/(81*MPhi^2*Pi^2) - 
-       (yd[mif2, mif3]*ydqPhi[mif4, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
-        (72*MPhi^2*Pi^2) - (ydbar[mif1, mif4]*ydqPhibar[mif3, fl1]*
-         yquPhi[mif2, fl2]*yubar[fl1, fl2])/(72*MPhi^2*Pi^2), 
-     \[Beta][alphaOqd8bar[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/144*(g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
-          ydqPhibar[fl1, mif2])/(MPhi^2*Pi^2) + 
-       (yd[fl1, mif3]*ydbar[mif1, fl2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[fl2, mif2])/(32*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif3, fl1])/(72*MPhi^2*Pi^2) + 
-       (yd[mif2, fl1]*ydbar[fl2, mif4]*ydqPhi[fl1, mif1]*
-         ydqPhibar[mif3, fl2])/(32*MPhi^2*Pi^2) - 
-       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
-         yquPhibar[mif1, fl1])/(144*MPhi^2*Pi^2) - 
-       (yd[mif2, mif3]*ydqPhi[mif4, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
-        (12*MPhi^2*Pi^2) + (yd[fl1, mif3]*ydqPhi[mif4, fl1]*
-         yquPhibar[mif1, fl2]*yu[mif2, fl2])/(32*MPhi^2*Pi^2) - 
-       (ydbar[mif1, mif4]*ydqPhibar[mif3, fl1]*yquPhi[mif2, fl2]*
-         yubar[fl1, fl2])/(12*MPhi^2*Pi^2) + 
-       (ydbar[fl1, mif4]*ydqPhibar[mif3, fl1]*yquPhi[mif2, fl2]*
-         yubar[mif1, fl2])/(32*MPhi^2*Pi^2), 
+         yubar[mif1, mif4])/(6*MPhi^2*Pi^2) + 
+       (alphaOqu8bar[mif1_, mif2_, mif3_, mif4_]*
+         (120*g3^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
+           ydqPhibar[fl1, mif2] + 240*g3^2*KroneckerDelta[mif1, mif2]*
+           yquPhi[fl1, mif3]*yquPhibar[fl1, mif4] - 60*ydqPhi[fl1, mif1]*
+           ydqPhibar[fl1, fl2]*yquPhi[mif2, mif3]*yquPhibar[fl2, mif4] + 
+          120*g3^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
+           yquPhibar[mif1, fl1] - 240*yquPhi[fl1, MIF1]*yquPhi[mif2, mif3]*
+           yquPhibar[fl1, mif4]*yquPhibar[mif1, MIF1] - 60*ydqPhi[fl1, fl2]*
+           ydqPhibar[fl1, mif2]*yquPhi[fl2, mif3]*yquPhibar[mif1, mif4] - 
+          120*ydqPhi[fl1, MIF1]*ydqPhibar[fl1, mif2]*yquPhi[MIF1, mif3]*
+           yquPhibar[mif1, mif4] - 240*yquPhi[fl1, mif3]*yquPhi[mif2, MIF1]*
+           yquPhibar[fl1, MIF1]*yquPhibar[mif1, mif4] - 
+          120*yquPhi[MIF1, mif3]*yquPhi[mif2, fl1]*yquPhibar[mif1, mif4]*
+           yquPhibar[MIF1, fl1] - 120*ydqPhi[fl1, mif1]*ydqPhibar[fl1, MIF1]*
+           yquPhi[mif2, mif3]*yquPhibar[MIF1, mif4] - 120*yquPhi[MIF1, fl1]*
+           yquPhi[mif2, mif3]*yquPhibar[mif1, fl1]*yquPhibar[MIF1, mif4] - 
+          540*yd[mif2, fl1]*ydqPhi[fl1, mif1]*yquPhibar[fl2, mif4]*
+           yu[fl2, mif3] + 1440*yd[fl1, fl2]*ydqPhi[fl2, mif1]*
+           yquPhibar[fl1, mif4]*yu[mif2, mif3] - 540*yquPhi[fl1, mif3]*
+           yquPhibar[mif1, fl2]*yu[mif2, fl2]*yubar[fl1, mif4] - 
+          540*ydbar[mif1, fl1]*ydqPhibar[fl1, mif2]*yquPhi[fl2, mif3]*
+           yubar[fl2, mif4] - 540*yquPhi[mif2, fl1]*yquPhibar[fl2, mif4]*
+           yu[fl2, mif3]*yubar[mif1, fl1] + 1440*ydbar[fl1, fl2]*
+           ydqPhibar[fl2, mif2]*yquPhi[fl1, mif3]*yubar[mif1, mif4]))/
+        (34560*MPhi^2*Pi^2), \[Beta][alphaOquqd1[mif1_, mif2_, mif3_, 
+        mif4_]] -> (yd[mif3, mif4]*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*
+         yquPhi[fl1, mif2])/(6*MPhi^2*Pi^2) + 
+       (g3^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2])/(9*MPhi^2*Pi^2) + 
+       (5*g1^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/(324*MPhi^2*Pi^2) + 
+       (g2^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/(12*MPhi^2*Pi^2) - 
+       (7*g3^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/(27*MPhi^2*Pi^2) + 
+       (ydqPhibar[mif4, fl1]*yquPhi[mif3, fl2]*yu[mif1, mif2]*
+         yubar[fl1, fl2])/(6*MPhi^2*Pi^2) + 
+       (-54*yd[mif3, mif4]*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*
+          yquPhi[fl1, mif2] - 72*g3^2*ydqPhibar[mif4, mif3]*
+          yquPhi[mif1, mif2] - 10*g1^2*ydqPhibar[mif4, mif1]*
+          yquPhi[mif3, mif2] - 54*g2^2*ydqPhibar[mif4, mif1]*
+          yquPhi[mif3, mif2] + 168*g3^2*ydqPhibar[mif4, mif1]*
+          yquPhi[mif3, mif2] - 54*ydqPhibar[mif4, fl1]*yquPhi[mif3, fl2]*
+          yu[mif1, mif2]*yubar[fl1, fl2])/(648*MPhi^2*Pi^2), 
      \[Beta][alphaOquqd1bar[mif1_, mif2_, mif3_, mif4_]] -> 
       (yd[fl1, fl2]*ydbar[mif3, mif4]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
-        (12*MPhi^2*Pi^2) + (g3^2*ydqPhi[mif4, mif3]*yquPhibar[mif1, mif2])/
+        (6*MPhi^2*Pi^2) + (g3^2*ydqPhi[mif4, mif3]*yquPhibar[mif1, mif2])/
         (9*MPhi^2*Pi^2) + (5*g1^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2])/
         (324*MPhi^2*Pi^2) + (g2^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2])/
         (12*MPhi^2*Pi^2) - (7*g3^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2])/
         (27*MPhi^2*Pi^2) + (ydqPhi[mif4, fl1]*yquPhibar[mif3, fl2]*
-         yu[fl1, fl2]*yubar[mif1, mif2])/(12*MPhi^2*Pi^2), 
+         yu[fl1, fl2]*yubar[mif1, mif2])/(6*MPhi^2*Pi^2) + 
+       (-54*yd[fl1, fl2]*ydbar[mif3, mif4]*ydqPhi[fl2, mif1]*
+          yquPhibar[fl1, mif2] - 72*g3^2*ydqPhi[mif4, mif3]*
+          yquPhibar[mif1, mif2] - 10*g1^2*ydqPhi[mif4, mif1]*
+          yquPhibar[mif3, mif2] - 54*g2^2*ydqPhi[mif4, mif1]*
+          yquPhibar[mif3, mif2] + 168*g3^2*ydqPhi[mif4, mif1]*
+          yquPhibar[mif3, mif2] - 54*ydqPhi[mif4, fl1]*yquPhibar[mif3, fl2]*
+          yu[fl1, fl2]*yubar[mif1, mif2])/(648*MPhi^2*Pi^2), 
+     \[Beta][alphaOquqd8[mif1_, mif2_, mif3_, mif4_]] -> 
+      (-5*g1^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2])/(288*MPhi^2*Pi^2) - 
+       (3*g2^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2])/(32*MPhi^2*Pi^2) + 
+       (5*g3^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2])/(24*MPhi^2*Pi^2) - 
+       (5*g1^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/(432*MPhi^2*Pi^2) - 
+       (g2^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/(16*MPhi^2*Pi^2) - 
+       (11*g3^2*ydqPhibar[mif4, mif1]*yquPhi[mif3, mif2])/(36*MPhi^2*Pi^2) + 
+       (72*ydqPhi[fl1, fl2]*ydqPhibar[fl1, mif1]*ydqPhibar[mif4, mif3]*
+          yquPhi[fl2, mif2] + 288*ydqPhi[MIF1, fl1]*ydqPhibar[MIF1, mif3]*
+          ydqPhibar[mif4, fl1]*yquPhi[mif1, mif2] + 144*ydqPhi[fl1, MIF1]*
+          ydqPhibar[fl1, mif3]*ydqPhibar[mif4, MIF1]*yquPhi[mif1, mif2] + 
+         60*g1^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2] + 
+         324*g2^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2] - 
+         720*g3^2*ydqPhibar[mif4, mif3]*yquPhi[mif1, mif2] + 
+         144*ydqPhi[fl1, MIF1]*ydqPhibar[fl1, mif1]*ydqPhibar[mif4, mif3]*
+          yquPhi[MIF1, mif2] + 40*g1^2*ydqPhibar[mif4, mif1]*
+          yquPhi[mif3, mif2] + 216*g2^2*ydqPhibar[mif4, mif1]*
+          yquPhi[mif3, mif2] + 1056*g3^2*ydqPhibar[mif4, mif1]*
+          yquPhi[mif3, mif2] + 72*ydqPhibar[mif4, fl1]*yquPhi[mif1, mif2]*
+          yquPhi[mif3, fl2]*yquPhibar[fl1, fl2] + 288*ydqPhibar[mif4, mif3]*
+          yquPhi[fl1, mif2]*yquPhi[mif1, MIF1]*yquPhibar[fl1, MIF1] + 
+         144*ydqPhibar[mif4, mif3]*yquPhi[mif1, fl1]*yquPhi[MIF1, mif2]*
+          yquPhibar[MIF1, fl1] + 144*ydqPhibar[mif4, MIF1]*yquPhi[mif1, mif2]*
+          yquPhi[mif3, fl1]*yquPhibar[MIF1, fl1])/(3456*MPhi^2*Pi^2), 
      \[Beta][alphaOquqd8bar[mif1_, mif2_, mif3_, mif4_]] -> 
       (-5*g1^2*ydqPhi[mif4, mif3]*yquPhibar[mif1, mif2])/(288*MPhi^2*Pi^2) - 
        (3*g2^2*ydqPhi[mif4, mif3]*yquPhibar[mif1, mif2])/(32*MPhi^2*Pi^2) + 
        (5*g3^2*ydqPhi[mif4, mif3]*yquPhibar[mif1, mif2])/(24*MPhi^2*Pi^2) - 
        (5*g1^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2])/(432*MPhi^2*Pi^2) - 
        (g2^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2])/(16*MPhi^2*Pi^2) - 
-       (11*g3^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2])/(36*MPhi^2*Pi^2), 
-     \[Beta][alphaOllbar[mif1_, mif2_, mif3_, mif4_]] -> 0, 
-     \[Beta][alphaOeebar[mif1_, mif2_, mif3_, mif4_]] -> 0, 
-     \[Beta][alphaOlebar[mif1_, mif2_, mif3_, mif4_]] -> 0, 
-     \[Beta][alphaOlq1bar[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[fl1, mif3]*
-         ydqPhibar[fl1, mif4])/(108*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[mif4, fl1]*
-         yquPhibar[mif3, fl1])/(54*MPhi^2*Pi^2), 
-     \[Beta][alphaOlq3bar[mif1_, mif2_, mif3_, mif4_]] -> 0, 
-     \[Beta][alphaOeubar[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/54*(g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif3]*
-         yquPhibar[fl1, mif4])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOedbar[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/54*(g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif3, fl1])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOqebar[mif1_, mif2_, mif3_, mif4_]] -> 
-      (g1^2*KroneckerDelta[mif3, mif4]*ydqPhi[fl1, mif1]*
-         ydqPhibar[fl1, mif2])/(54*MPhi^2*Pi^2) - 
-       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[mif2, fl1]*
-         yquPhibar[mif1, fl1])/(27*MPhi^2*Pi^2), 
-     \[Beta][alphaOlubar[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/108*(g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif3]*
-         yquPhibar[fl1, mif4])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOldbar[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/108*(g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
-         ydqPhibar[mif3, fl1])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOledqbar[mif1_, mif2_, mif3_, mif4_]] -> 
-      (ydqPhibar[mif3, fl1]*ylbar[mif1, mif2]*yquPhi[mif4, fl2]*
-        yubar[fl1, fl2])/(12*MPhi^2*Pi^2), 
-     \[Beta][alphaOlequ1bar[mif1_, mif2_, mif3_, mif4_]] -> 
-      -1/12*(yd[fl1, fl2]*ydqPhi[fl2, mif3]*ylbar[mif1, mif2]*
-         yquPhibar[fl1, mif4])/(MPhi^2*Pi^2), 
-     \[Beta][alphaOlequ3bar[mif1_, mif2_, mif3_, mif4_]] -> 0, 
-     \[Beta][alphaWeinberg[mif1_, mif2_]] -> 0, 
-     \[Beta][alphaWeinbergbar[mif1_, mif2_]] -> 0}
+       (11*g3^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2])/(36*MPhi^2*Pi^2) + 
+       (72*ydqPhi[fl1, mif1]*ydqPhi[mif4, mif3]*ydqPhibar[fl1, fl2]*
+          yquPhibar[fl2, mif2] + 288*ydqPhi[mif4, mif3]*yquPhi[fl1, MIF1]*
+          yquPhibar[fl1, mif2]*yquPhibar[mif1, MIF1] + 
+         60*g1^2*ydqPhi[mif4, mif3]*yquPhibar[mif1, mif2] + 
+         324*g2^2*ydqPhi[mif4, mif3]*yquPhibar[mif1, mif2] - 
+         720*g3^2*ydqPhi[mif4, mif3]*yquPhibar[mif1, mif2] + 
+         144*ydqPhi[fl1, mif3]*ydqPhi[mif4, MIF1]*ydqPhibar[fl1, MIF1]*
+          yquPhibar[mif1, mif2] + 288*ydqPhi[MIF1, mif3]*ydqPhi[mif4, fl1]*
+          ydqPhibar[MIF1, fl1]*yquPhibar[mif1, mif2] + 144*ydqPhi[fl1, mif1]*
+          ydqPhi[mif4, mif3]*ydqPhibar[fl1, MIF1]*yquPhibar[MIF1, mif2] + 
+         144*ydqPhi[mif4, mif3]*yquPhi[MIF1, fl1]*yquPhibar[mif1, fl1]*
+          yquPhibar[MIF1, mif2] + 144*ydqPhi[mif4, MIF1]*yquPhi[MIF1, fl1]*
+          yquPhibar[mif1, mif2]*yquPhibar[mif3, fl1] + 72*ydqPhi[mif4, fl1]*
+          yquPhi[fl1, fl2]*yquPhibar[mif1, mif2]*yquPhibar[mif3, fl2] + 
+         40*g1^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2] + 
+         216*g2^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2] + 
+         1056*g3^2*ydqPhi[mif4, mif1]*yquPhibar[mif3, mif2])/
+        (3456*MPhi^2*Pi^2), \[Beta][alphaOuB[mif1_, mif2_]] -> 
+      -1/288*(g1*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOuBbar[mif1_, mif2_]] -> 
+      -1/288*(g1*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOud1[mif1_, mif2_, mif3_, mif4_]] -> 
+      (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+         ydqPhibar[mif4, fl1])/(81*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif2]*
+         yquPhibar[fl1, mif1])/(162*MPhi^2*Pi^2) - 
+       (yd[fl1, mif4]*ydbar[fl2, mif3]*yquPhi[fl2, mif2]*
+         yquPhibar[fl1, mif1])/(18*MPhi^2*Pi^2) + 
+       (yd[fl1, mif4]*ydqPhi[mif3, fl2]*yquPhibar[fl1, mif1]*yu[fl2, mif2])/
+        (18*MPhi^2*Pi^2) + (ydbar[fl1, mif3]*ydqPhibar[mif4, fl2]*
+         yquPhi[fl1, mif2]*yubar[fl2, mif1])/(18*MPhi^2*Pi^2) - 
+       (ydqPhi[mif3, fl1]*ydqPhibar[mif4, fl2]*yu[fl1, mif2]*
+         yubar[fl2, mif1])/(18*MPhi^2*Pi^2) + 
+       (-120*g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+          ydqPhibar[mif4, fl1] + 60*g1^2*KroneckerDelta[mif3, mif4]*
+          yquPhi[fl1, mif2]*yquPhibar[fl1, mif1] + 270*yd[fl1, mif4]*
+          ydbar[fl2, mif3]*yquPhi[fl2, mif2]*yquPhibar[fl1, mif1] - 
+         270*yd[fl1, mif4]*ydqPhi[mif3, fl2]*yquPhibar[fl1, mif1]*
+          yu[fl2, mif2] - 270*ydbar[fl1, mif3]*ydqPhibar[mif4, fl2]*
+          yquPhi[fl1, mif2]*yubar[fl2, mif1] + 270*ydqPhi[mif3, fl1]*
+          ydqPhibar[mif4, fl2]*yu[fl1, mif2]*yubar[fl2, mif1])/
+        (9720*MPhi^2*Pi^2), \[Beta][alphaOud1bar[mif1_, mif2_, mif3_, 
+        mif4_]] -> (g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+         ydqPhibar[mif3, fl1])/(81*MPhi^2*Pi^2) - 
+       (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif1]*
+         yquPhibar[fl1, mif2])/(162*MPhi^2*Pi^2) - 
+       (yd[fl1, mif3]*ydbar[fl2, mif4]*yquPhi[fl2, mif1]*
+         yquPhibar[fl1, mif2])/(18*MPhi^2*Pi^2) + 
+       (yd[fl1, mif3]*ydqPhi[mif4, fl2]*yquPhibar[fl1, mif2]*yu[fl2, mif1])/
+        (18*MPhi^2*Pi^2) + (ydbar[fl1, mif4]*ydqPhibar[mif3, fl2]*
+         yquPhi[fl1, mif1]*yubar[fl2, mif2])/(18*MPhi^2*Pi^2) - 
+       (ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl2]*yu[fl1, mif1]*
+         yubar[fl2, mif2])/(18*MPhi^2*Pi^2) + 
+       (alphaOud1bar[mif1_, mif2_, mif3_, mif4_]*
+         (-120*g1^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+           ydqPhibar[mif3, fl1] + 60*g1^2*KroneckerDelta[mif3, mif4]*
+           yquPhi[fl1, mif1]*yquPhibar[fl1, mif2] + 270*yd[fl1, mif3]*
+           ydbar[fl2, mif4]*yquPhi[fl2, mif1]*yquPhibar[fl1, mif2] - 
+          270*yd[fl1, mif3]*ydqPhi[mif4, fl2]*yquPhibar[fl1, mif2]*
+           yu[fl2, mif1] - 270*ydbar[fl1, mif4]*ydqPhibar[mif3, fl2]*
+           yquPhi[fl1, mif1]*yubar[fl2, mif2] + 270*ydqPhi[mif4, fl1]*
+           ydqPhibar[mif3, fl2]*yu[fl1, mif1]*yubar[fl2, mif2]))/
+        (19440*MPhi^2*Pi^2), \[Beta][alphaOud8[mif1_, mif2_, mif3_, 
+        mif4_]] -> -1/72*(g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+          ydqPhibar[mif4, fl1])/(MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif2]*
+         yquPhibar[fl1, mif1])/(72*MPhi^2*Pi^2) + 
+       (yd[fl1, mif4]*ydbar[fl2, mif3]*yquPhi[fl2, mif2]*
+         yquPhibar[fl1, mif1])/(24*MPhi^2*Pi^2) - 
+       (yd[fl1, mif4]*ydqPhi[mif3, fl2]*yquPhibar[fl1, mif1]*yu[fl2, mif2])/
+        (24*MPhi^2*Pi^2) - (yd[fl1, mif4]*ydqPhi[mif3, fl1]*
+         yquPhibar[fl2, mif1]*yu[fl2, mif2])/(8*MPhi^2*Pi^2) - 
+       (ydbar[fl1, mif3]*ydqPhibar[mif4, fl2]*yquPhi[fl1, mif2]*
+         yubar[fl2, mif1])/(24*MPhi^2*Pi^2) - 
+       (ydbar[fl1, mif3]*ydqPhibar[mif4, fl1]*yquPhi[fl2, mif2]*
+         yubar[fl2, mif1])/(8*MPhi^2*Pi^2) + 
+       (ydqPhi[mif3, fl1]*ydqPhibar[mif4, fl2]*yu[fl1, mif2]*
+         yubar[fl2, mif1])/(24*MPhi^2*Pi^2) + 
+       (60*g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif3, fl1]*
+          ydqPhibar[mif4, fl1] + 60*g3^2*KroneckerDelta[mif3, mif4]*
+          yquPhi[fl1, mif2]*yquPhibar[fl1, mif1] - 90*yd[fl1, mif4]*
+          ydbar[fl2, mif3]*yquPhi[fl2, mif2]*yquPhibar[fl1, mif1] + 
+         90*yd[fl1, mif4]*ydqPhi[mif3, fl2]*yquPhibar[fl1, mif1]*
+          yu[fl2, mif2] + 270*yd[fl1, mif4]*ydqPhi[mif3, fl1]*
+          yquPhibar[fl2, mif1]*yu[fl2, mif2] + 90*ydbar[fl1, mif3]*
+          ydqPhibar[mif4, fl2]*yquPhi[fl1, mif2]*yubar[fl2, mif1] + 
+         270*ydbar[fl1, mif3]*ydqPhibar[mif4, fl1]*yquPhi[fl2, mif2]*
+          yubar[fl2, mif1] - 90*ydqPhi[mif3, fl1]*ydqPhibar[mif4, fl2]*
+          yu[fl1, mif2]*yubar[fl2, mif1])/(4320*MPhi^2*Pi^2), 
+     \[Beta][alphaOud8bar[mif1_, mif2_, mif3_, mif4_]] -> 
+      -1/72*(g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+          ydqPhibar[mif3, fl1])/(MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif1]*
+         yquPhibar[fl1, mif2])/(72*MPhi^2*Pi^2) + 
+       (yd[fl1, mif3]*ydbar[fl2, mif4]*yquPhi[fl2, mif1]*
+         yquPhibar[fl1, mif2])/(24*MPhi^2*Pi^2) - 
+       (yd[fl1, mif3]*ydqPhi[mif4, fl2]*yquPhibar[fl1, mif2]*yu[fl2, mif1])/
+        (24*MPhi^2*Pi^2) - (yd[fl1, mif3]*ydqPhi[mif4, fl1]*
+         yquPhibar[fl2, mif2]*yu[fl2, mif1])/(8*MPhi^2*Pi^2) - 
+       (ydbar[fl1, mif4]*ydqPhibar[mif3, fl2]*yquPhi[fl1, mif1]*
+         yubar[fl2, mif2])/(24*MPhi^2*Pi^2) - 
+       (ydbar[fl1, mif4]*ydqPhibar[mif3, fl1]*yquPhi[fl2, mif1]*
+         yubar[fl2, mif2])/(8*MPhi^2*Pi^2) + 
+       (ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl2]*yu[fl1, mif1]*
+         yubar[fl2, mif2])/(24*MPhi^2*Pi^2) + 
+       (alphaOud8bar[mif1_, mif2_, mif3_, mif4_]*
+         (60*g3^2*KroneckerDelta[mif1, mif2]*ydqPhi[mif4, fl1]*
+           ydqPhibar[mif3, fl1] + 60*g3^2*KroneckerDelta[mif3, mif4]*
+           yquPhi[fl1, mif1]*yquPhibar[fl1, mif2] - 90*yd[fl1, mif3]*
+           ydbar[fl2, mif4]*yquPhi[fl2, mif1]*yquPhibar[fl1, mif2] + 
+          90*yd[fl1, mif3]*ydqPhi[mif4, fl2]*yquPhibar[fl1, mif2]*
+           yu[fl2, mif1] + 270*yd[fl1, mif3]*ydqPhi[mif4, fl1]*
+           yquPhibar[fl2, mif2]*yu[fl2, mif1] + 90*ydbar[fl1, mif4]*
+           ydqPhibar[mif3, fl2]*yquPhi[fl1, mif1]*yubar[fl2, mif2] + 
+          270*ydbar[fl1, mif4]*ydqPhibar[mif3, fl1]*yquPhi[fl2, mif1]*
+           yubar[fl2, mif2] - 90*ydqPhi[mif4, fl1]*ydqPhibar[mif3, fl2]*
+           yu[fl1, mif1]*yubar[fl2, mif2]))/(8640*MPhi^2*Pi^2), 
+     \[Beta][alphaOuG[mif1_, mif2_]] -> 
+      -1/192*(g3*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOuGbar[mif1_, mif2_]] -> 
+      -1/192*(g3*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOuH[mif1_, mif2_]] -> 
+      (lam*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
+        (3*MPhi^2*Pi^2) - (yd[fl1, fl2]*ydbar[fl1, fl3]*ydbar[fl4, fl2]*
+         ydqPhibar[fl3, mif1]*yquPhi[fl4, mif2])/(2*MPhi^2*Pi^2) + 
+       (-120*lam*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2] + 
+         120*yd[fl1, fl2]*ydbar[fl1, fl3]*ydbar[fl4, fl2]*
+          ydqPhibar[fl3, mif1]*yquPhi[fl4, mif2])/(480*MPhi^2*Pi^2), 
+     \[Beta][alphaOuHbar[mif1_, mif2_]] -> 
+      (lam*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
+        (3*MPhi^2*Pi^2) - (yd[fl1, fl2]*yd[fl3, fl4]*ydbar[fl1, fl4]*
+         ydqPhi[fl2, mif1]*yquPhibar[fl3, mif2])/(2*MPhi^2*Pi^2) + 
+       (-120*lam*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2] + 
+         120*yd[fl1, fl2]*yd[fl3, fl4]*ydbar[fl1, fl4]*ydqPhi[fl2, mif1]*
+          yquPhibar[fl3, mif2])/(480*MPhi^2*Pi^2), 
+     \[Beta][alphaOuu[mif1_, mif2_, mif3_, mif4_]] -> 
+      (g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif2]*
+         yquPhibar[fl1, mif1])/(162*MPhi^2*Pi^2) + 
+       (g3^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif2]*
+         yquPhibar[fl1, mif1])/(864*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif2, mif3]*yquPhi[fl1, mif4]*
+         yquPhibar[fl1, mif1])/(288*MPhi^2*Pi^2) - 
+       (g3^2*KroneckerDelta[mif1, mif4]*yquPhi[fl1, mif2]*
+         yquPhibar[fl1, mif3])/(288*MPhi^2*Pi^2) + 
+       (g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
+         yquPhibar[fl1, mif3])/(162*MPhi^2*Pi^2) + 
+       (g3^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
+         yquPhibar[fl1, mif3])/(864*MPhi^2*Pi^2) - 
+       (yquPhi[fl1, mif4]*yquPhibar[fl2, mif3]*yu[fl2, mif2]*
+         yubar[fl1, mif1])/(32*MPhi^2*Pi^2) + 
+       (yquPhi[fl1, mif2]*yquPhibar[fl2, mif3]*yu[fl2, mif4]*
+         yubar[fl1, mif1])/(96*MPhi^2*Pi^2) + 
+       (yquPhi[fl1, mif4]*yquPhibar[fl2, mif1]*yu[fl2, mif2]*
+         yubar[fl1, mif3])/(96*MPhi^2*Pi^2) - 
+       (yquPhi[fl1, mif2]*yquPhibar[fl2, mif1]*yu[fl2, mif4]*
+         yubar[fl1, mif3])/(32*MPhi^2*Pi^2) + 
+       (-1920*g1^2*KroneckerDelta[mif3, mif4]*yquPhi[fl1, mif2]*
+          yquPhibar[fl1, mif1] - 360*g3^2*KroneckerDelta[mif3, mif4]*
+          yquPhi[fl1, mif2]*yquPhibar[fl1, mif1] + 
+         1080*g3^2*KroneckerDelta[mif2, mif3]*yquPhi[fl1, mif4]*
+          yquPhibar[fl1, mif1] + 1080*g3^2*KroneckerDelta[mif1, mif4]*
+          yquPhi[fl1, mif2]*yquPhibar[fl1, mif3] - 
+         1920*g1^2*KroneckerDelta[mif1, mif2]*yquPhi[fl1, mif4]*
+          yquPhibar[fl1, mif3] - 360*g3^2*KroneckerDelta[mif1, mif2]*
+          yquPhi[fl1, mif4]*yquPhibar[fl1, mif3] + 4860*yquPhi[fl1, mif4]*
+          yquPhibar[fl2, mif3]*yu[fl2, mif2]*yubar[fl1, mif1] - 
+         1620*yquPhi[fl1, mif2]*yquPhibar[fl2, mif3]*yu[fl2, mif4]*
+          yubar[fl1, mif1] - 1620*yquPhi[fl1, mif4]*yquPhibar[fl2, mif1]*
+          yu[fl2, mif2]*yubar[fl1, mif3] + 4860*yquPhi[fl1, mif2]*
+          yquPhibar[fl2, mif1]*yu[fl2, mif4]*yubar[fl1, mif3])/
+        (311040*MPhi^2*Pi^2), \[Beta][alphaOuW[mif1_, mif2_]] -> 
+      -1/96*(g2*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOuWbar[mif1_, mif2_]] -> 
+      -1/96*(g2*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
+        (MPhi^2*Pi^2), \[Beta][alphaOlambdad[mif1_, mif2_]] -> 
+      (yd[MIF1, mif2]*ydqPhi[fl1, MIF1]*ydqPhibar[fl1, mif1])/(24*Pi^2) + 
+       (yd[mif1, MIF1]*ydqPhi[MIF1, fl1]*ydqPhibar[mif2, fl1])/(12*Pi^2) + 
+       (yd[MIF1, mif2]*yquPhi[mif1, fl1]*yquPhibar[MIF1, fl1])/(24*Pi^2) + 
+       (ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2])/(6*Pi^2) - 
+       (muH^2*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*yubar[fl1, fl2])/
+        (24*MPhi^2*Pi^2) + (-2*yd[MIF1, mif2]*ydqPhi[fl1, MIF1]*
+          ydqPhibar[fl1, mif1] - 4*yd[mif1, MIF1]*ydqPhi[MIF1, fl1]*
+          ydqPhibar[mif2, fl1] - 2*yd[MIF1, mif2]*yquPhi[mif1, fl1]*
+          yquPhibar[MIF1, fl1] - 8*ydqPhibar[mif2, fl1]*yquPhi[mif1, fl2]*
+          yubar[fl1, fl2])/(96*Pi^2), 
+     \[Beta][alphaOlambdadbar[mif1_, mif2_]] -> 
+      (ydbar[MIF1, mif2]*ydqPhi[fl1, mif1]*ydqPhibar[fl1, MIF1])/(24*Pi^2) + 
+       (ydbar[mif1, MIF1]*ydqPhi[mif2, fl1]*ydqPhibar[MIF1, fl1])/(12*Pi^2) + 
+       (ydbar[MIF1, mif2]*yquPhi[MIF1, fl1]*yquPhibar[mif1, fl1])/(24*Pi^2) + 
+       (ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/(6*Pi^2) - 
+       (muH^2*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*yu[fl1, fl2])/
+        (24*MPhi^2*Pi^2) + (-2*ydbar[MIF1, mif2]*ydqPhi[fl1, mif1]*
+          ydqPhibar[fl1, MIF1] - 4*ydbar[mif1, MIF1]*ydqPhi[mif2, fl1]*
+          ydqPhibar[MIF1, fl1] - 2*ydbar[MIF1, mif2]*yquPhi[MIF1, fl1]*
+          yquPhibar[mif1, fl1] - 8*ydqPhi[mif2, fl1]*yquPhibar[mif1, fl2]*
+          yu[fl1, fl2])/(96*Pi^2), \[Beta][alphaOlambdae[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOlambdaebar[mif1_, mif2_]] -> 0, 
+     \[Beta][alphaOlambdau[mif1_, mif2_]] -> 
+      (ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/(6*Pi^2) - 
+       (muH^2*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*yquPhi[fl1, mif2])/
+        (24*MPhi^2*Pi^2) + (yquPhi[fl1, mif2]*yquPhibar[fl1, MIF1]*
+         yu[mif1, MIF1])/(12*Pi^2) + (ydqPhi[fl1, MIF1]*ydqPhibar[fl1, mif1]*
+         yu[MIF1, mif2])/(24*Pi^2) + (yquPhi[mif1, fl1]*yquPhibar[MIF1, fl1]*
+         yu[MIF1, mif2])/(24*Pi^2) + (-8*ydbar[fl1, fl2]*ydqPhibar[fl2, mif1]*
+          yquPhi[fl1, mif2] - 4*yquPhi[fl1, mif2]*yquPhibar[fl1, MIF1]*
+          yu[mif1, MIF1] - 2*ydqPhi[fl1, MIF1]*ydqPhibar[fl1, mif1]*
+          yu[MIF1, mif2] - 2*yquPhi[mif1, fl1]*yquPhibar[MIF1, fl1]*
+          yu[MIF1, mif2])/(96*Pi^2), 
+     \[Beta][alphaOlambdaubar[mif1_, mif2_]] -> 
+      (yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/(6*Pi^2) - 
+       (muH^2*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2])/
+        (24*MPhi^2*Pi^2) + (yquPhi[fl1, MIF1]*yquPhibar[fl1, mif2]*
+         yubar[mif1, MIF1])/(12*Pi^2) + 
+       (ydqPhi[fl1, mif1]*ydqPhibar[fl1, MIF1]*yubar[MIF1, mif2])/(24*Pi^2) + 
+       (yquPhi[MIF1, fl1]*yquPhibar[mif1, fl1]*yubar[MIF1, mif2])/(24*Pi^2) + 
+       (-8*yd[fl1, fl2]*ydqPhi[fl2, mif1]*yquPhibar[fl1, mif2] - 
+         4*yquPhi[fl1, MIF1]*yquPhibar[fl1, mif2]*yubar[mif1, MIF1] - 
+         2*ydqPhi[fl1, mif1]*ydqPhibar[fl1, MIF1]*yubar[MIF1, mif2] - 
+         2*yquPhi[MIF1, fl1]*yquPhibar[mif1, fl1]*yubar[MIF1, mif2])/
+        (96*Pi^2)}

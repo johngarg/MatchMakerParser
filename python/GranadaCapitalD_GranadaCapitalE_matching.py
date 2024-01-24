@@ -1,3 +1,0 @@
-## Symbols used:<>OutputPythonClass[GranadaD_GranadaE][Table[RuleDelayed @@ {MatchMakerParser`MatchMakerParser`PackagePrivate`rule[[1]], (ParseSums @* Expand)[Block[{MatchMakerParser`MatchMakerParser`PackagePrivate`uniq = Unique[MatchMakerParser`MatchMakerParser`PackagePrivate`p]}, MatchMakerParser`MatchMakerParser`PackagePrivate`rule[[1]] //. {Pattern -> MatchMakerParser`MatchMakerParser`PackagePrivate`uniq, MatchMakerParser`MatchMakerParser`PackagePrivate`uniq[MatchMakerParser`MatchMakerParser`PackagePrivate`x_, MatchMakerParser`MatchMakerParser`PackagePrivate`y_] :> Free[MatchMakerParser`MatchMakerParser`PackagePrivate`x]} /. MatchMakerParser`MatchMakerParser`PackagePrivate`rule]]}, {MatchMakerParser`MatchMakerParser`PackagePrivate`rule, $Failed[[-2]]}]]
-
-

@@ -1,0 +1,137 @@
+M$ModelName = "GranadaPi7";
+
+M$Information =
+{ Date -> "2024-01-15" };
+
+(* Sextet not defined in SM model file *)
+IndexRange[Index[Sextet]] = Range[6];
+IndexStyle[Sextet, x];
+AddGaugeRepresentation[SU3C -> {T6, Sextet}];
+
+M$Parameters =
+{ yeqPi7 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Generation], Index[Generation]}
+  , Description -> "Coupling yeqPi7 of yeqPi7(-g0,-g1)*GranadaPi7(-c0,-i0)*LR(-s0,g0)*QL(s0,c0,i0,g1) interaction"
+  }
+, yluPi7 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Generation], Index[Generation]}
+  , Description -> "Coupling yluPi7 of yluPi7(-g0,-g1)*GranadaPi7(-c0,-i0)*Eps(i0,i1)*LL(-s0,-i1,g0)*UR(s0,c0,g1) interaction"
+  }
+, lambdaHatPrimePi7 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> False
+  , Description -> "Coupling lambdaHatPrimePi7 of lambdaHatPrimePi7()*GranadaPi7(-c0,-i0)*Phi(i0)*Phi(-i1)*GranadaPi7(c0,i1) interaction"
+  }
+, lambdaHatPi7 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> False
+  , Description -> "Coupling lambdaHatPi7 of lambdaHatPi7()*Phi(-i0)*Phi(i0)*GranadaPi7(-c0,-i1)*GranadaPi7(c0,i1) interaction"
+  }
+, MPi7 == 
+  { ParameterType -> Internal
+  , Description -> "GranadaPi7 mass"
+  }
+, EpsSU3 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Colour], Index[Colour], Index[Colour]}
+  , Description -> "Three-index epsilon symbol for contracting colour triplets into the antitriplet irrep."
+  }
+, Eps4 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[SU24], Index[SU24]}
+  , Description -> "SU(2) product for two quadruplets. Defined in 1711.10391."
+  }
+, T2244 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> False
+  , Indices -> {Index[SU2D], Index[SU2D], Index[SU24], Index[SU24]}
+  , Description -> "Clebsch-Gordan coefficients to multiply 2* x 2* x 4 x 4 for SU(2). Gotten from GroupMath."
+  }
+, T6 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Gluon], Index[Sextet], Index[Sextet]}
+  , Description -> "SU(3) generators in the sextet representation. See Appendix A.3 of 0909.2666."
+  }
+, K6 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[Sextet], Index[Colour], Index[Colour]}
+  , Description -> "Matrices for contracting 3x3 into a 6 fo SU(3). See Appendix A.2 of 0909.2666."
+  }
+, C2224 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[SU2D], Index[SU2D], Index[SU2D], Index[SU24]}
+  , Description -> "Matrices for contracting 2x2x2x4 of SU(2). Defined as: sigma(I,i,-j)*C(Q,-I,-k)*Eps(-Q, -R) from 1711.10391."
+  }
+, C344 ==
+  { ParameterType -> Internal
+  , ComplexParameter -> True
+  , Indices -> {Index[SU2W], Index[SU24], Index[SU24]}
+  , Description -> "Matrices for contracting 4x4x3 of SU(2). Gotten from `RepMatrices[SU2, {3}]` from GroupMath."
+  }
+};
+
+M$ClassesDescription =
+{ S[200] == 
+  { ClassName -> GranadaPi7
+  , Mass -> MPi7
+  , Width -> 0
+  , SelfConjugate -> False
+  , QuantumNumbers -> {Y -> 7/6}
+  , Indices -> {Index[Colour], Index[SU2D]}
+  , FullName -> "heavy"
+  }
+};
+
+(********************* The Lagrangian *********************)
+
+gotoBFM =
+{ G[a__] -> G[a] + GQuantum[a]
+, Wi[a__] -> Wi[a] + WiQuantum[a]
+, B[a__] -> B[a] + BQuantum[a] 
+};
+
+LFreeGranadaPi7 :=
+Block[
+  {i0,c0,mu}
+  ,
+  DC[anti[GranadaPi7][c0,i0], mu] DC[GranadaPi7[c0,i0], mu] - MGranadaPi7^2 anti[GranadaPi7][c0,i0] GranadaPi7[c0,i0]
+]/.gotoBFM;
+
+LyluPi7 :=
+Block[
+  {s0,g1,i0,i1,g0,c0}
+  ,
+  yluPi7[g0,g1] anti[GranadaPi7][c0,i0] Eps[i0,i1] anti[LL][s0,i1,g0].UR[s0,g1,c0]
+];
+
+LyeqPi7 :=
+Block[
+  {s0,g1,i0,g0,c0}
+  ,
+  yeqPi7[g0,g1] anti[GranadaPi7][c0,i0] anti[LR][s0,g0].QL[s0,i0,g1,c0]
+];
+
+LlambdaHatPi7 :=
+Block[
+  {c0,i0,i1}
+  ,
+  lambdaHatPi7 anti[Phi][i0] Phi[i0] anti[GranadaPi7][c0,i1] GranadaPi7[c0,i1]
+];
+
+LlambdaHatPrimePi7 :=
+Block[
+  {c0,i0,i1}
+  ,
+  lambdaHatPrimePi7 anti[GranadaPi7][c0,i0] Phi[i0] anti[Phi][i1] GranadaPi7[c0,i1]
+];
+
+Ltot := LSM + LFreeGranadaPi7 + LyluPi7 + HC[LyluPi7] + LyeqPi7 + HC[LyeqPi7] + LlambdaHatPi7 + LlambdaHatPrimePi7;

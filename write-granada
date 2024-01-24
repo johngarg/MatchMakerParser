@@ -165,15 +165,15 @@ for f in VALID_MULTIPLETS:
         valid_unix_name = "GranadaCapital" + f.removeprefix("Granada")
 
     # Make output directory if it doesn't already exist
-    if not os.path.exists(f"granada2/{valid_unix_name}"):
-        run_and_print(f"mkdir granada2/{valid_unix_name}")
+    if not os.path.exists(f"granada/{valid_unix_name}"):
+        run_and_print(f"mkdir granada/{valid_unix_name}")
 
         # Match the fields
         print(f"\n\nNow matching {f}...")
         run_and_print(f"cd mm/; ./match {f}; cd ..")
 
         # Copy results to corresponding directory
-        model_path = f"granada2/{valid_unix_name}/"
+        model_path = f"granada/{valid_unix_name}/"
         print(f"\nCopying MatchingResult.dat...")
         matching_result_path = os.path.join(model_path, "MatchingResult.dat")
         matching_problems_path = os.path.join(model_path, "MatchingProblems.dat")
