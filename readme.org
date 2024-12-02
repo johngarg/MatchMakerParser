@@ -5,74 +5,9 @@ A small tool to parse Mathematica expressions from MatchMaker into Python code.
 ** Usage
 The package provides the main executable `parse-matchmaker-output`:
 #+begin_src bash
-./parse-matchmaker-output S1 data/S1Config.m data/S1MatchingData.dat python/s1_matching.py
+./parse-matchmaker-output S1 S1Config.m S1MatchingData.dat s1_matching.py
 #+end_src
 The first argument is the name of the process (will enter the name of the
 Python class constructed), the second is the config file that defines couplings,
 the third is the path to the Matchmaker output, and the last is the desired path
 for the python output file.
-
-** Questions
-- What do we do about input parameters and running?
-- What's going on with CKM matrix?
-- The way MatchMaker is dealing with complex conjugates is a bit annoying,
-  haven't thought a lot about what to do here
-
-** Workflow
-How do we want this to work? Last meeting we discussed an output like:
-#+begin_src python
-matching_instance = MatchingResults(scale=1000, yLQ=np.matrix([[1, 7j, 0],[...],[...]]), ...)
-matching_instance.get_coeff("Clq(1)", [1,1,1,1])
-#+end_src
-This means that nothing will need to be symbolic within the dataclass. Initialise the objects with sensible values so that only the matrix will need to be updated.
-
-Another idea is to just treat everything that's symbolic in the Mathematica code as symbolic in Python with Sympy:
-#+begin_src Mathematica
-StringRiffle[
- Table[ToString[i] <> " = Symbol(" <> PythonForm[ToString[i]] <>
-   ")", {i, Normal @ $PythonForm`Symbols}], "\n"]
-#+end_src
-Will give something like
-#+begin_src python
-ydbar = Symbol('ydbar')
-μ = Symbol('μ')
-MS1 = Symbol('MS1')
-YLQS = Symbol('YLQS')
-YLQSbar = Symbol('YLQSbar')
-#+end_src
-In any case, we can use a version of this to add the additional symbols as attributes to the class.
-
-** Thoughts on a Numpy interface
-
-There is an idea to actually use =numpy= to perform fast matrix multiplication,
-since =sympy= can recognise matrix summations:
-#+begin_src python
-import sympy as sym
-import numpy as np
-from numpy import dot
-
-from sympy.abc import i,j,k,l
-
-X = sym.MatrixSymbol("X", 2, 2)
-matrix_expr = sym.MatrixExpr.from_index_summation(sym.Sum(X[i,j]*X[i,k], (i, 0, 1)))
-func = sym.lambdify(X, matrix_expr, modules='numpy')
-
-npX = np.matrix([[1, 2], [3, 4]])
-func(npX)
-#+end_src
-It's not clear if this will be quicker than just using =Sympy= to perform the matrix multiplication, or just the sum directly using =summation= for that matter!
-
-Actually, it seems this is already implemented in =numpy=! See [[https://numpy.org/doc/stable/reference/generated/numpy.einsum.html][this library]] called =einsum=, which stands for /Einstein summation/
-#+begin_src python
->>> a = np.arange(6).reshape((3,2))
->>> b = np.arange(12).reshape((4,3))
->>> np.einsum('ki,jk->ij', a, b)
-array([[10, 28, 46, 64],
-       [13, 40, 67, 94]])
-#+end_src
-This will clean up the expressions a lot, for 3 by 3 matrices I don't know how
-much of a speed up it will give, but if we want array programming the whole way
-then it will be the way to go.
-
-This functionality in =sympy.tensor= also seems usable:
-https://github.com/sympy/sympy/pull/9314
