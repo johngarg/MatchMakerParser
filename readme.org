@@ -11,3 +11,29 @@ The first argument is the name of the process (will enter the name of the
 Python class constructed), the second is the config file that defines couplings,
 the third is the path to the Matchmaker output, and the last is the desired path
 for the python output file.
+
+The package can also be run from within a Mathematica session:
+
+#+begin_src mathematica
+<<MatchMakerParser`
+
+(* Declare _all_ couplings and flavour indices *)
+DeclareCouplings[
+    {yd,   {3, 3}}, {ydbar,   {3, 3}},
+    {yu,   {3, 3}}, {yubar,   {3, 3}},
+    {yl,   {3, 3}}, {ylbar,   {3, 3}},
+    {yXi1, {3, 3}}, {yXi1bar, {3, 3}}
+];
+
+(* Declare _exotic_ parameters *)
+DeclareExoticParams[
+    MXi1,
+    lambdaXi1, lambdaXi1bar,
+    lambdaXi1P, lambdaXi1Pbar,
+    yXi1, yXi1bar,
+    kappaXi1, kappaXi1bar
+];
+
+(* Run the main function, supposing you have the Xi1 MatchingResult.dat file *)
+MatchMakerToPython["Xi1", "Xi1MatchingResult.dat", "output/Xi1.py"];
+#+end_src
