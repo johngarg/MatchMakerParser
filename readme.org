@@ -3,7 +3,7 @@
 A small tool to parse Mathematica expressions from MatchMaker into Python code.
 
 ** Usage
-The package provides the main executable `parse-matchmaker-output`:
+The package provides the main executable ~parse-matchmaker-output~:
 #+begin_src bash
 ./parse-matchmaker-output S1 S1Config.m S1MatchingData.dat s1_matching.py
 #+end_src
