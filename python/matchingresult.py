@@ -62,6 +62,24 @@ class GenericMatchingResult:
     def mu(self):
         return self.scale
 
+    def just_running(self, method_name: str, method_args: list):
+        func = getattr(self, method_name)
+
+        # Save the initial value of the scale
+        initial_scale = self.scale
+
+        # Set scale to the mass to kill running contribution
+        self.scale = getattr(self, f"M{self.name}")
+        # Isolate the matching part
+        matching = func(*method_args)
+
+        # Reset scale to initial value
+        self.scale = initial_scale
+        # Subtract matching from total result to isolate the running
+        running = func(*method_args) - matching
+
+        return running
+
     def kronecker_delta(self, i, j):
         if i == j:
             return 1
