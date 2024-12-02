@@ -1,2 +1,3 @@
 *.m linguist-language=Mathematica
 *.csv linguist-vendored
+mm/* linguist-vendored
