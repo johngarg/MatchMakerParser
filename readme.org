@@ -37,3 +37,5 @@ DeclareExoticParams[
 (* Run the main function, supposing you have the Xi1 MatchingResult.dat file *)
 MatchMakerToPython["Xi1", "Xi1MatchingResult.dat", "output/Xi1.py"];
 #+end_src
+
+If you use this code, please cite our paper https://arxiv.org/abs/2412.01759.
