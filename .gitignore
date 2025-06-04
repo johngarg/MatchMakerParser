@@ -14,6 +14,9 @@ granada/
 granada2/
 old_granada/
 python/*_matching.py
+python/
+notebooks/
+*.csv
 
 # Matching files
 mm/Granada*.fr
@@ -33,3 +36,4 @@ notebooks/
 
 # Junk
 etc/
+.aider*
