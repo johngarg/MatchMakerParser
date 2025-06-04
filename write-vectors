@@ -1,0 +1,200 @@
+#!/Users/johngargalionis/.virtualenvs/oneloopdict/bin/python
+
+"""Script to match the vector multiplets in the granada dictionary onto the dimension-6 SMEFT"""
+
+import os
+import pandas as pd
+from pprint import pprint
+
+WARSAW = {
+    "alphaO3G": r"\mathcal{O}_{G}",
+    "alphaO3Gt": r"\mathcal{O}_{\tilde{G}}",
+    "alphaO3W": r"\mathcal{O}_{W}",
+    "alphaO3Wt": r"\mathcal{O}_{\tilde{W}}",
+    "alphaOHG": r"\mathcal{O}_{HG}",
+    "alphaOHGt": r"\mathcal{O}_{H\tilde{G}}",
+    "alphaOHW": r"\mathcal{O}_{HW}",
+    "alphaOHWt": r"\mathcal{O}_{H\tilde{W}}",
+    "alphaOHB": r"\mathcal{O}_{HB}",
+    "alphaOHBt": r"\mathcal{O}_{H\tilde{B}}",
+    "alphaOHWB": r"\mathcal{O}_{HWB}",
+    "alphaOHWBt": r"\mathcal{O}_{HW\tilde{B}}",
+    "alphaOHBox": r"\mathcal{O}_{H\Box}",
+    "alphaOHD": r"\mathcal{O}_{HD}",
+    "alphaOH": r"\mathcal{O}_{H}",
+    "alphaOuG": r"\mathcal{O}_{uG}",
+    "alphaOuW": r"\mathcal{O}_{uW}",
+    "alphaOuB": r"\mathcal{O}_{uB}",
+    "alphaOdG": r"\mathcal{O}_{dG}",
+    "alphaOdW": r"\mathcal{O}_{dW}",
+    "alphaOdB": r"\mathcal{O}_{dB}",
+    "alphaOeW": r"\mathcal{O}_{eW}",
+    "alphaOeB": r"\mathcal{O}_{eB}",
+    "alphaOHq1": r"\mathcal{O}_{Hq}^{(1)}",
+    "alphaOHq3": r"\mathcal{O}_{Hq}^{(3)}",
+    "alphaOHu": r"\mathcal{O}_{Hu}",
+    "alphaOHd": r"\mathcal{O}_{Hd}",
+    "alphaOHud": r"\mathcal{O}_{Hud}",
+    "alphaOHl1": r"\mathcal{O}_{Hl}^{(1)}",
+    "alphaOHl3": r"\mathcal{O}_{Hl}^{(3)}",
+    "alphaOHe": r"\mathcal{O}_{He}",
+    "alphaOuH": r"\mathcal{O}_{uH}",
+    "alphaOdH": r"\mathcal{O}_{dH}",
+    "alphaOeH": r"\mathcal{O}_{eH}",
+    "alphaOuGbar": r"\mathcal{O}_{uG}^{\dagger}",
+    "alphaOuWbar": r"\mathcal{O}_{uW}^{\dagger}",
+    "alphaOuBbar": r"\mathcal{O}_{uB}^{\dagger}",
+    "alphaOdGbar": r"\mathcal{O}_{dG}^{\dagger}",
+    "alphaOdWbar": r"\mathcal{O}_{dW}^{\dagger}",
+    "alphaOdBbar": r"\mathcal{O}_{dB}^{\dagger}",
+    "alphaOeWbar": r"\mathcal{O}_{eW}^{\dagger}",
+    "alphaOeBbar": r"\mathcal{O}_{eB}^{\dagger}",
+    "alphaOHq1bar": r"\mathcal{O}_{Hq}^{(1) \dagger}",
+    "alphaOHq3bar": r"\mathcal{O}_{Hq}^{(3) \dagger}",
+    "alphaOHubar": r"\mathcal{O}_{Hu}^{\dagger}",
+    "alphaOHdbar": r"\mathcal{O}_{Hd}^{\dagger}",
+    "alphaOHudbar": r"\mathcal{O}_{Hud}^{\dagger}",
+    "alphaOHl1bar": r"\mathcal{O}_{Hl}^{(1) \dagger}",
+    "alphaOHl3bar": r"\mathcal{O}_{Hl}^{(3) \dagger}",
+    "alphaOHebar": r"\mathcal{O}_{He}^{\dagger}",
+    "alphaOuHbar": r"\mathcal{O}_{uH}^{\dagger}",
+    "alphaOdHbar": r"\mathcal{O}_{dH}^{\dagger}",
+    "alphaOeHbar": r"\mathcal{O}_{eH}^{\dagger}",
+    "alphaOqq1": r"\mathcal{O}_{qq}^{(1)}",
+    "alphaOqq3": r"\mathcal{O}_{qq}^{(3)}",
+    "alphaOuu": r"\mathcal{O}_{uu}",
+    "alphaOdd": r"\mathcal{O}_{dd}",
+    "alphaOud1": r"\mathcal{O}_{ud}^{(1)}",
+    "alphaOud8": r"\mathcal{O}_{ud}^{(8)}",
+    "alphaOqu1": r"\mathcal{O}_{qu}^{(1)}",
+    "alphaOqu8": r"\mathcal{O}_{qu}^{(8)}",
+    "alphaOqd1": r"\mathcal{O}_{qd}^{(1)}",
+    "alphaOqd8": r"\mathcal{O}_{qd}^{(8)}",
+    "alphaOquqd1": r"\mathcal{O}_{quqd}^{(1)}",
+    "alphaOquqd8": r"\mathcal{O}_{quqd}^{(8)}",
+    "alphaOll": r"\mathcal{O}_{ll}",
+    "alphaOee": r"\mathcal{O}_{ee}",
+    "alphaOle": r"\mathcal{O}_{le}",
+    "alphaOlq1": r"\mathcal{O}_{lq}^{(1)}",
+    "alphaOlq3": r"\mathcal{O}_{lq}^{(3)}",
+    "alphaOeu": r"\mathcal{O}_{eu}",
+    "alphaOed": r"\mathcal{O}_{ed}",
+    "alphaOqe": r"\mathcal{O}_{qe}",
+    "alphaOlu": r"\mathcal{O}_{lu}",
+    "alphaOld": r"\mathcal{O}_{ld}",
+    "alphaOledq": r"\mathcal{O}_{ledq}",
+    "alphaOlequ1": r"\mathcal{O}_{lequ}^{(1)}",
+    "alphaOlequ3": r"\mathcal{O}_{lequ}^{(3)}",
+    "alphaOqq1bar": r"\mathcal{O}_{qq}^{(1) \dagger}",
+    "alphaOqq3bar": r"\mathcal{O}_{qq}^{(3) \dagger}",
+    "alphaOuubar": r"\mathcal{O}_{uu}^{\dagger}",
+    "alphaOddbar": r"\mathcal{O}_{dd}^{\dagger}",
+    "alphaOud1bar": r"\mathcal{O}_{ud}^{(1) \dagger}",
+    "alphaOud8bar": r"\mathcal{O}_{ud}^{(8) \dagger}",
+    "alphaOqu1bar": r"\mathcal{O}_{qu}^{(1) \dagger}",
+    "alphaOqu8bar": r"\mathcal{O}_{qu}^{(8) \dagger}",
+    "alphaOqd1bar": r"\mathcal{O}_{qd}^{(1) \dagger}",
+    "alphaOqd8bar": r"\mathcal{O}_{qd}^{(8) \dagger}",
+    "alphaOquqd1bar": r"\mathcal{O}_{quqd}^{(1) \dagger}",
+    "alphaOquqd8bar": r"\mathcal{O}_{quqd}^{(8) \dagger}",
+    "alphaOllbar": r"\mathcal{O}_{ll}^{\dagger}",
+    "alphaOeebar": r"\mathcal{O}_{ee}^{\dagger}",
+    "alphaOlebar": r"\mathcal{O}_{le}^{\dagger}",
+    "alphaOlq1bar": r"\mathcal{O}_{lq}^{(1) \dagger}",
+    "alphaOlq3bar": r"\mathcal{O}_{lq}^{(3) \dagger}",
+    "alphaOeubar": r"\mathcal{O}_{eu}^{\dagger}",
+    "alphaOedbar": r"\mathcal{O}_{ed}^{\dagger}",
+    "alphaOqebar": r"\mathcal{O}_{qe}^{\dagger}",
+    "alphaOlubar": r"\mathcal{O}_{lu}^{\dagger}",
+    "alphaOldbar": r"\mathcal{O}_{ld}^{\dagger}",
+    "alphaOledqbar": r"\mathcal{O}_{ledq}^{\dagger}",
+    "alphaOlequ1bar": r"\mathcal{O}_{lequ}^{(1) \dagger}",
+    "alphaOlequ3bar": r"\mathcal{O}_{lequ}^{(3) \dagger}",
+    "alphaWeinberg": r"\mathcal{O}_{Weinberg}",
+    "alphaWeinbergbar": r"\mathcal{O}_{Weinberg}^{\dagger}",
+}
+
+VALID_MULTIPLETS = {
+    "B1",
+}
+VALID_MULTIPLETS = {"GranadaV" + f for f in VALID_MULTIPLETS}
+DRY = False
+
+
+def run_and_print(cmd, dry=DRY):
+    print("$ " + cmd)
+    if not dry:
+        os.system(cmd)
+
+
+NONVANISHING = {}
+for f in VALID_MULTIPLETS:
+    valid_unix_name = f
+    if f.removeprefix("Granada")[0].isupper():
+        valid_unix_name = "GranadaCapital" + f.removeprefix("Granada")
+
+    # Make output directory if it doesn't already exist
+    if not os.path.exists(f"vectors/{valid_unix_name}"):
+        run_and_print(f"mkdir vectors/{valid_unix_name}")
+
+        # Match the fields
+        print(f"\n\nNow matching {f}...")
+        run_and_print(f"cd mm/; ./match {f}; cd ..")
+
+        # Copy results to corresponding directory
+        model_path = f"vectors/{valid_unix_name}/"
+        print(f"\nCopying MatchingResult.dat...")
+        matching_result_path = os.path.join(model_path, "MatchingResult.dat")
+        matching_problems_path = os.path.join(model_path, "MatchingProblems.dat")
+        rge_result_path = os.path.join(model_path, "RGEResult.dat")
+        run_and_print(f"cp mm/{f}_MM/MatchingResult.dat {matching_result_path}")
+        run_and_print(f"cp mm/{f}_MM/MatchingProblems.dat {matching_problems_path}")
+        run_and_print(f"cp mm/{f}_MM/RGEResult.dat {rge_result_path}")
+
+        # Write config
+        print(f"\nWriting MatchMakerParser config...")
+        config_path = os.path.join(model_path, "Config.m")
+        run_and_print(f"feynwrite {f} --mmp-config > {config_path}")
+
+    # Run MatchMakerParser
+    print(f"\nRunning matchmaker parser...")
+    python_file = f"{valid_unix_name}_matching.py"
+    output = os.path.join("pythonv", python_file)
+    if not os.path.exists(output):
+        run_and_print(
+            f"./parse-matchmaker-output-tree {f} {config_path} {matching_result_path} {output}"
+        )
+
+    # Load class from python directory
+    cmd = (
+        f"from pythonv.{python_file.removesuffix('.py')} import {f}MatchingResult as MR"
+    )
+    print("Reading class...")
+    print(cmd)
+    if not DRY:
+        exec(cmd)
+        mr = MR()
+        print(mr.nonvanishing)
+        NONVANISHING[f] = mr.nonvanishing
+
+    # Return to parent directory
+    run_and_print("cd mm/ && ./clean")
+
+print("Writing dataframe to csv...")
+
+WARSAW_NO_BARS = {op: tex
+                  for op,tex in WARSAW.items()
+                  if not op.endswith("bar")}
+table_data = {"ops": WARSAW_NO_BARS.values()}
+for k, v in NONVANISHING.items():
+    data = []
+    for op in WARSAW_NO_BARS:
+        if op in v:
+            data.append(1)
+        else:
+            data.append(0)
+
+    table_data[k] = data
+
+pd.DataFrame(table_data).to_csv("./nonvanishing.csv")
+pprint(WARSAW)

@@ -1,0 +1,11 @@
+#!/usr/bin/env wolframscript
+
+<<MatchMakerParser`;
+
+{fileName, name, configFilePath, matchMakerDataPath, outputPythonFilePath} = $ScriptCommandLine;
+
+(* Evaluate config file *)
+Get[configFilePath];
+
+(* Output Python file *)
+MatchMakerToPythonOnlyTree[name, matchMakerDataPath, outputPythonFilePath];

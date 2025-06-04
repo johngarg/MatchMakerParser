@@ -1,3 +1,5 @@
+(* ::Package:: *)
+
 Package["MatchMakerParser`"]
 
 Print["Main package MatchMakerParser.m loaded!"];
@@ -80,6 +82,7 @@ ParseSums[y_[idx__]] /; y === KroneckerDelta := y[idx];
 ParseSums[x_] := x;
 PackageExport["ParseSums"]
 PackageExport["Free"]
+PackageExport["sum"]
 
 ParseMatchMakerOutput::usage = "Parses sums in a list of rules as output by
 Matchmaker.";
@@ -190,7 +193,7 @@ class `n`MatchingResult(python.matchingresult.GenericMatchingResult):
     operatorTriples =
     Select[
       operatorTriples
-    , MemberQ[$WarsawOperatorCoefficients, First[#]] && ! StringEndsQ[First[#], "bar"] &
+    , MemberQ[$WarsawOperatorCoefficients, First[#]] (*&& ! StringEndsQ[First[#], "bar"]*) &
     ];
 
     (* Isolate the non-vanishing operator coefficients *)
@@ -262,4 +265,40 @@ MatchMakerToPython[
     , "## Symbols used:\n" <> usedSymbols <> "\n\n" <> pythonCode
     ];
   ];
+
 PackageExport["MatchMakerToPython"]
+
+
+MatchMakerToPythonOnlyTree[
+  name_String
+, matchMakerDataPath_String
+, outputPythonFilePath_String
+] :=
+  Block[
+    {matchMakerData, parsedMatchMakerData, pythonCode, usedSymbols}
+  ,
+    matchMakerData = Read[matchMakerDataPath][[-2]];
+
+    Print["Parsing matchmaker data..."];
+    parsedMatchMakerData = ParseMatchMakerOutput[matchMakerData /. MatchMakerParser`onelooporder -> 0];
+
+    Print["Successfully parsed! Converting to Python code..."];
+    pythonCode = OutputPythonClass[name][parsedMatchMakerData];
+
+    usedSymbols =
+    StringRiffle[
+      Table[
+        "# " <> ToString[i]
+      , {i, Normal[$PythonForm`Symbols]}
+      ]
+    , "\n"
+    ];
+
+    Print["Writing Python file " <> outputPythonFilePath];
+    WriteString[
+      outputPythonFilePath
+    , "## Symbols used:\n" <> usedSymbols <> "\n\n" <> pythonCode
+    ];
+  ];
+
+PackageExport["MatchMakerToPythonOnlyTree"]
