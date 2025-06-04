@@ -11,10 +11,11 @@ img/
 # raw data
 data/
 granada/
-granada2/
+vectors/
 old_granada/
 python/*_matching.py
 python/
+pythonv/
 notebooks/
 *.csv
 
